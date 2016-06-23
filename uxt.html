@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>UXT</title>
+      <!-- Bootstrap -->
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    .feature{
+      margin: 0;
+      padding: 0;
+      background-attachment: fixed;
+      background-size:cover;
+      
+
+    }
+      #video-background{
+        position: fixed;
+        top: 50%
+        left:0;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        object-fit: cover;
+        overflow: hidden;
+
+      }
+      .jumbotron{
+        background-attachment: fixed;
+        position: relative;
+        -webkit-backface-visibility:hidden;
+        -webkit-transform:translateZ(0); 
+        opacity: .99;
+             }
+    </style>
+
+   
+  </head>
+  <body data-spy="scroll" data-target="#uxt" data-offset="70">
+    <!-- nav section-->
+
+    <nav id="uxt" class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+      <a class="navbar-brand">
+      <!--  <img  style="width:80%; height: 35px; align=left;" src="img/logos.jpg" >-->
+        
+      </a>
+    </div>
+    
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+      <ul class="nav navbar-nav navbar-right" style="font-size:1.2em;">
+        <li class="active"><a href="#">Home </a></li>
+          <li class="active"><a href="#section">sections</a></li>
+          <li  class="active"><a href="#projects">Projects</a></li>
+        <li class="active"><a href="#clients">Our Clients</a></li>
+        <li class="active"><a href="#testimonials">Testimonials</a></li>
+        <li class="active"><a href="#careers">Careers</a></li>
+        <li class="active"><a href="#contacts">Contatcs</a></li>
+        
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row"><div class="col-md-12">
+  
+
+<div class="feature">
+<article>
+  <center><h1 style="font-size:2.25em; color:#ffffff;"><em>USER EXPERIENCE TECHNOLOGY</em></h1></center><br>
+
+</article>
+<video autoplay="" loop="" preload="auto" class="covervid-video" poster="" id="video-background">
+<!--  <source src="vids/officeloop_low.mp4" type="video/mp4"> Your browser does not support this video i suggest you use another one.-->
+  <source src="vids/officeloop2.mp4" type="video/mp4"> Your browser does not support this video i suggest you use anothe browser
+</video>
+  
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+  <div id="section">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="">
+        <p> June is a specila month to me and my twin sister </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('.covervid-video').coverVid(1920, 1080);.
+    </script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
