@@ -12,6 +12,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
+    .nav{
+      color:#ffffff;
+    }
     .feature{
       margin: 0;
       padding: 0;
@@ -20,7 +23,7 @@
       
 
     }
-      #video-background{
+      /*#video-background{
         position: fixed;
         top: 50%
         left:0;
@@ -30,18 +33,101 @@
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: -1000;
+        z-index: -100;
         object-fit: cover;
         overflow: hidden;
+        background: url(img/photo.jpg) no-repeat;
+        background-size: cover;
+        /*-webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(50%);*/
+
 
       }
       .jumbotron{
-        background-attachment: fixed;
+       /* background-attachment: relative;
         position: relative;
         -webkit-backface-visibility:hidden;
         -webkit-transform:translateZ(0); 
-        opacity: .99;
+        opacity: .99;*/
+        background-color: #00c176;
+         height: auto;
+          width: 100%;
+          padding: 40px 0;
+          overflow: hidden;
+          font-size: 1em;
              }
+
+             .fade-carousel .slides .slide-1,
+             .fade-carousel .slides .slide-2,
+             .fade-carousel .slides .slide-3{
+              height: 100vh;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+
+            .slide-1{
+              background-image: url(img/index.jpg);
+            }
+             .slide-2{
+              background-image: url(img/images.jpg);
+            }
+             .slide-3{
+              background-image: url(img/photo.jpg);
+            }
+            .overlay{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: 2;
+              background-color: #080d15;
+              opacity: 7;
+            }
+            .hero{
+              font-size: 6em;
+              font-weight: bold;
+              margin: 0;
+              padding: 0;
+            }
+            .fade-carousel .carousel-inner .item .hero{
+              opacity: 0;
+              -webkit-transition: 2s all ease-in-out .1s;
+              -moz-transition: 2s all ease-in-out .1s;
+              -ms-transition: 2s all ease-in-out .1s;
+              -o-transition: 2s all ease-in-out .1s;
+              transition: 2s all ease-in-out .1s;
+            }
+            .fade-carousel .carousel-inner .item.active .hero{
+              opacity: 1;
+              -webkit-transition:2s all ease-in-out .1s;
+              -moz-transition: 2s all ease-in-out .1s;
+              -ms-transition: 2s all ease-in-out .1s;
+              -o-transition: 2s all ease-in-out .1s;
+              transition: 2s all ease-in-out .1s;
+            }
+            .jumbotron{
+              width: 100%;
+              height: 100%;
+               height: auto;
+                padding: 40px 0;
+                overflow: hidden;
+                font-size: 1em;
+                background-color: #00bcd4;
+                color: #ffffff;
+            }
+            .clients{
+              background-color: #1E88E5;
+              width: 100%;
+              height: 100%;
+            }
+            #myCarousel{
+              background: #2f4357;
+              margin-top: 20px;
+
+            }
+            body{
+              font-size: 1.2em;
+            }
     </style>
 
    
@@ -62,7 +148,7 @@
       <span class="icon-bar"></span>
      </button>
       <a class="navbar-brand">
-      <!--  <img  style="width:80%; height: 35px; align=left;" src="img/logos.jpg" >-->
+      <img  style="width:80%; height: 35px; align=left;" src="img/logos.jpg" >
         
       </a>
     </div>
@@ -94,7 +180,7 @@
   <center><h1 style="font-size:2.25em; color:#ffffff;"><em>USER EXPERIENCE TECHNOLOGY</em></h1></center><br>
 
 </article>
-<video autoplay="" loop="" preload="auto" class="covervid-video" poster="" id="video-background">
+<video autoplay="" loop="" muted="" preload="auto" class="covervid-video" poster="img/photo.jpg" id="video-background">
 <!--  <source src="vids/officeloop_low.mp4" type="video/mp4"> Your browser does not support this video i suggest you use another one.-->
   <source src="vids/officeloop2.mp4" type="video/mp4"> Your browser does not support this video i suggest you use anothe browser
 </video>
@@ -102,20 +188,189 @@
 </div>
 </div>
 </div>
-
+<!--section-->
+<div id="products">
 <div class="jumbotron">
-  <div id="section">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <img src="">
-        <p> June is a specila month to me and my twin sister </p>
-      </div>
+<center><h3 style="color:#ffffff;"><strong>OUR PRODUCTS</strong></h3></center>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/sauti dateslogo.png">
+      <p>sauti dates..</p>
+      <a class="btn btn-primary" href="">more</a>
+    </div><!--thumbnail-->
+  </div><!-- col-md-4-->
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/BulkSMSinSurat.png">
+      <p style="color:#009688;">Bulk sms</p>
+      <a class="btn btn-primary" href="">more</a>
+  </div><!-- thumbnail-->
+  </div><!--col-md-4 -->
+ <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/skiza.jpg">
+      <p>Spoken Word On Skiza Tunes</p>
+      <a class="btn btn-primary" href="">more</a>
+  </div><!--thumbnail-->
+</div><!--col-md-4>-->
+<div class="row">
+  <div class="col-md-4">
+  <div class="thumbnail"></div>
+  <a href=""><img src="" class="thumbnail"></a>
+    <center><P>Uzazi APP</P></center>
     </div>
+  <div class="col-md-4">
+    <div class="thumnbnail">
+      <a href=""><img src="" class="thumbnail"></a>
+    </div>
+    <center>M-KONNECT</center>
   </div>
+<div class="col-md-4">
+  <div class="thumnbnail">
+    <a href=""><img src="" class="thumbnail"></a>
+  </div>
+  <center>BulkEmail</center>
 </div>
+</div><!--jumbotron-->
+</div><!--section-->
 
+<!--projects section-->
+<div id="projects">
+<div class="container">
+<div class="feature">
+  <div>
+    <center><p>OUR PRODUCTS</p></center>
+    <img src="img/skiza.jpg">
+  </div><!--col-md-12 -->
+</div><!--feature-->
+</div><!--container-->
+</div><!--projects -->
 
+<!--clients section-->
+<div id="clients">
+<center><p style="font-size: 2.5em;"><strong>PEOPLE WHO BELIEVE IN US</strong></p></center>
+  <div class="col-md-12">
+  <div class="well">
+   <center> <p> clients  icons</p></center>
+   <div id="myCarousel" class="carousel slide" style="width: 400px; height:200px; margin: 0 auto" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" style=" margin:0; padding:2%;">
+              <div class="item active">
+               <center> <img src="img/download.png" style="width: 200px; height:100px;" alt="baptism"></center>
+              </div>
+              <div class="item">
+                <center><img src="img/masabalogo.png" style="width: 200px; height:100px;" alt="Holy Communion"></center>
+              </div>
+              <div class="item">
+                <center><img src="img/ramsalogo.png" style="width: 200px; height:100px; margin: 0 auto" alt="resurection"></center>
+              </div>
+            </div>
+           <!-- <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span> 
+            </a>
+            
+            <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span> 
+            </a> -->
+          </div><!--courasel-->
+  </div>
+    
+  </div><!--col-md-12-->
+</div><!--clients -->
 
+<!--testimonials-->
+<div id="testimonials">
+  <div class="panel">
+    <center><p> slider pluggin for bulk sms </p></center>
+
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="3000" id="mycarousel">
+
+    <!--overlay -->
+    <div class="overlay"></div>
+      <!--indicators-->
+      <ol class="courasel indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+        
+      </ol>
+
+      <!--wrapper for sliders-->
+      <div class="carousel-inner">
+        <div class="item-slides-active">
+          <div class="slide-1"></div>
+          <div class="overlay"></div>
+          <div class="hero">
+          <hgroup>
+            <h3>Ramsa</h3>
+          </hgroup>
+        </div><!--hero-->
+      </div><!--item-slides-->
+
+      <div class="item-slides">
+        <div class="slide-2"> </div><!--item slide2-->
+        <div class="overlay"></div>
+        <div class="hero">
+          <hgroup>
+            <h3>Masaaba</h3>
+          </hgroup>
+        </div><!--hero-->
+      </div><!--item slides-->
+
+      <div class="items-slides">
+        <div class="slide-3"></div><!--item slide3-->
+        <div class="overlay"></div>
+        <div class="hero">
+          <hgroup>
+            <h3>Comcraft</h3>
+          </hgroup>
+        </div><!-- hero-->
+      </div><!--item slide--> 
+  
+</div><!--courasel inner-->
+</div><!--carousel-->
+
+<!-- careers -->
+<div id="careers">
+<div class="col-md-12">
+  <div class="panel">
+   <center> <p> Apply using open Baraza platform </p></center>
+  </div><!--panel-->
+  </div><!--col-md-12-->
+</div><!--careers-->
+
+<div id="contacts">
+  <div class="footer">
+    <div class="container">
+
+  <div class="col-sm-8 col-sm-offset-2 text-center">
+  <h4 style="align:center; font-family:'freight-text-pro'; font-size:2.25em;"><em><strong>Contact Us</strong></em></h4>
+  <ul class="list-inline center-block">
+  <li><a href="http://facebook.com/UXT"><img src="img/soc_fb.png" /></li>
+  <li><a href="http://twitter.com/UXT"><img src="img/soc_tw.png" /></li>
+  <li><a href="http://google.com/+UXT"><img src="img/soc_gplus.png" /></a></li>
+  <li><a href="http://google.com/+UXT"><img src="img/soc_pin.png" /></a></li>
+  
+    
+  </ul>
+  
+  </div>
+  
+</div>
+<ul class="nav pull-right scroll-top">
+<li><a href="#" title="Back to top" data-toggle="popover" tabindex="0" data-trigger="focus" ><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+<div class="footer">
+     <p class="text-muted">Copyright ©2016 Mustard</p>
+     <p class="text-muted">All Rights Reserved</p>
+  </div><!--social media icons -->
+</div><!-- contacts-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
