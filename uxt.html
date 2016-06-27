@@ -115,6 +115,9 @@
                 background-color: #00bcd4;
                 color: #ffffff;
             }
+            .jumbotron p{
+              color:#009688;
+            }
             .clients{
               background-color: #1E88E5;
               width: 100%;
@@ -195,30 +198,32 @@
   <div class="col-md-4">
     <div class="thumbnail">
       <img src="img/sauti dateslogo.png">
-      <p>sauti dates..</p>
-      <a class="btn btn-primary" href="">more</a>
+     <center> <p>sauti dates..</p></center>
+      <a class="btn btn-default" href="">More</a>
     </div><!--thumbnail-->
   </div><!-- col-md-4-->
   <div class="col-md-4">
     <div class="thumbnail">
       <img src="img/BulkSMSinSurat.png">
       <p style="color:#009688;">Bulk sms</p>
-      <a class="btn btn-primary" href="">more</a>
+      <a class="btn btn-default" href="">More</a>
   </div><!-- thumbnail-->
   </div><!--col-md-4 -->
  <div class="col-md-4">
     <div class="thumbnail">
       <img src="img/skiza.jpg">
-      <p>Spoken Word On Skiza Tunes</p>
-      <a class="btn btn-primary" href="">more</a>
+      <center><p>Spoken Word On Skiza Tunes</p></center>
+      <a class="btn btn-default" href="">More</a>
   </div><!--thumbnail-->
 </div><!--col-md-4>-->
 <div class="row">
   <div class="col-md-4">
-  <div class="thumbnail"></div>
-  <a href=""><img src="" class="thumbnail"></a>
-    <center><P>Uzazi APP</P></center>
-    </div>
+  <div class="thumbnail">
+  <img src="img/uzaziapp.jpg">
+    <center><p>Uzazi APP</p></center>
+    <a class="btn btn-default" href="">More</a>
+    </div><!--THUMBNAIL-->
+    </div><!--col-md-4-->
   <div class="col-md-4">
     <div class="thumnbnail">
       <a href=""><img src="" class="thumbnail"></a>
@@ -231,6 +236,7 @@
   </div>
   <center>BulkEmail</center>
 </div>
+</div><!--row-->
 </div><!--jumbotron-->
 </div><!--section-->
 
@@ -251,7 +257,7 @@
 <center><p style="font-size: 2.5em;"><strong>PEOPLE WHO BELIEVE IN US</strong></p></center>
   <div class="col-md-12">
   <div class="well">
-   <center> <p> clients  icons</p></center>
+   
    <div id="myCarousel" class="carousel slide" style="width: 400px; height:200px; margin: 0 auto" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -359,6 +365,20 @@
   
     
   </ul>
+  <div id="map"></div>
+      <script>
+        function initMap() {
+          var mapDiv = document.getElementById('map');
+          var map = new google.maps.Map(mapDiv, {
+              center: {lat: 44.540, lng: -78.546},
+              zoom: 8
+          });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        <!--AIzaSyBUs_z5aTGUMn2tqBBg_HpN9Z26edkXgLc-->
+    </script>
   
   </div>
   
