@@ -8,9 +8,20 @@
     <title>UXT</title>
       <!-- Bootstrap -->
      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <meta name="description" content="Circle Hover Effects with CSS Transitions" />
+        <meta name="keywords" content="circle, border-radius, hover, css3, transition, image, thumbnail, effect, 3d" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
     <style type="text/css">
     .nav{
       color:#ffffff;
@@ -57,54 +68,7 @@
           font-size: 1em;
              }
 
-             .fade-carousel .slides .slide-1,
-             .fade-carousel .slides .slide-2,
-             .fade-carousel .slides .slide-3{
-              height: 100vh;
-              background-size: cover;
-              background-position: center center;
-              background-repeat: no-repeat;
-            }
-
-            .slide-1{
-              background-image: url(img/index.jpg);
-            }
-             .slide-2{
-              background-image: url(img/images.jpg);
-            }
-             .slide-3{
-              background-image: url(img/photo.jpg);
-            }
-            .overlay{
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              z-index: 2;
-              background-color: #080d15;
-              opacity: 7;
-            }
-            .hero{
-              font-size: 6em;
-              font-weight: bold;
-              margin: 0;
-              padding: 0;
-            }
-            .fade-carousel .carousel-inner .item .hero{
-              opacity: 0;
-              -webkit-transition: 2s all ease-in-out .1s;
-              -moz-transition: 2s all ease-in-out .1s;
-              -ms-transition: 2s all ease-in-out .1s;
-              -o-transition: 2s all ease-in-out .1s;
-              transition: 2s all ease-in-out .1s;
-            }
-            .fade-carousel .carousel-inner .item.active .hero{
-              opacity: 1;
-              -webkit-transition:2s all ease-in-out .1s;
-              -moz-transition: 2s all ease-in-out .1s;
-              -ms-transition: 2s all ease-in-out .1s;
-              -o-transition: 2s all ease-in-out .1s;
-              transition: 2s all ease-in-out .1s;
-            }
+            
             .jumbotron{
               width: 100%;
               height: 100%;
@@ -112,21 +76,52 @@
                 padding: 40px 0;
                 overflow: hidden;
                 font-size: 1em;
-                background-color: #00bcd4;
+                background-color: #009688;
+               /* background-color: #00bcd4;*/
                 color: #ffffff;
             }
+            
+
+
             .jumbotron p{
               color:#009688;
+
             }
-            .clients{
-              background-color: #1E88E5;
+            #contacts {
+              /*background-color: #1E88E5;*/
               width: 100%;
-              height: 100%;
+              height: auto;
+              background-image: url(img/nairobi2.jpg);
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-attachment: scroll;
+              background-size: cover;
+  
+
             }
             #myCarousel{
-              background: #2f4357;
+              background: #009688;
               margin-top: 20px;
 
+            }
+            .well{
+              width: 100%;
+              height: 100%;
+               height: auto;
+                padding: 40px 0;
+                overflow: hidden;
+                font-size: 1em;
+                
+            }
+            .panel{
+              width: 100%;
+              height: 70%;
+               height: auto;
+                overflow: hidden;
+                font-size: 1em;
+                 padding: 40px 0;
+                 margin-bottom: 15%;
+                
             }
             body{
               font-size: 1.2em;
@@ -181,7 +176,7 @@
 <div class="feature">
 <article>
   <center><h1 style="font-size:2.25em; color:#ffffff;"><em>USER EXPERIENCE TECHNOLOGY</em></h1></center><br>
-
+ 
 </article>
 <video autoplay="" loop="" muted="" preload="auto" class="covervid-video" poster="img/photo.jpg" id="video-background">
 <!--  <source src="vids/officeloop_low.mp4" type="video/mp4"> Your browser does not support this video i suggest you use another one.-->
@@ -194,49 +189,49 @@
 <!--section-->
 <div id="products">
 <div class="jumbotron">
-<center><h3 style="color:#ffffff;"><strong>OUR PRODUCTS</strong></h3></center>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <img src="img/sauti dateslogo.png">
-     <center> <p>sauti dates..</p></center>
-      <a class="btn btn-default" href="">More</a>
-    </div><!--thumbnail-->
-  </div><!-- col-md-4-->
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <img src="img/BulkSMSinSurat.png">
-      <p style="color:#009688;">Bulk sms</p>
-      <a class="btn btn-default" href="">More</a>
-  </div><!-- thumbnail-->
-  </div><!--col-md-4 -->
- <div class="col-md-4">
-    <div class="thumbnail">
-      <img src="img/skiza.jpg">
-      <center><p>Spoken Word On Skiza Tunes</p></center>
-      <a class="btn btn-default" href="">More</a>
-  </div><!--thumbnail-->
-</div><!--col-md-4>-->
-<div class="row">
-  <div class="col-md-4">
-  <div class="thumbnail">
-  <img src="img/uzaziapp.jpg">
-    <center><p>Uzazi APP</p></center>
-    <a class="btn btn-default" href="">More</a>
-    </div><!--THUMBNAIL-->
-    </div><!--col-md-4-->
-  <div class="col-md-4">
-    <div class="thumnbnail">
-      <a href=""><img src="" class="thumbnail"></a>
-    </div>
-    <center>M-KONNECT</center>
-  </div>
-<div class="col-md-4">
-  <div class="thumnbnail">
-    <a href=""><img src="" class="thumbnail"></a>
-  </div>
-  <center>BulkEmail</center>
-</div>
-</div><!--row-->
+<ul class="ch-grid">
+          <li>
+            <div class="ch-item"> 
+              <div class="ch-info">
+                <h3>BULK SMS</h3>
+                <p>by UXT <a href="http://drbl.in/eGjw" style="font-size:1.2em;">Read More</a></p>
+              </div>
+              <div class="ch-thumb ch-img-1"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item">
+              <div class="ch-info">
+                <h3>Spoken Word on Skiza</h3>
+                <p style="font-size:1em;">by UXT <a href="http://drbl.in/eFWR">Read More</a></p>
+              </div>
+              <div class="ch-thumb ch-img-2"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ch-item">
+              <div class="ch-info">
+                <h3>MKonnect</h3>
+                <p>UXT<a href="http://drbl.in/eFED" style="font-size:1.2em;">READ MORE</a></p>
+              </div>
+              <div class="ch-thumb ch-img-3"></div>
+            </div>
+          </li>
+        </ul>
+        
+            <ul class="ch-grid">
+          <li>
+            <div class="ch-item"> 
+              <div class="ch-info">
+                <h3>BULK SMS</h3>
+                <p>by UXT <a href="http://drbl.in/eGjw" style="font-size:1.2em;">Read More</a></p>
+              </div>
+              <div class="ch-thumb ch-img-1"></div>
+            </div>
+          </li>
+          </ul>
+
+
 </div><!--jumbotron-->
 </div><!--section-->
 
@@ -246,7 +241,7 @@
 <div class="feature">
   <div>
     <center><p>OUR PRODUCTS</p></center>
-    <img src="img/skiza.jpg">
+    <img src="img/skiza.jpg" class="img-circle">
   </div><!--col-md-12 -->
 </div><!--feature-->
 </div><!--container-->
@@ -254,9 +249,9 @@
 
 <!--clients section-->
 <div id="clients">
-<center><p style="font-size: 2.5em;"><strong>PEOPLE WHO BELIEVE IN US</strong></p></center>
+<center><p style="font-size: 2em;"><strong>PEOPLE WHO BELIEVE IN US</strong></p></center>
   <div class="col-md-12">
-  <div class="well">
+  
    
    <div id="myCarousel" class="carousel slide" style="width: 400px; height:200px; margin: 0 auto" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -285,62 +280,17 @@
               <span class="sr-only">Next</span> 
             </a> -->
           </div><!--courasel-->
-  </div>
+  
     
   </div><!--col-md-12-->
 </div><!--clients -->
 
 <!--testimonials-->
 <div id="testimonials">
-  <div class="panel">
-    <center><p> slider pluggin for bulk sms </p></center>
-
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="3000" id="mycarousel">
-
-    <!--overlay -->
-    <div class="overlay"></div>
-      <!--indicators-->
-      <ol class="courasel indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#mycarousel" data-slide-to="1"></li>
-        <li data-target="#mycarousel" data-slide-to="2"></li>
-        
-      </ol>
-
-      <!--wrapper for sliders-->
-      <div class="carousel-inner">
-        <div class="item-slides-active">
-          <div class="slide-1"></div>
-          <div class="overlay"></div>
-          <div class="hero">
-          <hgroup>
-            <h3>Ramsa</h3>
-          </hgroup>
-        </div><!--hero-->
-      </div><!--item-slides-->
-
-      <div class="item-slides">
-        <div class="slide-2"> </div><!--item slide2-->
-        <div class="overlay"></div>
-        <div class="hero">
-          <hgroup>
-            <h3>Masaaba</h3>
-          </hgroup>
-        </div><!--hero-->
-      </div><!--item slides-->
-
-      <div class="items-slides">
-        <div class="slide-3"></div><!--item slide3-->
-        <div class="overlay"></div>
-        <div class="hero">
-          <hgroup>
-            <h3>Comcraft</h3>
-          </hgroup>
-        </div><!-- hero-->
-      </div><!--item slide--> 
+  <div class="well">
   
-</div><!--courasel inner-->
-</div><!--carousel-->
+  </div><!-- -->
+  </div><!--testimonials -->
 
 <!-- careers -->
 <div id="careers">
@@ -386,7 +336,7 @@
 <ul class="nav pull-right scroll-top">
 <li><a href="#" title="Back to top" data-toggle="popover" tabindex="0" data-trigger="focus" ><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>
-<div class="footer">
+<div class="footer" style="font-size:1.2em color:#ffffff;">
      <p class="text-muted">Copyright ©2016 Mustard</p>
      <p class="text-muted">All Rights Reserved</p>
   </div><!--social media icons -->
