@@ -115,12 +115,12 @@ a:focus {
 }
 
 body > section {
-  padding: 70px 0;
+  padding: 40px 0;
 }
 
 .center {
   text-align: center;
-  padding-bottom: 55px;
+  padding-bottom: 5px;
 }
 
 .scaleIn {
@@ -284,13 +284,19 @@ input.search-form:hover {
  }
 
 #logo {
-  width: 200px;
-  height: 100px;
+  width: 230px;
+  height: 112px;
 }
 
 #navbar-header {
   color: blue;
+  margin-top: 30px;
+  align-content: center;
 
+}
+
+#nav-container {
+  width: 100%;
 }
 
 .navbar {
@@ -303,15 +309,32 @@ input.search-form:hover {
 
  .navbar-nav{
   background: #6600ff;
-  margin-top: 5px;
-  border-radius: 5px;
-  margin-left: 10px;
+  border-radius: 2px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  margin-top: 8px;
+  display: inline;
+  width: 770px;
 
  }
 
 .navbar-nav>li{
-  margin-left: 35px;
+  /*margin-left: 20px;*/
   padding-bottom: 0px;
+  background: #6600ff;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
+#navheader {
+  margin-left: 60px;
+  margin-right: 0px;
+  overflow-x: hidden;
+}
+
+#formsearch {
+  float: right;
+  margin: 5px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -326,6 +349,11 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > li > a:hover{
 	background-color: #c52d2f;
   color: #fff;
+}
+
+#collapse {
+  width: 80%;
+  height: 200px;
 }
 
 .navbar-inverse {
@@ -827,6 +855,11 @@ input.search-form:hover {
 
 .panel-body{
   padding: 20px 20px 10px;
+}
+
+#nav {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .panel-group .panel+.panel{
