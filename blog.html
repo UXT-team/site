@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Blog | Corlate</title>
-    
+
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -14,11 +14,11 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -28,69 +28,65 @@
 
 <body>
 
-    <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
-                    </div>
-                    <div class="col-sm-6 col-xs-8">
-                       <div class="social">
-                            <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                           </div>
-                       </div>
-                    </div>
-                </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
+  <header id="header">
 
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
-                
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-item.html">Blog Single</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                            </ul>
-                        </li>
-                        <li class="active"><a href="blog.html">Blog</a></li> 
-                        <li><a href="contact-us.html">Contact</a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-        
-    </header><!--/header-->
+    <nav id="nav" class="navbar navbar-inverse" role="banner">
+          <div id="nav-container" class="container">
+              <div id="navheader" class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" alt="logo"></a>
+              </div>
+
+              <div class="collapse navbar-collapse">
+
+
+                  <h3 id="navbar-header">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Making Life Better Through Information And Technology</h3>
+
+                   <form id="formsearch">
+                     <input type="text" name="name" value=""><button class="btn" type="search-form" name="search">search</button>
+                   </form>
+
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html">HOME</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="about-us.html">About Us</a></li>
+                              <li><a href="#">Team</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVICES<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Sauti Dates</a></li>
+                              <li><a href="#">M-Konnect</a></li>
+                              <li><a href="#">Skiza Tunes</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Bulk SMS</a></li>
+                              <li><a href="#">Bulk Email</a></li>
+                              <li><a href="#">CCTV Cameras</a></li>
+                          </ul>
+                      </li>
+
+                      <li><a href="#">CLIENTS</a></li>
+                      <li class="active"><a href="blog.html">BLOG</a></li>
+                      <li><a href="contact-us.html">CONTACT</a></li>
+                  </ul>
+              </div>
+          </div><!--/.container-->
+      </nav><!--/nav-->
+  </header><!--/header-->
 
     <section id="blog" class="container">
         <div class="center">
@@ -111,20 +107,20 @@
                                     <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
                                 </div>
                             </div>
-                                
+
                             <div class="col-xs-12 col-sm-10 blog-content">
                                 <a href="#"><img class="img-responsive img-blog" src="images/blog/blog1.jpg" width="100%" alt="" /></a>
                                 <h2><a href="blog-item.html">Consequat bibendum quam liquam viverra</a></h2>
                                 <h3>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</h3>
                                 <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
-                        </div>    
+                        </div>
                     </div><!--/.blog-item-->
-                        
+
                     <div class="blog-item">
                         <div class="row">
                              <div class="col-sm-2 text-center">
-                                <div class="entry-meta"> 
+                                <div class="entry-meta">
                                     <span id="publish_date">07  NOV</span>
                                     <span><i class="fa fa-user"></i> <a href="#">John Doe</a></span>
                                     <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">2 Comments</a></span>
@@ -137,9 +133,9 @@
                                 <h3>Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.</h3>
                                 <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
-                        </div>    
+                        </div>
                     </div><!--/.blog-item-->
-                        
+
                     <ul class="pagination pagination-lg">
                         <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous Page</a></li>
                         <li class="active"><a href="#">1</a></li>
@@ -157,7 +153,7 @@
                                 <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
                         </form>
                     </div><!--/.search-->
-    				
+
     				<div class="widget categories">
                         <h3>Recent Comments</h3>
                         <div class="row">
@@ -183,11 +179,11 @@
                                         <span>By <a href="#">Alex</a></span <span>On <a href="#">Creative</a></span>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                        </div>                     
+                        </div>
                     </div><!--/.recent comments-->
-                     
+
 
                     <div class="widget categories">
                         <h3>Categories</h3>
@@ -200,9 +196,9 @@
                                     <li><a href="#">Technology <span class="badge">25</span></a></li>
                                 </ul>
                             </div>
-                        </div>                     
+                        </div>
                     </div><!--/.categories-->
-    				
+
     				<div class="widget archieve">
                         <h3>Archieve</h3>
                         <div class="row">
@@ -214,9 +210,9 @@
                                     <li><a href="#"><i class="fa fa-angle-double-right"></i> September 2013 <span class="pull-right">(08)</a></li>
                                 </ul>
                             </div>
-                        </div>                     
+                        </div>
                     </div><!--/.archieve-->
-    				
+
                     <div class="widget tags">
                         <h3>Tag Cloud</h3>
                         <ul class="tag-cloud">
@@ -232,7 +228,7 @@
                             <li><a class="btn btn-xs btn-primary" href="#">Gadgets</a></li>
                         </ul>
                     </div><!--/.tags-->
-    				
+
     				<div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
                         <ul class="sidebar-gallery">
@@ -244,7 +240,7 @@
                             <li><a href="#"><img src="images/blog/gallery6.png" alt="" /></a></li>
                         </ul>
                     </div><!--/.blog_gallery-->
-    			</aside>  
+    			</aside>
             </div><!--/.row-->
         </div>
     </section><!--/#blog-->
@@ -264,7 +260,7 @@
                             <li><a href="#">Privacy policy</a></li>
                             <li><a href="#">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -279,7 +275,7 @@
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -294,7 +290,7 @@
                             <li><a href="#">Plugin Development</a></li>
                             <li><a href="#">Article Writing</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -309,7 +305,7 @@
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
