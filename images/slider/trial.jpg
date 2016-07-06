@@ -1,0 +1,80 @@
+<svg id="expand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      svg > g {
+      display: none;
+      }
+      svg > g:target {
+      display: inherit;
+      }
+      #bulb:target {
+      }
+      ]]>
+    </style>
+
+  </defs>
+
+  <g id="play-icon" fill="white">
+    <path d="M18.44,16.5v64h64v-64h-64Zm24.25,49-0.11-35L60.31,48.18Z"/>
+  </g>
+
+  <g id="maximize" fill="white">
+    <polygon points="67.35 10.29 67.35 14.29 82.18 14.29 60.98 35.48 63.81 38.31 85.01 17.11 85.01 31.95 89.01 31.95 89.01 10.29 67.35 10.29"/>
+    <polygon points="32 14.29 32 10.29 10.34 10.29 10.34 31.95 14.34 31.95 14.34 17.11 35.54 38.31 38.37 35.48 17.17 14.29 32 14.29"/>
+    <polygon points="85.01 65.24 85.01 80.07 63.81 58.87 60.98 61.7 82.18 82.9 67.35 82.9 67.35 86.9 89.01 86.9 89.01 65.24 85.01 65.24"/>
+    <polygon points="35.54 58.87 14.34 80.07 14.34 65.24 10.34 65.24 10.34 86.9 32 86.9 32 82.9 17.17 82.9 38.37 61.7 35.54 58.87"/>
+  </g>
+
+  <g id="close" fill="white">
+    <polygon points="78.2 23.3 75 20.1 48.7 46.4 22.5 20.1 19.2 23.3 45.5 49.6 18.3 76.8 21.5 80.1 48.7 52.8 76 80.1 79.2 76.8 52 49.6 78.2 23.3"/>
+  </g>
+
+  <g id="chevron-right" fill="white">
+    <polygon points="66 49 63.2 51.8 36.4 25 42 25 66 49"/>
+    <polygon points="42 73 36.5 73 63.2 46.2 66 49 42 73"/>
+  </g>
+
+  <g id="chevron-left" fill="white">
+    <polygon points="60.4 25 66 25 39.2 51.8 36.4 49 60.4 25"/>
+    <polygon points="36.4 49 39.2 46.2 65.9 73 60.4 73 36.4 49"/>
+  </g>
+
+  <g id="embed">
+    <polygon points="75.3 72 69.6 72 92.2 49.5 69.4 27 75.1 27 97.9 49.7 75.3 72"/>
+    <polygon points="22.8 27 28.5 27 5.8 49.5 28.6 72 22.9 72 0.1 49.3 22.8 27"/>
+    <polygon points="39.2 83 34.9 83 60.1 15 64.3 15 39.2 83"/>
+  </g>
+
+  <g id="share">
+    <polygon points="47 23.65 47 68 51 68 51 23.63 61.49 34.11 64.31 31.29 48.99 15.97 33.78 31.29 36.62 34.11 47 23.65"/>
+    <polygon points="73 62 73 77 25 77 25 62 21 62 21 81 77 81 77 62 73 62"/>
+  </g>
+
+  <g id="download">
+    <polygon points="64.31 55.71 61.49 52.89 51 63.37 51 19 47 19 47 63.37 36.51 52.89 33.69 55.71 49 71.03 64.31 55.71"/>
+    <polygon points="73 62 73 77 25 77 25 62 21 62 21 81 77 81 77 62 73 62"/>
+  </g>
+
+  <g id="add-to-board">
+    <path d="M17,17V81H81V17H17ZM77,77H21V21H77V77Z"/>
+    <polygon points="47.1 63.1 51.1 63.1 51.1 51.1 63.1 51.1 63.1 47.1 51.1 47.1 51.1 35 47.1 35 47.1 47.1 35 47.1 35 51.1 47.1 51.1 47.1 63.1"/>
+  </g>
+
+  <g id="added-to-board">
+    <path d="M17,17V81H81V17H17ZM46.1,59.4l-2.8,2.8-2.8-2.8-9.2-9.2,2.8-2.8,9.2,9.2L64,35.9l2.8,2.8Z"/>
+  </g> 
+
+  <g id="newspaper">
+    <rect x="52.01" y="31.82" width="19" height="17.94" style="isolation: isolate"/>
+    <rect x="51.99" y="53.52" width="19" height="3.54" style="isolation: isolate"/>
+    <rect x="27.03" y="60.75" width="19.04" height="3.54" style="isolation: isolate"/>
+    <rect x="27.03" y="53.52" width="19.04" height="3.54" style="isolation: isolate"/>
+    <rect x="51.99" y="60.75" width="19" height="3.54" style="isolation: isolate"/>
+    <rect x="27.04" y="39.03" width="19.04" height="3.54" style="isolation: isolate"/>
+    <path d="M17,22.88V73.2H81V22.88H17ZM77.09,69.28H20.95V26.82H77.09V69.28Z" style="isolation: isolate"/>
+    <rect x="27.02" y="46.26" width="19.04" height="3.54" style="isolation: isolate"/>
+    <rect x="27.03" y="31.84" width="19.04" height="3.54" style="isolation: isolate"/>
+  </g>
+
+</svg>
