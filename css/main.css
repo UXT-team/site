@@ -107,11 +107,11 @@ a:focus {
 }
 
 .media>.pull-left{
-  margin-right: 20px;
+ /* margin-right: 20px;*/
 }
 
 .media>.pull-right{
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 
 body > section {
@@ -2542,7 +2542,7 @@ shortcodes page css
 ********* Footer ******
 ************************/
 #bottom {
-  background: red;
+  background:  #F05F40;;
   border-bottom: 5px solid #c52d2f;
   font-size: 14px;
   color: #c52d2f;
