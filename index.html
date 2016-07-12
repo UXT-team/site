@@ -13,6 +13,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/feature.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -180,7 +181,7 @@
                             <div class="thumbnail">
                             <img src="images/service/sautidates.png" alt="Sautidates">
                           <center>
-                            <h2 id="navbar-header">Sauti Dates</h2>
+                            <h2 style="color:#F05F40;" onmouseover="sauti(this)" onmouseleave="dates(this)">Sauti Dates</h2>
                           </center>
 
                             <br>
@@ -196,7 +197,7 @@
                             <img src="images/service/bulksms.jpg" alt="BulkSMS" id="bulksms">
                             <br>
                           <center>
-                            <h2 onmouseover="bulk(this)" onmouseout="bulksms(this)" style="color: rgb(0, 0, 255);">Bulk SMS</h2>
+                            <h2 onmouseover="bulkmail(this)" onmouseout="bulk(this)">Bulk SMS</h2>
                           </center>
 
                           <center> <p style="display:inline">Bulksms is one of the services we provide..</p></center>
@@ -211,7 +212,7 @@
                              <img src="images/service/skizatune.jpg" alt="BulkSMS">
                             <br>
                           <center>
-                            <h2 onmouseover="skiza(this)" onmouseout="skizas(this)" style="color: rgb(255, 255, 255);">Skiza Tunes</h2>
+                            <h2 onmouseover="skiza(this)" onmouseout="skizas(this)");">Skiza Tunes</h2>
                           </center>
 
                            <center><p style="display:inline">Get Spoken Word as skiza Tune..</p></center>
@@ -226,7 +227,7 @@
                              <img src="images/service/uzaziapp.jpg" alt="UzaziApp" id="mconnect">
                             <br>
                           <center>
-                            <h2 id="navbar-header" onmouseover="uzazi(this)" onmouseout="uzazis(this)">Uzazi App</h2>
+                            <h2 style="color:#F05F40;" onmouseover="uzazi(this)" onmouseout="uzazis(this)">Uzazi App</h2>
                           </center>
 
                            <center><p style="display:inline">Uzazi app is a free mobile application for..</p></center>
@@ -241,7 +242,7 @@
                              <img src="images/service/mconnect.jpg" alt="M-Konnect" id="mconnect">
                             <br>
                           <center>
-                            <h2 id="navbar-header">M-Konnect</h2>
+                            <h2 style="color:  #F05F40;" onmouseover="mkonnect(this)" onmouseout="konnect(this)"  >M-Konnect</h2>
                           </center>
 
                           <center> <p style="display:inline">M-Konnect is a shortcode application for connecting..</p></center>
@@ -256,7 +257,7 @@
                             <img src="images/service/email.jpg" alt="BulkSMS" id="mconnect">
                                                             <br>
                           <center>
-                            <h2>Bulk Email</h2>
+                            <h2 style="color: #f05f40;" onmouseover="bulkmail(this)" onmouseout="bulk(this)">Bulk Email</h2>
                           </center>
 
                            <center><p style="display:inline">Bulkemail is one of the services we provide..</p></center>
@@ -332,11 +333,11 @@
                         <ul>
                             <li><a href="#">Faq</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
+                            <!--<li><a href="#">Forum</a></li>-->
                             <li><a href="#">Documentation</a></li>
                             <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="http://bulksms.uxt.co.ke/">Billing system</a></li>
+                            <!--<li><a href="#">Ticket system</a></li>-->
+                            <li><a href="http://bulksms.uxt.co.ke/">Billing system Bulk sms</a></li>
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
@@ -347,18 +348,18 @@
                         <ul>
                             <li><a href="#">Web Development</a></li>
                             <li><a href="#">SEO Marketing</a></li>
-                            <li><a href="#">Theme</a></li>
+                            <!--<li><a href="#">Theme</a></li>-->
                             <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
+                         <!--   <li><a href="#">Article Writing</a></li>-->
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
-                        <h3>Our Partners</h3>
+                       <!-- <h3>Our Partners</h3>
                         <ul>
                             <li><a href="#">Adipisicing Elit</a></li>
                             <li><a href="#">Eiusmod</a></li>
@@ -367,7 +368,7 @@
                             <li><a href="#">Exercitation</a></li>
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div><!--/.col-md-3-->
             </div>
@@ -406,8 +407,8 @@
         function bulk(b){
             b.style.color="#0000FF";
         }
-        function bulksms(b){
-            b.style.color="#ffffff";
+        function sms(b){
+            b.style.color=" #F05F40";
         }
 
         function skiza(s){
@@ -415,14 +416,35 @@
 
         }
         function skizas(s){
-             s.style.color="#ffffff";
+             s.style.color=" #F05F40";
         }
 
         function uzazi(z){
-            z.style.color="#ffa500";
+            z.style.color="#0000FF";
         }
         function uzazis(z){
-            z.style.color="#ffffff";
+            z.style.color="#F05F40";
+        }
+        function mkonnect(m) {
+            m.style.color="#0000FF";
+        }
+        function konnect(m){
+            m.style.color="#F05F40";
+        }
+        function bulkmail(bulks){
+            bulks.style.color="#0000FF";
+
+        }
+
+        function bulk(bulks){
+            bulks.style.color="#F05F40"
+        }
+
+        function sauti(sautidates){
+            sautidates.style.color="#0000FF";
+        }
+        function dates(sautidates){
+            sautidates.style.color="#F05F40";
         }
     </script>
 
