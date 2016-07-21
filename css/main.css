@@ -2507,3 +2507,8 @@ shortcodes page css
   margin-top: 0;
   font-weight: 600
 }
+
+#page-wrap {
+     width: 86%;
+     margin: 0 auto;
+}
