@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>jQuery imageSlider Plugin Demo</title>
+<style>
+* {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+h1 {
+	font-size: 150%;
+	font-weight: bold;
+	text-align: center;
+}
+.my-slider {
+	height: 450px;
+	margin: 0 auto;
+	/*width: 900px;*/
+	width: 100%;
+}
+.my-slider ul {
+	height: 450px;
+	overflow: hidden;
+}
+.my-slider li {
+	float: left;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.imageslider.js"></script>
+<script>
+$(function() {
+	$('.js-imageslider').imageslider({
+		slideItems: '.my-slider-item',
+		slideContainer: '.my-slider-list',
+		slideDistance: 5,
+		slideDuratin: 800,
+		resizable: true,
+		pause: true
+	});
+});
+</script>
+</head>
+<body>
+<h1 style="margin-top:150px; margin-bottom:50px;">jQuery imageSlider Plugin Demo</h1>
+
+<div class="my-slider js-imageslider">
+<ul class="my-slider-list">
+<li class="my-slider-item"><img src="images/partners/safaricom.png" width="900" alt=""></li>
+<li class="my-slider-item"><img src="images/partners/ramsa.png" width="900" alt=""></li>
+<li class="my-slider-item"><img src="images/partners/viscar.png" width="900" alt=""></li>
+</ul>
+<!-- /.js-imageslider --></div>
+	<div>
+		<p>
+			HELLO JAMES KAE WAWERU
+		</p>
+	</div>
+
+</body>
+</html>
