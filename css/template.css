@@ -283,6 +283,11 @@ body .sp-body-inner {
 }
 #sp-header-wrapper .logo-wrapper .logo {
   background: url(../images/logo.jpg) no-repeat 0 50%;
+  width: 250px;
+  height: 168px;
+  float: left;
+  top: 0px;
+
 }
 #sp-header-wrapper .logo-wrapper .logo-text {
   font-size: 24px;

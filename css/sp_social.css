@@ -7,20 +7,20 @@ div.sp_social {}
 	div.sp_social ul li a strong {display:none}
 
 	/*Icons*/
-	div.sp_social ul li a.sp_social_rss span {background-image:url(../../images/financial-news/rss.png)}
-	div.sp_social ul li a.sp_social_facebook span {background-image:url(../../images/financial-news/facebook.png)}
-	div.sp_social ul li a.sp_social_twitter span {background-image:url(../../images/financial-news/twitter.png)}
-	div.sp_social ul li a.sp_social_googleplus span {background-image:url(../../images/financial-news/google_plus.png)}
-	div.sp_social ul li a.sp_social_linkedin span {background-image:url(../../images/financial-news/linkedin.png)}
-	div.sp_social ul li a.sp_social_youtube span {background-image:url(../../images/financial-news/youtube.png)}
-	div.sp_social ul li a.sp_social_pinterest span {background-image:url(../../images/financial-news/pinterest.png)}
-	div.sp_social ul li a.sp_social_flickr span{background-image:url(../../images/financial-news/flickr.png)}
-	div.sp_social ul li a.sp_social_picasa span{background-image:url(../../images/financial-news/picasa.png)}
-	div.sp_social ul li a.sp_social_myspace span{background-image:url(../../images/financial-news/myspace.png)}
-	div.sp_social ul li a.sp_social_digg span{background-image:url(../../images/financial-news/digg.png)}
-	div.sp_social ul li a.sp_social_skype span{background-image:url(../../images/financial-news/skype.png)}
-	div.sp_social ul li a.sp_social_vimeo span{background-image:url(../../images/financial-news/vimeo.png)}
-	div.sp_social ul li a.sp_social_delicious span{background-image:url(../../images/financial-news/delicious.png)}
+	div.sp_social ul li a.sp_social_rss span {background-image:url(../images/social/rss.png)}
+	div.sp_social ul li a.sp_social_facebook span {background-image:url(../images/social/facebook.png)}
+	div.sp_social ul li a.sp_social_twitter span {background-image:url(../images/social/twitter.png)}
+	div.sp_social ul li a.sp_social_googleplus span {background-image:url(../images/social/google_plus.png)}
+	div.sp_social ul li a.sp_social_linkedin span {background-image:url(../images/social/linkedin.png)}
+	div.sp_social ul li a.sp_social_youtube span {background-image:url(../images/social/youtube.png)}
+	div.sp_social ul li a.sp_social_pinterest span {background-image:url(../images/social/pinterest.png)}
+	div.sp_social ul li a.sp_social_flickr span{background-image:url(../images/social/flickr.png)}
+	div.sp_social ul li a.sp_social_picasa span{background-image:url(../images/social/picasa.png)}
+	div.sp_social ul li a.sp_social_myspace span{background-image:url(../images/social/myspace.png)}
+	div.sp_social ul li a.sp_social_digg span{background-image:url(../images/social/digg.png)}
+	div.sp_social ul li a.sp_social_skype span{background-image:url(../images/social/skype.png)}
+	div.sp_social ul li a.sp_social_vimeo span{background-image:url(../images/social/vimeo.png)}
+	div.sp_social ul li a.sp_social_delicious span{background-image:url(../images/social/delicious.png)}
 
 	/*Hover*/
 	div.sp_social ul li a:hover span {background-position:0 -34px}

@@ -2512,3 +2512,24 @@ shortcodes page css
      width: 86%;
      margin: 0 auto;
 }
+
+#left, #right {
+    width:7%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #FAEBD7;
+}
+
+#left {
+    left: 0;
+    float: left;
+    visibility: visible;
+
+}
+
+#right {
+    right: 0;
+    float: right;
+}
