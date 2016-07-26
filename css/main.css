@@ -258,7 +258,7 @@ input.search-form:hover {
  #mconnect {
    width: 215px;
    height: 250px;
- }
+ } 
 
 #logo {
   width: 230px;
@@ -2509,7 +2509,7 @@ shortcodes page css
 }
 
 #page-wrap {
-     width: 86%;
+     width: 92%;
      margin: 0 auto;
 }
 
