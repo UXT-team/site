@@ -17,7 +17,7 @@
 				slideItems: '.is-item',
 				slideContainer: '.is-container',
 				slideDistance: 1,
-				slideDuration: 1,
+				slideDuration: 50,
 				slideEasing: 'linear',
 				resizable: false,
 				reverse: false,
