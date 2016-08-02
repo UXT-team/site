@@ -250,9 +250,12 @@ input.search-form:hover {
   margin:0;
 }
 
- #bulksms {
-   width: 200px;
-   height: 105px;
+ #bulks {
+   width: 1896px;
+   height: 1644px;
+ }
+ #site{
+  height: 1863px;
  }
 
  #mconnect {
