@@ -250,12 +250,9 @@ input.search-form:hover {
   margin:0;
 }
 
- #bulks {
-   width: 1896px;
-   height: 1644px;
- }
- #site{
-  height: 1863px;
+ #bulksms {
+   width: 200px;
+   height: 105px;
  }
 
  #mconnect {
@@ -2512,7 +2509,7 @@ shortcodes page css
 }
 
 #page-wrap {
-     width: 92%;
+     width: 86%;
      margin: 0 auto;
 }
 
