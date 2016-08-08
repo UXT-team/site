@@ -258,7 +258,7 @@ input.search-form:hover {
  #mconnect {
    width: 215px;
    height: 250px;
- } 
+ }
 
 #logo {
   width: 230px;
@@ -2561,4 +2561,15 @@ shortcodes page css
 #partners-img {
   width: 150px;
   height: 100px;
+}
+
+.row-about {
+  display: flex; /* equal height of the children */
+}
+
+.col-about {
+  flex: 1; /* additionally, equal width */
+
+  padding: 1em;
+  border: solid;
 }
