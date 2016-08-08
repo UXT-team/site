@@ -19,25 +19,44 @@
   <div class="table-responsive">
     <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
       <thead>
-        <tr class="info">
+        <tr class="success">
          <th>Phone number</th>
-            <th>processed</th>
+         <th>Process </th>
+         <th>In Date</th>
+         <th>Text Message</th>
+         <th>Service Id</th>
+         <th>Processed 1</th>
+         <th>Sender name</th>
+         <th>Link id</th>
+         <th>Product id</th>
+         <th>Client </th>
+         <th>Service Type</th>
+         <th>Send Time</th>
+         <th>Times tamp</th>
+         <th>Sent flag</th>
+         <th>User ID</th>
+         <th>Coprec </th>
+         <th>Correlator 1</th>
+         <th>Sync </th>
+         <th>ID </th>
+           <!-- <th>processed</th>
             <th>In date</th>
             <th>Text Message</th>
-            <th>Service_id</th>
-            <th>Processed1</th>
-            <th>sender_name</th>
-            <th>Link_id</th></tr>
-            <th>product_id</th></tr>
+            <th>Serviceid</th>
+            <th>Processed 1</th>
+            <th>sender name</th>
+            <th>Link id</th></tr>
+            <th>product id</th></tr>
             <th>Client</th></tr>
-            <th>Service_type</th></tr>
-            <th>Timestamp</th></tr>
-            <th>sent_flag</th></tr>
-            <th>user_id</th></tr>
+            <th>Service type</th></tr>
+            <th>Send time</th></tr>
+            <th>Times tamp</th></tr>
+            <th>sent flag</th></tr>
+            <th>user id</th></tr>
             <th>Coproc</th></tr>
             <th>Correlator</th></tr>
             <th>Sync</th></tr>
-            <th>Id</th></tr>
+            <th>Id</th></tr> -->
             
 
       </thead>
@@ -108,7 +127,16 @@
   </div>
 </div>
 </div><!--col-md-12 -->
+<div class="col-md-12">
+  <center><button class="btn btn-danger" onclick="jimuduafya()">Print this</button></center>
+  <center><a href="export.php"><button class="btn btn-danger">EXPORT</button></a></center>
+</div>
 </div><!--well -->
+<script>
+function jimuduafya() {
+    window.print();
+}
+</script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
