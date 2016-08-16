@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.uxtinfo.com/index.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 26 Jun 2014 16:37:58 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>uxt | User Experience Technologies</title>
+<link rel="stylesheet" type="text/css" href="cssstyles.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">
+</head>
+
+<!--
+h2 {
+	color: #0033FF;
+}
+.style4 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.style5 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+.style6 {color: #000066}
+.style7 {color: #000000}
+.style8 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.style9 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style10 {color: #000000; font-weight: bold; }
+-->
+</style>
+</head>
+<body background="images/bg.jpg">
+<table width="1138">
+  <tr>
+    <td width="101"><blockquote>
+      <p align="right">&nbsp;</p>
+      <div align="center"></div>
+    </blockquote></td>
+    <td width="1025">
+      <div align="right">
+        <table width="1185" bgcolor="#000000">
+          <tr>
+            <td width="407" height="56">&nbsp;</td>
+            <td width="76"><span class="active style9"> <a href="index-2.html"><img src="images/home.png"></a></span></td>
+            <td width="103"><div align="center"><a href="gallery.html" class="style9"><img src="images/gallery.png"></a></div></td>
+            <td width="89"><div align="center"><a href="ict.html" class="style9"><img src="images/ict.png"></a></div></td>
+            <td width="119"><div align="center"><a href="medical.html" class="style9"><img src="images/medical.png"></a></div></td>
+            <td width="119"><div align="center"><a href="mobile.html" class="style9"><img src="images/mobile.png"></a></div></td>
+            <td width="102"><div align="center"><a href="about.html" class="style9"><img src="images/about.png"></a></div></td>
+            <td width="135"><div align="center"><a href="contact.html" class="style9"><img src="images/contact.png"></a></div></td>
+          </tr>
+                </table>
+      </div>
+        <div align="right">
+          <!-- Start of Navigation bar-->
+          
+          <ul class="navigation">
+            <li class="active"></li>
+              </ul>
+          
+      
+            <!--End of Navigation bar-->
+          </p>
+          
+      </div>
+            <center><table><tr><td width="1025" height="400">
+              
+              
+  <center>
+  <h1><br />
+  </h1>
+  <div id="container">
+    <ul>
+    <li><img src="images/slide1.jpg" width="1025" height="400" /></li>
+    <li><img src="images/slide2.jpg" width="1025" height="400" /></li>
+    <li><img src="images/slide3.jpg" width="1025" height="400" /></li>
+    <li><img src="images/slide4.jpg" width="1025" height="400" /></li>
+    <li><img src="images/slide5.jpg" width="1025" height="400" /></li>
+  </ul>
+  <span class="button prevButton"></span> <span class="button nextButton"></span></div>
+</center>
+  
+<script src="jquery-1.4.2.min.js"></script>
+              
+  <script>
+$(window).load(function(){
+		var pages = $('#container li'), current=0;
+		var currentPage,nextPage;
+		var timeoutID;
+		var buttonClicked=0;
+
+		var handler1=function(){
+			buttonClicked=1;
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if($(this).hasClass('prevButton'))
+			{
+				if (current <= 0)
+					current=pages.length-1;
+				else
+					current=current-1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",-604);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+					currentPage.hide();
+				});
+				currentPage.animate({ marginLeft: 604 }, 800,function(){
+					$('#container .button').bind('click',handler1);
+				});
+			}
+			else
+			{
+
+				if (current >= pages.length-1)
+					current=0;
+				else
+					current=current+1;
+				nextPage = pages.eq(current);	
+
+				nextPage.css("marginLeft",604);
+				nextPage.show();
+				nextPage.animate({ marginLeft: 0 }, 800,function(){
+				});
+				currentPage.animate({ marginLeft: -604 }, 800,function(){
+					currentPage.hide();
+					$('#container .button').bind('click',handler1);
+				});
+			}		
+		}
+
+		var handler2=function(){
+			if (buttonClicked==0)
+			{
+			$('#container .button').unbind('click');
+			currentPage= pages.eq(current);
+			if (current >= pages.length-1)
+				current=0;
+			else
+				current=current+1;
+			nextPage = pages.eq(current);	
+			nextPage.css("marginLeft",604);
+			nextPage.show();
+			nextPage.animate({ marginLeft: 0 }, 800,function(){
+			});
+			currentPage.animate({ marginLeft: -604 }, 800,function(){
+				currentPage.hide();
+				$('#container .button').bind('click',handler1);
+			});
+			timeoutID=setTimeout(function(){
+				handler2();	
+			}, 4000);
+			}
+		}
+
+		$('#container .button').click(function(){
+			clearTimeout(timeoutID);
+			handler1();
+		});
+
+		timeoutID=setTimeout(function(){
+			handler2();	
+			}, 4000);
+		
+});
+
+</script>
+              
+  <!--end of slide--><br/>
+              
+  <center><table><tr><td width="1018" height="182" background="images/bg1.png">	
+    
+    
+    <blockquote>
+    <blockquote>
+    
+    <blockquote><span class="style5"><h1 class="style6">&nbsp;</h1>
+				        <h1 class="style6">User Experience Technologies Ltd&trade;</h1>
+				      </span>
+      <p>&nbsp;</p>
+				        <p align="justify" class="style7">User Experience Technologies (UxT) is   a local Kenyan company dealing in innovation, research and development   of technological products and solutions in the fields of ICT, Mechanical   and manufacturing, Medical and Health. </p>
+				        <p align="justify" class="style7">&nbsp;</p>
+				        <p align="justify" class="style7">UxT is revolutionizing the   knowledge base society by tapping the very innovative minds to develop   well thought-out solutions and contents to solve individual, society,   corporate and government problems and challenges.</p>
+				        <blockquote>
+				          <p>&nbsp; </p>
+			            </blockquote>
+	            </blockquote>
+			        <blockquote>
+    <blockquote>
+      <p align="right"><a href="about.html"><img src="images/more.png" width="124" height="35"></a></p>
+	            </blockquote></td>
+  </tr></table>
+  </center>
+  <br/>
+  <center><table><tr><td width="287" height="356" background="images/bg1.png">
+			
+			
+					<h2 align="center" class="style7">&nbsp;</h2>
+					<h2 align="center" class="style7">Get intouch with us</h2>
+					<p align="center" class="style7">&nbsp; </p>
+					<blockquote>
+					  <p align="justify"><a href="#"></a>For any enquiries, Comments, compliments and suggestions, kindly dont hesitate to get in touch with us.</p>
+					  <p align="justify">&nbsp;</p>
+					  <p align="justify" class="style7">click &quot;more&quot; to get access to our contact page to get our contacts or send us a mail. </p>
+					  <p align="right"><a href="contact.html"><img src="images/more.png" width="84" height="37"></a></p>
+			    </blockquote>					<p align="center">&nbsp;</p></td>
+					
+<td width="-2">					
+<td width="240" valign="baseline" background="images/bg1.png">
+				      <h2 align="center" class="style7">&nbsp;</h2>
+				      <h2 align="center" class="style7">What we offer </h2>
+				      <p align="center" class="style7">&nbsp;</p>
+				      <blockquote>
+				        <p align="left">W<span class="style7">e at UXT provide the following products and services:-</span></p>
+				        <p align="left">&nbsp;</p>
+				      </blockquote>
+		        <ul>
+		         
+				           <li><a href="medical.html"><img src="images/medical1.png" width="189" height="36"></li>
+		                   <li><a href="medical.html"><img src="images/ict1.png" width="189" height="36"></li>
+						   <li><a href="medical.html"><img src="images/mobile1.png" width="189" height="36"></li>
+                </ul>
+              </td><td width="9">					    
+<td width="451" valign="baseline" background="images/bg1.png">				
+					<h2 align="center">&nbsp;</h2>
+					<h2 align="center">Our Patners </h2>
+					<p align="center">&nbsp;</p>
+					<blockquote>
+					  <p align="justify">We are proud to introduce our esteemed patners who work hand in hand in giving our services</p>
+					  <p align="justify">&nbsp;</p>
+				      <ul>
+				        <li class="style10">
+				          <div align="left">AMEK (Association Of Medical Engineering Of Kenya)</div>
+				        </li>
+				        <li class="style10">
+				          <div align="left">Machakos level V Hospital</div>
+				        </li>
+				        <li class="style10">
+				          <div align="left">Melchizedek Hospital</div>
+				        </li>
+				        <li class="style10">
+				          <div align="left">Ladnan Hospital</div>
+				        </li>
+				        <li class="style10">
+				          <div align="left">Medical Training Institutions in Kenya etc</div>
+				        </li>
+				        <li></li>
+			          </ul>
+		              <p align="justify">&nbsp;</p>
+		              <p align="justify">&nbsp;</p>
+		              <p align="justify">&nbsp;</p>
+		              <p align="justify">&nbsp;</p>
+		              <p align="justify">&nbsp;</p>
+					</blockquote>
+              </table>
+</center><br/>
+              
+  <center><table width="1000"><tr>
+<td width="420" height="321" background="images/bg1.png">			
+	<blockquote>
+	  <h2 align="center">&nbsp;</h2>
+	  <blockquote>
+	    <h2 align="left">About Us</h2>
+	    </blockquote>
+	  <p><img src="images/callibrator.jpg" alt="" width="162" height="186" hspace="10" style="float: left; padding: 0px 20px 10px 0px" title=""/>      
+	  <p>Due to the increasing need to  control medical equipment, User Experience Technologies Limited (UXT) we keep  upgrading our activities in the field of medicine to provide inspection, testing, calibration of bio-medical equipment and training  biomedical personnel to ensure quality control...</p>
+	   <blockquote><p align="right"><a href="about.html"><img src="images/more.png" width="83" height="31"></a></p>
+	  <p>&nbsp;</p></td>
+<td width="10">&nbsp;</td>
+<td width="239" valign="baseline" background="images/bg1.png">
+							<blockquote>
+							  <p>&nbsp;</p>
+			    <blockquote>
+			      <h2 align="center" class="style8"> Posts</h2>
+			      <p align="left" class="style7">&nbsp;</p>
+			    </blockquote>
+							 
+							    <ul>
+							      <li>
+							        <span class="style7"><a href="#">Recent post one </a></span></li>
+							      <li>
+							        <span class="style7"><a href="#">Recent post two </a></span></li>
+							      <li>
+							        <span class="style7"><a href="#">Recent post three </a></span></li>
+							      <li>
+							        <a href="#">Rrecent post four </a></li>
+							      <li>
+							        <span class="style7"><a href="#">Recent post one </a></span></li>
+							      <li>
+							        <a href="#">Recent post six </a></li>
+						        </ul>
+			  
+							  <p>&nbsp;</p>
+							  <p>&nbsp;</p>
+							  <p align="right"><a href="about.html"><img src="images/more.png" width="79" height="29"></a></p>
+		      </td>
+<td width="4"></td>
+<td width="306" valign="baseline" background="images/bg1.png">
+							<blockquote>
+							  <h2 align="left">&nbsp;</h2>
+							  <h2 align="left"><blink>Latest News</blink></h2>
+							</blockquote>
+							<p align="center">&nbsp;</p>
+			                <blockquote>
+			                  <p><span class="style7"><a href="#" class="date_news">May 21, 2014</a></span></p>
+			                  <p><span style="color: #000000"><img src="images/news.jpg" alt="news" title="" style="float: left; padding: 5px 10px 0px 0px;"/> </span>                              </p>
+			                  <p class="style7"><a href="#" class="style7">New equipments </a><br />
+		                      Due to the increasing need to  control medical equipment, User Experience Technologies Limited (UXT) we keep  upgrading our .Due to the increasing need to  control medical equipment, User Experience Technologies Limited (UXT) we keep  upgrading our </p>
+			                  <p align="right" class="style7"><a href="about.html"><img src="images/more.png" width="63" height="27"></a></p>
+                <blockquote> 
+		                        </p>
+</blockquote></td>
+</tr></table>
+</center>
+					  <div align="center" class="style7"><strong><a href="http://www.lukwisetechnologies.com/">Powered by Lukwise Technologies Ltd&trade;</a></strong></div>
+				    <div id="footer_bot">
+              <div id="footer_bot_left">						</div>
+						  <div class="style4" id="footer_icon">
+						    <div align="right"><a href="#"><img src="images/facebook.png" alt="" title=""/></a>
+						      <a href="#"><img src="images/twitter.png" alt="" title=""/></a>
+						      <a href="#"><img src="images/yahoo.png" alt="" title=""/></a>
+						      <a href="#"><img src="images/rss.png" alt="" title=""/></a>
+						      <a href="#"><img src="images/youtube.png" alt="" title=""/></a> </div>
+						  </div>
+					      <p align="center" class="style5"> Copyright &copy; 2014. User Experience Technologies Ltd&trade;. All Right Reserved</p>
+</body>
+
+<!-- Mirrored from www.uxtinfo.com/index.html by HTTrack Website Copier/3.x [XR&CO'2010], Thu, 26 Jun 2014 16:37:58 GMT -->
+</html>
