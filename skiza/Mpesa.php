@@ -1,3 +1,3 @@
 <?php
-#Business model on downloads
+#Business model on download
  ?>
