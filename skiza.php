@@ -40,7 +40,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
+	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/template.css" type="text/css" />
 	<link rel="stylesheet" href="css/preset1.css" type="text/css" />
 	<link rel="stylesheet" href="css/sp-smart-minima.css" type="text/css" />
@@ -323,14 +324,14 @@ $(function() {
 
 <section>
 <section>
-	<div class="breadcrums" style="margin-top:2%; font-size:1.2em;">
+	<div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
 		<ul class="breadcrumb">
 		
       <li class="active"><a href="#events"> Events</a> </li>
       <li class="active"><a href="#featured"> Featured Works </a></li>
       <li class="active"><a href="#artiste"> Artiste</a> </li>
       <li class="active"><a href="#songs">All songs</a></li>
-      <li class="active"><a href="#downloads">Downloads</a></li>
+      <li class="active"><a href="#albumns">Albumns</a></li>
 
     </ul>
 	</div><!--breadcrums-->
@@ -344,8 +345,8 @@ $(function() {
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </section>
 
-<section class="main" id="#artiste" style="/*background-color:#F05F40;*/ background-color:#000000;">
-			
+<section class="main"  style="background-color:#000000;">
+			<div id="artiste">
 				<ul class="ch-grid">
 					<li>
 						<div class="ch-item ch-img-1">				
@@ -472,11 +473,19 @@ $(function() {
 						</div>
 					</li>
 				</ul>
+				</div>
 			</section>
 
 			<section>
+
+			<div id="songs">
+				
+			
+				
 			<div class="col-xs-8">
+				
 				<div class="jumbotron" style="height:auto; width:100%;">
+					<!--<center><h3 style="font-size:1.8em; color:#1abc9c">SONGS</h3></center>-->
 					<div class="list-group">
 						<ul class="list-group">
 							<li class="list-group-item">
@@ -485,64 +494,65 @@ $(function() {
   						<source src="downloads/artiste/SPOKEN WORD - MAN IN THE MIRROR.mp3" type="audio/mpeg">
   						Your browser does not support the auio element
 					</audio> Man In the MIRROR &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-			<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+			<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - BEAUTIFULE.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
 								</audio> SPOKEN WORD - BEAUTIFULE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - HIGH COURT.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
 								</audio> SPOKEN WORD - HIGH COURT &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - ONE LOVE.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
-								</audio>SPOKEN WORD - ONE LOVE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Full Mp3</button></a><br>
+								</audio>SPOKEN WORD - ONE LOVE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Full Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - SI SIRI.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
-								</audio>SPOKEN WORD - SI SIRI &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Full Mp3</button></a><br>
+								</audio>SPOKEN WORD - SI SIRI &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Full Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - INFLATION.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
 								</audio> SPOKEN WORD - INFLATION &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - THE ONLY ONE.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
-								</audio> SPOKEN WORD - THE ONLY ONE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+								</audio> SPOKEN WORD - THE ONLY ONE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Mp3</button></a><br>
 							</li>
 							<li class="list-group-item">
 								<audio controls>
 									<source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
 									Your browser does not support the audio element
 								</audio>SPOKEN WORD - THE SCORE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+								<a href="download.php"><button type="submit" class="btn btn-success btn-md">Download Mp3</button></a><br>
 							</li>
 
 						</ul>
-						<center><li style="font-size:2.2em; padding: 5%; color:#1abc9c;"><strong><em><a data-toggle="collapse" data-parent="#accordion" href="#collapseone">VIEW MORE</a></em></strong></li></center>
+						<center><li style="font-size:1.7em;  font-color:#1abc9c;"><em><a data-toggle="collapse" data-parent="#accordion" href="#collapseone">VIEW MORE SONGS</a></em></li></center>
 						<div id="accordion" class="collapse">
 							
 						</div>
 					</div>
+
 					
     
     <div id="collapseone" class="panel-collapse collapse collapse">
@@ -584,18 +594,50 @@ $(function() {
 				</div><!--collapse-->
 				</div><!--jumbotron-->
 				</div><!--col-xs-8-->
-				
-				<div class="albumns" style="padding:0%;">
+				</div><!--songs-->
+
+				<div id="albumns">
+			<div class="albumns" style="padding:0%;">	
 				<div class="col-sm-4">
-					<div class="list group">
-						<a href="#" class="list-group-item active"><span class="glyphicon glyphicon-music"><button class="btn btn-warning btn-md">Download Albumn</button></span>Albumn<span class="badge">Onion</span></a>
+				<div class="panel">
+				<!--<center><h3 style="font-size:1.8em; color:#1abc9c;">Albumns</h3></center>-->
+				</div><!--panel-->
+					<div class="list group" style="width:90%; padding:5%;">
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">Onion</span></a>
 
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"><button class="btn btn-primary btn-md">Download Albumn</button></span>Albumn<span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
 
-						<a href="#" class="list-group-item "><span class="badge">Mofasa</span><span class="glyphicon glyphicon-music"><button class="btn btn-primary btn-md">Download Albumn</button></span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">mofasa</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						
+						
+					</div>
+					<center><li style="font-size:1.7em;  font-color:#1abc9c; padding:1%;"><em><a data-toggle="collapse" data-parent="#accordion" href="#albumn">VIEW MORE ALBUMNS</a></em></li></center>
+					<div id="albumn" class="panel-collapse collapse collapse">
+						<div class="list-group" style="width:90%">
+							<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">Onion</span></a>
+
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">mofasa</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">mofasa</span></a>
+						
+						</div><!--list-group-->
 					</div>
 				</div><!--col-md-4-->
+				</div><!--albumns class-->
 				</div><!--albumns-->
+
 			</section>
 			<section>
 				
