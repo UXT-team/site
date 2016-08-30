@@ -325,7 +325,7 @@ $(function() {
 <section>
 	<div class="breadcrums" style="margin-top:2%; font-size:1.2em;">
 		<ul class="breadcrumb">
-		
+
       <li class="active"><a href="#events"> Events</a> </li>
       <li class="active"><a href="#featured"> Featured Works </a></li>
       <li class="active"><a href="#artiste"> Artiste</a> </li>
@@ -334,7 +334,7 @@ $(function() {
 
     </ul>
 	</div><!--breadcrums-->
-<section>
+<!-- <section>
 	<div class="container" style="margin-top:2%; font-size:1.2em;">
 		<div class="wells">
 			<center><h2 style="color:#1abc9c">SKIZA  EVENTS</h2></center>
@@ -342,63 +342,265 @@ $(function() {
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</section>
+</section> -->
+<section  id="sp-slideshow-wrapper" class=" "><div class="container"><div class="row-fluid" id="slideshow">
+<div id="sp-slideshow" class="span12"><div id="sp-smart-slider252" class="sp-smart-slider layout-minima  ">
+    <!-- Carousel items -->
+    <div class="minima-slider" style="height:500px">
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">UXT  <span>LEADING </span> CONTENT  <span>PROVIDER</span></h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            We are now run by different Brands to increase Innovation and Empower our clients Online. We operate 24HRS thus meeting our client needs and demands through Timely and Quality Web Solutions.                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="contentprovider.html" class="btn btn-primary btn-large minima-more">View Our Brands</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+                        <img src="images/slider/content.jpg" alt="We  <span>Empower </span> our  <span>Clients</span> Online" title="We  Empower  our  Clients Online" / style="padding:5%">
+                        <img src="images/slider/providers.jpg" alt="We  <span>Empower </span> our  <span>Clients</span> Online" title="We  Empower  our  Clients Online" />
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">Got A <span>BUSINESS</span> GET A PROFESSIONAL <span>WEBSITE</span></h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            Our experience has taught us to come up with ideas that improves service delivery through ICT based solutions from  all walks of life.                    </div>
+
+                                                    <div class="slider-button">
+                                <a href="ussd.html" class="btn btn-primary btn-large minima-more">Details</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+                        <img src="images/slider/design.jpg" alt="Got a <span>Business</span> get a professional <span>Website</span>" title="Got a Business get a professional Website" / style="">
+                        <img src="images/slider/webb.jpg" alt="Got a <span>Business</span> get a professional <span>Website</span>" title="Got a Business get a professional Website" / style="">
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">WE ARE NOW ICT SOLUTIONS <span>& SOCIETY BASED SOLUTIONS</span>SERVICES </h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            We are improving content going into your Website with Profesionally taken Photos and Videos...Quality Content is Key for the success of your online presence                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="webapps.html" class="btn btn-primary btn-large minima-more">Find out how</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+
+                         <img src="images/slider/ICT-Solutions.jpg" alt="We are Now Offering <span>Photography & Videography"/>
+                        <img src="images/slider/solutions.jpg" alt="We are Now Offering <span>Photography & Videography"/>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">AT UXT, <span>CUSTOMER</span> IS THE <span>HERO</span></h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            We are totally internet business-focused, so we know how important our Customers are. Your web and online presence and performance is very key to your organisation, whether it’s commercial or not-for-profit or SME or a starter company or an individual’s work. That is why you are a hero.                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="bulksms.uxt.co.ke" class="btn btn-primary btn-large minima-more">About Us</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+
+                        <img src="images/slider/customer.png" alt="At Oracom, <span>customer</span> is the <span>Hero</span>" title="At Oracom, customer is the Hero" / style="padding-top:5%;">
+                         <img src="images/slider/contactus.png" alt="A Dedicated <span>Online Team</span> offering <span>Live</span> Support" title="A Dedicated Online Team offering Live Support" / style="">
+
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">UXT <span>LEADING</span> CONTENT <span>PROVIDER</span> WORLD</h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            Send notifications, advertise and alert with our fully featured Bulk SMS. Deliver messages from your computer or server quickly and easily, through the world's largest SMS messaging network with a registered sender ID. We have the capacity to send 10,000,000 texts within a day. Our Bulk SMS Services in Kenya include; BULK SMS, 2-WAY MESSAGING...                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="bulksms.html" class="btn btn-primary btn-large minima-more">See More</a>
+                            </div>
+                                                </div>
+          <div  class="slider-image">
+                        <img src="images/slider/bulk-sms-4.JPG" alt="We <span>Empower</span> your <span>Mobile</span> World" title="UXT is the leading Content Provider" / style="padding:5%">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title"> <span>WEB APPLICATIONS</span> and <span> WEB DESIGN</span> SERVICES</h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            Our Web Hosting packages have been tailor-made to match the needs of our wide variety of clients. Reliable, cheap and fast hosting servers. We have learnt the power in hosting, we have hosting security professionals who have experience with back-up and server management. We register .co.ke, .com, .org, .net etc                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="contact.html" class="btn btn-primary btn-large minima-more">Read More</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+                        <img src="images/slider/webapplication.jpg" alt=" <span>DOMAIN REGISTRATION</span> and <span> WEB HOSTING</span> Services" title=" DOMAIN REGISTRATION and  WEB HOSTING Services" / style="padding:5%;">
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">A DEDICATED <span>ONLINE TEAM</span> OFFERING <span>LIVE</span> SUPPORT</h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            We are committed to providing best-in-class customer care through world class technology and response mechanisms. At Idea you can expect nothing but the best in customer service. That's how we work for you! We have also automated most of our services to help you faster.                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="testimonials.html" class="btn btn-primary btn-large minima-more">Contact Us</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+                        <img src="images/slider/care.png" alt="A Dedicated <span>Online Team</span> offering <span>Live</span> Support" title="A Dedicated Online Team offering Live Support" / style="padding-top:5%">
+                        <img src="images/slider/contactus.png" alt="A Dedicated <span>Online Team</span> offering <span>Live</span> Support" title="A Dedicated Online Team offering Live Support" / style="">
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="slider-item">
+                <div class="container">
+                    <div class="slider-content">
+                        <div class="slider-title">
+                            <h1 class="sp-smart-title">NOW OFFERING  <span>SEARCH ENGINE OPTIMIZATION</span> </h1>
+                        </div>
+
+                        <div class="slider-text hidden-phone" style="font-size: 1.5em;">
+                            We offers training programmes across all digital marketing platforms. This  training gives participants the understanding of how to harness the power of Digital Marketing as a core driver of the marketing strategy for businesses.                        </div>
+
+                                                    <div class="slider-button">
+                                <a href="/" class="btn btn-primary btn-large minima-more">View Our Course</a>
+                            </div>
+                                                </div>
+
+                    <div  class="slider-image">
+
+                        <img src="images/slider/SEO.png" alt="Now Offering  <span>Digital Marketing Training</span> " title="Now Offering  Digital Marketing Training " / style="padding-top:2%;">
+
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+                </div>
+    <div class="sp-preloader">
+        <i class="icon-cog icon-spin"></i>
+        <i class="icon-cog icon-spin"></i>
+        <i class="icon-cog icon-spin"></i>
+    </div>
+    <div class="slider-controllers">
+        <ul>
+                    <li class="active">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                        <li class="">
+                <a href="javascript:;"></a>
+            </li>
+                    <ul>
+    </div>
+</div>
+</div>
+</div></div></section>
 
 <section class="main" id="#artiste" style="/*background-color:#F05F40;*/ background-color:#000000;">
-			
-				<ul class="ch-grid">
-					<li>
-						<div class="ch-item ch-img-1">				
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-1"></div>
-									<div class="ch-info-back">
-										<h3>Teardrops</h3>
-										<p> <a href="http://drbl.in/ewng">View My songs</a></p>
-									</div>	
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-2">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-2"></div>
-									<div class="ch-info-back">
-										<h3>Teardrops</h3>
-										<p> <a href="http://drbl.in/eQDg">View My Songs</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-3">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-3"></div>
-									<div class="ch-info-back">
-										<h3>Teardrops</h3>
-										<p> <a href="http://drbl.in/ejLW">View My songs</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-				
 
 				<ul class="ch-grid">
 					<li>
-						<div class="ch-item ch-img-1">				
+						<div class="ch-item ch-img-1">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
 									<div class="ch-info-back">
 										<h3>Teardrops</h3>
 										<p> <a href="http://drbl.in/ewng">View My songs</a></p>
-									</div>	
+									</div>
 								</div>
 							</div>
 						</div>
@@ -431,16 +633,59 @@ $(function() {
 					</li>
 				</ul>
 
+
 				<ul class="ch-grid">
 					<li>
-						<div class="ch-item ch-img-1">				
+						<div class="ch-item ch-img-1">
 							<div class="ch-info-wrap">
 								<div class="ch-info">
 									<div class="ch-info-front ch-img-1"></div>
 									<div class="ch-info-back">
 										<h3>Teardrops</h3>
 										<p> <a href="http://drbl.in/ewng">View My songs</a></p>
-									</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back">
+										<h3>Teardrops</h3>
+										<p> <a href="http://drbl.in/eQDg">View My Songs</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h3>Teardrops</h3>
+										<p> <a href="http://drbl.in/ejLW">View My songs</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back">
+										<h3>Teardrops</h3>
+										<p> <a href="http://drbl.in/ewng">View My songs</a></p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -540,15 +785,15 @@ $(function() {
 						</ul>
 						<center><li style="font-size:2.2em; padding: 5%; color:#1abc9c;"><strong><em><a data-toggle="collapse" data-parent="#accordion" href="#collapseone">VIEW MORE</a></em></strong></li></center>
 						<div id="accordion" class="collapse">
-							
+
 						</div>
 					</div>
-					
-    
+
+
     <div id="collapseone" class="panel-collapse collapse collapse">
     <div class="well">
      <ul class="list-group">
-          <li class="list-group-item"> 
+          <li class="list-group-item">
           	<audio controls>
 				<source src="downloads/artiste/SPOKEN WORD - INFLATION.mp3" type="audio/mpeg">
 					Your browser does not support the audio element
@@ -556,21 +801,21 @@ $(function() {
 				<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
 
           </li>
-          <li class="list-group-item"> 
+          <li class="list-group-item">
           		<audio controls>
 				<source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
 					Your browser does not support the audio element
 				</audio>SPOKEN WORD - THE SCORE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
 				<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
-             
+
           </li>
-          <li class="list-group-item"> 
+          <li class="list-group-item">
           		<audio controls>
 				<source src="downloads/artiste/SPOKEN WORD - THE ONLY ONE.mp3" type="audio/mpeg">
 				Your browser does not support the audio element
 				</audio> SPOKEN WORD - THE ONLY ONE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
 			<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
-              
+
           </li>
           <li class="list-group-item">
           	<audio controls>
@@ -584,7 +829,7 @@ $(function() {
 				</div><!--collapse-->
 				</div><!--jumbotron-->
 				</div><!--col-xs-8-->
-				
+
 				<div class="albumns" style="padding:0%;">
 				<div class="col-sm-4">
 					<div class="list group">
@@ -598,7 +843,7 @@ $(function() {
 				</div><!--albumns-->
 			</section>
 			<section>
-				
+
 			</section>
 
 <section id="sp-bottom-wrapper" class=" "><div class="container"><div class="row-fluid" id="bottom">
