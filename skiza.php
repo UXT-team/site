@@ -28,6 +28,11 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/skiza.css" />
+	<!--calender-->
+	<link rel="stylesheet" href="calendar/css/calendar.css">
+	<link rel="stylesheet" href="calendar/components/bootstrap2/css/bootstrap.css">
+	<link rel="stylesheet" href="calendar/components/bootstrap2/css/bootstrap-responsive.css">
+	
 
 
 
@@ -584,6 +589,15 @@ $(function() {
 </div><!--fetaured-->
 </div></div></section>
 
+<section>
+	<div class="calender">
+		<?php
+		include 'calendar/index.html';
+
+		 ?>
+	</div>
+</section>
+
 <section class="main"  style="background-color:#000000;">
 			<div id="artiste">
 				<div class="panel">
@@ -937,6 +951,47 @@ $(function() {
 </div></div></footer>
 </div>
 </div>
+<!--calender scripts-->
+
+<script type="text/javascript" src="calendar/components/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="calendar/components/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="calendar/components/bootstrap2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="calendar/components/jstimezonedetect/jstz.min.js"></script>
+	<script type="text/javascript" src="calendar/js/language/bg-BG.js"></script>
+	<script type="text/javascript" src="calendar/js/language/nl-NL.js"></script>
+	<script type="text/javascript" src="calendar/js/language/fr-FR.js"></script>
+	<script type="text/javascript" src="calendar/js/language/de-DE.js"></script>
+	<script type="text/javascript" src="calendar/js/language/el-GR.js"></script>
+	<script type="text/javascript" src="calendar/js/language/it-IT.js"></script>
+	<script type="text/javascript" src="calendar/js/language/hu-HU.js"></script>
+	<script type="text/javascript" src="calendar/js/language/pl-PL.js"></script>
+	<script type="text/javascript" src="calendar/js/language/pt-BR.js"></script>
+	<script type="text/javascript" src="calendar/js/language/ro-RO.js"></script>
+	<script type="text/javascript" src="calendar/js/language/es-CO.js"></script>
+	<script type="text/javascript" src="calendar/js/language/es-MX.js"></script>
+	<script type="text/javascript" src="calendar/js/language/es-ES.js"></script>
+	<script type="text/javascript" src="calendar/js/language/ru-RU.js"></script>
+	<script type="text/javascript" src="calendar/js/language/sk-SR.js"></script>
+	<script type="text/javascript" src="calendar/js/language/sv-SE.js"></script>
+	<script type="text/javascript" src="calendar/js/language/zh-CN.js"></script>
+	<script type="text/javascript" src="calendar/js/language/cs-CZ.js"></script>
+	<script type="text/javascript" src="calendar/js/language/ko-KR.js"></script>
+	<script type="text/javascript" src="calendar/js/language/zh-TW.js"></script>
+	<script type="text/javascript" src="calendar/js/language/id-ID.js"></script>
+	<script type="text/javascript" src="calendar/js/language/th-TH.js"></script>
+	<script type="text/javascript" src="calendar/js/calendar.js"></script>
+	<script type="text/javascript" src="calendar/js/app.js"></script>
+
+	<script type="text/javascript">
+		var disqus_shortname = 'bootstrapcalendar'; // required: replace example with your forum shortname
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script>
+
+
 
 <script src="js/wow.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
