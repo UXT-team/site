@@ -1,3 +1,0 @@
-<?php
-#Download albumn script
- ?>
