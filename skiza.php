@@ -28,11 +28,6 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/skiza.css" />
-	<!--calender-->
-	<link rel="stylesheet" href="calendar/css/calendar.css">
-	<link rel="stylesheet" href="calendar/components/bootstrap2/css/bootstrap.css">
-	<link rel="stylesheet" href="calendar/components/bootstrap2/css/bootstrap-responsive.css">
-	
 
 
 
@@ -46,7 +41,6 @@
 	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/template.css" type="text/css" />
 	<link rel="stylesheet" href="css/preset1.css" type="text/css" />
 	<link rel="stylesheet" href="css/sp-smart-minima.css" type="text/css" />
@@ -329,20 +323,28 @@ $(function() {
 
 <section>
 <section>
-	<div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
+	<div class="breadcrums" style="margin-top:2%; font-size:1.2em;">
 		<ul class="breadcrumb">
 
       <li class="active"><a href="#events"> Events</a> </li>
-      <li class="active"><a href="#featured"> Featured Artistes </a></li>
+      <li class="active"><a href="#featured"> Featured Works </a></li>
       <li class="active"><a href="#artiste"> Artiste</a> </li>
       <li class="active"><a href="#songs">All songs</a></li>
-      <li class="active"><a href="#albumns">Albumns</a></li>
+      <li class="active"><a href="#downloads">Downloads</a></li>
 
     </ul>
 	</div><!--breadcrums-->
+<!-- <section>
+	<div class="container" style="margin-top:2%; font-size:1.2em;">
+		<div class="wells">
+			<center><h2 style="color:#1abc9c">SKIZA  EVENTS</h2></center>
+
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</section> -->
 <center><h2 style="color:white;background:red"><strong>EVENTS</strong></h2></center>
 <section  id="sp-slideshow-wrapper" class=" "><div class="container"><div class="row-fluid" id="slideshow">
-<div id="featured">
 <div id="sp-slideshow" class="span12"><div id="sp-smart-slider252" class="sp-smart-slider layout-minima">
     <!-- Carousel items -->
     <div class="minima-slider" style="height:500px">
@@ -586,67 +588,9 @@ $(function() {
     </div>
 </div>
 </div>
-</div><!--fetaured-->
 </div></div></section>
 
-<section>
-	<div class="calender">
-		<?php
-		include 'calendar/index.html';
-
-		 ?>
-	</div>
-</section>
-
-<section class="main"  style="background-color:#000000;">
-			<div id="artiste">
-				<div class="panel">
-				<div class="artiste">
-			<center><em><p style="font-size: 2.25em;">Featured Artiste</p></em></center>
-				</div><!--artiste-->
-				</div>
-				<ul class="ch-grid">
-					<li>
-						<div class="ch-item ch-img-1">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-1"></div>
-									<div class="ch-info-back">
-										<h3>Teardrops</h3>
-										<p> <a href="http://drbl.in/ewng">View My songs</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-2">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-2"></div>
-									<div class="ch-info-back">
-										<h3>Teardrops</h3>
-										<p> <a href="http://drbl.in/eQDg">View My Songs</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="ch-item ch-img-3">
-							<div class="ch-info-wrap">
-								<div class="ch-info">
-									<div class="ch-info-front ch-img-3"></div>
-									<div class="ch-info-back">
-										<h3>Teardrops</h3>
-										<p> <a href="http://drbl.in/ejLW">View My songs</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-
+<section class="main" id="#artiste" style="/*background-color:#F05F40;*/ background-color:#000000;">
 
 				<ul class="ch-grid">
 					<li>
@@ -690,6 +634,7 @@ $(function() {
 					</li>
 				</ul>
 
+
 				<ul class="ch-grid">
 					<li>
 						<div class="ch-item ch-img-1">
@@ -731,200 +676,172 @@ $(function() {
 						</div>
 					</li>
 				</ul>
-				</div>
+
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back">
+										<h3>Teardrops</h3>
+										<p> <a href="http://drbl.in/ewng">View My songs</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back">
+										<h3>Teardrops</h3>
+										<p> <a href="http://drbl.in/eQDg">View My Songs</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h3>Teardrops</h3>
+										<p> <a href="http://drbl.in/ejLW">View My songs</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</section>
 
 			<section>
+			<div class="col-xs-8">
+				<div class="jumbotron" style="height:auto; width:100%;">
+					<div class="list-group">
+						<ul class="list-group">
+							<li class="list-group-item">
 
-			<div id="songs">
+								<audio controls>
+  						<source src="downloads/artiste/SPOKEN WORD - MAN IN THE MIRROR.mp3" type="audio/mpeg">
+  						Your browser does not support the auio element
+					</audio> Man In the MIRROR &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+			<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - BEAUTIFULE.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio> SPOKEN WORD - BEAUTIFULE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - HIGH COURT.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio> SPOKEN WORD - HIGH COURT &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - ONE LOVE.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio>SPOKEN WORD - ONE LOVE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Full Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - SI SIRI.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio>SPOKEN WORD - SI SIRI &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Full Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - INFLATION.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio> SPOKEN WORD - INFLATION &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - THE ONLY ONE.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio> SPOKEN WORD - THE ONLY ONE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+							</li>
+							<li class="list-group-item">
+								<audio controls>
+									<source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
+									Your browser does not support the audio element
+								</audio>SPOKEN WORD - THE SCORE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+								<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+							</li>
 
+						</ul>
+						<center><li style="font-size:2.2em; padding: 5%; color:#1abc9c;"><strong><em><a data-toggle="collapse" data-parent="#accordion" href="#collapseone">VIEW MORE</a></em></strong></li></center>
+						<div id="accordion" class="collapse">
 
-
-			<div class="col-sm-8">
-				<div class="list-group">
-<ul class="list-group">
-  <li class="list-group-item">
-
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - BEAUTIFULE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - HIGH COURT.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - ONE LOVE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - SI SIRI.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - INFLATION.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE ONLY ONE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-  <li class="list-group-item">
-    <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-  </li>
-
-  <li class="list-group-item" style="font-size:1.3em;  padding:2%;"><a data-toggle="collapse" href="#song" aria-expanded="false" aria-controls="collapseExample"><center>VIEW MORE</center></a></li>
-</ul>
+						</div>
+					</div>
 
 
-<div id="song" class="collapse">
-	<div class="list-group" >
-		<ul class="list-group">
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-			<li class="list-group-item">
-				 <audio controls>
-  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
-</audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
-			</li>
-		</ul>
-	</div>
-</div>
+    <div id="collapseone" class="panel-collapse collapse collapse">
+    <div class="well">
+     <ul class="list-group">
+          <li class="list-group-item">
+          	<audio controls>
+				<source src="downloads/artiste/SPOKEN WORD - INFLATION.mp3" type="audio/mpeg">
+					Your browser does not support the audio element
+				</audio> SPOKEN WORD - INFLATION &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+				<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
 
+          </li>
+          <li class="list-group-item">
+          		<audio controls>
+				<source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
+					Your browser does not support the audio element
+				</audio>SPOKEN WORD - THE SCORE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+				<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
 
-</div><!-- listgroup-->
+          </li>
+          <li class="list-group-item">
+          		<audio controls>
+				<source src="downloads/artiste/SPOKEN WORD - THE ONLY ONE.mp3" type="audio/mpeg">
+				Your browser does not support the audio element
+				</audio> SPOKEN WORD - THE ONLY ONE &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+			<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
 
-
+          </li>
+          <li class="list-group-item">
+          	<audio controls>
+          		<source src="downloads/artiste/SPOKEN WORD - STATE OF WONDER.mp3" type="audio/mpeg">
+          		Your browser does not support the audio element
+          	</audio>SPOKEN -STATE OF WONDER &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+          	<a href="download.php"><button type="submit" class="btn btn-success">Download Mp3</button></a><br>
+          </li>
+        </ul>
+				</div><!--well-->
+				</div><!--collapse-->
+				</div><!--jumbotron-->
 				</div><!--col-xs-8-->
 
-				</div><!--songs-->
-
-
-				<div id="albumns">
-			<div class="albumns" style="padding:-5%;">
+				<div class="albumns" style="padding:0%;">
 				<div class="col-sm-4">
+					<div class="list group">
+						<a href="#" class="list-group-item active"><span class="glyphicon glyphicon-music"><button class="btn btn-warning btn-md">Download Albumn</button></span>Albumn<span class="badge">Onion</span></a>
 
-					<div class="list group" style="width:90%; padding:5%;">
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">Onion</span></a>
+						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"><button class="btn btn-primary btn-md">Download Albumn</button></span>Albumn<span class="badge">flipside</span></a>
 
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">mofasa</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<li class="list-group-item" style="font-size:1.3em;  padding:5%;"><a data-toggle="collapse" href="#albumn" aria-expanded="false" aria-controls="collapseExample"><center>VIEW MORE ALBUMNS</center></a></li>
-
-					</div>
-
-					<div id="albumn" class="collapse">
-						<div class="list-group" style="width:80%">
-							<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">Onion</span></a>
-
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">mofasa</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">flipside</span></a>
-						<a href="#" class="list-group-item"><span class="glyphicon glyphicon-music"></span>&nbsp; &nbsp;<button class="btn btn-primary btn-md">DownloadAlbumn</button><span class="badge">mofasa</span></a>
-
-						</div><!--list-group-->
+						<a href="#" class="list-group-item "><span class="badge">Mofasa</span><span class="glyphicon glyphicon-music"><button class="btn btn-primary btn-md">Download Albumn</button></span></a>
 					</div>
 				</div><!--col-md-4-->
-				</div><!--albumns class-->
 				</div><!--albumns-->
-
 			</section>
 			<section>
 
@@ -951,47 +868,6 @@ $(function() {
 </div></div></footer>
 </div>
 </div>
-<!--calender scripts-->
-
-<script type="text/javascript" src="calendar/components/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="calendar/components/underscore/underscore-min.js"></script>
-	<script type="text/javascript" src="calendar/components/bootstrap2/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="calendar/components/jstimezonedetect/jstz.min.js"></script>
-	<script type="text/javascript" src="calendar/js/language/bg-BG.js"></script>
-	<script type="text/javascript" src="calendar/js/language/nl-NL.js"></script>
-	<script type="text/javascript" src="calendar/js/language/fr-FR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/de-DE.js"></script>
-	<script type="text/javascript" src="calendar/js/language/el-GR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/it-IT.js"></script>
-	<script type="text/javascript" src="calendar/js/language/hu-HU.js"></script>
-	<script type="text/javascript" src="calendar/js/language/pl-PL.js"></script>
-	<script type="text/javascript" src="calendar/js/language/pt-BR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/ro-RO.js"></script>
-	<script type="text/javascript" src="calendar/js/language/es-CO.js"></script>
-	<script type="text/javascript" src="calendar/js/language/es-MX.js"></script>
-	<script type="text/javascript" src="calendar/js/language/es-ES.js"></script>
-	<script type="text/javascript" src="calendar/js/language/ru-RU.js"></script>
-	<script type="text/javascript" src="calendar/js/language/sk-SR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/sv-SE.js"></script>
-	<script type="text/javascript" src="calendar/js/language/zh-CN.js"></script>
-	<script type="text/javascript" src="calendar/js/language/cs-CZ.js"></script>
-	<script type="text/javascript" src="calendar/js/language/ko-KR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/zh-TW.js"></script>
-	<script type="text/javascript" src="calendar/js/language/id-ID.js"></script>
-	<script type="text/javascript" src="calendar/js/language/th-TH.js"></script>
-	<script type="text/javascript" src="calendar/js/calendar.js"></script>
-	<script type="text/javascript" src="calendar/js/app.js"></script>
-
-	<script type="text/javascript">
-		var disqus_shortname = 'bootstrapcalendar'; // required: replace example with your forum shortname
-		(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-	</script>
-
-
 
 <script src="js/wow.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
