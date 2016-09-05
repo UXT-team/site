@@ -872,6 +872,13 @@ $(function() {
 </audio> &nbsp; &nbsp; &nbsp;
 <a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
 			</li>
+			<li class="list-group-item">
+				 <audio controls>
+  <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
+  Your browser does not support the auio element
+</audio> &nbsp; &nbsp; &nbsp;
+<a href="download.php"><button type="submit" class="btn btn-success">Download</button></a><br>
+			</li>
 		</ul>
 	</div>
 </div>
