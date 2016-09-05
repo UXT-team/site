@@ -59,7 +59,7 @@ $file='SPOKEN WORD - BEAUTIFULE.mp3';
 header('Content-Disposition: attachment; filename="'.basename($file).'"');
 header('Content-Type: audio/mp3');
 echo "<script>alert('Ule msee')</script>";
-echo '<script type="text/javascript">alert("' '")</script>';
+#echo '<script type="text/javascript">alert("' '")</script>';
 readfile('../artiste/SPOKEN WORD - BEAUTIFULE.mp3');
 
 
