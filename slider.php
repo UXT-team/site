@@ -354,14 +354,6 @@
 				});
 			});
 		</script>
-		<section>
-			<div class="calender">
-				<?php
-				include 'calendar/index.html';
-
-				 ?>
-			</div>
-		</section>
 
 		<section class="main"  style="background-color:#000000;">
 					<div id="artiste">
@@ -694,6 +686,7 @@
 					<section>
 
 					</section>
+
 
 		<section id="sp-bottom-wrapper" class=" "><div class="container"><div class="row-fluid" id="bottom">
 		<div id="sp-bottom" class="span12">
