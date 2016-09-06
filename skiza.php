@@ -332,16 +332,17 @@ $(function() {
 	<div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
 		<ul class="breadcrumb">
 
-      <li class="active"><a href="#events"> Events</a> </li>
-      <li class="active"><a href="#featured"> Featured Artistes </a></li>
-      <li class="active"><a href="#artiste"> Artiste</a> </li>
-      <li class="active"><a href="#songs">All songs</a></li>
-      <li class="active"><a href="#albumns">Albumns</a></li>
+      <li class="active"><a href="#events"><button type="button" class=" btn btn-primary"> Events</button></a> </li>
+      <li class="active"><a href="#calendar"> <button type="button" class=" btn btn-primary">Calendar Events</button> </a></li>
+      <li class="active"><a href="#artiste"><button type="button" class=" btn btn-primary"> Artistes</button></a> </li>
+      <li class="active"><a href="#songs"><button type="button" class=" btn btn-primary">All songs</button></a></li>
+      <li class="active"><a href="#albumns"><button type="button" class=" btn btn-primary">Albumns</button></a></li>
+      <li class="active"><a href="#contacts"><button type="button" class=" btn btn-primary">Contacts</button></a></li>
 
     </ul>
 	</div><!--breadcrums-->
 
-<center><h2 style="color:white;background:orange"><strong>EVENTS</strong></h2></center>
+<center><h2 style="color:white;background:#00c176;"><strong>EVENTS</strong></h2></center>
 <section  id="sp-slideshow-wrapper" class=" "><div class="container"><div class="row-fluid" id="slideshow">
 <div id="featured">
 <div id="sp-slideshow" class="span12"><div id="sp-smart-slider252" class="sp-smart-slider layout-minima">
@@ -591,15 +592,23 @@ $(function() {
 </div></div></section>
 
 <section>
-	<div class="calender">
-		<?php
-		include 'calendar/index.html';
+	<div class="calender" id="calendar">
 
-		 ?>
+		<?php
+		include 'bootstrap-calendar/calendar.php';
+
+		?>
+		 <script type="text/javascript">
+        var calendar = $("#calendar").calendar(
+            {
+                tmpl_path: "/tmpls/",
+                events_source: function () { return []; }
+            });         
+    </script>
 	</div>
 </section>
 
-<section class="main"  style="background-color:#000000;">
+<section class="main"  style="background-color:#00c176;">
 			<div id="artiste">
 				<div class="panel">
 				<div class="artiste">
@@ -934,10 +943,12 @@ $(function() {
 <section id="sp-bottom-wrapper" class=" "><div class="container"><div class="row-fluid" id="bottom">
 <div id="sp-bottom" class="span12">
 <br />
+<div id="contacts">
 <div class="custom clearfix"  >
 	<p><div class="row-fluid " ><div class=span6></p>
 <h3>Question? Concerns?</h3>
 <p>+254 713 958 410 </div><div class=span6></p>
+</div><!--contacts-->
 
 <p></div></div> <div class="row-fluid hidden-phone" ><div class=span4></p>
 <div class="sp-social-share">
