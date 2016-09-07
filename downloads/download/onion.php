@@ -1,17 +1,17 @@
-<?php   
-/*if (isset($_GET['file'])) { 
+<?php
+/*if (isset($_GET['file'])) {
     $file = $_GET['file'] ;
-        if (file_exists($file) && is_readable($file) && preg_match('/\.mp3$/',$file))  { 
-            header('Content-type: application/mp3');  
-            header("Content-Disposition: attachment; filename=\"$file\"");   
-            readfile($file); 
-        } 
-    } else { 
-    header("HTTP/1.0 404 Not Found"); 
-    echo "<h1>Error 404: File Not Found: <br /><em>$file</em></h1>"; 
+        if (file_exists($file) && is_readable($file) && preg_match('/\.mp3$/',$file))  {
+            header('Content-type: application/mp3');
+            header("Content-Disposition: attachment; filename=\"$file\"");
+            readfile($file);
+        }
+    } else {
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1>Error 404: File Not Found: <br /><em>$file</em></h1>";
 } */
 
-/* 
+/*
 PHP forced download script
 */
 
@@ -49,13 +49,13 @@ PHP forced download script
 if (isset($_GET['download'])) {
 	# code...
 	if (!empty($_GET['download'])) {
-		
+
 		$file = $_GET['download'];
 		download($file);
 	}
 }
 */
-$file='SPOKEN WORD - BEAUTIFULE.mp3';
+$file=$_GET['filename'];
 header('Content-Disposition: attachment; filename="'.basename($file).'"');
 header('Content-Type: audio/mp3');
 echo "<script>alert('Ule msee')</script>";
@@ -65,4 +65,3 @@ readfile('../artiste/SPOKEN WORD - BEAUTIFULE.mp3');
 
 
 ?>
-

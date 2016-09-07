@@ -356,7 +356,7 @@ $(function() {
   <source src="downloads/artiste/SPOKEN WORD - BEAUTIFULE.mp3" type="audio/mpeg">
   Your browser does not support the auio element
 </audio> &nbsp; &nbsp; &nbsp;
-<a href="downloads/download/onion.php"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
+<a href="downloads/download/onion.php?filename ='SPOKEN WORD - BEAUTIFULE.mp3'"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
   </li>
   <li class="list-group-item">
     <audio controls>
@@ -469,7 +469,7 @@ $(function() {
   <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
   Your browser does not support the auio element
 </audio> &nbsp; &nbsp; &nbsp;
-<a href="download.php"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
+<a href="download.php?filename=SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
 			</li>
 			<li class="list-group-item">
 				 <audio controls>
@@ -796,7 +796,7 @@ $(function() {
             {
                 tmpl_path: "/tmpls/",
                 events_source: function () { return []; }
-            });         
+            });
     </script>
 	</div>
 </section>
@@ -937,7 +937,7 @@ $(function() {
 				</div>
 			</section>
 
-			
+
 			<section>
 
 			</section>
