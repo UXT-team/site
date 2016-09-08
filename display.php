@@ -18,9 +18,9 @@
     $path = $ros['path'];
     $id = $ros['id'];
     echo '<img src="'.$path.'" width="200px" height="200px" />';
+    echo '<a href="download.php?id='.$id.' id="'.$id.'"> download</a>';
 
   }
   ?>
-  <a href="download.php?id=<?php echo $id ?>"> download</a>
 </body>
 </html>
