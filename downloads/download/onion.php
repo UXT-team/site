@@ -55,13 +55,36 @@ if (isset($_GET['download'])) {
 	}
 }
 */
-$file='SPOKEN WORD - BEAUTIFULE.mp3';
-header('Content-Disposition: attachment; filename="'.basename($file).'"');
-header('Content-Type: audio/mp3');
-echo "<script>alert('Ule msee')</script>";
-#echo '<script type="text/javascript">alert("' '")</script>';
-readfile('../artiste/SPOKEN WORD - BEAUTIFULE.mp3');
+error_reporting(0);
+$filename='SPOKEN WORD - BEAUTIFULE.mp3';
+$filesize = filesize($file);
+$filepath= '../artiste/'.$filename;
+if (file_exists($filepath)) {
+	
+	$filename = basename($filepath);
+	$filesize = filesize($file);
 
+	//output HEADERS
+	header('Content-Disposition: attachment; filename="'.basename($filename).'"');
+	header('Content-Type: audio/mp3');
+
+	//outputfile
+	readfile($filepath);
+	exit();
+
+
+}
+else{
+
+	echo "<script>alert('File Not Found')</script>";
+	echo "<script>window.open('404PageNotfound.html','_self')</script>";
+}
+
+/*header('Content-Disposition: attachment; filename="'.basename($file).'"');
+header('Content-Type: audio/mp3');
+
+#echo '<script type="text/javascript">alert("' '")</script>';
+readfile($filepath);*/
 
 
 ?>

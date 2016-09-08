@@ -534,8 +534,10 @@ $(function() {
 
 			</section>
 
-
-<center><h2 style="color:white;background:#00c176; margin-top:5%;" ><strong>EVENTS</strong></h2></center>
+<div class="panel-heading">
+<center><em><p style="font-size: 2.25em; color:#d35f14;">EVENTS</p></em></center>
+</div>
+</section>
 <section  id="sp-slideshow-wrapper" class=" "><div class="container"><div class="row-fluid" id="slideshow">
 <div id="featured">
 <div id="sp-slideshow" class="span12"><div id="sp-smart-slider252" class="sp-smart-slider layout-minima">
