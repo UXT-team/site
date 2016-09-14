@@ -29,9 +29,14 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/skiza.css" />
 	<!--calender-->
-	<link rel="stylesheet" href="calendar/css/calendar.css">
-	<link rel="stylesheet" href="calendar/components/bootstrap2/css/bootstrap.css">
-	<link rel="stylesheet" href="calendar/components/bootstrap2/css/bootstrap-responsive.css">
+	 <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet" media="screen">
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="css/calendar.css" rel="stylesheet">
+
+     <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
 
 
 
@@ -333,7 +338,7 @@ $(function() {
 		<ul class="breadcrumb">
 
       <li class="active"><a href="#events"><button type="button" class=" btn btn-primary"> Events</button></a> </li>
-      <li class="active"><a href="#calendar"> <button type="button" class=" btn btn-primary">Calendar Events</button> </a></li>
+      <li class="active"><a href="#calendaar"> <button type="button" class=" btn btn-primary">Calendar Events</button> </a></li>
       <li class="active"><a href="#artiste"><button type="button" class=" btn btn-primary"> Artistes</button></a> </li>
       <li class="active"><a href="#songs"><button type="button" class=" btn btn-primary">All songs</button></a></li>
       <li class="active"><a href="#albumns"><button type="button" class=" btn btn-primary">Albumns</button></a></li>
@@ -536,6 +541,9 @@ $(function() {
 
 <div class="panel-heading">
 <center><em><p style="font-size: 2.25em; color:#d35f14;">EVENTS</p></em></center>
+</div>
+<div class="panel-body">
+	<center><a href="calendar.html"><button class="btn btn-warning btn-sm" style=" font-size:1.75em;">View our calender Events</button></a></center>
 </div>
 </section>
 <section  id="sp-slideshow-wrapper" class=" "><div class="container"><div class="row-fluid" id="slideshow">
@@ -787,19 +795,10 @@ $(function() {
 </div></div></section>
 
 <section>
-	<div class="calender" id="calendar">
+	<div class="calender" id="calendaar">
 
-		<?php
-		include 'bootstrap-calendar/calendar.php';
 
-		?>
-		 <script type="text/javascript">
-        var calendar = $("#calendar").calendar(
-            {
-                tmpl_path: "/tmpls/",
-                events_source: function () { return []; }
-            });
-    </script>
+		
 	</div>
 </section>
 
@@ -968,44 +967,17 @@ $(function() {
 </div>
 </div>
 <!--calender scripts-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="calendar/components/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="calendar/components/underscore/underscore-min.js"></script>
-	<script type="text/javascript" src="calendar/components/bootstrap2/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="calendar/components/jstimezonedetect/jstz.min.js"></script>
-	<script type="text/javascript" src="calendar/js/language/bg-BG.js"></script>
-	<script type="text/javascript" src="calendar/js/language/nl-NL.js"></script>
-	<script type="text/javascript" src="calendar/js/language/fr-FR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/de-DE.js"></script>
-	<script type="text/javascript" src="calendar/js/language/el-GR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/it-IT.js"></script>
-	<script type="text/javascript" src="calendar/js/language/hu-HU.js"></script>
-	<script type="text/javascript" src="calendar/js/language/pl-PL.js"></script>
-	<script type="text/javascript" src="calendar/js/language/pt-BR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/ro-RO.js"></script>
-	<script type="text/javascript" src="calendar/js/language/es-CO.js"></script>
-	<script type="text/javascript" src="calendar/js/language/es-MX.js"></script>
-	<script type="text/javascript" src="calendar/js/language/es-ES.js"></script>
-	<script type="text/javascript" src="calendar/js/language/ru-RU.js"></script>
-	<script type="text/javascript" src="calendar/js/language/sk-SR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/sv-SE.js"></script>
-	<script type="text/javascript" src="calendar/js/language/zh-CN.js"></script>
-	<script type="text/javascript" src="calendar/js/language/cs-CZ.js"></script>
-	<script type="text/javascript" src="calendar/js/language/ko-KR.js"></script>
-	<script type="text/javascript" src="calendar/js/language/zh-TW.js"></script>
-	<script type="text/javascript" src="calendar/js/language/id-ID.js"></script>
-	<script type="text/javascript" src="calendar/js/language/th-TH.js"></script>
-	<script type="text/javascript" src="calendar/js/calendar.js"></script>
-	<script type="text/javascript" src="calendar/js/app.js"></script>
-
-	<script type="text/javascript">
-		var disqus_shortname = 'bootstrapcalendar'; // required: replace example with your forum shortname
-		(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-	</script>
+    <script src="vendors/fullcalendar/fullcalendar.js"></script>
+    <script src="vendors/fullcalendar/gcal.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/calendar.js"></script>
 
 
 
