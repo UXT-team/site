@@ -29,8 +29,10 @@ if(isset($_POST["submit1"]))
   if($ros==true)
   {
     echo "insert data successful";
+    echo serialize($_FILES);
   } else {
     echo "Error inserting data";
+
   }
 }
  ?>
