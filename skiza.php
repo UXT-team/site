@@ -334,6 +334,13 @@ $(function() {
 
 <section>
 <section>
+	<div class="well">
+	<div class="content-box-small">
+		<center><p style="color:#00c176; font-size:2em;"><em>SPOKEN WORD & POETRY ON SKIZA</em></p></center>
+		</div>
+	</div>
+</section>
+<section>
 	<div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
 		<ul class="breadcrumb">
 
@@ -355,29 +362,6 @@ $(function() {
 			<div class="col-sm-8">
 				<div class="list-group">
 <ul class="list-group">
-  <?php
-  $db_name = "test";
-  $conn = mysqli_connect('localhost','root',"");
-  mysqli_select_db($conn,$db_name) or die("Database connection failed");
-  $query = "select * from demo";
-  $query1 = mysqli_query($conn,$query);
-  while ($ros = mysqli_fetch_array($query1))
-  {
-    $path = $ros['path'];
-    $id = $ros['id'];
-    // echo '<img src="'.$path.'" width="200px" height="200px" />';
-    // echo '<a href="download.php?id='.$id.' id="'.$id.'"> download</a>';
-
-    echo '<li class="list-group-item">
-      <audio controls>
-    <source src="'.$path.'" type="audio/mpeg">
-    Your browser does not support the auio element
-   </audio> &nbsp; &nbsp; &nbsp;
-   <a href="download.php?id='.$id.' id="'.$id.'"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
-    </li>';
-
-  }
-   ?>
   <li class="list-group-item">
 
     <audio controls>
@@ -386,10 +370,10 @@ $(function() {
 </audio> &nbsp; &nbsp; &nbsp;
 <a href="downloads/download/onion.php?filename ='SPOKEN WORD - BEAUTIFULE.mp3'"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
   </li>
-  <!-- <li class="list-group-item">
+  <li class="list-group-item">
     <audio controls>
   <source src="downloads/artiste/SPOKEN WORD - HIGH COURT.mp3" type="audio/mpeg">
-  Your browser does not support the auio element
+  Your browser does not support the audio element
 </audio> &nbsp; &nbsp; &nbsp;
 <a href="download.php"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
   </li>
@@ -438,14 +422,10 @@ $(function() {
   <li class="list-group-item">
     <audio controls>
   <source src="downloads/artiste/SPOKEN WORD - THE SCORE.mp3" type="audio/mpeg">
-
-
-
-
   Your browser does not support the auio element
 </audio> &nbsp; &nbsp; &nbsp;
 <a href="download.php"><button type="submit" class="btn btn-success">Download Full song</button></a><br>
-  </li> -->
+  </li>
 
   <li class="list-group-item" style="font-size:1.3em;  padding:2%;"><a data-toggle="collapse" href="#song" aria-expanded="false" aria-controls="collapseExample"><center>VIEW MORE</center></a></li>
 </ul>
@@ -825,7 +805,7 @@ $(function() {
 	<div class="calender" id="calendaar">
 
 
-
+		
 	</div>
 </section>
 
