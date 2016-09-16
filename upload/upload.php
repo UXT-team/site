@@ -31,7 +31,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 	        else{ // No error found! Move uploaded files
 	            if(move_uploaded_file($_FILES["files"]["tmp_name"][$f], $path.$name)) {
 
-                $query ="insert into demo(name,path) values('$name','./$path$name')";
+                $query ="insert into demo(name,path) values('$name','upload/$path$name')";
                 $ros = mysqli_query($conn,$query);
                 if($ros!=true)
                 {
