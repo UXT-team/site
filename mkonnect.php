@@ -357,7 +357,7 @@ $(function() {
 
 
 			<div id="cv">
-
+			<center><p style="font-size:2em; font-weight:bold;">CV WRITING SKILLS</p></center>
 			<p>rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			<p> Why do we use it?
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
@@ -441,6 +441,7 @@ It is a long established fact that a reader will be distracted by the readable c
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
 <div class="container">
+<center><p style="font-size:2em; font-weight:bold;">INTERVIEW SKILLS</p></center>
     <div class="row">
         <div class="col-md-6 col-md-offset-3 well">
             <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
@@ -504,12 +505,20 @@ It is a long established fact that a reader will be distracted by the readable c
 
 					<div class="list-box">
 						<ul class="list-group">
-							<li class="list-group-item"><center>Accounting</center></li><!--listgroup-item-->
-							<li class="list-group-item"><center>Engineering</center></li><!--listgroup-item-->
-							<li class="list-group-item"><center>ICT</center></li><!--listgroup-item-->
-							<li class="list-group-item"><center>ARTS</center></li><!--listgroup-item-->
-							<li class="list-group-item"><center></center></li><!--listgroup-item-->
-							<li class="list-group-item"><center></center></li><!--listgroup-item-->
+							<li class="list-group-item"><center><a data-toggle="collapse" href="#account" aria-expanded="false" aria-controls="collapseExample">Accounting</a></center></li><!--listgroup-item-->
+							<div id="account" class="collapse">
+								<div class="card">
+									<div class="card-content">
+										<center>
+										<p>It is a long established fact that a reader will be distracted by the readable content of <a href="">Apply</a> </p></center>
+									</div><!--card-content-->
+								</div>
+							</div><!--account-->
+							<li class="list-group-item"><center><a href="">Engineering</a></center></li><!--listgroup-item-->
+							<li class="list-group-item"><center><a href="">ICT</a></center></li><!--listgroup-item-->
+							<li class="list-group-item"><center><a href="">ARTS</a></center></li><!--listgroup-item-->
+							<li class="list-group-item"><center><a href="">Teaching</a></center></li><!--listgroup-item-->
+							<li class="list-group-item"><center><a href="">Driving</a></center></li><!--listgroup-item-->
 						</ul>
 					</div><!--list-box-->
 						
