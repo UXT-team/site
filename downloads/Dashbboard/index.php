@@ -76,19 +76,19 @@ if (!$_SESSION['email']) {
                 <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
                   <ul class="list-group" >
                     <li class="list-group-item"><a href="skiza.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
-                    <li class="list-group-item"><a href="songs.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>Upload Songs</a></li>
-                    <li class="list-group-item"><a href="albumn.php" style="color:#000000;" > <i class="glyphicon glyphicon-th-list"></i>Upload Albumn</a></li>
-                    <li class="list-group-item"><a href="views.php" style="color:#000000;"> <i class="glyphicon glyphicon-cloud-download"></i>Download Views</a></li>
-                    <li class="list-group-item"><a href="users.php" style="color:#000000;"> <i class="glyphicon glyphicon-user"></i>&nbsp;Skiza Artistes</a></li>
-                    <li class="list-group-item"><a href="songviews.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>&nbsp;Song views</a></li>
-                    <li class="list-group-item"><a href="albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-th-list"></i>&nbsp; Albumn views</a></li>
-                    <li class="list-group-item"><a href="albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
+                    <li class="list-group-item"><a href="upload/upload.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>Upload Songs</a></li>
+                    <li class="list-group-item"><a href="upload/upload.php" style="color:#000000;" > <i class="glyphicon glyphicon-th-list"></i>Upload Albumn</a></li>
+                    <li class="list-group-item"><a href="upload/views.php" style="color:#000000;"> <i class="glyphicon glyphicon-cloud-download"></i>Download Views</a></li>
+                    <li class="list-group-item"><a href="views/views.php" style="color:#000000;"> <i class="glyphicon glyphicon-user"></i>&nbsp;Skiza Artistes</a></li>
+                    <li class="list-group-item"><a href="upload/songviews.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>&nbsp;Song views</a></li>
+                    <li class="list-group-item"><a href="upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-th-list"></i>&nbsp; Albumn views</a></li>
+                    <li class="list-group-item"><a href="upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
 
 
 
                   </ul>
                   
-                </div><!--sidebar-->
+                </div><!--listgroup-->
               </div><!--col-md-2-->
              <div class="jumbotron">
       <div class="col-md-10">
