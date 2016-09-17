@@ -1,3 +1,16 @@
+<?php
+
+//store information of all pages in variables
+
+session_start(); 
+
+if (!$_SESSION['email']) {
+  
+  header("location: Auth/login.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +24,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- styles -->
     <link href="css/styles.css" rel="stylesheet">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
@@ -28,22 +42,24 @@
             </div>
           </div><!--col-md-5-->
 
-          <div class="col-md-5">
-            <center><p style="color: white; font-size: 1.7em;">ADMIN SKIZA PORTAL</p></center>
-          </div><!--col-md-5-->
+          <div class="col-md-3">
+            <center><p style="color: white; font-size: 1.7em; margin-top: 4%;">ADMIN SKIZA PORTAL</p></center> 
+            
+          </div><!--col-md-3-->
+
+          <div class="col-md-2">
+            <center><p style="color: white; font-size: 1.5em; margin-top:4%;"><?php echo $_SESSION['email'];  ?></p></center>
+          </div><!--col-md--2-->
 
           <div class="col-md-2">
             <div class="navbar navbar-inverse" role="banner">
 	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
 	                    <ul class="nav navbar-nav">
-	                      <li class="dropdown">
-	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
-	                        <ul class="dropdown-menu animated fadeInUp">
-	                          <li><a href="profile.html" style="white">Profile</a></li>
-	                          <li><a href="login.html" style="white">Logout</a></li>
-	                        </ul>
-	                      </li>
-	                    </ul>
+                      <div class="signout">
+                        <a href="Auth/logout.php"><input type="submit" class="btn btn-info" value="LogOut" style="margin-top:8%; "></a>
+                      
+                   
+	                    </ul><!--nav-->
 
 	                  </nav>
 	              </div>

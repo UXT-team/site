@@ -1,8 +1,13 @@
+<?php
+session_start();//session starts here
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 
-	<title>Skiza Register</title>
+	<title>Skiza Login</title>
 	<!--responsive-->
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" >
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -44,7 +49,7 @@
       <ul class="nav navbar-nav navbar-right" style="font-size:1.2em;">
         
          
-        <li class="active"><a href="login.php">Login</a></li>
+        <li class="active"><a href="register.php">Register</a></li>
         <li class="dropdown">
           <a data-target="#" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -69,10 +74,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 well">
-			<form role="form" class="form-horizontal" action="registration.php" method="POST" name="contactform">
+			<form role="form" class="form-horizontal" action="login.php" method="POST" name="contactform">
 
 				<fieldset>
-					<legend> <center>SKIZA ADMIN REGISTER</center></legend>
+					<legend> <center>SKIZA ADMIN Login <span class="glyphicon glyphicon-user"></span></center> </legend>
 
 			
 						<div class="form-group">
@@ -101,11 +106,19 @@
 
 						<div class="col-md-12">
 							
-							<input type="password" name="pass" placeholder="Enter Password" class="form-control" value="<?php if(isset($password)) echo $password; ?>">
+							<input type="password" name="password" placeholder="Enter Password" class="form-control" value="<?php if(isset($password)) echo $password; ?>">
 
 						</div><!--col-md-12-->
 
 						</div><!--form-group-->
+
+						<div class="form-group">
+                  <div class="col-md-12">
+                     <div class="checkbox">
+               <label><input type="checkbox" name="re"> Remember me</label>
+                    </div><!--checkbox-->
+                  </div><!--col-md-12-->
+                </div><!-- form-group-->
 	
 
 						<div class="form-group"
@@ -113,7 +126,7 @@
 							<div class="col-md-12">
 
 							
-							<center><button class="btn btn-lg btn-success btn-block" name="login" type="submit" style="font-size:1.25em;">Login</button></center>
+							<center><button class="btn btn-sm btn-success btn-block" name="login" type="submit" value="<?php if(isset($success)) echo $success; elseif(isset($log_error)) echo $log_error; ?>" style="font-size:1.25em;">Login</button></center>
 
 							</div><!--col-md-12-->
 
@@ -142,38 +155,112 @@ include 'db/db_connection.php';
 
 if (isset($_POST['login'])) {
 	
-	$name = $_POST['txt_name;'];
+	
 	$user_email = $_POST['email'];
 	$pass = $_POST['password'];
-	$rpass = $_POST['confirm_pass'];
+	$remember = $_POST['re'];
+
+	//encrypt password
+
+	$pass = md5($pass);
+
 
 	$error = false;
 
 	//Validation
 
-	if (empty($name)) {
-		
-		
-		#$name_error ="please enter name";
-
-		echo "<script>alert('Please Enter Your Name')</script>";
-	}
 
 	if (empty($user_email)) {
 		
 		#$error = true;
-		echo $email_error='<span class="text-danger">Please Enter Email</span>'; 
+		#echo $email_error='<span class="text-danger">Please Enter Email<br></span>';
+		
+		echo $email_error ='<div class= "alert alert-danger alert-small" role="alert"> <center> Please Enter your Email </center> <br> </div> '; 
 		#echo "<script>alert('Please Enter your email')</script>";
+		exit();
 	}
 
 	if (empty($pass)) {
 		
 		#echo "<script>alert('Please Enter Your Password')</script>";
-		echo $password ='<div class= "alert alert-danger alert-small" role="alert"> Please Enter your password ';
+		echo $password ='<div class= "alert alert-danger alert-small" role="alert"> <center> Please Enter your password </center> <br> </div> ';
+		#echo $password='<span class="text-danger">Please Enter Password <br></span>';
+		exit();
 	}
+
+
+	//set remember for 1hr if remember is on
+
+	if ($remember &&  $remember == 'on') {
+		
+		setcookie("email", $user_email, time()+(60*60*1));
+        setcookie("password", $pass, time()+(60*60*1));
+
+	}
+
+	//remember me not checked
+        else{
+        	session_start();
+
+					$_SESSION['email'] = $user_email;
+					$_SESSION['password'] = $pass;
+         
+            }
+
+            //query db to check user's credentials
+
+            $check = " Select * from users WHERE email = '$user_email' AND password = '$pass' ";
+
+            // run query
+
+            $run = mysqli_query($con, $check);
+
+            //get number of rows n run query
+
+            if (mysqli_num_rows($run)) {
+
+            	$success = " <div class=' alert alert-success alert-small role= alert'><center>Login Succesful</center></div> ";
+
+            	echo $success;
+
+            	$welcome="<script> window.open('../index.php', '_self'); </script>";
+
+            	echo $welcome;
+
+            	//here session is used and value of $user_email store in $_SESSION.
+
+      		  $_SESSION['email']=$user_email;
+            	
+
+            }
+
+            else {
+
+            	
+
+
+
+            	$log_error = " <div class=' alert-danger alert-small role=' alert'> <center> Login Failed,please check your credentials correctly and try again</center> </div>"; 
+
+            	echo $log_error;
+
+            	//sleep 5seconds
+            	sleep(20);
+
+            	//redirect page
+
+            	 $refresh="<script>window.location.replace('login.php' ,'_self')</script>";
+            	 sleep(20);  
+
+            	 echo $refresh;
+            }
+
+
 
 	
 }
 
 
  ?>
+
+

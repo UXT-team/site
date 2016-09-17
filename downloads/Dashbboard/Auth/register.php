@@ -33,7 +33,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 well">
-            <form role="form" class="form-horizontal" action="form2.php" method="POST" name="contactform">
+            <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
             <fieldset>
     
                 <legend>SKIZA ADMIN REGISTER <span class="glyphicon glyphicon-user"></span></legend>
@@ -162,8 +162,9 @@ include("db/db_connection.php");//make connection here
     {
        
 
-                  
-        echo"<script>window.open('login.php','_self')</script>";
+          $login = "<script>window.open('login.php','_self')</script>";        
+        echo $login;
+        
           
     }
     else{
