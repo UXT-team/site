@@ -8,10 +8,12 @@
 
                         <!--modal-->
                         <div class="container">
-  <center><h2>Apply the Jobs by clicking the button below<span class="glyphicon glyphicon-hand-down"></span></h2>
+ <center><h2>Apply the Jobs by clicking the button below</h2>
+  <h3><span class="glyphicon glyphicon-hand-down"></span></h3> <h3><i class="fa fa-hand-o-down" aria-hidden="true"></i></h3><br>
   <!-- Trigger the modal with a button -->
 
-  <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#accounts" style="font-size:1em;">
+  
+<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#accounts" style="font-size:1em;">
                         Apply
                         </button>
   </center>
@@ -25,31 +27,33 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span>JOB APPLICATION</h4>
-        </div>
+           <center> <h4 class="modal-title"><i class="fa fa-file-text" aria-hidden="true"></i>JOB APPLICATION<span class="glyphicon glyphicon-pencil"></span></h4></center>       
+            </div><!--modal-header-->
         <div class="modal-body">
           
            <div class="row">
             <div class="col-md-12">
                     <div class="col-md-6 col-md-offset-3 well">
-                       <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
+                       <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
     
                 <legend><center> <span class="glyphicon glyphicon-user"></span></center> <center> APPLY THE JOBS ABOVE</center> <center><span class="glyphicon glyphicon-user"></span></center> </legend>
 
-                <div class="form-group">
+               <div class="form-group">
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" />
-                                           </div><!--col-md-12-->
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" value="" id="inputName" required />
+                        <div class="help-block with-errors"></div><!--help-block-->
+                    </div><!--col-md-12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus />
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus value="" required />
+                        <div class="help-block with-errors"></div>
                         
                     </div><!--form-group-->
                 </div><!--form-group-->
@@ -58,7 +62,8 @@
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" />
+                         <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
                         
                     </div><!--col-md-12-->
                 </div><!--form-group-->
@@ -67,15 +72,16 @@
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" />
-                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
                     </div><!--col-md-12-->
                 </div><!--form-group-->
                  <div class="form-group">
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" />
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
@@ -83,7 +89,7 @@
                   
                   <div class="col-md-12">
                     
-                     <select class="form-control" name="txt_jobs" value="">
+                     <select class="form-control" name="txt_jobs"  required>
                     
                               <option>Accountant</option>
                               <option>Clerk</option>
