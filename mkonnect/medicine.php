@@ -4,7 +4,7 @@
                 <div class="card">
                   <div class="card-content">
                         <center>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of </p>
+                    <p>List of Jobs in Medicine </p>
                         </center>
 
                         <!--modal-->
