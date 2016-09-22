@@ -203,8 +203,8 @@ $(function() {
 </script>
 </head>
 <body style=" background-color: #f7f7f7;" class="article homepage ltr preset1 responsive bg hfeed clearfix" data-spy="scroll" data-target="#uxt" data-offset="70">
-	<div id = "page-wrap">
-		<div style="background:white;" class="sp-body-inner">
+	<div id = "page-wrap"></div>
+		<div style="background:white;" class="sp-body-inner"></div>
 			<!--[if lt IE 9]>
       <div class="chromeframe alert alert-danger" style="text-align:center">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="http://browsehappy.com/">upgrade your browser</a> or <a target="_blank" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
       <![endif]-->
@@ -344,7 +344,7 @@ $(function() {
 	<div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
 		<ul class="breadcrumb">
 
-      <li class="active"><a href="#jobs"><button type="button" class=" btn btn-primary"> JOBS</button></a> </li>
+      <li class="active"><a href="mkonnect/index.html"><button type="button" class=" btn btn-primary"> JOBS</button></a> </li>
       <li class="active"><a href="#cv"> <button type="button" class=" btn btn-primary">CV WRITING</button> </a></li>
       <li class="active"><a href="#interview"><button type="button" class=" btn btn-primary"> INTERVIEW SKILLS</button></a> </li>
       
@@ -373,41 +373,50 @@ It is a long established fact that a reader will be distracted by the readable c
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" value="<?php if($error) echo $name; ?>" />-->
+                        
                         <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" />
-                       <!-- <span class="text-danger"><?php #if (isset($name_error)) echo $name_error; ?></span>-->
+                       
                     </div>
                 </div>
 
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_email" placeholder="Your Email" type="email" value="<?php #if($error) echo $fromemail; ?>" />-->
+                        
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus />
-                        <!--<span class="text-danger"><?php #if (isset($fromemail_error)) echo $fromemail_error; ?></span>--> 
+                        
                     </div>
                 </div>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +254-7..." type="text" />
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
               
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_pass" placeholder="Your Password" type="password" value="<?php #if($error) echo $pass; ?>" />-->
+                        
                         <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" />
-                        <!--<span class="text-danger"><?php #if (isset($pass_error)) echo $pass_error; ?></span>-->
-                    </div>
-                </div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
                  <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_pass" placeholder="Your Password" type="password" value="<?php #if($error) echo $pass; ?>" />-->
+                        
                         <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" />
-                        <!--<span class="text-danger"><?php #if (isset($pass_error)) echo $pass_error; ?></span>-->
+                       
                     </div>
                 </div>
                 
                 <div class="form-group">
                     <div class="col-md-12">
-                       <!-- <input name="submit" type="submit" class="btn btn-primary" value="Register" />-->
+                       
                          <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
 
                     </div>
@@ -452,79 +461,345 @@ It is a long established fact that a reader will be distracted by the readable c
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" value="<?php if($error) echo $name; ?>" />-->
+                       
                         <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" />
-                       <!-- <span class="text-danger"><?php #if (isset($name_error)) echo $name_error; ?></span>-->
-                    </div>
-                </div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
 
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_email" placeholder="Your Email" type="email" value="<?php #if($error) echo $fromemail; ?>" />-->
+                        
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus />
-                        <!--<span class="text-danger"><?php #if (isset($fromemail_error)) echo $fromemail_error; ?></span>--> 
-                    </div>
-                </div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" />
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
               
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_pass" placeholder="Your Password" type="password" value="<?php #if($error) echo $pass; ?>" />-->
+                        
                         <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" />
-                        <!--<span class="text-danger"><?php #if (isset($pass_error)) echo $pass_error; ?></span>-->
-                    </div>
-                </div>
+                       
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
                  <div class="form-group">
                     
                     <div class="col-md-12">
-                        <!--<input class="form-control" name="txt_pass" placeholder="Your Password" type="password" value="<?php #if($error) echo $pass; ?>" />-->
+                        
                         <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" />
-                        <!--<span class="text-danger"><?php #if (isset($pass_error)) echo $pass_error; ?></span>-->
-                    </div>
-                </div>
+                       
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
                 
                 <div class="form-group">
                     <div class="col-md-12">
-                       <!-- <input name="submit" type="submit" class="btn btn-primary" value="Register" />-->
+                      
                          <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
 
-                    </div>
-                </div>
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+
+
             </fieldset>
             </form>
 				</div><!--col-md--12-->
 				</div><!--interview-->
 			</section>
 
-			<section>
-				<div id="jobs">
-					<div class="col-md-12">
+				<section id="jobs">
 
-					<center><p style="font-size:2em; font-weight:bold;">JOB CATEGORIES</p></center>
+<div class="container">
 
-					<div class="list-box">
-						<ul class="list-group">
-							<li class="list-group-item"><center><a data-toggle="collapse" href="#account" aria-expanded="false" aria-controls="collapseExample">Accounting</a></center></li><!--listgroup-item-->
-							<div id="account" class="collapse">
-								<div class="card">
-									<div class="card-content">
-										<center>
-										<p>It is a long established fact that a reader will be distracted by the readable content of <a href="">Apply</a> </p></center>
-									</div><!--card-content-->
-								</div>
-							</div><!--account-->
-							<li class="list-group-item"><center><a href="">Engineering</a></center></li><!--listgroup-item-->
-							<li class="list-group-item"><center><a href="">ICT</a></center></li><!--listgroup-item-->
-							<li class="list-group-item"><center><a href="">ARTS</a></center></li><!--listgroup-item-->
-							<li class="list-group-item"><center><a href="">Teaching</a></center></li><!--listgroup-item-->
-							<li class="list-group-item"><center><a href="">Driving</a></center></li><!--listgroup-item-->
-						</ul>
-					</div><!--list-box-->
-						
-					</div><!--col-md--12-->
-				</div><!--jobs-->
-			</section>
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <div class="list-group">
+
+      
+          <li class="list-group-item"><a data-toggle="collapse" href="#accounting" aria-expanded="false" aria-controls="collapseExample">
+
+          <center>Accounting</center></a>
+
+          </li><!--list-group-item-->
+          <div id="accounting" class="collapse">
+                <div class="card">
+                  <div class="card-content">
+                        <center>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of </p>
+                        </center>
+
+                        <!--modal-->
+                        <div class="container">
+  <center><h2>Apply the Jobs by clicking the button below<span class="glyphicon glyphicon-hand-down"></span></h2>
+  <!-- Trigger the modal with a button -->
+
+  <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#accounts" style="font-size:1em;">
+                        Apply
+                        </button>
+  </center>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="accounts" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span>JOB APPLICATION</h4>
+        </div>
+        <div class="modal-body">
+          
+           <div class="row">
+            <div class="col-md-12">
+                    <div class="col-md-6 col-md-offset-3 well">
+                       <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span></center> <center> APPLY THE JOBS ABOVE</center> <center><span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" />
+                                           </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus />
+                        
+                    </div><!--form-group-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" />
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+              
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" />
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" />
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs" value="">
+                    
+                              <option>Accountant</option>
+                              <option>Clerk</option>
+                              <option>Cashier</option>
+                              <option>Banker</option>
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+                
+                <div class="form-group">
+                    <div class="col-md-12">
+                       
+                         <input class="btn btn-lg btn-warning btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+        </div><!--col-md-12-->
+        </div><!--row-->
+
+
+        </div><!--modal-body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!--modal-footer-->
+      </div><!--modal-content-->
+      
+    </div><!--modal-dialog-->
+  </div><!--modal-fade-->
+  
+</div><!--container-->
+
+                        </div><!--card-content-->
+                        </div><!--card-->
+                        </div><!--engineering-->
+
+
+                        <li class="list-group-item"><a data-toggle="collapse" href="#engineering" aria-expanded="false" aria-controls="collapseExample">
+
+          <center>Engineering</center></a>
+
+          </li><!--list-group-item-->
+          <div id="engineering" class="collapse">
+                <div class="card">
+                  <div class="card-content">
+                        <center>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of </p>
+                        </center>
+
+                        <!--modal-->
+                        <div class="container">
+  <center><h2>Apply the Jobs by clicking the button below<span class="glyphicon glyphicon-hand-down"></span></h2>
+  <!-- Trigger the modal with a button -->
+
+  <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#engineer" style="font-size:1em;">
+                        Apply
+                        </button>
+  </center>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="engineer" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><span class="glyphicon glyphicon-pencil"></span>JOB APPLICATION</h4>
+        </div>
+        <div class="modal-body">
+          
+           <div class="row">
+            <div class="col-md-12">
+                    <div class="col-md-6 col-md-offset-3 well">
+                       <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span></center> <center> APPLY THE JOBS ABOVE</center> <center><span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" />
+                                           </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus />
+                        
+                    </div><!--form-group-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" />
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+              
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" />
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" />
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs" value="">
+                    
+                              <option>Accountant</option>
+                              <option>Clerk</option>
+                              <option>Cashier</option>
+                              <option>Banker</option>
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+                
+                <div class="form-group">
+                    <div class="col-md-12">
+                       
+                         <input class="btn btn-lg btn-warning btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+        </div><!--col-md-12-->
+        </div><!--row-->
+
+
+        </div><!--modal-body-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!--modal-footer-->
+      </div><!--modal-content-->
+      
+    </div><!--modal-dialog-->
+  </div><!--modal-fade-->
+  
+</div><!--container-->
+
+                        </div><!--card-content-->
+                        </div><!--card-->
+                        </div><!--engineering-->
+                        </div><!--list-group-->
+                        </div><!--col-md-12-->
+                        </div><!--row-->
+                        </div><!--container-->
+                        </section>
+			
+
+			
 
 </div><!--mkonnect-->
 
