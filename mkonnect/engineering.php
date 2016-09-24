@@ -30,6 +30,13 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
          <center> <h4 class="modal-title"><i class="fa fa-file-text" aria-hidden="true"></i>JOB APPLICATION<span class="glyphicon glyphicon-pencil"></span></h4></center>
+         <div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
+    <ul class="breadcrumb">
+   <center>If you already have an account</center><br>
+      <center><li class="active"><a href="#logs"><button type="button" class=" btn btn-warning"> login</button></a> </li></center>
+      </ul>
+      </div><!--breadcrums-->
+
         </div>
         <div class="modal-body">
           
@@ -47,8 +54,8 @@
                     <div class="col-md-12">
                         
                         <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" value="" id="inputName" required />
-                        <div class="help-block with-errors"></div>
-                                           </div><!--col-md-12-->
+                        <div class="help-block with-errors"></div><!--help-block-->
+                    </div><!--col-md-12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
@@ -113,6 +120,13 @@
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <div id="logs">
+                    <p> If you already have an account <?php include('login.php') ?></p>
+                    </div><!--log-->
+                  </div><!--col-md-12-->
+                </div><!--form-group-->
             </fieldset>
             </form>
         </div><!--col-md--12-->
@@ -152,16 +166,48 @@
                           $confirm_pass = $_POST['confirm_pass'];
                           $pass = $_POST['password'];
                           
-                          
-                          
+                          //select query
+
+                          $email_query = " select * from jobs WHERE email='$email'";
+
+                          //run query
+
+                          $run_query = mysqli_query($con,$email_query);
+
+                          if(mysqli_num_rows($run_query)>0){
+
+                            $mail_exist = "<script>alert('Email already exists')</script>";
+                            echo $mail_exist;
+
+                            
+
+                          }
+
+                          //insert user in the db
+
+                 $insert = " insert into jobs (name,email,phonenumber,job_type,password) VALUES ($name','$email','$num','$jobs',md5('$pass') )";
+
+                 if(mysqli_query($con,$insert)){
+
+                   $jobs = "<script>window.open('jobs.php')</script>";
+                 }
+                     else{
+
+                     "<script> alert ( 'Please check your details and try again.')</script>";
+
+                     //redirect page
+
+                     $refresh="<script>window.location.replace('engineering.php' ,'_self')</script>";
+
+                     }     
+
 
 
 
 
                         }
 
-                      /*  $telephone1 =  mysql_real_escape_string(stripslashes($_POST['telephone']));
-                        $telephone = '254'.substr($telephone1,-9);*/
+                      
 
 
 

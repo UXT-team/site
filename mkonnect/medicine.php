@@ -29,6 +29,12 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <center> <h4 class="modal-title"><i class="fa fa-file-text" aria-hidden="true"></i>JOB APPLICATION<span class="glyphicon glyphicon-pencil"></span></h4></center>
+          <div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
+    <ul class="breadcrumb">
+   <center>If you already have an account</center><br>
+      <center><li class="active"><a href="#logs"><button type="button" class=" btn btn-warning"> login</button></a> </li></center>
+      </ul>
+      </div><!--breadcrums-->
         </div><!--modal-header-->
         <div class="modal-body">
           
@@ -108,6 +114,13 @@
                          <input class="btn btn-lg btn-warning btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
 
                     </div><!--col-md--12-->
+                </div><!--form-group-->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <div id="logs">
+                    <p> If you already have an account <?php include('login.php') ?></p>
+                    </div><!--log-->
+                  </div><!--col-md-12-->
                 </div><!--form-group-->
             </fieldset>
             </form>
