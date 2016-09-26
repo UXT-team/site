@@ -365,7 +365,7 @@ It is a long established fact that a reader will be distracted by the readable c
  <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 well">
-            <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform" data-toggle="validator">
+            <form role="form" class="form-horizontal" action="mkonnect/cv.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
     
                 <legend><center> <span class="glyphicon glyphicon-pencil"> CV WRITING REGISTER </span><span class="glyphicon glyphicon-folder-open"></span> </legend>
@@ -401,31 +401,11 @@ It is a long established fact that a reader will be distracted by the readable c
                         
                     </div><!--col-md-12-->
                 </div><!--form-group-->
-              
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required  />
-
-              <div class="help-block with-errors">Minimum of 6 Characters</div><!--help-block-->
-                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                   <div class="help-block with-errors"></div><!--help-block-->
-                       
-                    </div>
-                </div>
                 
-                <div class="form-group">
+              <div class="form-group">
                     <div class="col-md-12">
                        
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="registration" style="font-size:1.25em;" >
 
                     </div>
                 </div>
@@ -444,10 +424,11 @@ It is a long established fact that a reader will be distracted by the readable c
 				</div><!--col-xs-12-->
 
 				</div><!--cv writing-->
-
-
-				
 			
+
+
+
+
 
 			</section>
 
@@ -461,7 +442,7 @@ It is a long established fact that a reader will be distracted by the readable c
 <center><p style="font-size:2em; font-weight:bold;">INTERVIEW SKILLS</p></center>
     <div class="row">
         <div class="col-md-6 col-md-offset-3 well">
-            <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform" data-toggle="validator">
+            <form role="form" class="form-horizontal" action="mkonnect/interview.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
     
                 <legend><center> <span class="glyphicon glyphicon-user"></span>INTERVIEW SKILLS REGISTER <span class="glyphicon glyphicon-user"></span></center> </legend>

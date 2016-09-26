@@ -198,6 +198,7 @@
                      //redirect page
 
                      $refresh="<script>window.location.replace('engineering.php' ,'_self')</script>";
+                     echo $refresh;
 
                      }     
 

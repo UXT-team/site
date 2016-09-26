@@ -45,7 +45,7 @@ if (!$_SESSION['email']) {
           </div><!--col-md-3-->
 
           <div class="col-md-2">
-            <center><p style="color: white; font-size: 1.5em; margin-top:4%;"><?php echo $_SESSION['email'];  ?></p></center>
+            <center><p style="color: white; font-size: 1.5em; margin-top:4%;"><?php echo $_SESSION['email'];  ?> </p></center>
           </div><!--col-md--2-->
 
           <div class="col-md-2">

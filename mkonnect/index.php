@@ -11,7 +11,7 @@
 
     
 </head>
-<body style=" background-color: #f7f7f7;" >
+<body style=" background-color: #f7f7f7;" data-spy="scroll" data-target="#uxt" data-offset="70">
 <section>
 
 <div class="container">
@@ -55,6 +55,12 @@
                          <center>Medicine</center></a>
 
                         <?php include('medicine.php'); ?>
+
+                        <li class="list-group-item"><a data-toggle="collapse" href="#mechanic" aria-expanded="false" aria-controls="collapseExample">
+
+                         <center>Mechanic</center></a>
+
+                        <?php include('mechanic.php'); ?>
 
 
                        
