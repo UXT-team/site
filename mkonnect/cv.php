@@ -1,59 +1,53 @@
+<?php
+include('header.php');
+ ?>
+<?php
 
-				<?php
-
-
-//include db
-include('db/db_connection.php');
-
-
-    //set validation error flag as false
-   # $error = false;
-    //check if form is submitted
+include("db/db_connection.php");//make connection here
+if(isset($_POST['cv_writing']))
+{
+    $user_name=$_POST['txt_name'];//here getting result from the post array after submitting the form.
+    $user_email=$_POST['email'];//same
+    $user_num=$_POST['txt_number'];
+   
     
-    if (isset($_POST['registration']))
-    {
-        $name =$_POST['txt_name'];
-        $user_email = $_POST['email'];
-       
-      
-$check_email_query="select * from cv WHERE email=' $user_email '";
+  
+    
+//here query check weather if user already registered so can't register again.
+
+    $check_email_query="select * from cv_writing WHERE email='".$user_email."'";
     $run_query=mysqli_query($con,$check_email_query);
-    $numResults = mysqli_num_rows($run_query);
-     
-
-
-    if($numResults==1)
+   
+     $results = mysqli_num_rows($run_query);
+         
+    if($results>=0)
     {
-       $message="<script>alert($user_email 'is already exist in our database, Please try another one!')</script>";
- 
-        echo $message;
+        $mail_exists= "<script>alert(' ".$user_email." Email is already exist in our database, Please try another one!')</script>";
 
+         echo $mail_exists;
+
+
+        //refresh page
+
+         $refresh = "<script>window.open('../mkonnect.php','_self')</script>";
+         echo $refresh;
 
     }
-    else{
-//insert the user into the database.
 
-    $insert_user="insert into cv (name,email,phonenumber) VALUES ('$name','$user_email','$num'";
+    else{
+
+        //insert the user into the database.
+
+    $insert_user="insert into cv_writing (name,email,phonenumber) VALUES ('$user_name','$user_email','$user_num')";
+
+     }
+
 
     if(mysqli_query($con,$insert_user))
-    {
-       
-
-          $login = "<script>window.open('cvs.html','_self')</script>";        
-        echo $login;
-        
-          
+     {
+        echo"<script>window.open('thanks.php','_self')</script>";
     }
-    else{
-          
-          echo "<script>window.location.replace('cv.php' ,'_self')</script>";  
-      }
 
-      }
+}
 
-     
-
-    }
 ?>
-
-

@@ -405,7 +405,7 @@ It is a long established fact that a reader will be distracted by the readable c
               <div class="form-group">
                     <div class="col-md-12">
                        
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="registration" style="font-size:1.25em;" >
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="cv_writing" style="font-size:1.25em;" >
 
                     </div>
                 </div>
@@ -476,30 +476,10 @@ It is a long established fact that a reader will be distracted by the readable c
                     </div><!--col-md-12-->
                 </div><!--form-group-->
               
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_pass" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required  />
-                        <div class="help-block with-errors">Minimum of 6 characters</div>
-                       
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
                  <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                
-                <div class="form-group">
                     <div class="col-md-12">
                       
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="interview" style="font-size:1.25em;" >
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->

@@ -60,7 +60,7 @@
                     <div class="col-md-12">
                         
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus value="" required />
-                        <div class="help-block with-errors"></div>
+                       <!-- <div class="help-block with-errors"></div>-->
                         
                     </div><!--form-group-->
                 </div><!--form-group-->

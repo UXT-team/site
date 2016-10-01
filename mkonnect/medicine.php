@@ -41,11 +41,12 @@
            <div class="row">
             <div class="col-md-12">
                     <div class="col-md-6 col-md-offset-3 well">
-                       <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform" data-toggle="validator">
+                       <form role="form" class="form-horizontal" action="medicine.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
     
                 <legend><center> <span class="glyphicon glyphicon-user"></span></center> <center> APPLY THE JOBS ABOVE</center> <center><span class="glyphicon glyphicon-user"></span></center> </legend>
-  <div class="form-group">
+
+             <div class="form-group">
                     
                     <div class="col-md-12">
                         
@@ -143,3 +144,63 @@
                         </div><!--card-content-->
                         </div><!--card-->
                         </div><!--medicine-->
+
+                        <?php
+
+                        //include db
+include('db/db_connection.php');
+
+if(isset($_POST['register'])){
+
+  //declare variables
+  $name = $_POST['txt_name'];
+  $user_email = $_POST['email'];
+  $num = $_POST['txt_number'];
+  $pass = $_POST['password'];
+  $jobs = $_POST['txt_jobs'];
+
+  //check whether email exist
+  //select query
+ 
+ $check_email_query="select * from medicine WHERE email=' $user_email '";
+    $run_query=mysqli_query($con,$check_email_query);
+    $numResults = mysqli_num_rows($run_query);
+     
+
+
+    if($numResults==1)
+    {
+       $message="<script>alert($user_email 'is already exist, Please try another one!')</script>";
+ 
+        echo $message;
+
+
+    }
+    else{
+//insert the user into the database.
+
+    $insert_user="insert into medicine (name,email,phonenumber,job_type) VALUES ('$name','$user_email','$num','$jobs')";
+
+    if(mysqli_query($con,$insert_user))
+    {
+       
+
+          $login = "<script>window.open('cvs.html','_self')</script>";        
+        echo $login;
+        
+          
+    }
+    else{
+          
+          echo "<script>window.location.replace('medicine.php' ,'_self')</script>";  
+      }
+
+      }
+
+     
+
+    }
+
+
+
+ ?>

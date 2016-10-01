@@ -1,4 +1,9 @@
- <!DOCTYPE html>
+<?php
+
+//store information of all pages in variables
+
+ ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Registration Done</title>
@@ -8,10 +13,16 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
-     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      <style type="text/css">
      	.section{
-     		background-image: url("img/thanks.jpg");
+     		background-image: url("img/mkonnect7.jpg");
      		height: 100vh;
      		width: 100%;
      		/*background-position: 100px 200px; */
@@ -24,7 +35,10 @@
 <body>
 <div class="panel panel-default">
 	<div class="section">
-		<center><h1>Thanks for rgistration,you'll be contacted soon.</h1></center>
+    <div class="well-md">
+
+ </div>
+		<!--<center><h1>Thanks for rgistration,you'll be contacted soon.</h1></center>-->
 	</div>
 </div>
 </body>
