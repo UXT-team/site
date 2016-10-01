@@ -13,7 +13,7 @@ if (!$_SESSION['email']) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SKIZA ARTISTES</title>
+  <title>Interview Skills</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +43,7 @@ if (!$_SESSION['email']) {
           </div><!--col-md-5-->
 
           <div class="col-md-3">
-            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;"> SUPER ADMIN SKIZA PORTAL</p></center> 
+            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;">ADMIN MKONNECT Portal</p></center> 
             
           </div><!--col-md-3-->
 
@@ -88,16 +88,21 @@ if (!$_SESSION['email']) {
         <div class="page-content">
             <div class="row">
               <div class="col-md-2">
-                <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
+               <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
                   <ul class="list-group" >
-                    <li class="list-group-item"><a href="skiza.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
-                    <li class="list-group-item"><a href="../upload/upload.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>Upload Songs</a></li>
-                    <li class="list-group-item"><a href="../upload/upload.php" style="color:#000000;" > <i class="glyphicon glyphicon-th-list"></i>Upload Albumn</a></li>
-                    <li class="list-group-item"><a href="upload/views.php" style="color:#000000;"> <i class="glyphicon glyphicon-cloud-download"></i>Download Views</a></li>
-                    <li class="list-group-item"><a href="views.php" style="color:#000000;"> <i class="glyphicon glyphicon-user"></i>&nbsp;Skiza Artistes</a></li>
-                    <li class="list-group-item"><a href="../upload/songviews.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>&nbsp;Song views</a></li>
-                    <li class="list-group-item"><a href="../upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-th-list"></i>&nbsp; Albumn views</a></li>
-                    <li class="list-group-item"><a href="upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
+                    <li class="list-group-item"><a href="../index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
+                  
+                    <li class="list-group-item"><a href="cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
+                    <li class="list-group-item"><a href="interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
+                    <li class="list-group-item">
+                      <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
+                  <div id="jobs" class="collapse">
+                    <a href="engineering.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Engineering</a>
+                    <a href="ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
+                   <a href="medicine.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
+                </div>
+                    
+                    <li class="list-group-item"><a href="help" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
 
 
 
@@ -108,7 +113,7 @@ if (!$_SESSION['email']) {
              
       <div class="col-md-10">
        <div clas="col-md-10">
-<center><p style="font-size:2em;">SKIZA ARTISTES</p></center>
+<center><p style="font-size:2em;">Interview Skills</p></center>
 <div class="table-scrol">
   <div class="table-responsive">
     <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
@@ -117,7 +122,9 @@ if (!$_SESSION['email']) {
          <th>ID</th>
          <th>Name</th>
          <th>Email </th>
+         <th>PhoneNumber</th>
          <th>Date of Registration</th>
+         <th>Delete</th>
          
             
 
@@ -128,7 +135,7 @@ if (!$_SESSION['email']) {
       include 'db/db_connection.php';
 
       //select query to view users
-      $view_admin_query = " select * from users";
+      $view_admin_query = " select * from interview_skills";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
@@ -140,7 +147,7 @@ if (!$_SESSION['email']) {
         $user_id = $row[0];
         $name = $row[1];
         $email = $row[2];
-        $reg= $row[3];
+        $num = $row[3];
         $reg= $row[4];
         $dell = $row[5];
        
@@ -152,6 +159,8 @@ if (!$_SESSION['email']) {
          <!-- show those results in the table -->
          <td><?php echo $user_id; ?></td>
          <td><?php echo $name; ?></td>
+         <td><?php echo $email; ?></td>
+         <td><?php echo $num; ?></td>
          <td><?php echo $reg; ?></td> 
         <td><a href="deleteartiste.php?del=<?php echo $id ?>"><button class="btn btn-warning">Delete Artiste</button></a></td>
        </tr>

@@ -13,7 +13,7 @@ if (!$_SESSION['email']) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SKIZA ARTISTES</title>
+  <title>Engineering</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +39,7 @@ if (!$_SESSION['email']) {
           </div><!--col-md-5-->
 
           <div class="col-md-3">
-            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;"> SUPER ADMIN </p></center> 
+            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;">ADMIN MKONNECT PORTAL </p></center> 
             
           </div><!--col-md-3-->
 
@@ -84,16 +84,21 @@ if (!$_SESSION['email']) {
         <div class="page-content">
             <div class="row">
               <div class="col-md-2">
-                 <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
+                <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
                   <ul class="list-group" >
-                    <li class="list-group-item"><a href="skiza.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
-                    <li class="list-group-item"><a href="upload/upload.php" style="color:#000000;"> <i class="glyphicon glyphicon-star-empty"></i>Events</a></li>
-                    <li class="list-group-item"><a href="upload/upload.php" style="color:#000000;" > <i class="glyphicon glyphicon-cloud-download"></i>Generate quotes</a></li>
-                    <li class="list-group-item"><a href="upload/views.php" style="color:#000000;"> <i class="glyphicon glyphicon-file"></i>Sales Reports</a></li>
-                    <li class="list-group-item"><a href="views/views.php" style="color:#000000;"> <i class="glyphicon glyphicon-user"></i>&nbsp;Monitor Users</a></li>
-                   <!-- <li class="list-group-item"><a href="upload/songviews.php" style="color:#000000;"> <i class="glyphicon glyphicon-music"></i>&nbsp;Song views</a></li>
-                    <li class="list-group-item"><a href="upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-th-list"></i>&nbsp; Albumn views</a></li>-->
-                    <li class="list-group-item"><a href="upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
+                    <li class="list-group-item"><a href="../index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
+                  
+                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
+                    <li class="list-group-item"><a href="views/interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
+                    <li class="list-group-item">
+                      <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
+                  <div id="jobs" class="collapse">
+                    <a href="engineering.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Engineering</a>
+                    <a href="ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
+                   <a href="medicine.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
+                </div>
+                    
+                    <li class="list-group-item"><a href="help" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
 
 
 

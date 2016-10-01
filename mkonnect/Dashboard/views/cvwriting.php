@@ -77,24 +77,23 @@ if (!$_SESSION['email']) {
               <div class="col-md-2">
                 <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
                   <ul class="list-group" >
-                    <li class="list-group-item"><a href="skiza.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
+                    <li class="list-group-item"><a href="../index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
                   
-                    <li class="list-group-item"><a href="upload/upload.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
-                    <li class="list-group-item"><a href="upload/views.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
+                    <li class="list-group-item"><a href="cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
+                    <li class="list-group-item"><a href="interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
                     <li class="list-group-item">
                       <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
                   <div id="jobs" class="collapse">
-                    <a href="#" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Engineering</a>
-                    <a href="#" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
-                   <a href="#" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
+                    <a href="engineering.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Engineering</a>
+                    <a href="ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
+                   <a href="medicine.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
                 </div>
                     
-                    <li class="list-group-item"><a href="upload/albumn.php" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
+                    <li class="list-group-item"><a href="help" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
 
 
 
                   </ul>
-
                   
                 </div><!--listgroup-->
               </div><!--col-md-2-->
@@ -122,7 +121,7 @@ if (!$_SESSION['email']) {
       include 'db/db_connection.php';
 
       //select query to view users
-      $view_admin_query = " select * from cv";
+      $view_admin_query = " select * from cv_writing";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
