@@ -1,71 +1,49 @@
-
-
-
-          </li><!--list-group-item-->
-          <div id="ict" class="collapse">
-                <div class="card">
-                  <div class="card-content">
-                        <center>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of </p>
-                        </center>
-
-                        <!--modal-->
-                        <div class="container">
-  <center><h2>Apply the Jobs by clicking the button below</h2>
-  <h3><span class="glyphicon glyphicon-hand-down"></span></h3> <h3><i class="fa fa-hand-o-down" aria-hidden="true"></i></h3><br>
-  <!-- Trigger the modal with a button -->
-
-  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#IT" style="font-size:1em;">
-                        Apply
-                        </button>
-  </center>
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="IT" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <center> <h4 class="modal-title"><i class="fa fa-file-text" aria-hidden="true"></i>JOB APPLICATION<span class="glyphicon glyphicon-pencil"></span></h4></center>
-         <div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
-    <ul class="breadcrumb">
-   <center>If you already have an account</center><br>
-      <center><li class="active"><a href="#logs"><button type="button" class=" btn btn-warning"> login</button></a> </li></center>
-      </ul>
-      </div><!--breadcrums-->
-
-        </div>
-        <div class="modal-body">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 thumbnail">
+            <center>
+          <strong>Accounts Clerk</strong>
+          <strong>Job Description</strong>
+          </p>
+          <strong>Personal qualities:</strong>
+          </center>
           
-           <div class="row">
-            <div class="col-md-12">
-                    <div class="col-md-6 col-md-offset-3 well">
-                       <form role="form" class="form-horizontal" action="engineering.php" method="POST" name="contactform" data-toggle="validator" >
+          <div class="text" style="">
+          <ul style="text-align: left; padding: 10%">
+          <li > At least CPA 2 or Equivalent.</li>
+           <li> Confident and able to work accurately.</li>
+            <li> Good interpersonal and communication skills.</li>
+             <li> Pro-active, self–starter with self-defined goals.</li>
+             <li>  Ability to work well under pressure. </li>
+              <li> Team player. </li>
+               <li>Below 30 years Expected Salary range – 20-25k.</li> 
 
+      This job was copied from BrighterMonday<br>
+      </ul>
+      </div>
+      </div>
+        <div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect/interview.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
     
-                <legend><center> <span class="glyphicon glyphicon-user"></span></center> <center> APPLY THE JOBS ABOVE</center> <center><span class="glyphicon glyphicon-user"></span></center> </legend>
+                <legend><center> <span class="glyphicon glyphicon-user"></span>INTERVIEW SKILLS REGISTER <span class="glyphicon glyphicon-user"></span></center> </legend>
 
                 <div class="form-group">
                     
                     <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" value="" id="inputName" required />
-                        <div class="help-block with-errors"></div><!--help-block-->
-                    </div><!--col-md-12-->
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus value="" required />
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
                         <div class="help-block with-errors"></div>
-                        
-                    </div><!--form-group-->
+                    </div><!--col-md-12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
@@ -77,14 +55,12 @@
                         
                     </div><!--col-md-12-->
                 </div><!--form-group-->
-              
-                <div class="form-group">
+                 <div class="form-group">
                     
                     <div class="col-md-12">
                         
                         <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>
-                        
+                        <div class="help-block">Minimum of 6 characters</div>                        
                     </div><!--col-md-12-->
                 </div><!--form-group-->
                  <div class="form-group">
@@ -112,103 +88,85 @@
                   </div><!--col-md-12-->
 
                 </div><!--form-group-->
-                
-                <div class="form-group">
+              
+                 <div class="form-group">
                     <div class="col-md-12">
-                       
-                         <input class="btn btn-lg btn-warning btn-block" type="submit" value="Register" name="register" style="font-size:1.25em;" >
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="IT" style="font-size:1.25em;" >
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
-                <div class="form-group">
-                  <div class="col-md-12">
-                    <div id="logs">
-                    <p> If you already have an account <?php include('login.php') ?></p>
-                    </div><!--log-->
-                  </div><!--col-md-12-->
-                </div><!--form-group-->
+
+
+
             </fieldset>
             </form>
         </div><!--col-md--12-->
-        </div><!--col-md-12-->
+
         </div><!--row-->
 
+                <?php 
 
-        </div><!--modal-body-->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div><!--modal-footer-->
-      </div><!--modal-content-->
-      
-    </div><!--modal-dialog-->
-  </div><!--modal-fade-->
-  
-</div><!--container-->
+        //include db
+        include('db/db_connection.php');
 
-                        </div><!--card-content-->
-                        </div><!--card-->
-                        </div><!--engineering-->
+        if(isset($_POST['IT'])){
 
+        //declare variable
+          $user_name = $_POST['txt_name'];
+          $user_email = $_POST['email'];
+          $user_pass = $_POST['password'];
+          $user_num = $_POST['txt_number'];
+          $user_job = $_POST['txt_jobs']; 
 
+          //use select query
 
-                        <?php
+          $select_query = "select * from accounts WHERE email = ".$user_email."";
 
-                        //connect to db
+          //con to db to get query
+          $conn_query = mysqli_query($con, $select_query);
 
-                        include ('db/db_connection.php');
+          //check email
 
-                        if (isset($_POST['register'])) {
+          $rows = mysqli_num_rows($conn_query);
 
-                          $name = $_POST['txt_name'];
-                          $email = $_POST['email'];
-                          $num = $_POST['txt_number'];
-                          $jobs = $_POST['txt_jobs'];
-                          $confirm_pass = $_POST['confirm_pass'];
-                          $pass = $_POST['password'];
-                          
-                          //select query
+          if($rows>0){
 
-                          $email_query = " select * from jobs WHERE email='$email'";
+            $mail_exist= "<script>$('#thankyouModal').modal('show')</script>";
+             echo $mail_exist;
 
-                          //run query
+          }
+          
 
-                          $run_query = mysqli_query($con,$email_query);
+            //insert into db
+            $insert_query = "insert into ICT name,email,phonenumber,job_type,password VALUES ('$user_name','$user_email','$user_num','$user_job','$user_pass')";
 
-                          if(mysqli_num_rows($run_query)>0){
+            if (mysqli_query($con,$insert_query)){
 
-                            $mail_exist = "<script>alert('Email already exists')</script>";
-                            echo $mail_exist;
+              $run = "<script>window.open(cvs.html)</script>";
+              echo $run;
+            }
+            else{
+              $eror = "<script>alert('please check your details and try again')</script>";
+              echo $eror;
 
-                            
+              sleep(5);
 
-                          }
+              //redirect page
+              echo "<script>alert('mkonnect.php')</script>";
+            }
+          
 
-                          //insert user in the db
-
-                 $insert = " insert into jobs (name,email,phonenumber,password) VALUES ($name,$email,$num,$jobs,$pass)";
-
-                 if(mysqli_query($con,$insert)){
-
-                   $jobs = "<script>window.open('jobs.php')</script>";
-                 }
-                     else{
-
-                     "<script> alert ( 'Please check your details and try again.')</script>";
-
-                     //redirect page
-
-                     $refresh="<script>window.location.replace('engineering.php' ,'_self')</script>";
-
-                     }     
+        }
 
 
 
+        ?>
+       
+          
+    
 
-
-                        }
-
-                      
-
-
-
-                         ?>
+            
+                
+                
+            

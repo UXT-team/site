@@ -1,5 +1,5 @@
- <div class="row">
-   <div class="col-md-6 col-md-offset-3 thumbnail">
+  <div class="row">
+              <div class="col-md-6 col-md-offset-3 thumbnail">
             <center>
           <strong>Accounts Clerk</strong>
           <strong>Job Description</strong>
@@ -8,7 +8,7 @@
           </center>
           
           <div class="text" style="">
-          <ul style="text-align: left; padding: 10%">
+          <ul style="text-align: left; margin-top:; padding: 10%">
           <li > At least CPA 2 or Equivalent.</li>
            <li> Confident and able to work accurately.</li>
             <li> Good interpersonal and communication skills.</li>
@@ -92,7 +92,7 @@
                  <div class="form-group">
                     <div class="col-md-12">
                       
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="interview" style="font-size:1.25em;" >
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="accounts" style="font-size:1.25em;" >
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -103,18 +103,76 @@
             </form>
         </div><!--col-md--12-->
 
-        
-        </div><!--container-->
-        </div><!--card-content-->
-        </div><!--card-->
-        </div><!--accounting-->
-        </div><!--engineer-->
+        </div><!--row-->
+         <div class="modal fade" id="thankyouModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><?php if($rows>0){  echo $mail_exist;
+}  ?></h4>
+            </div>
+            <div class="modal-body">
+                <p>Email Already Exists!</p>                     
+            </div>    
+        </div>
+    </div>
+</div>
 
+        <?php 
 
+        //include db
+        include('db/db_connection.php');
+
+        if(isset($_POST['accounts'])){
+
+        //declare variable
+          $user_name = $_POST['txt_name'];
+          $user_email = $_POST['email'];
+          $user_pass = $_POST['password'];
+          $user_num = $_POST['txt_number'];
+          $user_job = $_POST['txt_jobs']; 
+
+          //use select query
+
+          $select_query = "select * from accounts WHERE email = ".$user_email."";
+
+          //con to db to get query
+          $conn_query = mysqli_query($con, $select_query);
+
+          //check email
+
+          $rows = mysqli_num_rows($conn_query);
+
+          if($rows>0){
+
+            $mail_exist= "<script>$('#thankyouModal').modal('show')</script>";
+             echo $mail_exist;
+
+          }
           
-    
 
-            
-                
-                
-            
+            //insert into db
+            $insert_query = "insert into accounts name,email,phonenumber,job_type,password VALUES ('$user_name','$user_email','$user_num','$user_job','$user_pass')";
+
+            if (mysqli_query($con,$insert_query)){
+
+              $run = "<script>window.open(cvs.html)</script>";
+              echo $run;
+            }
+            else{
+              $eror = "<script>alert('please check your details and try again')</script>";
+              echo $eror;
+
+              sleep(5);
+
+              //redirect page
+              echo "<script>alert('mkonnect.php')</script>";
+            }
+          
+
+        }
+
+
+
+        ?>

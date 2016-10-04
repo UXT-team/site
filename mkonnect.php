@@ -185,8 +185,14 @@ h1 {
 .my-slider li {
 	float: left;
 }
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 </style>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery.imageslider.js"></script>
 <script>
@@ -344,7 +350,7 @@ $(function() {
 	<div class="breadcrums" style="margin-top:5%; font-size:1.2em;">
 		<ul class="breadcrumb">
 
-      <li class="active"><a href="mkonnect/index.php"><button type="button" class=" btn btn-primary"> JOBS</button></a> </li>
+      <li class="active"><a href="#jobs"><button type="button" class=" btn btn-primary"> JOBS</button></a> </li>
       <li class="active"><a href="#cv"> <button type="button" class=" btn btn-primary">CV WRITING</button> </a></li>
       <li class="active"><a href="#interview"><button type="button" class=" btn btn-primary"> INTERVIEW SKILLS</button></a> </li>
       
@@ -491,9 +497,85 @@ It is a long established fact that a reader will be distracted by the readable c
 				</div><!--col-md--12-->
 				</div><!--interview-->
 			</section>
-	
+
 
 </div><!--mkonnect-->
+<section>
+<div id="jobs">
+	<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <div class="list-group">
+<ul class="list-group">
+
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#sales" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-primary btn-md ">Sales & Marketing</button></center></a>
+ </li>
+
+<div id="sales" class="collapse">
+	<?php include('mkonnect/marketing.php'); ?>
+</div>
+
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#techom" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-primary btn-md ">Telecommunications</button></center></a>
+ </li>
+
+<div id="techom" class="collapse">
+	<?php include('mkonnect/telecom.php'); ?>
+</div>
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#mechanic" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-primary btn-md ">Mechanic</button></center></a>
+ </li>
+
+<div id="mechanic" class="collapse">
+	<?php include('mkonnect/mechanic.php'); ?>
+</div>
+ <li class="list-group-item">
+ <a data-toggle="collapse" href="#accounts" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-primary btn-md ">Accounts</button></center></a>
+ </li>
+
+<div id="accounts" class="collapse">
+<?php include('mkonnect/accounts.php'); ?>
+</div>
+
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#ICT_tech" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-primary btn-md ">ICT</button></center></a>
+ </li>
+
+ <div id="ICT_tech" class="collapse">
+          
+          <?php include('mkonnect/ict.php'); ?>
+      </div>
+
+  <li class="list-group-item">
+ <a data-toggle="collapse" href="#engineer" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-primary btn-md ">Engineering</button></center></a>
+ </li>
+
+ <div id="engineer" class="collapse">
+        
+        <?php include('mkonnect/engineering.php'); ?>
+
+        </div>
+
+</ul>
+
+      	
+       </div><!--list-group-->
+       </div><!--col-md--12-->
+       </div><!--row-->
+       </div><!--container-->
+       </div><!--jobs-->
+      </section>
+</section>
 
 <section id="sp-bottom-wrapper" class=" "><div class="container"><div class="row-fluid" id="bottom">
 <div id="sp-bottom" class="span12">
@@ -530,8 +612,6 @@ It is a long established fact that a reader will be distracted by the readable c
     <script src="vendors/fullcalendar/gcal.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/calendar.js"></script>
-
-
 
 <script src="js/wow.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
