@@ -194,19 +194,6 @@ body {
 <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="jquery.imageslider.js"></script>
-<script>
-$(function() {
-	$('.js-imageslider').imageslider({
-		slideItems: '.my-slider-item',
-		slideContainer: '.my-slider-list',
-		slideDistance: 5,
-		slideDuratin: 800,
-		resizable: true,
-		pause: true
-	});
-});
-</script>
 </head>
 <body style=" background-color: #f7f7f7;" class="article homepage ltr preset1 responsive bg hfeed clearfix" data-spy="scroll" data-target="#uxt" data-offset="70">
 	<div id = "page-wrap"></div>
@@ -497,7 +484,9 @@ It is a long established fact that a reader will be distracted by the readable c
 				</div><!--col-md--12-->
 				</div><!--interview-->
 			</section>
-
+<section>
+	
+</section>
 
 </div><!--mkonnect-->
 <section>
@@ -517,8 +506,107 @@ It is a long established fact that a reader will be distracted by the readable c
  </li>
 
 <div id="sales" class="collapse">
-	<?php include('mkonnect/marketing.php'); ?>
-</div>
+	<div class="row">
+              <?php include('mkonnect/marketing.php'); ?>
+
+      <div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Sales& Marketing <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Digital Brand Manager	</option>
+                              <option>Digital Marketing Manager</option>
+                              <option>Director of Digital Marketing</option>
+                              <option>e-commerce Marketing Director</option>
+                              <option>e-commerce Marketing Manager</option>
+                              <option>Sales Engineer</option>
+                              <option>Sales Representative</option>
+                              <option>Senior Brand Manager</option>
+                              <option>Internet Marketing Specialist</option>
+                              <option>e-commerce Marketing Specialist</option>
+                              <option>Email Marketer</option>
+                              <option>Inside Sales Representative</option>
+                              <option>Internet Marketing Coordinator</option>
+                              <option>Internet Marketing Director</option>
+                              <option>Sales Director</option>
+                              <option>Senior Product Manager</option>
+                              
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="marketing" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+        </div><!--row-->
+
+        <?php include('mkonnect/sample2.php'); ?>
+
+       
+
+</div><!--sales&marketing-->
 
 <li class="list-group-item">
  <a data-toggle="collapse" href="#techom" aria-expanded="false" aria-controls="collapseExample">
@@ -526,24 +614,311 @@ It is a long established fact that a reader will be distracted by the readable c
  </li>
 
 <div id="techom" class="collapse">
-	<?php include('mkonnect/telecom.php'); ?>
-</div>
+	
+		<div class="row">
+              <?php include('mkonnect/telecom.php'); ?>
+
+      <div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Telecommunications <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Telcom Engineer</option>
+                              <option>Digital Marketing Manager</option>
+                              <option>Director of Digital Marketing</option>
+                              <option>e-commerce Marketing Director</option>
+                              <option>e-commerce Marketing Manager</option>
+                              <option>Sales Engineer</option>
+                              <option>Sales Representative</option>
+                              <option>Senior Brand Manager</option>
+                              <option>Internet Marketing Specialist</option>
+                              <option>e-commerce Marketing Specialist</option>
+                              <option>Email Marketer</option>
+                              <option>Inside Sales Representative</option>
+                              <option>Internet Marketing Coordinator</option>
+                              <option>Internet Marketing Director</option>
+                              <option>Sales Director</option>
+                              <option>Senior Product Manager</option>
+                              
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="telecom" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+        </div><!--row-->
+
+
+	<?php include('mkonnect/sample2.php');?>
+
+</div><!--techom-->
+
 <li class="list-group-item">
  <a data-toggle="collapse" href="#mechanic" aria-expanded="false" aria-controls="collapseExample">
  <center><button class="btn btn-primary btn-md ">Mechanic</button></center></a>
  </li>
 
 <div id="mechanic" class="collapse">
+
+	<div class="row">
+
 	<?php include('mkonnect/mechanic.php'); ?>
-</div>
+
+	<div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Telecommunications <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Body Paint</option>
+                              <option>Digital Marketing Manager</option>
+                              <option>Director of Digital Marketing</option>
+                              <option>e-commerce Marketing Director</option>
+                              <option>e-commerce Marketing Manager</option>
+                              <option>Sales Engineer</option>
+                              <option>Sales Representative</option>
+                              <option>Senior Brand Manager</option>
+                              <option>Internet Marketing Specialist</option>
+                              <option>e-commerce Marketing Specialist</option>
+                              <option>Email Marketer</option>
+                              <option>Inside Sales Representative</option>
+                              <option>Internet Marketing Coordinator</option>
+                              <option>Internet Marketing Director</option>
+                              <option>Sales Director</option>
+                              <option>Senior Product Manager</option>
+                              
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="mechanic" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+        </div><!--row-->
+
+	<?php include('mkonnect/sample4.php'); ?>
+
+</div><!--mechanic-->
  <li class="list-group-item">
  <a data-toggle="collapse" href="#accounts" aria-expanded="false" aria-controls="collapseExample">
  <center><button class="btn btn-primary btn-md ">Accounts</button></center></a>
  </li>
 
 <div id="accounts" class="collapse">
+	<div class="row">
 <?php include('mkonnect/accounts.php'); ?>
-</div>
+	
+	<div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Accounts <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Auditor</option>
+                              <option>Budget Analyst</option>
+                              <option>Accounting Clerk</option>
+                              <option>Accounting Assistant</option>
+                              <option>Cost Accountant Credit</option>
+                              <option>Financial Analyst</option>
+                              <option>Credit Analyst</option>
+                              <option>Contracts and Financial Compliance Manager</option> 
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="accounts" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+	</div><!--row-->
+
+	<?php include('mkonnect/sample5.php');?>
+
+	</div><!--accounts-->
 
 <li class="list-group-item">
  <a data-toggle="collapse" href="#ICT_tech" aria-expanded="false" aria-controls="collapseExample">
@@ -551,18 +926,201 @@ It is a long established fact that a reader will be distracted by the readable c
  </li>
 
  <div id="ICT_tech" class="collapse">
-          
-          <?php include('mkonnect/ict.php'); ?>
-      </div>
+         
+         <div class="row">
 
-  <li class="list-group-item">
+		<?php include('mkonnect/ict.php'); ?>
+
+		<div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>ICT <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Auditor</option>
+                              <option>Budget Analyst</option>
+                              <option>Accounting Clerk</option>
+                              <option>Accounting Assistant</option>
+                              <option>Cost Accountant Credit</option>
+                              <option>Financial Analyst</option>
+                              <option>Credit Analyst</option>
+                              <option>Contracts and Financial Compliance Manager</option> 
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="IT" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+
+	</div><!--row-->
+
+		<?php include('mkonnect/sample6.php'); ?>
+</div> 
+
+<li class="list-group-item">
  <a data-toggle="collapse" href="#engineer" aria-expanded="false" aria-controls="collapseExample">
  <center><button class="btn btn-primary btn-md ">Engineering</button></center></a>
  </li>
 
  <div id="engineer" class="collapse">
         
-        <?php include('mkonnect/engineering.php'); ?>
+        <div class="row">
+
+		<?php include('mkonnect/engineering.php'); ?>
+
+		<div class="col-md-6 col-md-offset-3 well">
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Engineering <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <div class="help-block with-errors"></div>
+                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+                        <div class="help-block">Minimum of 6 characters</div>                        
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+                 <div class="form-group">
+                    
+                    <div class="col-md-12">
+                        
+                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
+                        <div class="help-block with-errors"></div>
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-12">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Auditor</option>
+                              <option>Budget Analyst</option>
+                              <option>Accounting Clerk</option>
+                              <option>Accounting Assistant</option>
+                              <option>Cost Accountant Credit</option>
+                              <option>Financial Analyst</option>
+                              <option>Credit Analyst</option>
+                              <option>Contracts and Financial Compliance Manager</option> 
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="engineering" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+            </fieldset>
+            </form>
+        </div><!--col-md--12-->
+
+	</div><!--row-->
+
+		<?php include('mkonnect/sample7.php'); ?>
+</div> 
+         
+      </div><!--list-group-->
+
+  
 
         </div>
 

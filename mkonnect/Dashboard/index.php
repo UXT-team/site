@@ -93,7 +93,7 @@ if (!$_SESSION['email']) {
       
           <div class="card">
             <div class="card-image">
-              <img src="images/download.png">
+              <img src="image/download.png">
             </div><!--card-image-->
             <div class="card-content">
               <p>Upload Songs<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
@@ -105,7 +105,7 @@ if (!$_SESSION['email']) {
         <div class="col-md-3">
           <div class="card">
             <div class="card-image">
-              <img src="images/albumn.png">
+              <img src="image/albumn.png">
             </div><!--card-image-->
           </div><!--card-->
           <div class="card-content">
@@ -115,7 +115,7 @@ if (!$_SESSION['email']) {
 
         <div class="col-md-3">
           <div class="card">
-            <img src="images/downloads.png">
+            <img src="image/downloads.png">
           </div><!--card-->
           <div class="card-content">
             <p>Download Views<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
@@ -124,7 +124,7 @@ if (!$_SESSION['email']) {
 
         <div class="col-md-3">
           <div class="card">
-            <img src="images/users.png">
+            <img src="image/users.png">
           </div><!--card-->
           <div class="card-content">
             <p>Skiza Artiste<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
@@ -133,7 +133,7 @@ if (!$_SESSION['email']) {
 
         <div class="col-md-3">
           <div class="card">
-            <img src="images/songview.png">
+            <img src="image/songview.png">
           </div><!--card-->
           <div class="card-content">
             <p>Song views<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
@@ -142,7 +142,7 @@ if (!$_SESSION['email']) {
 
           <div class="col-md-4">
           <div class="card">
-            <img src="images/albumnview.png">
+            <img src="image/albumnview.png">
           </div><!--card-->
           <div class="card-content">
             <p>Albumn View<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
@@ -151,7 +151,7 @@ if (!$_SESSION['email']) {
 
         <div class="col-md-3">
           <div class="card">
-            <img src="images/users.jpeg">
+            <img src="image/users.jpeg">
           </div><!--card-->
           <div class="card-content">
             <p>Skiza Artiste<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
