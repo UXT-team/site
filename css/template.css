@@ -124,7 +124,7 @@ body .sp-body-inner{overflow:hidden;}
 #sp-flag .flag{float:right;}
 #sp-menu-wrapper{border-bottom:1px solid #e4e4e4;background-color:#FF8C00;}
 #sp-header-wrapper{padding-top:15px;}
-#sp-header-wrapper .logo-wrapper .logo{background:url(../images/logu1.jpg) no-repeat 0 50%;width:250px;height:168px;float:left;top:0px;}
+#sp-header-wrapper .logo-wrapper .logo{background:url(../images/logo.jpg) no-repeat 0 50%;width:250px;height:168px;float:left;top:0px;}
 #sp-header-wrapper .logo-wrapper .logo-text{font-size:24px;}
 #sp-header-wrapper .logo-wrapper .logo-slogan{font-size:11px;}
 #sp-slideshow-wrapper #sp-slideshow .layout-minima .slider-controllers ul li{background:rgba(0,0,0,0.1);-webkit-box-shadow:inset 1px 1px 0 rgba(255,255,255,.4);-moz-box-shadow:inset 1px 1px 0 rgba(255,255,255,.4);box-shadow:inset 1px 1px 0 rgba(255,255,255,.4);border:1px solid #c7c7c7;}
