@@ -8,12 +8,12 @@ session_destroy();
 
 //destroy cookie
 
-setcookie("email", "", time()+(60*60*1));
-setcookie("password","", time()+(60*60*1));
+setcookie("email", "", time()+(20*20*1));
+setcookie("password","", time()+(20*20*1));
 
 //redirects them to login page 
 
-header("Location: mkonnect/login.php"); 
+header("Location: login.php"); 
 
 ?>
 

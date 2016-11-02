@@ -31,6 +31,14 @@
               <div class="help-block">Minimum of 6 characters</div>
             </div><!--col-md-6-->
             </div><!--form-group-->
+            
+            <div class="form-group">
+                  <div class="col-md-12">
+                     <div class="checkbox">
+               <label><input type="checkbox" name="re"> Remember me</label>
+                    </div>
+                  </div>
+                </div>
             <div class="form-group">
                     <div class="col-md-12">
                       
@@ -58,10 +66,36 @@ if (isset($_POST['login'])) {
 
   $email=$_POST['email'];
   $user_pass = $_POST['password'];
+  $remember = $_POST['re'];
 
   //encrypt password
 
   $user_pass = md5($user_pass);
+
+  //set cookie for 20minutes if remember is on
+        if (isset($_POST['re']) && $_POST['re'] == 'on'){
+
+        setcookie("email", $user_email, time()+(20*20*1));
+        setcookie("txt_pass", $pass, time()+(20*20*1));
+
+        }
+        /*unset the cookie
+     * it set cookie 1 sec back to current Unix time
+     * so that it will invalid */
+        else{
+          $user_email='';
+          $user_pass='';
+        
+
+         if (isset($_COOKIE['email'])) {
+             $user_email = $_COOKIE['email'];
+            }
+
+      if (isset($_COOKIE['password'])) {
+          $user_pass = $_COOKIE['password'];
+            }
+            }
+
 
   //select query
   $select_log = " select * from accounts WHERE email='$email' AND password='$user_pass'";
