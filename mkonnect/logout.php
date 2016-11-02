@@ -13,7 +13,7 @@ setcookie("password","", time()+(20*20*1));
 
 //redirects them to login page 
 
-header("Location: login.php"); 
+header("Location: ../mkonnect.php"); 
 
 ?>
 

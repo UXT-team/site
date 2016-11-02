@@ -792,6 +792,15 @@ It is a long established fact that a reader will be distracted by the readable c
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                      
+                      <p class="text-danger"><a href="mkonnect/resetpassword.php">Forgotten Password</a></p>
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+                
                 
 
             </fieldset>
