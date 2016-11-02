@@ -13,21 +13,16 @@
 </head>
 <body>
 
-                <!-- Button trigger popover-x -->
-<center><button class="btn btn-success btn-lg" data-toggle="popover-x" data-target="#myPopover1b" data-placement="top">Login</button></center>
- 
-<!-- PopoverX content -->
-<form class="form-vertical">
-    <div id="myPopover1b" class="popover popover-success">
-        <div class="arrow"></div>
-        <div class="popover-title"><span class="close" data-dismiss="popover-x">&times;</span><center><span class="glyphicon glyphicon-user"></span>Enter credentials<span class="glyphicon glyphicon-user"></span></center></div>
-        <div class="popover-content">
-            
-            <div class="form-group">
+<fieldset>
+  <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+  <div id="login">
+  <div class="col-md-6 col-md-offset-3 panel">
+   <legend><center> <span class="glyphicon glyphicon-user"></span>LOGIN <span class="glyphicon glyphicon-user"></span></center> </legend>
+    <div class="form-group">
                 <div class="col-md-12">
-        <input type="email" class="form-control" placeholder="email" required />
+        <input type="email" class="form-control" name="email" placeholder="email" required />
         <div class="help-block with-errors"></div><!--help-block-->
-        	</div><!--col-md--6-->
+          </div><!--col-md--6-->
             </div><!--form-group-->
             
             <div class="form-group">
@@ -36,13 +31,71 @@
               <div class="help-block">Minimum of 6 characters</div>
             </div><!--col-md-6-->
             </div><!--form-group-->
-        </div>
-        <div class="popover-footer">
-            <button type="submit" class="btn btn-sm btn-primary">Submit</button>
-            <button type="reset" class="btn btn-sm btn-default">Reset</button>
-        </div>
-    </div>
-</form>
+            <div class="form-group">
+                    <div class="col-md-12">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Login" name="login" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+            </div><!--col-md-6-->
+            </div><!--login-->
+  </form>
+</fieldset>
 
 </body>
 </html>
+
+<?php
+//include db..
+include('mkonnect/db/db_connection.php');
+
+
+
+if (isset($_POST['login'])) {
+  
+  //declare variable
+
+  $email=$_POST['email'];
+  $user_pass = $_POST['password'];
+
+  //encrypt password
+
+  $user_pass = md5($user_pass);
+
+  //select query
+  $select_log = " select * from accounts WHERE email='$email' AND password='$user_pass'";
+
+  $query = mysqli_query($con, $select_log);
+
+  if(mysqli_num_rows($query)){
+
+   // "<script>alert('Login successful')</script>";
+    // "<script>window.open('mkonnect/upload.php','_self')</script>";
+           echo "<script>window.open('mkonnect/uploadcv.php','_self')</script>";
+
+     //here session is used and value of $user_email store in $_SESSION.
+          
+      $row = mysqli_fetch_array($query);
+        $user_id = $row['id'];
+      session_start();//session starts here
+
+
+        $_SESSION['email']=$email;
+        $_SESSION['id']=$user_id;
+  }
+   else
+    {
+        echo "<script>alert('Email or password is incorrect! Please check your details and try again.')</script>";
+        
+    }
+
+
+
+
+}
+
+
+
+
+ ?>

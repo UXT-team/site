@@ -114,15 +114,9 @@ session_start();//session starts here
                     </div><!--checkbox-->
                   </div><!--col-md-12-->
                 </div><!-- form-group-->
-					<div class="form-group">
-							<div class="col-md-12">
-								<div class="panel">
-									<center><p class="text-danger">Forgetten Password? Click <a href="reset.php" target="blank">here</a></p></center>
-								</div><!--panel-->
-							</div><!--col-md-12-->
-						</div><!--form-group-->	
+	
 
-						<div class="form-group"
+						<div class="form-group">
 
 							<div class="col-md-12">
 
@@ -132,7 +126,6 @@ session_start();//session starts here
 							</div><!--col-md-12-->
 
 						</div><!--form-group-->
-
 						
 				</fieldset>
 

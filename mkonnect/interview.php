@@ -40,14 +40,16 @@ if(isset($_POST['interview']))
         //insert the user into the database.
 
     $insert_user="insert into interview_skills (name,email,phonenumber) VALUES ('$user_name','$user_email','$user_num')";
+    
+     if(mysqli_query($con,$insert_user))
+    {
+       echo"<script>window.open('thanks.php','_self')</script>";
+   }
 
     }
 
 
-   if(mysqli_query($con,$insert_user))
-    {
-       echo"<script>window.open('thanks.php','_self')</script>";
-   }
+  
 
 }
 

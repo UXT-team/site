@@ -17,49 +17,50 @@ include('header.php');
           $user_num = $_POST['txt_number'];
           $user_job = $_POST['txt_jobs']; 
 
-          //use select query
-
-     $select_query = "select * from marketing WHERE email='".$user_email."'";
-
-      $run_query=mysqli_query($con,$select_query);
-     $rows = mysqli_num_rows($run_query);
+         //here query check weather if user already registered so can't register again.
+    
+    $select_mechanic="select * from mechanic WHERE email='".$user_email."'";
+    
+    $run_mechanic=mysqli_query($con,$select_mechanic);
+   
+    
+     $rows = mysqli_num_rows($run_mechanic);
          
-    if($rows>0){
+    if($rows>0)
+    {
+ $mechanic_mail= "<script>alert(' ".$user_email." Email is already exist in our database, Please try another one!')</script>";
 
-         // $mail_exist= "<script>$('#thankyouModal').modal('show')</script>";
-          $mail_exist = "<script>alert(' ".$user_email." is already in Use. Try another email')</script>";
-          echo $mail_exist;
-            
-           exit();
+         echo $mechanic_mail;
 
-             //refresh page
+       
+        //refresh page
 
-           $redirect = "<script>window.open(mkonnect.php)</script>";
+         $refresh = "<script>window.open('mkonnect.php','_self')</script>";
+         
 
-           echo $redirect;
+    }
+    else{
 
-          }
+     // $_POST['marketing']=null;
+
+        //insert the user into the database.
+
+    $insert_mechanic="insert into mechanic (name,email,phonenumber,job_type,password) VALUES ('$user_name','$user_email','$user_num','$user_job',md5('$user_pass'))";
+
+    if(mysqli_query($con,$insert_mechanic))
+    {
+       echo"<script>window.open('mkonnect/uploadcv.php','_self')</script>";
+       
+       
+   }
+   else{
+    echo "<script>alert('Check your details and try again')</script>";
+    $refresh = "<script>window.open('mkonnect.php','_self')</script>";
+
+   }
+
+    }
           
-          
-
-            //insert into db
-  $insert_query = "insert into mechanic (name,email,phonenumber,job_type,password) VALUES ('$user_name','$user_email','$user_num','$user_job',md5('$user_pass'))";
-
-            if (mysqli_query($con,$insert_query)){
-
-              $run = "<script>window.open(mkonnect/cvs.html)</script>";
-              echo $run;
-            }
-            else{
-             // $eror = "<script>alert('please check your details and try again')</script>";
-              $eror ='<script>alert("check your details and try again again")</script>';
-            
-
-              sleep(10);
-
-              //redirect page
-              echo "<script>window.open('mkonnect.php')</script>";
-            }
           
 
         }

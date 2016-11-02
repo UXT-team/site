@@ -463,7 +463,7 @@ It is a long established fact that a reader will be distracted by the readable c
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. 720..." type="tel" required pattern=".{9,}" title="9 charachters minimum" value="" required />
                         <div class="help-block with-errors"></div>
                         
                     </div><!--col-md-12-->
@@ -538,7 +538,7 @@ It is a long established fact that a reader will be distracted by the readable c
                     
                     <div class="col-md-12">
                         
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
+                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. 0720..." type="tel" maxlength ="10"  required />
                         <div class="help-block with-errors"></div>
                         
                     </div><!--col-md-12-->
@@ -618,63 +618,20 @@ It is a long established fact that a reader will be distracted by the readable c
 		<div class="row">
               <?php include('mkonnect/telecom.php'); ?>
 
-      <div class="col-md-6 col-md-offset-3 well">
+              	<div class="col-md-6 col-md-offset-3 well">
             <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
     
-                <legend><center> <span class="glyphicon glyphicon-user"></span>Telecommunications <span class="glyphicon glyphicon-user"></span></center> </legend>
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Telecom<span class="glyphicon glyphicon-user"></span></center> </legend>
 
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                       
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
-                        <div class="help-block with-errors"></div>
-                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
+                <?php include('mkonnect/form.php') ?>
 
                 <div class="form-group">
                   <div class="col-md-12">
                     
                      <select class="form-control" name="txt_jobs"  required>
                     
-                              <option>Telcom Engineer</option>
+                              <option>Digital Brand Manager	</option>
                               <option>Digital Marketing Manager</option>
                               <option>Director of Digital Marketing</option>
                               <option>e-commerce Marketing Director</option>
@@ -709,10 +666,12 @@ It is a long established fact that a reader will be distracted by the readable c
             </fieldset>
             </form>
         </div><!--col-md--12-->
-        </div><!--row-->
 
 
-	<?php include('mkonnect/sample2.php');?>
+          </div><!--row-->
+
+
+	<?php include('mkonnect/sample3.php');?>
 
 </div><!--techom-->
 
@@ -733,50 +692,7 @@ It is a long established fact that a reader will be distracted by the readable c
     
                 <legend><center> <span class="glyphicon glyphicon-user"></span>Telecommunications <span class="glyphicon glyphicon-user"></span></center> </legend>
 
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                       
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
-                        <div class="help-block with-errors"></div>
-                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
+               <?php include('mkonnect/form.php') ?>
 
                 <div class="form-group">
                   <div class="col-md-12">
@@ -835,54 +751,20 @@ It is a long established fact that a reader will be distracted by the readable c
 	<div class="col-md-6 col-md-offset-3 well">
             <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
-    
+    			
                 <legend><center> <span class="glyphicon glyphicon-user"></span>Accounts <span class="glyphicon glyphicon-user"></span></center> </legend>
-
+               
+                <div class="panel">
                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                       
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
+                	<div class="col-md-6">
+                		<p class="text-warning"><center>Have an account?please</center> </p>	
+                		<legend><p class="text-success"><center><a href="#login">Login</a></center></p></legend>
+                	</div><!--col-md-6-->
                 </div><!--form-group-->
+                 </div><!--panel-->
 
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
-                        <div class="help-block with-errors"></div>
-                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
+                <?php include('mkonnect/form.php'); ?>
+                
                 <div class="form-group">
                   <div class="col-md-12">
                     
@@ -910,13 +792,18 @@ It is a long established fact that a reader will be distracted by the readable c
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
+                
 
             </fieldset>
             </form>
         </div><!--col-md--12-->
+       
 	</div><!--row-->
 
 	<?php include('mkonnect/sample5.php');?>
+	 <div class="col-md-12">
+        <?php include('mkonnect/login.php'); ?>
+        </div><!--col-md-12-->
 
 	</div><!--accounts-->
 
@@ -937,64 +824,20 @@ It is a long established fact that a reader will be distracted by the readable c
     
                 <legend><center> <span class="glyphicon glyphicon-user"></span>ICT <span class="glyphicon glyphicon-user"></span></center> </legend>
 
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                       
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
-                        <div class="help-block with-errors"></div>
-                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
+                <?php include('mkonnect/form.php'); ?>
 
                 <div class="form-group">
                   <div class="col-md-12">
                     
                      <select class="form-control" name="txt_jobs"  required>
                     
-                              <option>Auditor</option>
-                              <option>Budget Analyst</option>
-                              <option>Accounting Clerk</option>
-                              <option>Accounting Assistant</option>
-                              <option>Cost Accountant Credit</option>
-                              <option>Financial Analyst</option>
-                              <option>Credit Analyst</option>
-                              <option>Contracts and Financial Compliance Manager</option> 
+                              
+                              <option>Database Adminstrator</option>
+                              <option>User Support</option>
+                              <option>System Admin</option>
+                              <option>Web Developer</option>
+                              <option>Database Adminstrator</option>
+                              
 
                             </select>
 
@@ -1036,51 +879,8 @@ It is a long established fact that a reader will be distracted by the readable c
     
                 <legend><center> <span class="glyphicon glyphicon-user"></span>Engineering <span class="glyphicon glyphicon-user"></span></center> </legend>
 
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                       
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="txt_number" placeholder="Your Phone Number eg. +2547..." type="text" required pattern=".{9,}" title="9 charachters minimum" value="" required />
-                        <div class="help-block with-errors"></div>
-                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-                 <div class="form-group">
-                    
-                    <div class="col-md-12">
-                        
-                        <input class="form-control" name="confirm_pass" placeholder="confirm Password" type="password" data-match="#inputPassword" data-match-error="Whoops, these don't match" value="" id="inputPasswordConfirm" required />
-                        <div class="help-block with-errors"></div>
-                    </div><!--col-md-12-->
-                </div><!--form-group-->
-
+                	<?php include('mkonnect/form.php'); ?>
+                
                 <div class="form-group">
                   <div class="col-md-12">
                     
