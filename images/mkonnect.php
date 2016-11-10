@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 
  ?>
@@ -188,12 +188,6 @@ h1 {
 }
 .my-slider li {
 	float: left;
-}
-.btn-warning:hover,
-.btn-warning:focus,
-.btn-warning:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
 }
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -500,95 +494,127 @@ It is a long established fact that a reader will be distracted by the readable c
 
 </div><!--mkonnect-->
 <section>
-<div id="jobs" >
+<div id="jobs">
 	<div class="container">
 
   <div class="row">
 
-    <div class="col-md-12" >
+    <div class="col-md-12">
 
       <div class="list-group">
-      
+<ul class="list-group">
 
-      	<div class="thumbnail" style="margin:5%; >
-       			<ul class="list-group" style="margin:5%;">
-       				<li class="list-group-item panel">
-       				 <center><button class="btn btn-warning btn-block" data-toggle="collapse" href="#sales1" aria-expanded="false" aria-controls="collapseExample" style="font-size:2em;">SALES</button></center>
-       				<div id="sales1" class="collapse">
-       					<div class="row">
-       					<?php include('mkonnect/marketing.php');?>
-       					 </div><!--row-->
-       					 <?php include('mkonnect/sample2.php'); ?>
-       				</div><!--sales1-->
-       				</li>
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#sales" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-success btn-block " style="font-size:2em;">Sales & Marketing</button></center></a>
+ </li>
 
-       				       				<!--ict-->
-       				<li class="list-group-item panel">
-       					
-       					<center>
-       						<button class="btn btn-warning btn-block" data-toggle="collapse" href="#IT1" aria-expanded="false" aria-controls="collapseExample" style="font-size:2em;">ICT</button>
-       						<div id="IT1" class="collapse">
-       							<div class="row">
-       								<?php include('mkonnect/ict.php'); ?>
-       							</div><!--row-->
-       							<?php include('mkonnect/sample6.php'); ?>
-       						</div><!--ICT-->
-       					</center>
-       				</li>
+<div id="sales" class="collapse">
+	<div class="row">
+              <?php include('mkonnect/marketing.php'); ?>
 
-       				<!--Mechanic-->
-       				<li class="list-group-item panel">
-       					<center>
-       						<button class="btn btn-warning btn-block" data-toggle="collapse" href="#mechanic1" aria-expanded="false" aria-controls="collapseExample" style="font-size:2em;">Mechanic</button>
-       						<div id="mechanic1" class="collapse">
-       							<div class="row">
-       								<?php include('mkonnect/mechanic.php') ?>
-       							</div><!--row-->
-       							<?php include('mkonnect/sample4.php'); ?>
-       						</div><!--mechanic-->
-       					</center>
-       				</li>
+     
+        </div><!--row-->
 
-       				<!--telecom-->
-       				<li class="list-group-item">
-       					<center>
-       						<button class="btn btn-warning btn-block" data-toggle="collapse" href="#telecom3" aria-expanded="false" aria-controls="collapseExample" style="font-size:2em;">Telecom</button>
-       					
-       					<div id="telecom3" class="collapse">
-       						<div class="row">
-       							<?php include('mkonnect/telecom.php'); ?>
-       						</div><!--row-->
-       						<?php include('mkonnect/sample6.php'); ?>
-       					</div><!--telecom-->
-       					</center>
-       				</li>
+        <?php include('mkonnect/sample2.php'); ?>
 
-       				<!--accounts-->
+       
 
-       				<li class="list-group-item panel">
-       					<center>
-       					<button class="btn btn-warning btn-block" data-toggle="collapse" href="#accounts1" aria-expanded="false" aria-controls="collapseExample" style="font-size:2em;">Accounts</button>
-       					</center>
-       					<div id="accounts1" class="collapse">
-       						<div class="row">
-       						<?php include('mkonnect/accounts.php');?>
-       						</div><!--row-->
-       						
-       					</div><!--accounts-->
-       				</li>
+</div><!--sales&marketing-->
+
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#techom" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-warning btn-block " style="font-size:2em;">Telecommunications</button></center></a>
+ </li>
+
+<div id="techom" class="collapse">
+	
+		<div class="row">
+              <?php include('mkonnect/telecom.php'); ?>
+
+              
+
+          </div><!--row-->
 
 
+	<?php include('mkonnect/sample3.php');?>
 
+</div><!--techom-->
 
-       			</ul>
-      </div><!--thumbnail-->
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#mechanic" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-success btn-block " style="font-size:2em;">Mechanic</button></center></a>
+ </li>
 
+<div id="mechanic" class="collapse">
+
+	<div class="row">
+
+	<?php include('mkonnect/mechanic.php'); ?>
+
+        </div><!--row-->
+
+	<?php include('mkonnect/sample4.php'); ?>
+
+</div><!--mechanic-->
+ <li class="list-group-item">
+ <a data-toggle="collapse" href="#accounts" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-success btn-block " style="font-size: 2em;">Accounts</button></center></a>
+ </li>
+
+<div id="accounts" class="collapse">
+	<div class="row">
+<?php include('mkonnect/accounts.php'); ?>
+	
+	
+	
+       
+
+	</div><!--accounts-->
+
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#ICT_tech" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-warning btn-block " style="font-size: 2em;">ICT</button></center></a>
+ </li>
+
+ <div id="ICT_tech" class="collapse">
+         
+         <div class="row">
+
+		<?php include('mkonnect/ict.php'); ?>
+
+		
+
+		<?php include('mkonnect/sample6.php'); ?>
+</div> 
+
+<li class="list-group-item">
+ <a data-toggle="collapse" href="#engineer" aria-expanded="false" aria-controls="collapseExample">
+ <center><button class="btn btn-warning btn-block " style="font-size:2em;">Engineering</button></center></a>
+ </li>
+
+ <div id="engineer" class="collapse">
+        
+        <div class="row">
+
+		
+	</div><!--row-->
+
+		<?php include('mkonnect/sample7.php'); ?>
+</div> 
+         
+      </div><!--list-group-->
+
+  
+
+        </div>
+
+</ul>
 
       	
        </div><!--list-group-->
        </div><!--col-md--12-->
        </div><!--row-->
-             </div><!--row-->
        </div><!--container-->
        </div><!--jobs-->
       </section>

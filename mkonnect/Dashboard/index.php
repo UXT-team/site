@@ -75,6 +75,7 @@ if (!$_SESSION['email']) {
                   <div id="jobs" class="collapse">
                     <a href="views/engineering.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Engineering</a>
                     <a href="views/ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
+                    <a href="views/accounts.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Accounts</a>
                    <a href="views/medicine.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
                 </div>
                     

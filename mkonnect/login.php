@@ -18,12 +18,25 @@
   <div id="login">
   <div class="col-md-6 col-md-offset-3 panel">
    <legend><center> <span class="glyphicon glyphicon-user"></span>LOGIN <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+   <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Enter Email</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
     <div class="form-group">
                 <div class="col-md-12">
         <input type="email" class="form-control" name="email" placeholder="email" required />
         <div class="help-block with-errors"></div><!--help-block-->
           </div><!--col-md--6-->
             </div><!--form-group-->
+
+            <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Enter Password</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
             
             <div class="form-group">
                 <div class="col-md-12">
@@ -121,6 +134,7 @@ if (isset($_POST['login'])) {
    else
     {
         echo "<script>alert('Email or password is incorrect! Please check your details and try again.')</script>";
+	exit();
         
     }
 
