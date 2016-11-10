@@ -73,7 +73,7 @@ if (!$_SESSION['email']) {
                     <li class="list-group-item">
                       <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
                   <div id="jobs" class="collapse">
-                    <a href="views/engineering.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Engineering</a>
+                    <a href="views/marketing.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Sales & Marketing</a>
                     <a href="views/ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
                     <a href="views/accounts.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Accounts</a>
                    <a href="views/medicine.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
@@ -93,69 +93,62 @@ if (!$_SESSION['email']) {
         <div class="col-md-3">
       
           <div class="card">
-            <div class="card-image">
-              <img src="image/download.png">
-            </div><!--card-image-->
-            <div class="card-content">
-              <p>Upload Songs<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
-            </div><!--card-content-->
+            <div class="panel" style="padding:20%;">
+              <a href="interviewskills.php"><button class="btn btn-warning btn-lg" style="padding:10%;">Interview Skills</button></a>
+            </div><!--panel-->
          </div><!--content-box-small -->
        
         </div><!--col-md-4-->
 
         <div class="col-md-3">
           <div class="card">
-            <div class="card-image">
-              <img src="image/albumn.png">
-            </div><!--card-image-->
+            <div class="panel" style="padding:20%;">
+              <a href="cvwriting.php"><button class="btn btn-warning btn-lg" style="padding:10%;">CV WRITING</button></a>
+            </div><!--panel-->
+         </div><!--content-box-small -->
+        </div><!--col-md-4-->
+
+        <div class="col-md-3">
+          <div class="card">
+            <div class="panel" style="padding:20%;">
+              <a href="interviewskills.php"><button class="btn btn-warning btn-lg" style="padding:10%;">Help</button></a>
+            </div><!--panel-->
+         </div><!--content-box-small -->
+        </div><!--col-md-4-->
+
+        <div class="col-md-3">
+          <div class="card">
+            <!--<img src="image/user">-->
           </div><!--card-->
           <div class="card-content">
-            <p>Upload Albumn<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
+            <p> </p>
           </div><!--card-content-->
         </div><!--col-md-4-->
 
         <div class="col-md-3">
           <div class="card">
-            <img src="image/downloads.png">
+            <!--<img src="image/songview.png">-->
           </div><!--card-->
           <div class="card-content">
-            <p>Download Views<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
-          </div><!--card-content-->
-        </div><!--col-md-4-->
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="image/users.png">
-          </div><!--card-->
-          <div class="card-content">
-            <p>Skiza Artiste<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
-          </div><!--card-content-->
-        </div><!--col-md-4-->
-
-        <div class="col-md-3">
-          <div class="card">
-            <img src="image/songview.png">
-          </div><!--card-->
-          <div class="card-content">
-            <p>Song views<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
+            <p></p>
           </div><!--card-content-->
         </div><!--col-md-4-->
 
           <div class="col-md-4">
           <div class="card">
-            <img src="image/albumnview.png">
+            <!--<img src="image/albumnview.png">-->
           </div><!--card-->
           <div class="card-content">
-            <p>Albumn View<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
+            <p> </p>
           </div><!--card-content-->
         </div><!--col-md-4-->
 
         <div class="col-md-3">
           <div class="card">
-            <img src="image/users.jpeg">
+            <!--<img src="image/users.jpeg">-->
           </div><!--card-->
           <div class="card-content">
-            <p>Skiza Artiste<br>Ut tristique adipiscing mauris, sit amet suscipit metus porta quis. Donec dictum tincidunt erat, eu  </p>
+            <p>  </p>
           </div><!--card-content-->
         </div><!--col-md-4-->
 
