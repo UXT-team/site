@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UPLOAD</title>
+	<title>UPDATE PROFILE</title>
 	 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
      This must be loaded before fileinput.min.js -->
 <script src="js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@
 <script src="js/fileinput.min.js"></script>
 <!-- bootstrap.js below is needed if you wish to zoom and view file content 
      in a larger detailed modal dialog -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+
 <!-- optionally if you need a theme like font awesome theme you can include 
     it as mentioned below -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -38,18 +38,128 @@
      </style>
 </head>
 <body>
+<div class="row">
+<div class="container">
     <div class="jumbotron">
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label class="control-label">Select File</label>
-<input id="input-4" name="input4[]" type="file" multiple class="file-loading">
-<button class="btn btn-danger" name="upload"><a href="upload.php">Upload</a></button>
-<script>
-$(document).on('ready', function() {
-    $("#input-4").fileinput({showCaption: false});
-});
-</script>
-</form>
-    </div>
-</div>
+        <div class="panel">
+            <button style="float: right;" class="btn btn-danger btn-lg">Logout</button>
+            <h3 class="text-danger"><center>Please Update Your Profile the Click Next to Upload your C.V.</center></h3>
+            <div class="thumbnail" style=" margin:2%; ">
+                <div class="caption">
+                    
+                </div><!--caption-->
+                
+         
+                
+                <fieldset>
+                    
+                    <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator" style="padding: 5%;">
+       
+    
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Put Email Session varaible here to be seen by user here <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Enter FullName</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                 
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Enter Phone Number</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+               <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Nationality</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+              <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                        <select class="form-control" name="txt_nationality"  required>
+                    
+                              <option>Kenyan</option>
+                              <option>Ugandan</option>
+                              <option>East African</option>
+                              
+                              </select>
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Select Job Type</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+                  <div class="col-md-10">
+                    
+                     <select class="form-control" name="txt_jobs"  required>
+                    
+                              <option>Digital Brand Manager </option>
+                              <option>Digital Marketing Manager</option>
+                              <option>Director of Digital Marketing</option>
+                              <option>e-commerce Marketing Director</option>
+                              <option>e-commerce Marketing Manager</option>
+                              <option>Sales Engineer</option>
+                              <option>Sales Representative</option>
+                              <option>Senior Brand Manager</option>
+                              <option>Internet Marketing Specialist</option>
+                              <option>e-commerce Marketing Specialist</option>
+                              <option>Email Marketer</option>
+                              <option>Inside Sales Representative</option>
+                              <option>Internet Marketing Coordinator</option>
+                              <option>Internet Marketing Director</option>
+                              <option>Sales Director</option>
+                              <option>Senior Product Manager</option>
+                              
+
+                            </select>
+
+                  </div><!--col-md-12-->
+
+                </div><!--form-group-->
+              
+                 <div class="form-group">
+                    <div class="col-md-10">
+                      
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Next" name="profile" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                </fieldset>
+
+            
+
+            </div><!--thumbnail-->
+        </div><!--panel-->
+    </div><!--jumbotron-->
+    </div><!--container-->
+</div><!--row-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

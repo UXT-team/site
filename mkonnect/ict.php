@@ -1,6 +1,6 @@
 ﻿<div class="row">
 <div class="container">
-<div class="col-md-4 thumbnail" style="margin-top: 2%;">
+<div class="col-md-6 thumbnail" style="margin-top: 2%;">
             <center>
           <strong>Accounts Clerk</strong>
           <strong>Job Description</strong>
@@ -33,7 +33,7 @@
       </div><!--text-->
       </div><!--col-md-6-->
 
-      <div class="col-md-8" style="margin-top: 2%;">
+      <div class="col-md-6" style="margin-top: 2%;">
             <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
             <fieldset>
                 <div class="form-group">
@@ -45,30 +45,7 @@
 
                 <?php include('mkonnect/form.php'); ?>
 
-                <div class="form-group">
-                <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Select Job Type</label>
-                </div><!--col-md-12-->
-              </div><!--form-group-->
-
-                <div class="form-group">
-                  <div class="col-md-6">
-                    
-                     <select class="form-control" name="txt_jobs"  required>
-                    
-                              
-                              <option>Database Adminstrator</option>
-                              <option>User Support</option>
-                              <option>System Admin</option>
-                              <option>Web Developer</option>
-                              <option>Database Adminstrator</option>
-                              
-
-                            </select>
-
-                  </div><!--col-md-12-->
-
-                </div><!--form-group-->
+                
               
                  <div class="form-group">
                     <div class="col-md-8">
@@ -83,3 +60,5 @@
         </div><!--col-md--12-->
    </div> <!--containter-->    
   </div><!--row-->
+
+  <?php include('mkonnect/sample6.php'); ?>

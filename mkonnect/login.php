@@ -16,7 +16,9 @@
 <fieldset>
   <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
   <div id="login">
-  <div class="col-md-6 col-md-offset-3 panel">
+  <div class="col-md-6 col-md-offset-3 thumbnail">
+
+    
    <legend><center> <span class="glyphicon glyphicon-user"></span>LOGIN <span class="glyphicon glyphicon-user"></span></center> </legend>
 
    <div class="form-group">
