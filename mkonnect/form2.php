@@ -1,11 +1,4 @@
-<div class="row">
-<div class="col-md-6 well col-md-offset-3" >
-            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
-            <fieldset>
-          
-                <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
 
-               
 
                 <div class="form-group">
                 <div class="col-md-12">

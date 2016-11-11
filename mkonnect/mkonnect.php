@@ -45,21 +45,21 @@
 
   <div class="row">
   <div class="container">
-  <div class="col-md-12">
   <div class="jumbotron">
   <div class="thumnail">
     <div class="caption">
     <h3><center>Apply Below Job as Per Category</center></h3>
     </div>
   </div><!--thumbnail-->
-  <div class="col-md-3">
-  <div class="panel" style="padding:40%">
 
+
+
+  <div class="col-md-4">
+  <div class="panel" style="margin:10%; padding: 10%;">
 
 <p class="text-warning"> Sales & Marketing</p>
-    
+<button class="btn btn-warning btn-lg" style="padding:10%;" data-toggle="modal" data-target="#sales" >Apply</button>
 
-<button class="btn btn-warning btn-lg" style="padding:30%;" data-toggle="modal" data-target="#sales" >Apply</button>
     <!-- Modal -->
 <div class="modal fade" id="sales" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -69,6 +69,15 @@
         <h4 class="modal-title" id="myModalLabel">Register</h4>
       </div>
       <div class="modal-body">
+
+      <div class="row">
+<div class="col-md-6 well col-md-offset-3" >
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+          
+                <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+               
         <?php include('form2.php');?>
         <p>Already have an account?</p>
         <center><?php include('login2.php'); ?></center>
@@ -78,65 +87,106 @@
         <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         
-      </div>
-      </div>
+      </div><!--modal-footer-->
+      </div><!--modal-content-->
     </div><!--dialogue-->
-  </div><!--sales-->
+  </div><!--sales-->    
 </div><!--panel-->
+</div><!--col-md-4-->
 
-   </div><!--col-md-3-->
-    </div><!--panel-->
-     <div class="col-md-3">
-          <div class="card">
-            <div class="panel" style="padding: 40%">
-             <button class="btn btn-warning btn-lg" style="padding:30%;" data-toggle="modal" data-target="#myModal">Sales</button>
-            </div><!--panel-->
-         </div><!--content-box-small -->
-        </div><!--col-md-4-->
 
-        <div class="col-md-3">
-          <div class="card">
-            <div class="panel" style="padding: 40%">
-             <button class="btn btn-warning btn-lg" style="padding:30%;  ">Sales</button>
-            </div><!--panel-->
-         </div><!--content-box-small -->
-        </div><!--col-md-4-->
 
-        <div class="col-md-3">
-          <div class="card">
-            <div class="panel" style="padding: 40%">
-             <button class="btn btn-warning btn-lg" style="padding:30%;  ">Sales</button>
-            </div><!--panel-->
-         </div><!--content-box-small -->
-        </div><!--col-md-4-->
+<div class="col-md-4">
+  <div class="panel" style="padding:10%; margin:10%;">
+  <h3 class="text-warning">ICT</h3>
 
-    </div><!--jumbotron-->
-    </div><!--col-md-12-->
-    </div><!--container-->
-    </div><!--row-->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+    <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#IT">APPLY</button>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- Modal -->
+<div class="modal fade" id="IT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Register</h4>
       </div>
       <div class="modal-body">
-        ...
+
+      <div class="row">
+<div class="col-md-6 well col-md-offset-3" >
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+          
+                <legend><center> <span class="glyphicon glyphicon-user"></span> ICT <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+               
+        <?php include('form2.php');?>
+        <p>Already have an account?</p>
+        <center><?php include('login2.php'); ?></center>
+    
       </div>
-      <div class="modal-footer">
+      
+        <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        
+      </div><!--modal-footer-->
+      </div><!--modal-content-->
+    </div><!--dialogue-->
+  </div><!--ICT-->    
+
+  </div><!--panel-->
+</div><!--col-md-4-->
+
+
+<div class="col-md-4">
+  <div class="panel" style="padding:10%; margin:10%;">
+    
+  <h3 class="text-warning">Accounts</h3>
+
+    <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#accounts">APPLY</button>
+
+    <!-- Modal -->
+<div class="modal fade" id="accounts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Register</h4>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="modal-body">
+
+      <div class="row">
+<div class="col-md-6 well col-md-offset-3" >
+            <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+            <fieldset>
+          
+                <legend><center> <span class="glyphicon glyphicon-user"></span> Accounts <span class="glyphicon glyphicon-user"></span></center> </legend>
+
+               
+        <?php include('form2.php');?>
+        <p>Already have an account?</p>
+        <center><?php include('login2.php'); ?></center>
+    
+      </div>
+      
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div><!--modal-footer-->
+      </div><!--modal-content-->
+    </div><!--dialogue-->
+  </div><!--ICT-->    
+
+  </div><!--panel-->
+</div><!--col-md-4-->
+
+
+
+    </div><!--jumbotron-->
+     </div><!--container-->
+    </div><!--row-->
+    
+
 
 
 
