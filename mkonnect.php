@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 
  ?>
@@ -510,7 +510,7 @@ It is a long established fact that a reader will be distracted by the readable c
       <div class="list-group">
       
 
-      	<div class="thumbnail" style="margin:5%; >
+      	<div class="thumbnail" style="margin:5%;" >
        			<ul class="list-group" style="margin:5%;">
        				<li class="list-group-item panel">
        				 <center><button class="btn btn-warning btn-block" data-toggle="collapse" href="#sales1" aria-expanded="false" aria-controls="collapseExample" style="font-size:2em;">SALES</button></center>
@@ -518,7 +518,7 @@ It is a long established fact that a reader will be distracted by the readable c
        					<div class="row">
        					<?php include('mkonnect/marketing.php');?>
        					 </div><!--row-->
-       					 <?php include('mkonnect/sample2.php'); ?>
+       					 
        				</div><!--sales1-->
        				</li>
 
@@ -531,7 +531,7 @@ It is a long established fact that a reader will be distracted by the readable c
        							<div class="row">
        								<?php include('mkonnect/ict.php'); ?>
        							</div><!--row-->
-       							<?php include('mkonnect/sample6.php'); ?>
+       							
        						</div><!--ICT-->
        					</center>
        				</li>
@@ -544,7 +544,7 @@ It is a long established fact that a reader will be distracted by the readable c
        							<div class="row">
        								<?php include('mkonnect/mechanic.php') ?>
        							</div><!--row-->
-       							<?php include('mkonnect/sample4.php'); ?>
+       							
        						</div><!--mechanic-->
        					</center>
        				</li>
@@ -558,7 +558,7 @@ It is a long established fact that a reader will be distracted by the readable c
        						<div class="row">
        							<?php include('mkonnect/telecom.php'); ?>
        						</div><!--row-->
-       						<?php include('mkonnect/sample6.php'); ?>
+       						
        					</div><!--telecom-->
        					</center>
        				</li>

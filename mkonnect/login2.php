@@ -1,11 +1,6 @@
 
-
-
-
-                    <button class="btn btn-primary btn-lg" data-toggle="popover-x" data-target="#myPopover1b" data-placement="top">Login</button>
-                 
-                <!-- PopoverX content -->
-                <div id="myPopover1b" class="popover popover-default">
+                      <!-- PopoverX content -->
+                <div id="login2" class="">
                     <div class="arrow"></div>
                     
                     <div class="popover-content">
@@ -21,6 +16,6 @@
                         </form>
                     </div>
                     <div class="popover-footer">
-                        <button type="submit" class="btn btn-lg btn-primary">Login</button>
+                       <center> <button type="submit" class="btn btn-lg btn-primary">Login</button></center>
                     </div>
                 </div><!--mypopoverid-->
