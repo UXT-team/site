@@ -33,7 +33,10 @@
 
     <!-- Bootstrap -->
      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
      <style type="text/css">
+
      	
      </style>
 </head>
@@ -81,6 +84,40 @@
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
+             
+              <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                        <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Select Education Level</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+              <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                         <select class="form-control" name="txt_nationality"  required>
+                    
+                              <option>Degree</option>
+                              <option>Diploma</option>
+                              <option>Certificate</option>
+                              <option>KCSE</option>
+                              
+                              </select>
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
                <div class="form-group">
                 <div class="col-md-12">
                    <label for="txt_subject" class="control-label">Nationality</label>
@@ -103,9 +140,64 @@
                     </div><!--col-md--12-->
                 </div><!--form-group-->
 
+                <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Years Of Experience</label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                        <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label">Courses</label>
+                </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                
+
+                <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                        <input class="form-control" name="txt_courses" placeholder="Courses" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                <div class="col-md-12">
+                   <button class=" btn btn-warning" style="color: black; font-size:1.3em;" data-toggle="collapse" data-target="#collapsible-1" data-parent="#myAccordion">Add &nbsp;<i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                   
+    <div id="collapsible-1" class="collapse">
+          
+          <div class="form-group">
+                    
+                    <div class="col-md-10">
+                       
+                        <input class="form-control" name="txt_courses2" placeholder="Courses" type="text" id="inputName" required  />
+                        <div class="help-block with-errors"></div>
+                       
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+    </div><!--collapsible-1-->
+
+                </div><!--col-md-12-->
+                </div><!--form-group-->
+
                  <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Select Job Type</label>
+                   <label for="txt_subject" class="control-label">Current Profession</label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -114,10 +206,10 @@
                     
                      <select class="form-control" name="txt_jobs"  required>
                     
-                              <option>Digital Brand Manager </option>
-                              <option>Digital Marketing Manager</option>
-                              <option>Director of Digital Marketing</option>
-                              <option>e-commerce Marketing Director</option>
+                              <option>Accountant </option>
+                              <option>ICT</option>
+                              <option>Mechanic</option>
+                              <option>Hospitality</option>
                               <option>e-commerce Marketing Manager</option>
                               <option>Sales Engineer</option>
                               <option>Sales Representative</option>
@@ -155,11 +247,12 @@
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+
 </body>
 </html>
