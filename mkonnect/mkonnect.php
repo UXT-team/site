@@ -78,7 +78,7 @@
 
   <div class="row">
 <div class="col-md-12 well" style="padding:10%;">
-        <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator" novalidate="true">
+        <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform" data-toggle="validator" novalidate="true">
         <fieldset>
 
             <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
