@@ -78,7 +78,7 @@
   <div class="row">
 <div class="col-md-12 well" style="padding:10%;">
 
-        <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
+        <form role="form" class="form-horizontal"  name="contactform">
         <fieldset>
 
             <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
@@ -95,7 +95,7 @@
 
                 <div class="popover-content">
 
-                 <form class="form-vertical" data-toggle="validator" novalidate="true">
+                 <form class="form-vertical" data-toggle="validator" novalidate="true" action="register.php" method="POST">
                         <div class="form-group has-error has-danger">
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
 
@@ -115,7 +115,7 @@
                 </div><!--col-md-10-->
               </div><!--form-group-->
                 <form data-toggle="validator" novalidate="true" >
-                
+
                                 <div class="form-group">
                 <div class="col-md-12">
                    <label for="txt_subject" class="control-label">Enter Email</label>
@@ -123,15 +123,15 @@
               </div><!--form-group-->
 
                 <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                        
+
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
                         <div class="help-block with-errors"></div>
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
-               
+
 
                 <div class="form-group">
                 <div class="col-md-12">
@@ -140,11 +140,11 @@
               </div><!--form-group-->
 
                  <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                        
+
                         <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
+                        <div class="help-block">Minimum of 6 characters</div>
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
