@@ -77,7 +77,8 @@
 
   <div class="row">
 <div class="col-md-12 well" style="padding:10%;">
-        <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform" data-toggle="validator" novalidate="true">
+
+        <form role="form" class="form-horizontal" action="register.php" method="POST" name="contactform">
         <fieldset>
 
             <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
@@ -86,9 +87,9 @@
                 <div class="col-md-10">
                   <div class="panel">
                     <p>If you Already have an account, please Login</p>
-                    <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button> 
+                    <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button>
                     <div id="login2" class="collapse">
-                      
+
                         <div id="login2">
                 <div class="arrow"></div>
 
@@ -97,11 +98,11 @@
                  <form class="form-vertical" data-toggle="validator" novalidate="true">
                         <div class="form-group has-error has-danger">
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
-                            <div class="help-block with-errors"><ul class="list-unstyled"><li>Please include an '@' in the email address. 'intadmin' is missing an '@'.</li></ul></div>
+
                         </div>
 
-                       <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required="">
-                    <div class="help-block">Minimum of 6 characters</div>
+                       <input class="form-control" name="password" placeholder="Your Password" type="password" value="" required="">
+
                     </form>
                 </div>
                 <div class="popover-footer">
@@ -113,49 +114,16 @@
                   </div><!--panel-->
                 </div><!--col-md-10-->
               </div><!--form-group-->
+                <form data-toggle="validator" novalidate="true" >
+                <?php include('form.php'); ?>
+
+                <input class="btn btn-lg btn-success btn-block" type="submit" value="Register" name="accounts" style="font-size:1.25em;" >
+
+                </form>
 
 
-            <div class="form-group">
-            <div class="col-md-12">
-               <label for="txt_subject" class="control-label">Enter Email</label>
-            </div><!--col-md-12-->
-          </div><!--form-group-->
-
-            <div class="form-group has-error has-danger">
-
-                <div class="col-md-12">
-
-                    <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
-                    <div class="help-block with-errors"><ul class="list-unstyled"><li>Please include an '@' in the email address. 'intadmin' is missing an '@'.</li></ul></div>
-                </div><!--col-md-12-->
-            </div><!--form-group-->
-
-
-
-            <div class="form-group">
-            <div class="col-md-12">
-               <label for="txt_subject" class="control-label">Enter Password</label>
-            </div><!--col-md-12-->
-          </div><!--form-group-->
-
-             <div class="form-group has-error has-danger">
-
-                <div class="col-md-12">
-
-                    <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required="">
-                    <div class="help-block">Minimum of 6 characters</div>
-                </div><!--col-md-12-->
-            </div><!--form-group-->
-
-
-
-             <div class="form-group">
-                <div class="col-md-8">
-
-                     <input class="btn btn-lg btn-success btn-block disabled" type="submit" value="Register" name="accounts" style="font-size:1.25em;">
 
                 </div><!--col-md--12-->
-            </div><!--form-group-->
 
             <div class="form-group">
                 <div class="col-md-12">
@@ -174,7 +142,7 @@
 </div><!--row-->        <p>Already have an account?Login Below</p>
     <center>
                   <!-- PopoverX content -->
-            
+
 </center>
 
 

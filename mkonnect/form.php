@@ -1,14 +1,3 @@
- 
-              <div class="form-group">
-                    
-                    <div class="col-md-10">
-                       
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
                 <div class="form-group">
                 <div class="col-md-12">
                    <label for="txt_subject" class="control-label">Enter Email</label>
@@ -20,7 +9,7 @@
                     <div class="col-md-10">
                         
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus required />
-                        <div class="help-block with-errors"></div>
+                       
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
@@ -36,7 +25,7 @@
                     
                     <div class="col-md-10">
                         
-                        <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
-                        <div class="help-block">Minimum of 6 characters</div>                        
+                        <input class="form-control" name="password" placeholder="Your Password" type="password"  value="" required />
+                                               
                     </div><!--col-md-12-->
                 </div><!--form-group-->
