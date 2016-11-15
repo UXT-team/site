@@ -49,8 +49,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="form.php">Register</a></li>
-          <li class="active"><a href="#section3">Login</a></li>
+          <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#section4">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
@@ -83,7 +82,37 @@
 
             <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
 
+              <div class="form-group">
+                <div class="col-md-10">
+                  <div class="panel">
+                    <p>If you Already have an account, please Login</p>
+                    <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button> 
+                    <div id="login2" class="collapse">
+                      
+                        <div id="login2">
+                <div class="arrow"></div>
 
+                <div class="popover-content">
+
+                 <form class="form-vertical" data-toggle="validator" novalidate="true">
+                        <div class="form-group has-error has-danger">
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
+                            <div class="help-block with-errors"><ul class="list-unstyled"><li>Please include an '@' in the email address. 'intadmin' is missing an '@'.</li></ul></div>
+                        </div>
+
+                       <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required="">
+                    <div class="help-block">Minimum of 6 characters</div>
+                    </form>
+                </div>
+                <div class="popover-footer">
+                   <center> <button type="submit" class="btn btn-lg btn-success btn-lg">Login</button></center>
+                </div>
+            </div><!--mypopoverid-->
+
+                    </div><!--login-->
+                  </div><!--panel-->
+                </div><!--col-md-10-->
+              </div><!--form-group-->
 
 
             <div class="form-group">
@@ -145,25 +174,7 @@
 </div><!--row-->        <p>Already have an account?Login Below</p>
     <center>
                   <!-- PopoverX content -->
-            <div id="login2" class="">
-                <div class="arrow"></div>
-
-                <div class="popover-content">
-
-                 <form class="form-vertical" data-toggle="validator" novalidate="true">
-                        <div class="form-group has-error has-danger">
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
-                            <div class="help-block with-errors"><ul class="list-unstyled"><li>Please include an '@' in the email address. 'intadmin' is missing an '@'.</li></ul></div>
-                        </div>
-
-                       <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required="">
-                    <div class="help-block">Minimum of 6 characters</div>
-                    </form>
-                </div>
-                <div class="popover-footer">
-                   <center> <button type="submit" class="btn btn-lg btn-primary">Login</button></center>
-                </div>
-            </div><!--mypopoverid-->
+            
 </center>
 
 
