@@ -77,7 +77,7 @@
 
   <div class="row">
 <div class="col-md-12 well" style="padding:10%;">
-        <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" >
+        
         <fieldset>
 
             <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
@@ -94,7 +94,7 @@
 
                 <div class="popover-content">
 
-                 <form class="form-vertical" data-toggle="validator" novalidate="true">
+                 <form class="form-vertical" action="login.php" method="POST">
                         <div class="form-group has-error has-danger">
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
                             
@@ -102,19 +102,21 @@
 
                        <input class="form-control" name="password" placeholder="Your Password" type="password"  required="">
                     <div class="help-block">Minimum of 6 characters</div>
-                    </form>
+                    
                 </div>
                 <div class="popover-footer">
-                   <center> <button type="submit" class="btn btn-lg btn-success btn-lg">Login</button></center>
+                   <center> <button type="submit" name="telecom" class="btn btn-lg btn-success btn-lg">Login</button></center>
                 </div>
+                </form>
             </div><!--mypopoverid-->
+            
 
                     </div><!--login-->
                   </div><!--panel-->
                 </div><!--col-md-10-->
               </div><!--form-group-->
 
-
+              <form action="register.php" method="POST">
             <div class="form-group">
             <div class="col-md-12">
                <label for="txt_subject" class="control-label">Enter Email</label>
@@ -150,11 +152,12 @@
              <div class="form-group">
                 <div class="col-md-8">
 
-                     <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts" style="font-size:1.25em;">
+                     <input class="btn btn-lg btn-success btn-block " type="submit" value="Register"  style="font-size:1.25em;">
 
                 </div><!--col-md--12-->
             </div><!--form-group-->
-
+            </form>
+            
             <div class="form-group">
                 <div class="col-md-12">
 
@@ -166,7 +169,7 @@
 
 
         </fieldset>
-        </form>
+   
     </div><!--col-md--12-->
 
 </div><!--row-->        <p>Already have an account?Login Below</p>

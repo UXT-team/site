@@ -6,7 +6,7 @@ include('header.php');
          <?php 
 
         //include db
-        include('mkonnect/db/db_connection.php');
+        include('db/db_connection.php');
 
         if(isset($_POST['telecom'])){
 
