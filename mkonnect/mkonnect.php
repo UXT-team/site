@@ -62,7 +62,7 @@
 <div class="divider" id="section2"></div>
 
 <section class="konnect">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Jobs Here</h1></div>
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Jobs Here</h1><h2><span class=" glyphicon glyphicon-hand-down"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2><h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
 </section>
 
 <!-- Modal -->
