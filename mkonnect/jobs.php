@@ -26,13 +26,9 @@
 <!-- optionally if you need a theme like font awesome theme you can include 
     it as mentioned below -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<script src="js/fa.js"></script>
-<!-- optionally if you need translation for your language then include 
-    locale file as mentioned below -->
-<script src="js/<lang>.js"></script>
 
-    <!-- Bootstrap -->
-     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      
      <style type="text/css">
@@ -155,129 +151,27 @@
                        
                     </div><!--col-md--12-->
                 </div><!--form-group-->
-
-                <div class="form-group">
-                <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Courses</label>
-                </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                
-
+        
                 <div class="form-group">
                     
                     <div class="col-md-10">
                        
-                        <input class="form-control" name="txt_courses" placeholder="Courses" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                <div class="col-md-12">
-                   <button class=" btn btn-warning" style="color: black; font-size:1.3em;" data-toggle="collapse" data-target="#collapsible-1" data-parent="#myAccordion">Add &nbsp;<i class="fa fa-plus-square" aria-hidden="true"></i></button>
-                   
-    <div id="collapsible-1" class="collapse">
-          
-          <div class="form-group">
-                    
-                    <div class="col-md-10">
-                       
-                        <input class="form-control" name="txt_courses2" placeholder="Courses" type="text" id="inputName" required  />
-                        <div class="help-block with-errors"></div>
-                       
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-    </div><!--collapsible-1-->
-
-                </div><!--col-md-12-->
-                </div><!--form-group-->
-
-                 <div class="form-group">
-                <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Current Profession</label>
-                </div><!--col-md-12-->
-              </div><!--form-group-->
-
-                <div class="form-group">
-                  <div class="col-md-10">
-                    
-                     <select class="form-control" name="txt_jobs"  required>
-                    
-                              <option>Accountant </option>
-                              <option>ICT</option>
-                              <option>Mechanic</option>
-                              <option>Hospitality</option>
-                              <option>e-commerce Marketing Manager</option>
-                              <option>Sales Engineer</option>
-                              <option>Sales Representative</option>
-                              <option>Senior Brand Manager</option>
-                              <option>Internet Marketing Specialist</option>
-                              <option>e-commerce Marketing Specialist</option>
-                              <option>Email Marketer</option>
-                              <option>Inside Sales Representative</option>
-                              <option>Internet Marketing Coordinator</option>
-                              <option>Internet Marketing Director</option>
-                              <option>Sales Director</option>
-                              <option>Senior Product Manager</option>
-                              
-
-                            </select>
-
-                  </div><!--col-md-12-->
-
-                </div><!--form-group-->
-
-                <div class="form-group">
-                  <div class="col-md-10">
-                    <div class="container">
-  
-    <input type="hidden" name="count" value="1" / style="">
+                        
+                    <input type="hidden" name="count" value="1" / style="">
         <div class="control-group" id="fields">
-            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
+            <label class="control-label" for="field1">Courses</label>
             <div class="controls" id="profs"> 
                 <form class="input-append">
                     <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
-                </form>
-            <br>
-            <small>Press + to add another form field :)</small>
-            </div>
-        </div>
-
-        <div class="input_fields_wrap">
-    <button class="add_field_button">Add More Fields</button>
-    <div><input type="text" name="mytext[]"></div>
-</div>
-
-<script>
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
-    var add_button      = $(".add_field_button"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-    })
-});
-</script>
-        
-  
-</div>
-                  </div><!--col-md-10-->
+                    <br>
+            <small>Press + to add More courses if Any :)</small>
+            </div><!--control-->
+        </div><!--control-group-->
+                       
+                    </div><!--col-md-10-->
                 </div><!--form-group-->
-              
-                 <div class="form-group">
+
+                <div class="form-group">
                     <div class="col-md-10">
                       
                          <input class="btn btn-lg btn-success btn-block" type="submit" value="Next" name="profile" style="font-size:1.25em;" >
@@ -285,6 +179,13 @@
                     </div><!--col-md--12-->
                 </div><!--form-group-->
 
+
+  
+
+                </div><!--col-md-12-->
+            
+            </form>
+            
                 </fieldset>
 
             
@@ -294,6 +195,20 @@
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+<script src="js/fa.js"></script>
+<!-- optionally if you need translation for your language then include 
+    locale file as mentioned below -->
+<script src="js/<lang>.js"></script>
 <script type="text/javascript">
           $(document).ready(function(){
     var next = 1;
@@ -325,12 +240,7 @@
 });
 
         </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-<script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
 
 </body>
 </html>
