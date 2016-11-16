@@ -113,11 +113,13 @@
                 <div class="col-sm-4">
              <div class="well">
 
-             <button class="btn btn-lg btn-warning" data-toggle="collapse" data-target="#collapsible-1" data-parent="#myAccordion"> Add Experience</button>
+              <div class="experience">
+                 <button class="work-experience btn-warning btn-lg">Add Work Experience</button>
+                <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="job-experience"></div><!--inputs-->
 
-              <div id="collapsible-1" class="collapse">
-                <?php include('jobs.php'); ?>
-              </div><!--collapsible-1-->
+            </div><!--addskill-->
+            
+            <button class="btn btn-primary ">submit</button>
 
              </div><!--well-->
              </div><!--col-sm-4-->
@@ -125,35 +127,37 @@
              <div class="col-md-4">
                <div class="well">
                  
-                 <button class="btn btn-lg btn-warning" data-toggle="collapse" data-target="#collapsible-2" data-parent="#myAccordion"> Add Job Category </button>
+                  <div class="addcategory">
+                 <button class="categories btn-warning btn-lg">Add JobCategory</button>
+                <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="category"></div><!--inputs-->
 
-              <div id="collapsible-2" class="collapse">
-                <?php include('jobs.php'); ?>
-              </div><!--collapsible-1-->
+            </div><!--addskill-->
+            <button class="btn btn-primary"> Submit</button>
+
+               </div><!--well-->
+             </div><!--col-md-4-->
+
+              <div class="col-md-4">
+               <div class="well">
+                    <div class="adds">
+    <button class="qualifications btn-warning btn-lg">Add Qualifications</button>
+    <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="qualification"></div><!--inputs-->
+
+            </div><!--adds-->
+            <button class="btn btn-primary">Submit</button>
 
                </div><!--well-->
              </div><!--col-md-4-->
 
              <div class="col-md-4">
                <div class="well">
-                 
-                 <button class="btn btn-lg btn-warning" data-toggle="collapse" data-target="#collapsible-3" data-parent="#myAccordion"> Add Qualifications </button>
+               
+                 <div class="addskills">
+                 <button class="skills btn-warning btn-lg">Add Skills</button>
+                <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="skill"></div><!--inputs-->
 
-              <div id="collapsible-3" class="collapse">
-                <?php include('jobs.php'); ?>
-              </div><!--collapsible-1-->
-
-               </div><!--well-->
-             </div><!--col-md-4-->
-
-             <div class="col-md-4">
-               <div class="well">
-                 
-                 <button class="btn btn-lg btn-warning" data-toggle="collapse" data-target="#collapsible-4" data-parent="#myAccordion"> Add Skills </button>
-
-              <div id="collapsible-4" class="collapse">
-                <?php include('jobs.php'); ?>
-              </div><!--collapsible-1-->
+            </div><!--addskill-->
+            <button class="btn btn-primary"> Submit</button>
 
               
                </div><!--well-->
@@ -161,12 +165,14 @@
 
              <div class="col-md-4">
                <div class="well">
-                 
-                 <button class="btn btn-lg btn-warning" data-toggle="collapse" data-target="#collapsible-5" data-parent="#myAccordion"> Add Courses </button>
 
-              <div id="collapsible-5" class="collapse">
-                <?php include('jobs.php'); ?>
-              </div><!--collapsible-1-->
+                  <div class="addcourse">
+    <button class="courses btn-warning btn-lg">Add Courses</button>
+    <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="course"></div><!--inputs-->
+
+            </div><!--adds-->
+            <button class="btn btn-primary"> Submit</button>
+             
 
                </div><!--well-->
              </div><!--col-md-4-->
@@ -411,5 +417,165 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+          $(document).ready(function(){
+    var next = 1;
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
+
+    
+});
+
+        </script>
+
+<!--qualifications-->
+
+        <script>
+  $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".adds"); //Fields wrapper
+    var add_button      = $(".qualifications"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="qualification"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+</script>
+
+
+<!--courses-->
+
+<script>
+  
+  $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".addcourse"); //Fields wrapper
+    var add_button      = $(".courses"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="course"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+
+
+</script>
+
+<!--skill-->
+
+<script>
+  
+  $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".addskills"); //Fields wrapper
+    var add_button      = $(".skills"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="skill"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+
+
+</script>
+
+<!--JobCategory-->
+
+<script>
+  $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".addcategory"); //Fields wrapper
+    var add_button      = $(".categories"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="category"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+</script>
+
+
+<!--work experience-->
+
+<script>
+  $(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".experience"); //Fields wrapper
+    var add_button      = $(".work-experience"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="job-experience"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+</script>
+
+
+
+
+
   </body>
 </html>
