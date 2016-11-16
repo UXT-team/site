@@ -51,6 +51,8 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#">Interviewskills</a></li>
+          <li class="active"><a href="#">C.V.skills</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#section4">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>

@@ -30,20 +30,51 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/mkonnect.css">
      
      <style type="text/css">
 
      	
      </style>
 </head>
-<body>
-<div class="row">
+  <body data-spy="scroll" data-target="#uxt" data-offset="70">
+<!-- Fixed navbar -->
+<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
+          <li class="active"><a href="#section4">About</a></li>
+          <li class="active"><a href="#contacts">Contact</a></li>
+          <li class="active"><a href="#contacts">LogOut</a></li>
+          
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
+  
+<section class="konnect">
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Update your Profile here</h1> <span class=" glyphicon glyphicon-edit"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
+</section>
+
+
+
+
+<div class="row" style="margin-top: 8%;">
 <div class="container">
-    <div class="jumbotron">
+    <div class="panel">
         <div class="panel">
-            <button style="float: right;" class="btn btn-danger btn-lg">Logout</button>
             <h3 class="text-danger"><center>Please Update Your Profile the Click Next to Upload your C.V.</center></h3>
-            <div class="thumbnail" style=" margin:2%; ">
+            <div class="well" style=" margin:0%; ">
                 <div class="caption">
                     
                 </div><!--caption-->
@@ -52,14 +83,14 @@
                 
                 <fieldset>
                     
-                    <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator" style="padding: 5%;">
+                    <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator" style="padding: 2%;">
        
     
-                <legend><center> <span class="glyphicon glyphicon-user"></span>Put Email Session varaible here to be seen by user here <span class="glyphicon glyphicon-user"></span></center> </legend>
+                <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
                  <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Enter FullName</label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter FullName</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -67,7 +98,7 @@
                     
                     <div class="col-md-10">
                        
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required  />
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required=""  />
                         <div class="help-block with-errors"></div>
                        
                     </div><!--col-md--12-->
@@ -76,7 +107,7 @@
                  
                  <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Enter Phone Number</label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Phone Number</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -85,7 +116,7 @@
                     
                     <div class="col-md-10">
                        
-                        <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required  />
+                        <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required=""  />
                         <div class="help-block with-errors"></div>
                        
                     </div><!--col-md-12-->
@@ -93,7 +124,7 @@
 
                 <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Select Education Level</label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Select Education Level</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -101,7 +132,7 @@
                     
                     <div class="col-md-10">
                        
-                         <select class="form-control" name="txt_nationality"  required>
+                         <select class="form-control" name="txt_nationality"  required="">
                     
                               <option>Degree</option>
                               <option>Diploma</option>
@@ -116,7 +147,7 @@
 
                <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Nationality</label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Nationality</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -124,7 +155,7 @@
                     
                     <div class="col-md-10">
                        
-                        <select class="form-control" name="txt_nationality"  required>
+                        <select class="form-control" name="txt_nationality"  required="">
                     
                               <option>Kenyan</option>
                               <option>Ugandan</option>
@@ -138,7 +169,7 @@
 
                 <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label">Years Of Experience</label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Years Of Experience</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -146,7 +177,7 @@
                     
                     <div class="col-md-10">
                        
-                        <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required  />
+                        <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required=""  />
                         <div class="help-block with-errors"></div>
                        
                     </div><!--col-md--12-->
@@ -159,12 +190,13 @@
                         
                     <input type="hidden" name="count" value="1" / style="">
         <div class="control-group" id="fields">
-            <label class="control-label" for="field1">Courses</label>
+            <label class="control-label" for="field1"><h3 class="text-warning"><center>Courses</center></h3></label>
             <div class="controls" id="profs"> 
                 <form class="input-append">
-                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
+                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8" required="" /><button id="b1" class="btn add-more" type="button">+</button></div>
                     <br>
             <small>Press + to add More courses if Any :)</small>
+            </form>
             </div><!--control-->
         </div><!--control-group-->
                        
@@ -209,11 +241,96 @@
 <!-- optionally if you need translation for your language then include 
     locale file as mentioned below -->
 <script src="js/<lang>.js"></script>
+
+<!--navbar-->
+<script type="text/javascript">
+  /* affix the navbar after scroll below header */
+$('#nav').affix({
+      offset: {
+        top: $('header').height()-$('#nav').height()
+      }
+}); 
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#nav' })
+
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},1000);
+})
+
+/* smooth scrolling for nav sections */
+$('#nav .navbar-nav li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top+20;
+  $('body,html').animate({scrollTop:posi},700);
+})
+
+/* google maps */
+
+// enable the visual refresh
+google.maps.visualRefresh = true;
+
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+    // try HTML5 geolocation
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+
+      var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'Location found using HTML5.'
+      });
+
+      map.setCenter(pos);
+    }, function() {
+      handleNoGeolocation(true);
+    });
+  } else {
+    // browser doesn't support geolocation
+    handleNoGeolocation(false);
+  }
+}
+
+function handleNoGeolocation(errorFlag) {
+  if (errorFlag) {
+    var content = 'Error: The Geolocation service failed.';
+  } else {
+    var content = 'Error: Your browser doesn\'t support geolocation.';
+  }
+
+  var options = {
+    map: map,
+    position: new google.maps.LatLng(60, 105),
+    content: content
+  };
+
+  var infowindow = new google.maps.InfoWindow(options);
+  map.setCenter(options.position);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+  
+
+
+<!--add-remove-experience-->
 <script type="text/javascript">
           $(document).ready(function(){
     var next = 1;
     $(".add-more").click(function(e){
         e.preventDefault();
+        
         var addto = "#field" + next;
         var addRemove = "#field" + (next);
         next = next + 1;
