@@ -36,17 +36,18 @@
 <body>
 <div class="well-md">
 <?php //$user_id = $_SESSION['id'];
-   // $email=$_SESSION['id'];
-   // echo $email;
-   // if(!$_SESSION){
-   //   header("location: mkonnect/login.php");
-   // }
-     $valid_formats = array("jpg", "png", "gif", "doc","docx");
+
+    // $email=$_SESSION['id'];
+    // echo $email;
+    // if(!$_SESSION){
+    //   header("location: mkonnect/login.php");
+    // }
+      $valid_formats = array("jpg", "png", "gif", "doc","docx");
 $max_file_size = 1024*1000; //100 kb
 $path = "uploads/"; // Upload directory
 $count = 0;
 
-$db_name = "m_konnect";
+$db_name = "mkonnect";
 $conn=mysqli_connect('localhost','root',"");
 error_reporting(0);
 mysqli_select_db($conn, $db_name) or die("cannot connect to the  DB");

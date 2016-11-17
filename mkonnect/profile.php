@@ -51,6 +51,8 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#">Interviewskills</a></li>
+          <li class="active"><a href="#">C.V.skills</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#section4">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
@@ -72,8 +74,8 @@
 
           <ul class="list-group">
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="profile.php"><center><span class="glyphicon glyphicon-user"></span> <strong> Profile </strong></center></a></li>
-      <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>
-      <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="uploadcv.php"> <center> <i class="fa fa-cloud-upload" aria-hidden="true"></i><strong>Upload C.V. </strong></center></a></li>
+      <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>-->
+      <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="uploadcv.php"> <center> <i class="fa fa-cloud-upload" aria-hidden="true"></i><strong>Upload C.V. </strong></center></a></li>-->
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="#"> <center> <i class="fa fa-question-circle-o" aria-hidden="true"></i><strong>Help </strong></center></a></li>
       
     </ul>
@@ -110,68 +112,109 @@
               
               <hr>
               <div class="row">
-                <div class="col-sm-4">
-             <div class="well">
+                
 
-              <div class="experience">
-                 <button class="work-experience btn-warning btn-lg">Add Work Experience</button>
-                <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="job-experience"></div><!--inputs-->
-
-            </div><!--addskill-->
-            
-            <button class="btn btn-primary ">submit</button>
-
-             </div><!--well-->
-             </div><!--col-sm-4-->
-
-             <div class="col-md-4">
+             <div class="col-md-12">
                <div class="well">
-                 
-                  <div class="addcategory">
-                 <button class="categories btn-warning btn-lg">Add JobCategory</button>
-                <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="category"></div><!--inputs-->
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+                     <p><strong><center>VEIWS</center></strong></p>
+                     <p style="text-align: center">Accountant</p>
+                     <p style="text-align: center">CPA</p>
+                     <p style="text-align: center">CPS</p>
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
+                 <div class="col-md-6-">
+                  <div class="addcategory" >
+                 <!--<button class="categories btn-warning btn-lg" >Add JobCategory</button>
+                <div class="inputs" style="margin-top:10%  margin-bottom:4%;"><input type="text" name="category" style="margin-top: 5%"></div>-->
+                <!--inputs-->
+                <div class="col-md-6">
+                <select class="form-control" name="txt_category">
+                  <option>Accountant</option>
+                  <option>Accountant</option>
+                  <option>Accountant</option>
+                  <option>Accountant</option>
+                  <option>Accountant</option>
+                  <option>Accountant</option>
+                  <option>Accountant</option>
+                </select>
+                </div>
 
             </div><!--addskill-->
-            <button class="btn btn-primary"> Submit</button>
+            </div><!--col-md-6-->
+            <button class="btn btn-primary" style=" margin-top:0%;margin-left:55%"> Submit</button>
 
                </div><!--well-->
              </div><!--col-md-4-->
 
-              <div class="col-md-4">
+              <div class="col-md-12">
                <div class="well">
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+                     <p><strong><center>VEIWS</center></strong></p>
+                     <p style="text-align: center">Accountant</p>
+                     <p style="text-align: center">CPA</p>
+                     <p style="text-align: center">CPS</p>
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
                     <div class="adds">
     <button class="qualifications btn-warning btn-lg">Add Qualifications</button>
     <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="qualification"></div><!--inputs-->
 
             </div><!--adds-->
-            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" style=" margin-top:2%;margin-left:55%">Submit</button>
 
                </div><!--well-->
              </div><!--col-md-4-->
 
-             <div class="col-md-4">
+             <div class="col-md-12">
                <div class="well">
-               
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+                     <p><strong><center>VEIWS</center></strong></p>
+                     <p style="text-align: center">Accountant</p>
+                     <p style="text-align: center">CPA</p>
+                     <p style="text-align: center">CPS</p>
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
                  <div class="addskills">
                  <button class="skills btn-warning btn-lg">Add Skills</button>
                 <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="skill"></div><!--inputs-->
 
             </div><!--addskill-->
-            <button class="btn btn-primary"> Submit</button>
+            <button class="btn btn-primary" style=" margin-top:2%;margin-left:55%"> Submit</button>
 
               
                </div><!--well-->
              </div><!--col-md-4-->
 
-             <div class="col-md-4">
+             <div class="col-md-12">
                <div class="well">
+
+               <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+                     <p><strong><center>VEIWS</center></strong></p>
+                     <p style="text-align: center">Accountant</p>
+                     <p style="text-align: center">CPA</p>
+                     <p style="text-align: center">CPS</p>
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
 
                   <div class="addcourse">
     <button class="courses btn-warning btn-lg">Add Courses</button>
     <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="course"></div><!--inputs-->
 
             </div><!--adds-->
-            <button class="btn btn-primary"> Submit</button>
+            <button class="btn btn-primary" style=" margin-top:2%;margin-left:55%"> Submit</button>
              
 
                </div><!--well-->
@@ -273,7 +316,7 @@
     </div><!--/row-->
 
 
-<div class="divider" id="section2"></div>
+<div class="divider" id="section2"></div><!--divider-->
   
 <section class="konnect">
   <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Tell a Friend To find Jobs here</h1></div>
@@ -463,7 +506,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="qualification"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+            $(wrapper).append('<div><input type="text" name="qualification" style="margin-top: 2%; margin-left:50%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
         }
     });
     
@@ -488,7 +531,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="course"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+            $(wrapper).append('<div><input type="text" name="course" style="margin-top: 0%; margin-left:50%; margin-bottom:1%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
         }
     });
     
@@ -514,7 +557,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="skill"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+            $(wrapper).append('<div><input type="text" name="skill" style="margin-top: 0%; margin-left:50%; margin-bottom:1%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
         }
     });
     
@@ -539,7 +582,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="category"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
+            $(wrapper).append('<div><input type="text" name="category" style="margin-top: 1%; margin-left:50%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
         }
     });
     
