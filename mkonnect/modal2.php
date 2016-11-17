@@ -49,44 +49,6 @@
   </div>
 </div>
 
-<div class="row">
-<div class="col-md-10">
-<div class="jumbotron">
-<input type="text" id="text1"> +
-<input type="text" id="text2">
-<button id="button" class="btn btn-danger"> = </button>
-<div id="result"></div><!--result-->
-
-<?php 
-$text1 = $_POST['text1'];
-$text2 = $_POST['text2'];
- 
-echo $text1 + $text2; 
-?>
-
-
-
-</div><!--well-->
-
-
-
-</div><!--col-md-10-->
-
-</div><!--row-->
-<script >
-    $('#button').click(function() {
-    var val1 = $('#text1').val();
-    var val2 = $('#text2').val();
-    $.ajax({
-        type: 'POST',
-        url: 'modal.php',
-        data: { text1: val1, text2: val2 },
-        success: function(response) {
-            $('#result').html(response);
-        }
-    });
-})
-</script>
 
 <div class="container" style="margin-top:20% ">
   <div class="row">
@@ -220,6 +182,34 @@ echo $text1 + $text2;
         e.preventDefault(); $(this).parent('div').remove(); x--;
     })
 });
+</script>
+
+
+<div class="row">
+<div class="col-md-10">
+<div class="jumbotron">
+<input type="text" id="text1"> +
+<input type="text" id="text2">
+<button id="button" class="btn btn-danger"> = </button>
+<div id="result"></div><!--result-->
+
+</div><!--well-->
+
+</div><!--col-md-10-->
+</div><!--row-->
+<script >
+    $('#button').click(function() {
+    var val1 = $('#text1').val();
+    var val2 = $('#text2').val();
+    $.ajax({
+        type: 'POST',
+        url: 'process.php',
+        data: { text1: val1, text2: val2 },
+        success: function(response) {
+            $('#result').html(response);
+        }
+    });
+})
 </script>
 
         
