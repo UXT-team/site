@@ -101,7 +101,7 @@
 
                     <div class="col-md-10">
 
-                         <select class="form-control" name="txt_nationality"  required>
+                         <select class="form-control" name="txt_cert"  required>
 
                               <option>Degree</option>
                               <option>Diploma</option>
