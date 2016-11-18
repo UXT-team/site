@@ -77,7 +77,7 @@
 
   <div class="row">
 <div class="col-md-12 well" style="padding:10%;">
-        
+
         <fieldset>
 
             <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
@@ -86,9 +86,9 @@
                 <div class="col-md-10">
                   <div class="panel">
                     <p>If you Already have an account, please Login</p>
-                    <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button> 
+                    <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button>
                     <div id="login2" class="collapse">
-                      
+
                         <div id="login2">
                 <div class="arrow"></div>
 
@@ -97,19 +97,19 @@
                  <form class="form-vertical" action="login.php" method="POST">
                         <div class="form-group has-error has-danger">
                         <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
-                            
+
                         </div>
 
                        <input class="form-control" name="password" placeholder="Your Password" type="password"  required="">
                     <div class="help-block">Minimum of 6 characters</div>
-                    
+
                 </div>
                 <div class="popover-footer">
-                   <center> <button type="submit" name="telecom" class="btn btn-lg btn-success btn-lg">Login</button></center>
+                   <center> <input type="submit" name="login" value="Login" class="btn btn-lg btn-success btn-lg"></input></center>
                 </div>
                 </form>
             </div><!--mypopoverid-->
-            
+
 
                     </div><!--login-->
                   </div><!--panel-->
@@ -128,7 +128,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
-                    
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -152,12 +152,12 @@
              <div class="form-group">
                 <div class="col-md-8">
 
-                     <input class="btn btn-lg btn-success btn-block " type="submit" value="Register"  style="font-size:1.25em;">
+                     <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"  style="font-size:1.25em;">
 
                 </div><!--col-md--12-->
             </div><!--form-group-->
             </form>
-            
+
             <div class="form-group">
                 <div class="col-md-12">
 
@@ -169,13 +169,13 @@
 
 
         </fieldset>
-   
+
     </div><!--col-md--12-->
 
 </div><!--row-->        <p>Already have an account?Login Below</p>
     <center>
                   <!-- PopoverX content -->
-            
+
 </center>
 
 

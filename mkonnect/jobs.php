@@ -20,10 +20,10 @@
 <script src="js/plugins/purify.min.js" type="text/javascript"></script>
 <!-- the main fileinput plugin file -->
 <script src="js/fileinput.min.js"></script>
-<!-- bootstrap.js below is needed if you wish to zoom and view file content 
+<!-- bootstrap.js below is needed if you wish to zoom and view file content
      in a larger detailed modal dialog -->
 
-<!-- optionally if you need a theme like font awesome theme you can include 
+<!-- optionally if you need a theme like font awesome theme you can include
     it as mentioned below -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -31,10 +31,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="css/mkonnect.css">
-     
-     <style type="text/css">
+          <style type="text/css">
 
-     	
+
      </style>
 </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70">
@@ -55,13 +54,13 @@
           <li class="active"><a href="#section4">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
-          
+
       </div><!--/.nav-collapse -->
     </div><!--/.container -->
 </div><!--/.navbar -->
 
 <div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
-  
+
 <section class="konnect">
   <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Update your Profile here</h1> <span class=" glyphicon glyphicon-edit"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
 </section>
@@ -76,16 +75,16 @@
             <h3 class="text-danger"><center>Please Update Your Profile the Click Next to Upload your C.V.</center></h3>
             <div class="well" style=" margin:0%; ">
                 <div class="caption">
-                    
+
                 </div><!--caption-->
-                
-         
-                
+
+
+
                 <fieldset>
-                    
+
                     <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator" style="padding: 2%;">
-       
-    
+
+
                 <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
                  <div class="form-group">
@@ -95,30 +94,28 @@
               </div><!--form-group-->
 
                 <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                       
                         <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required=""  />
                         <div class="help-block with-errors"></div>
-                       
+
                     </div><!--col-md--12-->
                 </div><!--form-group-->
 
-                 
+
                  <div class="form-group">
                 <div class="col-md-12">
                    <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Phone Number</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
-             
+
               <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                       
                         <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required=""  />
                         <div class="help-block with-errors"></div>
-                       
+
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
@@ -129,19 +126,19 @@
               </div><!--form-group-->
 
               <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                       
+
                          <select class="form-control" name="txt_nationality"  required="">
-                    
+
                               <option>Degree</option>
                               <option>Diploma</option>
                               <option>Certificate</option>
                               <option>KCSE</option>
-                              
+
                               </select>
                         <div class="help-block with-errors"></div>
-                       
+
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
@@ -152,18 +149,19 @@
               </div><!--form-group-->
 
               <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                       
+
+
                         <select class="form-control" name="txt_nationality"  required="">
-                    
+
                               <option>Kenyan</option>
                               <option>Ugandan</option>
                               <option>East African</option>
-                              
+
                               </select>
                         <div class="help-block with-errors"></div>
-                       
+
                     </div><!--col-md--12-->
                 </div><!--form-group-->
 
@@ -174,24 +172,24 @@
               </div><!--form-group-->
 
                 <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                       
+
                         <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required=""  />
                         <div class="help-block with-errors"></div>
-                       
+
                     </div><!--col-md--12-->
                 </div><!--form-group-->
-        
+
                 <div class="form-group">
-                    
+
                     <div class="col-md-10">
-                       
-                        
+
+
                     <input type="hidden" name="count" value="1" / style="">
         <div class="control-group" id="fields">
             <label class="control-label" for="field1"><h3 class="text-warning"><center>Courses</center></h3></label>
-            <div class="controls" id="profs"> 
+            <div class="controls" id="profs">
                 <form class="input-append">
                     <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8" required="" /><button id="b1" class="btn add-more" type="button">+</button></div>
                     <br>
@@ -199,28 +197,28 @@
             </form>
             </div><!--control-->
         </div><!--control-group-->
-                       
+
                     </div><!--col-md-10-->
                 </div><!--form-group-->
 
                 <div class="form-group">
                     <div class="col-md-10">
-                      
+
                          <input class="btn btn-lg btn-success btn-block" type="submit" value="Next" name="profile" style="font-size:1.25em;" >
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
 
 
-  
+
 
                 </div><!--col-md-12-->
-            
+
             </form>
-            
+
                 </fieldset>
 
-            
+
 
             </div><!--thumbnail-->
         </div><!--panel-->
@@ -238,7 +236,7 @@
 
 <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
 <script src="js/fa.js"></script>
-<!-- optionally if you need translation for your language then include 
+<!-- optionally if you need translation for your language then include
     locale file as mentioned below -->
 <script src="js/<lang>.js"></script>
 
@@ -249,7 +247,7 @@ $('#nav').affix({
       offset: {
         top: $('header').height()-$('#nav').height()
       }
-}); 
+});
 
 /* highlight the top nav as scrolling occurs */
 $('body').scrollspy({ target: '#nav' })
@@ -321,7 +319,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
 
-  
+
 
 
 <!--add-remove-experience-->
@@ -330,7 +328,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     var next = 1;
     $(".add-more").click(function(e){
         e.preventDefault();
-        
+
         var addto = "#field" + next;
         var addRemove = "#field" + (next);
         next = next + 1;
@@ -341,8 +339,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
         $(addto).after(newInput);
         $(addRemove).after(removeButton);
         $("#field" + next).attr('data-source',$(addto).attr('data-source'));
-        $("#count").val(next);  
-        
+        $("#count").val(next);
+
             $('.remove-me').click(function(e){
                 e.preventDefault();
                 var fieldNum = this.id.charAt(this.id.length-1);
@@ -351,9 +349,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
                 $(fieldID).remove();
             });
     });
-    
 
-    
+
+
 });
 
         </script>
