@@ -48,6 +48,101 @@
         </div>
   </div>
 </div>
+<div class="row">
+  <div class="col-md-10">
+    <div class="jumbotron">
+     <div id="form-content">
+      
+      <form method="post" id="reg-form" autocomplete="off">
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_fname" id="lname" placeholder="First Name" required />
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_lname" id="lname" placeholder="Last Name" required />
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_email" id="lname" placeholder="Your Mail" required />
+        </div>
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_contact" id="lname" placeholder="Contact No" required />
+        </div>
+
+        <div class="form-group">
+          <div class="input_fields_wrap">
+    <button class="add_field_button btn-primary btn-lg">Add More Fields</button>
+    <input type="text" name="txt_mytext" class="form-control" id="mytext" placeholder="please enter skills" required />
+</div><!--input_fields_wrap-->
+        </div><!--form-group-->
+        
+        <hr />
+        
+        <div class="form-group">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+        
+      </form>
+            
+            </div>
+            
+
+            <script type="text/javascript">
+$(document).ready(function() {  
+  
+  // submit form using $.ajax() method
+  
+  $('#reg-form').submit(function(e){
+    
+    e.preventDefault(); // Prevent Default Submission
+    
+    $.ajax({
+      url: 'submit.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
+    })
+    .done(function(data){
+      $('#form-content').fadeOut('slow', function(){
+        $('#form-content').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
+  
+  /*
+  // submit form using ajax short hand $.post() method
+  
+  $('#reg-form').submit(function(e){
+    
+    e.preventDefault(); // Prevent Default Submission
+    
+    $.post('submit.php', $(this).serialize() )
+    .done(function(data){
+      $('#form-content').fadeOut('slow', function(){
+        $('#form-content').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');
+    });
+    
+  });
+  */
+  
+});
+</script>
+
+
+
+
+    </div><!--jumbotron-->
+  </div><!--col-md-10-->
+</div><!--row-->
 
 <div class="row">
 <div class="col-md-10">
@@ -103,6 +198,7 @@ echo $text1 + $text2;
         </div>
   </div>
 </div>
+
 
 
 <script type="text/javascript">
@@ -171,18 +267,14 @@ echo $text1 + $text2;
 
 
         <div class="input_fields_wrap">
-    <button class="add_field_button">Add More Fields</button>
-    <div><input type="text" name="mytext[]"></div>
+    <button class="add_field_button btn-primary btn-lg">Add More Fields</button>
+    <div id="form-content"><form method="post" id="reg" autocomplete="off"><input type="text" name="mytext[]"></form></div>
 </div>
 
- <div class="adds" style="margin:4%; padding: 4%">
-    <button class="categories btn-primary btn-lg">Add More Fields</button>
-    <div><input type="text" name="category"></div>
-</div>
-
+ <button class="btn btn-primary">Submit</button>
 <script>
   $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
+    var max_fields      = 2; //maximum input boxes allowed
     var wrapper         = $(".input_fields_wrap"); //Fields wrapper
     var add_button      = $(".add_field_button"); //Add button ID
     
@@ -191,15 +283,20 @@ echo $text1 + $text2;
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+            $(wrapper).append('<div><input type="text" name="txt_mytext" class="form-control" id="mytext" placeholder="please enter skills" required /><a href="#" class="remove_field">Remove</a></div>'); //add input box
         }
     });
     
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
         e.preventDefault(); $(this).parent('div').remove(); x--;
     })
+
 });
 </script>
+
+
+
+
 
 <script>
   $(document).ready(function() {
@@ -222,7 +319,7 @@ echo $text1 + $text2;
 });
 </script>
 
-        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </body>
 </html>

@@ -93,6 +93,7 @@
           
           <ul class="nav nav-tabs" id="myTab">
             <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#profile" data-toggle="tab">View Full Profile</a></li>
             <li><a href="#messages" data-toggle="tab">Messages</a></li>
             <li><a href="#shortcode" data-toggle="tab">ShortCode Service</a></li>
             <li><a href="#settings" data-toggle="tab">Settings</a></li>
@@ -119,20 +120,30 @@
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
-                     <p><strong><center>VEIWS</center></strong></p>
-                     <p style="text-align: center">Accountant</p>
-                     <p style="text-align: center">CPA</p>
-                     <p style="text-align: center">CPS</p>
+                        
+                        <div id="form-category">
+
+                       </div><!--form-content-->
+
                    </div><!--thumbnail-->
                  </div><!--panel-->
                  </div><!--col-md-6-->
+
                  <div class="col-md-6-">
                   <div class="addcategory" >
-                 <!--<button class="categories btn-warning btn-lg" >Add JobCategory</button>
-                <div class="inputs" style="margin-top:10%  margin-bottom:4%;"><input type="text" name="category" style="margin-top: 5%"></div>-->
-                <!--inputs-->
+                
                 <div class="col-md-6">
-                <select class="form-control" name="txt_category">
+
+              
+                </div><!--col-md-6-->
+
+                <?php include("category-help.php"); ?>
+
+          <div id="form-category">
+      
+      <form method="post" id="reg-category" autocomplete="off">
+        
+        <select class="form-control" name="txt_category" id="category">
                   <option>Accountant</option>
                   <option>Accountant</option>
                   <option>Accountant</option>
@@ -141,88 +152,319 @@
                   <option>Accountant</option>
                   <option>Accountant</option>
                 </select>
-                </div>
+
+  
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Job Category & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
 
             </div><!--addskill-->
             </div><!--col-md-6-->
-            <button class="btn btn-primary" style=" margin-top:0%;margin-left:55%"> Submit</button>
-
-               </div><!--well-->
-             </div><!--col-md-4-->
+             </div><!--well-->
+             </div><!--col-md-12-->
 
               <div class="col-md-12">
                <div class="well">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
-                     <p><strong><center>VEIWS</center></strong></p>
-                     <p style="text-align: center">Accountant</p>
-                     <p style="text-align: center">CPA</p>
-                     <p style="text-align: center">CPS</p>
+                     <div id="form-qualification">
+
+                       </div><!--form-content-->
+
                    </div><!--thumbnail-->
                  </div><!--panel-->
                  </div><!--col-md-6-->
+
+                    <?php include("qualification-help.php"); ?>
+
                     <div class="adds">
-    <button class="qualifications btn-warning btn-lg">Add Qualifications</button>
-    <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="qualification"></div><!--inputs-->
 
+                      <div id="form-qualification">
+      
+      <form method="post" id="reg-qualification" autocomplete="off">
+        
+        <div class="form-group">
+          <select class="form-control" name="txt_qualification" id="category">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  
+                </select>
+        </div><!--form-group-->
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Experience & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
+    
             </div><!--adds-->
-            <button class="btn btn-primary" style=" margin-top:2%;margin-left:55%">Submit</button>
-
                </div><!--well-->
-             </div><!--col-md-4-->
+             </div><!--col-md-12-->
 
              <div class="col-md-12">
                <div class="well">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
-                     <p><strong><center>VEIWS</center></strong></p>
-                     <p style="text-align: center">Accountant</p>
-                     <p style="text-align: center">CPA</p>
-                     <p style="text-align: center">CPS</p>
+
+                      <div id="form-skills">
+
+                       </div><!--form-skills-->
+
                    </div><!--thumbnail-->
                  </div><!--panel-->
                  </div><!--col-md-6-->
+
+                 <?php include("skills-help.php"); ?>
+
                  <div class="addskills">
-                 <button class="skills btn-warning btn-lg">Add Skills</button>
-                <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="skill"></div><!--inputs-->
-
+                   
+          <div id="form-skills">
+      
+      <form method="post" id="reg-skills" autocomplete="off">
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
+        </div>
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Skills & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
             </div><!--addskill-->
-            <button class="btn btn-primary" style=" margin-top:2%;margin-left:55%"> Submit</button>
-
-              
+            
                </div><!--well-->
-             </div><!--col-md-4-->
+             </div><!--col-md-12-->
 
              <div class="col-md-12">
                <div class="well">
-
-               <div class="col-md-6">
+                <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
-                     <p><strong><center>VEIWS</center></strong></p>
-                     <p style="text-align: center">Accountant</p>
-                     <p style="text-align: center">CPA</p>
-                     <p style="text-align: center">CPS</p>
+
+                      <div id="form-courses">
+
+                       </div><!--form-content-->
+
                    </div><!--thumbnail-->
                  </div><!--panel-->
                  </div><!--col-md-6-->
 
-                  <div class="addcourse">
-    <button class="courses btn-warning btn-lg">Add Courses</button>
-    <div class="inputs" style="margin-top:4%; margin-bottom:4%;"><input type="text" name="course"></div><!--inputs-->
+                  <?php include("course-help.php"); ?>
 
-            </div><!--adds-->
-            <button class="btn btn-primary" style=" margin-top:2%;margin-left:55%"> Submit</button>
-             
-
+                 <div class="addskills">
+                   
+          <div id="form-courses">
+      
+      <form method="post" id="reg-courses" autocomplete="off">
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_courses" id="courses" placeholder="Add courses" required />
+        </div>
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Courses & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
+            </div><!--addskill-->
+            
                </div><!--well-->
-             </div><!--col-md-4-->
+             </div><!--col-md-12-->
 
              </div><!--row-->
               
              </div><!--/tab-pane-->
+             <div class="tab-pane" id="profile">
+              <div class="row">
+                <div class="jumbotron">
+                <div class="col-md-12">
+                  <div class="panel">
+                    <h2><center><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;FUll Name &nbsp;&nbsp; <span class="glyphicon glyphicon-user"></span></center></h2>
+                    
+                  </div><!--panel-->
+                  <div class="thumbnail">
+        <table class="table table-striped" border="0">
+    
+          <tr>
+    <td colspan="2">
+      <div class="alert alert-info">
+        <strong><center>Full  Name</center></strong> 
+      </div>
+    </td>
+    </tr>
+    
+    <tr>
+  
+    <td><?php #echo $fname ?></td>
+    </tr>
+    
+    
+    </table>
+    <?php ?>
+                  </div><!--thumbnail-->
+                </div><!--col-md-12-->
+
+                <div class="col-md-12">
+                  <div class="panel">
+                    
+                    <h2><center><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Email &nbsp;&nbsp; <span class="glyphicon glyphicon-envelope"></span></center></h2>
+                  </div><!--panel-->
+                  <div class="thumbnail">
+          <table class="table table-striped" border="0">
+    
+    <tr>
+    <td colspan="2">
+      <div class="alert alert-info">
+        <strong><center>Email</center></strong> 
+      </div>
+    </td>
+    </tr>
+    
+    <tr>
+  
+    <td><?php #echo $fname ?></td>
+    </tr>
+    
+    
+    </table>
+    <?php ?>
+  
+
+                  </div><!--thumbnail-->
+                </div><!--col-md-12-->
+
+                <div class="col-md-12">
+                  <div class="panel">
+                    <h2><center>Job Category</center></h2>
+                  </div><!--panel-->
+
+                  <div class="thumbnail">
+                     <table class="table table-striped" border="0">
+    
+    <tr>
+    <td colspan="2">
+      <div class="alert alert-info">
+        <strong><center>Job Category</center></strong> 
+      </div>
+    </td>
+    </tr>
+    
+    <tr>
+  
+    <td><?php #echo $fname ?></td>
+    </tr>
+    
+    
+    </table>
+    <?php ?>
+                  </div><!--thumbnail-->
+
+                </div><!--col-md-12-->
+
+                <div class="col-md-12">
+                  <div class="panel">
+                    
+                    <h2><center><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Courses &nbsp;&nbsp;<span class="glyphicon glyphicon-folder-open"></span></center></h2>
+                  </div><!--panel-->
+                  <div class="thumbnail">
+                    
+               <table class="table table-striped" border="0">
+    
+    <tr>
+    <td colspan="2">
+      <div class="alert alert-info">
+        <strong><center>Courses</center></strong> 
+      </div>
+    </td>
+    </tr>
+    
+    <tr>
+  
+    <td><?php #echo $fname ?></td>
+    </tr>
+    
+    
+    </table>
+    <?php ?>
+
+                  </div><!--thumbnail-->
+                </div><!--col-md-12-->
+
+                <div class="col-md-12">
+                  <div class="panel">
+                    
+                    <h2><center><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Qualifications&nbsp;&nbsp;<span class="glyphicon glyphicon-education"></span></center></h2>
+                  </div><!--panel-->
+                  <div class="thumbnail">
+           <table class="table table-striped" border="0">
+    
+    <tr>
+    <td colspan="2">
+      <div class="alert alert-info">
+        <strong><center>Certifications</center></strong> 
+      </div>
+    </td>
+    </tr>
+    
+    <tr>
+  
+    <td><?php #echo $fname ?></td>
+    </tr>
+    
+    
+    </table>
+    <?php ?>
+                  </div><!--thumbnail-->
+                </div><!--col-md-12-->
+
+                <div class="col-md-12">
+                  <div class="panel">
+                    <h2><center>Skills</center></h2>
+                  </div><!--panel-->
+
+                  <div class="thumbnail">
+                     <table class="table table-striped" border="0">
+    
+    <tr>
+    <td colspan="2">
+      <div class="alert alert-info">
+        <strong><center>Skills</center></strong> 
+      </div>
+    </td>
+    </tr>
+    
+    <tr>
+  
+    <td><?php #echo $fname ?></td>
+    </tr>
+    
+    
+    </table>
+    <?php ?>
+                  </div><!--thumbnail-->
+
+                </div><!--col-md-12-->
+
+                </div><!--jumbotron-->
+                </div><!--row-->
+             </div><!--tab-pane-->
              <div class="tab-pane" id="messages">
                
                <h2></h2>
@@ -461,160 +703,155 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script type="text/javascript">
-          $(document).ready(function(){
-    var next = 1;
-    $(".add-more").click(function(e){
-        e.preventDefault();
-        var addto = "#field" + next;
-        var addRemove = "#field" + (next);
-        next = next + 1;
-        var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
-        var newInput = $(newIn);
-        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
-        var removeButton = $(removeBtn);
-        $(addto).after(newInput);
-        $(addRemove).after(removeButton);
-        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
-        $("#count").val(next);  
-        
-            $('.remove-me').click(function(e){
-                e.preventDefault();
-                var fieldNum = this.id.charAt(this.id.length-1);
-                var fieldID = "#field" + fieldNum;
-                $(this).remove();
-                $(fieldID).remove();
-            });
-    });
-    
-
-    
-});
-
-        </script>
-
-<!--qualifications-->
-
-        <script>
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".adds"); //Fields wrapper
-    var add_button      = $(".qualifications"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="qualification" style="margin-top: 2%; margin-left:50%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-    })
-});
-</script>
 
 
-<!--courses-->
 
-<script>
+
+            <script type="text/javascript">
+$(document).ready(function() {  
   
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".addcourse"); //Fields wrapper
-    var add_button      = $(".courses"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="course" style="margin-top: 0%; margin-left:50%; margin-bottom:1%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-    })
-});
-
-
-</script>
-
-<!--skill-->
-
-<script>
+  // submit form using $.ajax() method
   
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".addskills"); //Fields wrapper
-    var add_button      = $(".skills"); //Add button ID
+  $('#reg-form').submit(function(e){
     
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="skill" style="margin-top: 0%; margin-left:50%; margin-bottom:1%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
-        }
-    });
+    e.preventDefault(); // Prevent Default Submission
     
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
+    $.ajax({
+      url: 'submit.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
     })
-});
-
-
-</script>
-
-<!--JobCategory-->
-
-<script>
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".addcategory"); //Fields wrapper
-    var add_button      = $(".categories"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="category" style="margin-top: 1%; margin-left:50%;"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
+    .done(function(data){
+      $('#form-content').fadeOut('slow', function(){
+        $('#form-content').fadeIn('slow').html(data);
+      });
     })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
 });
 </script>
 
+<!--Job-Category-->
 
-<!--work experience-->
-
-<script>
-  $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
-    var wrapper         = $(".experience"); //Fields wrapper
-    var add_button      = $(".work-experience"); //Add button ID
+   <script type="text/javascript">
+$(document).ready(function() {  
+  
+  // submit form using $.ajax() method
+  
+  $('#reg-category').submit(function(e){
     
-    var x = 1; //initlal text box count
-    $(add_button).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="job-experience"/><a href="#" class="remove_field text-danger">Remove</a></div>'); //add input box
-        }
-    });
+    e.preventDefault(); // Prevent Default Submission
     
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
+    $.ajax({
+      url: 'category.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
     })
+    .done(function(data){
+      $('#form-category').fadeOut('slow', function(){
+        $('#form-category').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
 });
 </script>
+
+<!-- Qualifications-->
+
+<script type="text/javascript">
+$(document).ready(function() {  
+  
+  // submit form using $.ajax() method
+  
+  $('#reg-qualification').submit(function(e){
+    
+    e.preventDefault(); // Prevent Default Submission
+    
+    $.ajax({
+      url: 'qualification.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
+    })
+    .done(function(data){
+      $('#form-qualification').fadeOut('slow', function(){
+        $('#form-qualification').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
+});
+</script>
+
+
+<!-- skills-->
+
+<script type="text/javascript">
+$(document).ready(function() {  
+  
+  // submit form using $.ajax() method
+  
+  $('#reg-skills').submit(function(e){
+    
+    e.preventDefault(); // Prevent Default Submission
+    
+    $.ajax({
+      url: 'skills.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
+    })
+    .done(function(data){
+      $('#form-skills').fadeOut('slow', function(){
+        $('#form-skills').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
+});
+</script>
+
+
+<!-- skills-->
+
+<script type="text/javascript">
+$(document).ready(function() {  
+  
+  // submit form using $.ajax() method
+  
+  $('#reg-courses').submit(function(e){
+    
+    e.preventDefault(); // Prevent Default Submission
+    
+    $.ajax({
+      url: 'courses.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
+    })
+    .done(function(data){
+      $('#form-courses').fadeOut('slow', function(){
+        $('#form-courses').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
+});
+</script>
+
 
 
 
