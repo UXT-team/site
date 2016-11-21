@@ -9,8 +9,19 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/bootbox.min.js"></script>
 </head>
 <body>
 
+<script>
+	bootbox.alert({ 
+  size: "small",
+  title: "",
+  message: "Registration Successful…", 
+  callback: function(){ /* your callback code */
+  	console.log('Click Ok to Update your profile!');
+   }
+})
+</script>
 </body>
 </html>

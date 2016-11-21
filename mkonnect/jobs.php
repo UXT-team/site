@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/mkonnect.css">
+     <link rel="stylesheet" href="css/updateprofile.css">
           <style type="text/css">
 
 
@@ -62,7 +62,7 @@
 <div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
 
 <section class="konnect">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Update your Profile here</h1> <span class=" glyphicon glyphicon-edit"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below</h1> <span class=" glyphicon glyphicon-edit"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
 </section>
 
 
@@ -185,18 +185,6 @@
 
                     <div class="col-md-10">
 
-
-                    <input type="hidden" name="count" value="1" / style="">
-        <div class="control-group" id="fields">
-            <label class="control-label" for="field1"><h3 class="text-warning"><center>Courses</center></h3></label>
-            <div class="controls" id="profs">
-                <form class="input-append">
-                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8" required="" /><button id="b1" class="btn add-more" type="button">+</button></div>
-                    <br>
-            <small>Press + to add More courses if Any :)</small>
-            </form>
-            </div><!--control-->
-        </div><!--control-group-->
 
                     </div><!--col-md-10-->
                 </div><!--form-group-->

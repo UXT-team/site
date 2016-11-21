@@ -1,4 +1,9 @@
 <?php
+
+//import js 
+
+include('header.php');
+
 //include db
 $con = mysqli_connect("localhost", "root", "", "m_konnect");
 $db = "users";
@@ -39,6 +44,20 @@ $insert_acc="insert into users (email,password) VALUES ('$user_email',md5('$user
 
 if(mysqli_query($con,$insert_acc))
 {
+	echo "<script>
+	bootbox.alert({ 
+  size: 'small',
+  title: "",
+  message: 'Registration Successful…', 
+  callback: function(){ /* your callback code */
+  	console.log('Click Ok to Update your profile!');
+   }
+})
+</script>";
+
+//sleep for 5 seconds
+sleep(5);
+
 echo"<script>window.open('jobs.php','_self')</script>";
 
 
