@@ -145,12 +145,33 @@
         
         <select class="form-control" name="txt_category" id="category">
                   <option>Accountant</option>
-                  <option>Accountant</option>
-                  <option>Accountant</option>
-                  <option>Accountant</option>
-                  <option>Accountant</option>
-                  <option>Accountant</option>
-                  <option>Accountant</option>
+                  <option>Executive/Top Management</option>
+                  <option>Creatives (Art,Design,Fashion)</option>
+                  <option>Customer Service & Customer Support</option>
+                  <option>Education & Training</option>
+                  <option>Engineering/Mechanics/Construction</option>
+                  <option>Government</option>
+                  <option>Healthcare & Pharmaceutical</option>
+                  <option>Human Resources & Recruitment</option>
+                  <option>IT & Telecoms</option>
+                  <option>Legal</option>
+                  <option>Manufacturing/Production</option>
+                  <option>Marketing, Communications & PR</option>
+                  <option>Mining & Natural Resources</option>
+                  <option>NGO, Community & Social Devt</option>
+                  <option>Administration & Office Support</option>
+                  <option>Project / Programme Management</option>
+                  <option>Research, Quality Control/ Quality Assurance</option>
+                  <option>Sales/Business Development</option>
+                  <option>Security</option>
+                  <option>Strategy & Consulting</option>
+                  <option>Tourism & Travel</option>
+                  <option>Trades & Services</option>
+                  <option>Transport , Logistics, Procurement</option>
+                  <option>Real Estate</option>
+                  <option>Hospitality/Leisure/Travel</option>
+                  <option>Others</option>
+                  
                 </select>
 
   
