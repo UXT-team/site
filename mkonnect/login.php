@@ -2,8 +2,6 @@
 //include db..
 $con = mysqli_connect("localhost", "root", "", "m_konnect");
 
-echo "KAE";
-
 if (isset($_POST['login'])) {
 
   //declare variable
@@ -14,7 +12,7 @@ if (isset($_POST['login'])) {
 
 
   //select query
-  $select_log = " select * from users WHERE email='$email' AND password='$user_pass'";
+  $select_log = "select * from users WHERE email='$email' AND password='$user_pass'";
 
   $query = mysqli_query($con, $select_log);
 
@@ -37,6 +35,7 @@ if (isset($_POST['login'])) {
    else
     {
         echo "<script>alert('Email or password is incorrect! Please check your details and try again.')</script>";
+        echo "<script>window.open('mkonnect.php','_self')</script>";
 	exit();
 
     }
@@ -45,8 +44,4 @@ if (isset($_POST['login'])) {
 
 
 }
-
-
-
-
  ?>
