@@ -28,6 +28,8 @@ if($rows>0)
 $eng_acc= "<script>alert(' ".$user_email." Email is already exist in our database, Please try another one!')</script>";
 
 echo $eng_acc;
+echo"<script>window.open('mkonnect.php','_self')</script>";
+
 }
 else{
 
@@ -39,7 +41,9 @@ $insert_acc="insert into users (email,password) VALUES ('$user_email',md5('$user
 
 if(mysqli_query($con,$insert_acc))
 {
-echo"<script>window.open('jobs.php','_self')</script>";
+  echo "<script>alert('Registration Successful')</script>";
+
+  echo"<script>window.open('jobs.php','_self')</script>";
 
 
 }
