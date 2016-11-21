@@ -49,9 +49,8 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="#section4">About</a></li>
+          <li class="active"><a href="mkonnect.php">Home</a></li>
+          <li class="active"><a href="mkonnect.php">ShortCode</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
 
@@ -82,7 +81,7 @@
 
                 <fieldset>
 
-                    <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator" style="padding: 2%;">
+                    <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform" data-toggle="validator" style="padding: 2%;">
 
 
                 <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
@@ -129,7 +128,7 @@
 
                     <div class="col-md-10">
 
-                         <select class="form-control" name="txt_nationality"  required="">
+                         <select class="form-control" name="txt_cert"  required="">
 
                               <option>Degree</option>
                               <option>Diploma</option>
