@@ -48,7 +48,7 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#section4">About</a></li>
@@ -302,6 +302,58 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
      </div><!--container-->
     </div><!--row-->
 
+    <div id="sction4">
+      <div class="row">
+      
+      <div class="col-md-6">
+      <div class="well" style="margin-left: 45%;">
+        <div class="thumbnail" style="margin-left:5%;">
+          
+        <img src="img/careers.JPG">
+        <img src="img/findjob.JPG">
+          <p>Mkonnect is a job Application Platform that connects </p>
+          
+        </div><!--thumbnaill-->
+
+        </div><!--col-md-6-->
+        </div><!--well-->
+        
+      </div><!--row-->
+    </div><!--section4-->
+
+    <div id="section1">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well" style="margin-left: 45%;">
+            <h2 style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
+            <ul class="list-group">
+              <li class="list-group-item"> <h5>
+                <a href="#" class="pull-left text-warning">'SMS' Interview Skills  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
+              </li>
+              <li class="list-group-item"><h5>
+                <a href="#" class="pull-left text-warning">'SMS' C.V. Writing Skills to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5>
+              </li>
+              
+            </ul>
+          </div><!--well-->
+        </div><!--col-md-10-->
+        <div class="col-md-6">
+          <div class="well" style="margin-left: 15%; margin-right:25%;">
+            <h2 style="padding:2%; text-align:center;">JOBS</h2>
+            <ul class="list-group">
+              <li class="list-group-item"> <h5>
+                <a href="#" class="pull-left text-danger" style="font-size:1.7em;">'SMS' Jobs  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
+              </li>
+              
+              
+            </ul>
+          </div><!--well-->
+        </div><!--col-md-6-->
+      </div><!--row-->
+    </div><!--scetion4-->
+
+
+    
 
 <div id="contacts">
 <div class="container">

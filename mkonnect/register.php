@@ -52,11 +52,10 @@ if(mysqli_query($con,$insert_acc))
 //   size: 'small',
 //   title: "",
 //   message: 'Registration Successful…',
-//   callback: function(){ /* your callback code */
+//   callback: function(){
 //   	console.log('Click Ok to Update your profile!');
 //    }
-// })
-// </script>";
+// }) </script>";
 
 //sleep for 5 seconds
 sleep(5);

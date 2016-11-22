@@ -49,9 +49,8 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="#section4">About</a></li>
+          <li class="active"><a href="mkonnect.php">Home</a></li>
+          <li class="active"><a href="mkonnect.php">ShortCode</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
 

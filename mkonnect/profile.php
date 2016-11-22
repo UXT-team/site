@@ -50,11 +50,11 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
-          <li class="active"><a href="#">Interviewskills</a></li>
+          <li class="active"><a href="mkonnect.php">Home</a></li>
+        <li class="active"><a href="#">Interviewskills</a></li>
           <li class="active"><a href="#">C.V.skills</a></li>
-          <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="#section4">About</a></li>
+          <li class="active"><a href="#shortcode"><strong>ShortCode</strong></a></li>
+          
           <li class="active"><a href="#contacts">Contact</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
           
@@ -65,7 +65,7 @@
 <hr>
 <div class="container">
   <div class="row">
-      <div class="col-sm-10"><h1>jameskae69@gmail.com[use the session email]</h1></div>
+      <div class="col-sm-10"><h1></h1></div>
       <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.PNG"></a></div>
     </div>
     <div class="row">
