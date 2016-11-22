@@ -261,37 +261,37 @@
   <div id="jobs"></div><!--jobs-->
   <div class="panel" style="margin:10%; padding: 10%;">
 
-<p id="<?php $category=$first[$i];
-echo $category["id"];?>" class="text-warning"> <?php $category=array();
+<p  class="text-warning"> <?php $category=array();
  $category=$first[$i];
  echo $category["category"]; ?></p>
-<button class="btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
+<button id="<?php $category=$first[$i];
+echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
 </div><!--dialog-->
 </div><!--modal-->
 
 
 <div class="col-md-4">
   <div class="panel" style="padding:10%; margin:10%;">
-  <h3 id="<?php $category=$second[$i];
-  echo $category["id"];?>" class="text-warning"><?php $category=array();
+  <h3  class="text-warning"><?php $category=array();
    $category=$second[$i];
    echo $category["category"]; ?></h3>
 
 
-<button class="btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
+<button id="<?php $category=$second[$i];
+echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
 </div><!--dialog-->
 </div><!--modal-->
 
 <div class="col-md-4">
   <div class="panel" style="padding:10%; margin:10%;">
 
-  <h3 id="<?php $category=$third[$i];
-  echo $category["id"];?>" class="text-warning"><?php $category=array();
+  <h3  class="text-warning"><?php $category=array();
    $category=$third[$i];
    echo $category["category"]; ?></h3>
 
 
-<button class="btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
+<button id="<?php $category=$third[$i];
+echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
 </div><!--dialog-->
 </div><!--modal-->
 </div><!--row-->
@@ -324,6 +324,22 @@ echo $category["id"];?>" class="text-warning"> <?php $category=array();
     <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
   </div>
 </div>
+
+<script>
+$(document).on('click', '.cat',function(){
+			var id = $(this).attr('id');
+			console.log(id);
+			//$("#w3s").attr("href", "http://www.w3schom");
+			$.get(
+				'cat.php',
+				{ id: id },
+				function(data) {
+				}
+			);
+
+
+});
+</script>
 
 <ul class="nav pull-right scroll-top pull-right">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
