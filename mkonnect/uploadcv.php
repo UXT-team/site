@@ -99,7 +99,8 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
                  continue;
                }
                $count++; // Number of successfully uploaded files
-             }
+             } else {
+$message[]= "Unable to move file";             }
          }
      }
  }

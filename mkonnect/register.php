@@ -1,6 +1,6 @@
 <?php
 
-//import js
+//import js 
 
 include('header.php');
 
@@ -48,11 +48,11 @@ if(mysqli_query($con,$insert_acc))
 {
 
 // 	echo "<script>
-// 	bootbox.alert({
+// 	bootbox.alert({ 
 //   size: 'small',
 //   title: "",
-//   message: 'Registration Successful…',
-//   callback: function(){
+//   message: 'Registration Successful…', 
+//   callback: function(){ 
 //   	console.log('Click Ok to Update your profile!');
 //    }
 // }) </script>";
@@ -62,7 +62,7 @@ sleep(5);
 
 echo"<script>window.open('jobs.php','_self')</script>";
 
-  echo "<script>alert('Registration Successful')</script>";
+  #echo "<script>alert('Registration Successful')</script>";
 
   echo"<script>window.open('jobs.php','_self')</script>";
 
