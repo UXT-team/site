@@ -51,7 +51,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <!--li class="active"><a href="#section4">About</a></li-->
+          <li class="active"><a href="#section4">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -200,8 +200,6 @@
   </div><!--thumbnail-->
 
   <?php
-  
-  //include db
   $con = mysqli_connect("localhost", "root", "", "m_konnect");
   $db = "job_category";
 
@@ -304,7 +302,25 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
      </div><!--container-->
     </div><!--row-->
 
-    
+    <div id="sction4">
+      <div class="row">
+
+      <div class="col-md-6">
+      <div class="well" style="margin-left: 45%;">
+        <div class="thumbnail" style="margin-left:5%;">
+
+        <img src="img/careers.JPG">
+        <img src="img/findjob.JPG">
+          <p>Mkonnect is a job Application Platform that connects </p>
+
+        </div><!--thumbnaill-->
+
+        </div><!--col-md-6-->
+        </div><!--well-->
+
+      </div><!--row-->
+    </div><!--section4-->
+
     <div id="section1">
       <div class="row">
         <div class="col-md-6">
@@ -317,7 +333,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <li class="list-group-item"><h5>
                 <a href="#" class="pull-left text-warning">'SMS' C.V. Writing Skills to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5>
               </li>
-              
+
             </ul>
           </div><!--well-->
         </div><!--col-md-10-->
@@ -328,8 +344,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <li class="list-group-item"> <h5>
                 <a href="#" class="pull-left text-danger" style="font-size:1.7em;">'SMS' Jobs  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
               </li>
-              
-              
+
+
             </ul>
           </div><!--well-->
         </div><!--col-md-6-->
@@ -337,7 +353,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--scetion4-->
 
 
-    
+
 
 <div id="contacts">
 <div class="container">
@@ -360,22 +376,6 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
   </div>
 </div>
-
-<script>
-$(document).on('click', '.cat',function(){
-			var id = $(this).attr('id');
-			console.log(id);
-			//$("#w3s").attr("href", "http://www.w3schom");
-			$.get(
-				'cat.php',
-				{ id: id },
-				function(data) {
-				}
-			);
-
-
-});
-</script>
 
 <ul class="nav pull-right scroll-top pull-right">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
@@ -488,6 +488,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $('.cat').click(function() {
+          var id = $(this).attr('id');
+          console.log(id);
+          //$("#w3s").attr("href", "http://www.w3schom");
+          $.post(
+            'cat.php',
+            { id: id },
+            function(data) {
+              console.log(data);
+            }
+          );
+      });
+    })
+
+    </script>
 
 
 </body></html>
