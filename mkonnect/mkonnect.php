@@ -51,7 +51,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="#section4">About</a></li>
+          <!--li class="active"><a href="#section4">About</a></li-->
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -200,6 +200,8 @@
   </div><!--thumbnail-->
 
   <?php
+  
+  //include db
   $con = mysqli_connect("localhost", "root", "", "m_konnect");
   $db = "job_category";
 
@@ -302,25 +304,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
      </div><!--container-->
     </div><!--row-->
 
-    <div id="sction4">
-      <div class="row">
-      
-      <div class="col-md-6">
-      <div class="well" style="margin-left: 45%;">
-        <div class="thumbnail" style="margin-left:5%;">
-          
-        <img src="img/careers.JPG">
-        <img src="img/findjob.JPG">
-          <p>Mkonnect is a job Application Platform that connects </p>
-          
-        </div><!--thumbnaill-->
-
-        </div><!--col-md-6-->
-        </div><!--well-->
-        
-      </div><!--row-->
-    </div><!--section4-->
-
+    
     <div id="section1">
       <div class="row">
         <div class="col-md-6">

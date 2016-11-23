@@ -18,7 +18,7 @@
     <![endif]-->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="css/mkonnect.css">
+<link rel="stylesheet" href="css/profile.css">
 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -51,11 +51,10 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
-        <li class="active"><a href="#">Interviewskills</a></li>
-          <li class="active"><a href="#">C.V.skills</a></li>
-          <li class="active"><a href="#shortcode"><strong>ShortCode</strong></a></li>
+        
+          <!--li class="active"><a href="#shortcode"><strong>ShortCode</strong></a></li-->
           
-          <li class="active"><a href="#contacts">Contact</a></li>
+          <li class="active"><a href="#contacts">Contacts</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
           
       </div><!--/.nav-collapse -->
@@ -96,6 +95,8 @@
             <li><a href="#profile" data-toggle="tab">View Full Profile</a></li>
             <li><a href="#messages" data-toggle="tab">Messages</a></li>
             <li><a href="#shortcode" data-toggle="tab">ShortCode Service</a></li>
+            <li><a href="#CV" data-toggle="tab">CV Writing</a></li>
+            <li><a href="#Interviewskills" data-toggle="tab">Interview Skills</a></li>
             <li><a href="#settings" data-toggle="tab">Settings</a></li>
           </ul>
               
@@ -512,10 +513,32 @@
 
              </div><!--shortcode-->
 
+             <div class="tab-pane" id="CV">
+                <h3 style="margin-bottom:2%;">SMS Your skills to 22274 as shown below <i class="fa fa-level-down" aria-hidden="true"></i> </h3>
+                <ul class="list-group">
+                  
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' cvskills  to</a> 22274</li>
+                  
+                 
+                </ul> 
+
+             </div><!--c.v. writing-->
+
+             <div class="tab-pane" id="Interviewskills">
+                <h3 style="margin-bottom:2%;">SMS Interview to 22274 as shown below <i class="fa fa-level-down" aria-hidden="true"></i> </h3>
+                <ul class="list-group">
+                  <li class="list-group-item text-muted">Interview skills</li>
+                  <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' interview  to</a> 22274</li>
+                  
+                 
+                </ul> 
+
+             </div><!--interviewskills-->
+
 
              <div class="tab-pane" id="settings">
                 
-                
+                <div class="col-md-8">
                   <hr>
                   <form class="form" action="##" method="post" id="registrationForm">
                       
@@ -524,59 +547,72 @@
                           
                           <div class="col-xs-6">
                               <label for="phone"><h4>PhoneNumber</h4></label>
-                              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                              <input type="text" class="form-control" name="txt_phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
                           </div>
                       </div>
           
                       <div class="form-group">
                           <div class="col-xs-6">
                              <label for="mobile"><h4>Confirm PhoneNumber</h4></label>
-                              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Confirm Number number" title="enter your mobile number if any.">
+                              <input type="text" class="form-control" name="txt_mobile" id="mobile" placeholder="Confirm Number number" title="enter your mobile number if any.">
                           </div>
                       </div>
                       <div class="form-group">
                           
                           <div class="col-xs-6">
                               <label for="email"><h4>Email</h4></label>
-                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                              <input type="email" class="form-control" name="txt_email" id="email" placeholder="you@email.com" title="enter your email.">
                           </div>
                       </div>
                       <div class="form-group">
                           
                           <div class="col-xs-6">
                               <label for="email"><h4>Location</h4></label>
-                              <input type="email" class="form-control" id="location" placeholder="somewhere" title="enter a location">
+                              <input type="email" class="form-control" name="txt_location" id="location" placeholder="somewhere" title="enter a location">
                           </div>
                       </div>
                       <div class="form-group">
                           
                           <div class="col-xs-6">
                               <label for="password"><h4>Password</h4></label>
-                              <input type="password" class="form-control" name="password" id="password" placeholder="password" title="enter your password.">
+                              <input type="password" class="form-control" name="txt_password" id="password" placeholder="password" title="enter your password.">
                           </div>
                       </div>
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                            <label for="password2"><h4>Verify</h4></label>
-                              <input type="password" class="form-control" name="password2" id="password2" placeholder="password2" title="enter your password2.">
+                            <label for="password2"><h4>Verify Password</h4></label>
+                              <input type="password" class="form-control" name="password2" id="password2" name="txt_password" placeholder="password2" title="enter your password2.">
                           </div>
                       </div>
                       <div class="form-group">
                            <div class="col-xs-12">
                                 <br>
-                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i>View Changes</button>
                                 <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
                             </div>
                       </div>
                 </form>
-              </div>
+                </div><!--col-md-6-->
+
+                <div class="col-md-4">
+                  <div class="panel">
+
+                  <div id="registration">
+
+                  </div><!--form-content-->
+
+                  </div><!--panel-->
+                </div><!--col-md-4-->
+              </div><!--/tab-pane-settings-->
                
               </div><!--/tab-pane-->
           </div><!--/tab-content-->
 
         </div><!--/col-9-->
     </div><!--/row-->
+
+
 
 
 <div class="divider" id="section2"></div><!--divider-->
@@ -873,7 +909,34 @@ $(document).ready(function() {
 });
 </script>
 
+<!--registrationForm-->
 
+<script type="text/javascript">
+$(document).ready(function() {  
+  
+  // submit form using $.ajax() method
+  
+  $('#registrationForm').submit(function(e){
+    
+    e.preventDefault(); // Prevent Default Submission
+    
+    $.ajax({
+      url: 'profile-form.php',
+      type: 'POST',
+      data: $(this).serialize() // it will serialize the form data
+    })
+    .done(function(data){
+      $('#registration').fadeOut('slow', function(){
+        $('#registration').fadeIn('slow').html(data);
+      });
+    })
+    .fail(function(){
+      alert('Ajax Submit Failed ...');  
+    });
+  });
+  
+});
+</script>
 
 
 
