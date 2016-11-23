@@ -47,9 +47,16 @@ $insert_acc="insert into users (email,password) VALUES ('$user_email',md5('$user
 
 if(mysqli_query($con,$insert_acc))
 {
-
+$select_log = "select * from users WHERE email='$user_email'";
+$query = mysqli_query($con, $select_log);
+  $row = mysqli_fetch_array($query);
+    $user_id = $row['user_id'];
+    $_SESSION['email']=$user_email;
+    $_SESSION['id']=$user_id;
+    $category_id=$_SESSION['category'];
+    $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
+    mysqli_query($con,$insert_app);
 echo "<script>alert('Registration Successful')</script>";
-echo "<script>alert('".$_SESSION['category']."')</script>";
 echo"<script>window.open('jobs.php','_self')</script>";
 
 
