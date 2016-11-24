@@ -91,17 +91,26 @@
       <div class="col-sm-9">
           
           <ul class="nav nav-tabs" id="myTab">
-            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-            <li><a href="#profile" data-toggle="tab">View Full Profile</a></li>
+          
+            
+            <li class="active"><a href="#profile" data-toggle="tab">Home</a></li>
+
+            <li><a href="#edit-profile" data-toggle="tab">Edit Job Profile</a></li>
+
             <li><a href="#messages" data-toggle="tab">Messages</a></li>
+
             <li><a href="#shortcode" data-toggle="tab">ShortCode Service</a></li>
+
             <li><a href="#CV" data-toggle="tab">CV Writing</a></li>
+
             <li><a href="#Interviewskills" data-toggle="tab">Interview Skills</a></li>
+
             <li><a href="#settings" data-toggle="tab">Settings</a></li>
+
           </ul>
               
           <div class="tab-content">
-            <div class="tab-pane active" id="home">
+            <div class="tab-pane active" id="profile">
               <div class="table-responsive">
                 
                 <hr>
@@ -113,208 +122,7 @@
               </div><!--/table-resp-->
               
               <hr>
-              <div class="row">
-                
-
-             <div class="col-md-12">
-               <div class="well">
-                <div class="col-md-6">
-                 <div class="panel">
-                   <div class="thumbnail">
-                        
-                        <div id="form-category">
-
-                       </div><!--form-content-->
-
-                   </div><!--thumbnail-->
-                 </div><!--panel-->
-                 </div><!--col-md-6-->
-
-                 <div class="col-md-6-">
-                  <div class="addcategory" >
-                
-                <div class="col-md-6">
-
-              
-                </div><!--col-md-6-->
-
-                <?php include("category-help.php"); ?>
-
-          <div id="form-category">
-      
-      <form method="post" id="reg-category" autocomplete="off">
-        
-        <select class="form-control" name="txt_category" id="category">
-                  <option>Accountant</option>
-                  <option>Executive/Top Management</option>
-                  <option>Creatives (Art,Design,Fashion)</option>
-                  <option>Customer Service & Customer Support</option>
-                  <option>Education & Training</option>
-                  <option>Engineering/Mechanics/Construction</option>
-                  <option>Government</option>
-                  <option>Healthcare & Pharmaceutical</option>
-                  <option>Human Resources & Recruitment</option>
-                  <option>IT & Telecoms</option>
-                  <option>Legal</option>
-                  <option>Manufacturing/Production</option>
-                  <option>Marketing, Communications & PR</option>
-                  <option>Mining & Natural Resources</option>
-                  <option>NGO, Community & Social Devt</option>
-                  <option>Administration & Office Support</option>
-                  <option>Project / Programme Management</option>
-                  <option>Research, Quality Control/ Quality Assurance</option>
-                  <option>Sales/Business Development</option>
-                  <option>Security</option>
-                  <option>Strategy & Consulting</option>
-                  <option>Tourism & Travel</option>
-                  <option>Trades & Services</option>
-                  <option>Transport , Logistics, Procurement</option>
-                  <option>Real Estate</option>
-                  <option>Hospitality/Leisure/Travel</option>
-                  <option>Others</option>
-                  
-                </select>
-
-  
-        <hr />
-         <div class="form-group">
-          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Job Category & View Changes</button>
-        </div><!--form-group-->
-        
-      </form>
-            
-            </div><!--form-content-->
-
-            </div><!--addskill-->
-            </div><!--col-md-6-->
-             </div><!--well-->
-             </div><!--col-md-12-->
-
-              <div class="col-md-12">
-               <div class="well">
-                <div class="col-md-6">
-                 <div class="panel">
-                   <div class="thumbnail">
-                     <div id="form-qualification">
-
-                       </div><!--form-content-->
-
-                   </div><!--thumbnail-->
-                 </div><!--panel-->
-                 </div><!--col-md-6-->
-
-                    <?php include("qualification-help.php"); ?>
-
-                    <div class="adds">
-
-                      <div id="form-qualification">
-      
-      <form method="post" id="reg-qualification" autocomplete="off">
-        
-        <div class="form-group">
-          <select class="form-control" name="txt_qualification" id="category">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  
-                </select>
-        </div><!--form-group-->
-        <hr />
-         <div class="form-group">
-          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Experience & View Changes</button>
-        </div><!--form-group-->
-        
-      </form>
-            
-            </div><!--form-content-->
-    
-            </div><!--adds-->
-               </div><!--well-->
-             </div><!--col-md-12-->
-
-             <div class="col-md-12">
-               <div class="well">
-                <div class="col-md-6">
-                 <div class="panel">
-                   <div class="thumbnail">
-
-                      <div id="form-skills">
-
-                       </div><!--form-skills-->
-
-                   </div><!--thumbnail-->
-                 </div><!--panel-->
-                 </div><!--col-md-6-->
-
-                 <?php include("skills-help.php"); ?>
-
-                 <div class="addskills">
-                   
-          <div id="form-skills">
-      
-      <form method="post" id="reg-skills" autocomplete="off">
-        
-        <div class="form-group">
-          <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
-        </div>
-        <hr />
-         <div class="form-group">
-          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Skills & View Changes</button>
-        </div><!--form-group-->
-        
-      </form>
-            
-            </div><!--form-content-->
-            </div><!--addskill-->
-            
-               </div><!--well-->
-             </div><!--col-md-12-->
-
-             <div class="col-md-12">
-               <div class="well">
-                <div class="col-md-6">
-                 <div class="panel">
-                   <div class="thumbnail">
-
-                      <div id="form-courses">
-
-                       </div><!--form-content-->
-
-                   </div><!--thumbnail-->
-                 </div><!--panel-->
-                 </div><!--col-md-6-->
-
-                  <?php include("course-help.php"); ?>
-
-                 <div class="addskills">
-                   
-          <div id="form-courses">
-      
-      <form method="post" id="reg-courses" autocomplete="off">
-        
-        <div class="form-group">
-          <input type="text" class="form-control" name="txt_courses" id="courses" placeholder="Add courses" required />
-        </div>
-        <hr />
-         <div class="form-group">
-          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Courses & View Changes</button>
-        </div><!--form-group-->
-        
-      </form>
-            
-            </div><!--form-content-->
-            </div><!--addskill-->
-            
-               </div><!--well-->
-             </div><!--col-md-12-->
-
-             </div><!--row-->
-              
-             </div><!--/tab-pane-->
-             <div class="tab-pane" id="profile">
-              <div class="row">
+             <div class="row">
                 <div class="jumbotron">
                 <div class="col-md-12">
                   <div class="panel">
@@ -486,7 +294,222 @@
 
                 </div><!--jumbotron-->
                 </div><!--row-->
-             </div><!--tab-pane-->
+                
+
+            
+
+            
+              
+             </div><!--/tab-pane-->
+
+
+
+
+             
+
+              <div class="tab-pane" id="edit-profile">
+
+              <div class="row">
+                
+                 <div class="col-md-12">
+               <div class="well">
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+                        
+                        <div id="form-category">
+
+                       </div><!--form-content-->
+
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
+
+                 <div class="col-md-6-">
+                  <div class="addcategory" >
+                
+                <div class="col-md-6">
+
+              
+                </div><!--col-md-6-->
+
+                <?php include("category-help.php"); ?>
+
+          <div id="form-category">
+      
+      <form method="post" id="reg-category" autocomplete="off">
+        
+        <select class="form-control" name="txt_category" id="category">
+                  <option>Accountant</option>
+                  <option>Executive/Top Management</option>
+                  <option>Creatives (Art,Design,Fashion)</option>
+                  <option>Customer Service & Customer Support</option>
+                  <option>Education & Training</option>
+                  <option>Engineering/Mechanics/Construction</option>
+                  <option>Government</option>
+                  <option>Healthcare & Pharmaceutical</option>
+                  <option>Human Resources & Recruitment</option>
+                  <option>IT & Telecoms</option>
+                  <option>Legal</option>
+                  <option>Manufacturing/Production</option>
+                  <option>Marketing, Communications & PR</option>
+                  <option>Mining & Natural Resources</option>
+                  <option>NGO, Community & Social Devt</option>
+                  <option>Administration & Office Support</option>
+                  <option>Project / Programme Management</option>
+                  <option>Research, Quality Control/ Quality Assurance</option>
+                  <option>Sales/Business Development</option>
+                  <option>Security</option>
+                  <option>Strategy & Consulting</option>
+                  <option>Tourism & Travel</option>
+                  <option>Trades & Services</option>
+                  <option>Transport , Logistics, Procurement</option>
+                  <option>Real Estate</option>
+                  <option>Hospitality/Leisure/Travel</option>
+                  <option>Others</option>
+                  
+                </select>
+
+  
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Job Category & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
+
+            </div><!--addskill-->
+            </div><!--col-md-6-->
+             </div><!--well-->
+             </div><!--col-md-12-->
+
+              <div class="col-md-12">
+               <div class="well">
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+                     <div id="form-qualification">
+
+                       </div><!--form-content-->
+
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
+
+                    <?php include("qualification-help.php"); ?>
+
+                    <div class="adds">
+
+                      <div id="form-qualification">
+      
+      <form method="post" id="reg-qualification" autocomplete="off">
+        
+        <div class="form-group">
+         
+          <input type="text" class="form-control" name="txt_qualification" id="category" placeholder="Add experience in years" required />
+        </div><!--form-group-->
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Experience & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
+    
+            </div><!--adds-->
+               </div><!--well-->
+             </div><!--col-md-12-->
+
+             <div class="col-md-12">
+               <div class="well">
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+
+                      <div id="form-skills">
+
+                       </div><!--form-skills-->
+
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
+
+                 <?php include("skills-help.php"); ?>
+
+                 <div class="addskills">
+                   
+          <div id="form-skills">
+      
+      <form method="post" id="reg-skills" autocomplete="off">
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
+        </div>
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Skills & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
+            </div><!--addskill-->
+            
+               </div><!--well-->
+             </div><!--col-md-12-->
+
+             <div class="col-md-12">
+               <div class="well">
+                <div class="col-md-6">
+                 <div class="panel">
+                   <div class="thumbnail">
+
+                      <div id="form-courses">
+
+                       </div><!--form-content-->
+
+                   </div><!--thumbnail-->
+                 </div><!--panel-->
+                 </div><!--col-md-6-->
+
+                  <?php include("course-help.php"); ?>
+
+                 <div class="addskills">
+                   
+          <div id="form-courses">
+      
+      <form method="post" id="reg-courses" autocomplete="off">
+        
+        <div class="form-group">
+          <input type="text" class="form-control" name="txt_courses" id="courses" placeholder="Add courses" required />
+        </div>
+        <hr />
+         <div class="form-group">
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Courses & View Changes</button>
+        </div><!--form-group-->
+        
+      </form>
+            
+            </div><!--form-content-->
+            </div><!--addskill-->
+            
+               </div><!--well-->
+             </div><!--col-md-12-->
+
+
+              </div><!--row-->
+                
+
+
+
+             </div><!--edit-profile-->
+
+
+
+
              <div class="tab-pane" id="messages">
                
                <h2></h2>

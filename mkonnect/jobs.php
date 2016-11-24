@@ -61,7 +61,7 @@
 <div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
 
 <section class="konnect">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below</h1> <span class=" glyphicon glyphicon-edit"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below <span class=" glyphicon glyphicon-hand-down"></span></h1> </div>
 </section>
 
 

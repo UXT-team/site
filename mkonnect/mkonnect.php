@@ -23,6 +23,7 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
 <style type="text/css">
 .jumbotron{
    height: auto;
@@ -80,43 +81,19 @@
 
         <fieldset>
 
-            <legend><center> <span class="glyphicon glyphicon-user"></span>Sales <span class="glyphicon glyphicon-user"></span></center> </legend>
+            <legend><center> <span class="glyphicon glyphicon-user"></span> <span class="glyphicon glyphicon-user"></span></center> </legend>
 
-              <div class="form-group">
+              <div class="form-group" style="margin-bottom: 28%;">
                 <div class="col-md-10">
-                  <div class="panel">
-                    <p>If you Already have an account, please Login</p>
-                    <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button>
-                    <div id="login2" class="collapse">
-
-                        <div id="login2">
-                <div class="arrow"></div>
-
-                <div class="popover-content">
-
-                 <form class="form-vertical" action="login.php" method="POST">
-                        <div class="form-group has-error has-danger">
-                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
-
-                        </div>
-
-                       <input class="form-control" name="password" placeholder="Your Password" type="password"  required="">
-                    <div class="help-block">Minimum of 6 characters</div>
-
-                </div>
-                <div class="popover-footer">
-                   <center> <input type="submit" name="login" value="Login" class="btn btn-lg btn-success btn-lg"></input></center>
-                </div>
-                </form>
-            </div><!--mypopoverid-->
-
-
-                    </div><!--login-->
-                  </div><!--panel-->
+                <div class="thumbnail">
+                  <p><center>If you Already have an account? </center> </p>
+                  <h4 style="font-size:1.8em;"><center><a href="#login4">Login</a></center></h4>
+                  </div><!--thumnail-->
                 </div><!--col-md-10-->
               </div><!--form-group-->
 
-              <form action="register.php" method="POST">
+
+       <form action="register.php" method="POST" id="mkonnect">
             <div class="form-group">
             <div class="col-md-12">
                <label for="txt_subject" class="control-label">Enter Email</label>
@@ -142,7 +119,22 @@
 
                 <div class="col-md-12">
 
-                    <input class="form-control" name="password" placeholder="Your Password" type="password" required="">
+                    <input class="form-control" name="password" placeholder="Your Password" type="password" id="password" required="">
+                    <div class="help-block">Minimum of 6 characters</div>
+                </div><!--col-md-12-->
+            </div><!--form-group-->
+
+            <div class="form-group">
+            <div class="col-md-12">
+               <label for="txt_subject" class="control-label">Confirm Password</label>
+            </div><!--col-md-12-->
+          </div><!--form-group-->
+
+          <div class="form-group has-error has-danger">
+
+                <div class="col-md-12">
+
+                    <input class="form-control" name="txt_confirm" placeholder="Confirm Password" type="password" id="confirmpassword" required="">
                     <div class="help-block">Minimum of 6 characters</div>
                 </div><!--col-md-12-->
             </div><!--form-group-->
@@ -152,7 +144,7 @@
              <div class="form-group">
                 <div class="col-md-8">
 
-                     <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"  style="font-size:1.25em;">
+         <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"   style="font-size:1.25em;">
 
                 </div><!--col-md--12-->
             </div><!--form-group-->
@@ -166,13 +158,42 @@
                 </div><!--col-md--12-->
             </div><!--form-group-->
 
-
-
         </fieldset>
 
     </div><!--col-md--12-->
 
-</div><!--row-->        <p>Already have an account?Login Below</p>
+
+  <div class="jumbotron">
+                    
+                    <!--button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button-->
+                  
+
+                        <div id="login2">
+                <div class="arrow"></div>
+
+                <div class="popover-content">
+
+                 <form class="form-vertical" action="login.php" method="POST">
+                        <div class="form-group has-error has-danger">
+                        <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" required="">
+
+                        </div>
+
+                       <input class="form-control" name="password" placeholder="Your Password" type="password"   required="">
+                    <div class="help-block">Minimum of 6 characters</div>
+
+                </div>
+                <div class="popover-footer" id="login4">
+                   <center> <input type="submit" name="login" value="Login" class="btn btn-lg btn-info btn-lg"></input></center>
+                </div>
+                </form>
+            </div><!--mypopoverid-->
+
+
+                 
+                  </div><!--panel-->
+</div><!--login2-->
+</div><!--row-->        
     <center>
                   <!-- PopoverX content -->
 
@@ -473,5 +494,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script type="text/javascript" src="http://www.technicalkeeda.com/js/javascripts/plugin/jquery.js"></script>
+  <script type="text/javascript" src="http://www.technicalkeeda.com/js/javascripts/plugin/jquery.validate.js"></script>
+<script>
+  function validatePassword(){ 
+ var validator = $("#mkonnect").validate({
+  rules: {                   
+   password :"required",
+   confirmpassword:{
+    equalTo: "#password"
+      }  
+     },                             
+     messages: {
+      password :" Enter Password",
+      confirmpassword :" Enter Confirm Password Same as Password"
+     }
+ });
+ if(validator.form()){
+  alert('Sucess');
+ }
+}
 
-</body></html>
+ </script>
+
+
+</body>
+</html>
