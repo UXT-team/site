@@ -19,7 +19,9 @@ if( $_POST ){
     
     <tr>
     <td>Experience</td>
+     <form action="" method="POST">
     <td><?php echo $qualification ?></td>
+    </form>
     </tr>
    
     <tr>

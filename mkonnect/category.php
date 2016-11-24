@@ -19,7 +19,12 @@ if( $_POST ){
     
     <tr>
     <td>Job Category</td>
+    
+     <form action="" method="POST">
+
     <td><?php echo $category ?></td>
+
+    </form>
     </tr>
    
     <tr>

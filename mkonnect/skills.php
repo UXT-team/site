@@ -19,8 +19,10 @@ if( $_POST ){
     
     <tr>
     <td>Skills</td>
+    <form action="" method="POST">
     <td><?php echo $skills ?></td>
     </tr>
+    </form>
    
     <tr>
         <td>Save Changes</td>

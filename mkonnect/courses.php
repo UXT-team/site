@@ -18,8 +18,12 @@ if( $_POST ){
     </tr>
 
     <tr>
-    <td>Skills</td>
+    <td>Skills</td> 
+    <form action="" method="POST">
+
     <td><?php echo $courses ?></td>
+    
+    </form>
     </tr>
    
     <tr>

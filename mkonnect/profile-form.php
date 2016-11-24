@@ -20,7 +20,7 @@ if( $_POST ){
     	</div>
     </td>
     </tr>
-
+     <form action="" method="POST">
     <tr>
     <td>Email</td>
     <td><?php echo $email ?></td>
@@ -30,7 +30,7 @@ if( $_POST ){
     <td>PhoneNumber</td>
     <td><?php echo $phone ?></td>
     </tr>
-
+    </form>
     <tr>
     <td>Password</td>
     <td><span id="A1" contenteditable style="font-size: 2em;"><strong>......</strong></span></td>
