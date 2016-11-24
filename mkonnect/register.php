@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-//import js 
+//import js
 
 include('header.php');
 
@@ -46,33 +47,26 @@ $insert_acc="insert into users (email,password) VALUES ('$user_email',md5('$user
 
 if(mysqli_query($con,$insert_acc))
 {
-
-// 	echo "<script>
-// 	bootbox.alert({ 
-//   size: 'small',
-//   title: "",
-//   message: 'Registration Successful…', 
-//   callback: function(){ 
-//   	console.log('Click Ok to Update your profile!');
-//    }
-// }) </script>";
-
-//sleep for 5 seconds
-sleep(5);
-
+$select_log = "select * from users WHERE email='$user_email'";
+$query = mysqli_query($con, $select_log);
+  $row = mysqli_fetch_array($query);
+    $user_id = $row['user_id'];
+    $_SESSION['email']=$user_email;
+    $_SESSION['id']=$user_id;
+    $category_id=$_SESSION['category'];
+    $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
+    mysqli_query($con,$insert_app);
+echo "<script>alert('Registration Successful')</script>";
 echo"<script>window.open('jobs.php','_self')</script>";
 
-  #echo "<script>alert('Registration Successful')</script>";
-
-  echo"<script>window.open('jobs.php','_self')</script>";
 
 
 }
 else{
 echo "<script>alert('Check your details and try again')</script>";
-exit();
-//$refresh = "<script>window.open('mkonnect.php','_self')</script>";
-
+$refresh = "<script>window.open('mkonnect.php','_self')</script>";
+ echo $refresh;
+ exit();
 }
 
 }

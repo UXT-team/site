@@ -52,7 +52,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <!--li class="active"><a href="#section4">About</a></li-->
+          <li class="active"><a href="#section4">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -221,8 +221,6 @@
   </div><!--thumbnail-->
 
   <?php
-  
-  //include db
   $con = mysqli_connect("localhost", "root", "", "m_konnect");
   $db = "job_category";
 
@@ -284,37 +282,37 @@
   <div id="jobs"></div><!--jobs-->
   <div class="panel" style="margin:10%; padding: 10%;">
 
-<p id="<?php $category=$first[$i];
-echo $category["id"];?>" class="text-warning"> <?php $category=array();
+<p  class="text-warning"> <?php $category=array();
  $category=$first[$i];
  echo $category["category"]; ?></p>
-<button class="btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
+<button id="<?php $category=$first[$i];
+echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
 </div><!--dialog-->
 </div><!--modal-->
 
 
 <div class="col-md-4">
   <div class="panel" style="padding:10%; margin:10%;">
-  <h3 id="<?php $category=$second[$i];
-  echo $category["id"];?>" class="text-warning"><?php $category=array();
+  <h3  class="text-warning"><?php $category=array();
    $category=$second[$i];
    echo $category["category"]; ?></h3>
 
 
-<button class="btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
+<button id="<?php $category=$second[$i];
+echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
 </div><!--dialog-->
 </div><!--modal-->
 
 <div class="col-md-4">
   <div class="panel" style="padding:10%; margin:10%;">
 
-  <h3 id="<?php $category=$third[$i];
-  echo $category["id"];?>" class="text-warning"><?php $category=array();
+  <h3  class="text-warning"><?php $category=array();
    $category=$third[$i];
    echo $category["category"]; ?></h3>
 
 
-<button class="btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
+<button id="<?php $category=$third[$i];
+echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; margin:2%;" data-toggle="modal" data-target="#sales">Apply</button>
 </div><!--dialog-->
 </div><!--modal-->
 </div><!--row-->
@@ -325,7 +323,25 @@ echo $category["id"];?>" class="text-warning"> <?php $category=array();
      </div><!--container-->
     </div><!--row-->
 
-    
+    <div id="sction4">
+      <div class="row">
+
+      <div class="col-md-6">
+      <div class="well" style="margin-left: 45%;">
+        <div class="thumbnail" style="margin-left:5%;">
+
+        <img src="img/careers.JPG">
+        <img src="img/findjob.JPG">
+          <p>Mkonnect is a job Application Platform that connects </p>
+
+        </div><!--thumbnaill-->
+
+        </div><!--col-md-6-->
+        </div><!--well-->
+
+      </div><!--row-->
+    </div><!--section4-->
+
     <div id="section1">
       <div class="row">
         <div class="col-md-6">
@@ -338,7 +354,7 @@ echo $category["id"];?>" class="text-warning"> <?php $category=array();
               <li class="list-group-item"><h5>
                 <a href="#" class="pull-left text-warning">'SMS' C.V. Writing Skills to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5>
               </li>
-              
+
             </ul>
           </div><!--well-->
         </div><!--col-md-10-->
@@ -349,8 +365,8 @@ echo $category["id"];?>" class="text-warning"> <?php $category=array();
               <li class="list-group-item"> <h5>
                 <a href="#" class="pull-left text-danger" style="font-size:1.7em;">'SMS' Jobs  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
               </li>
-              
-              
+
+
             </ul>
           </div><!--well-->
         </div><!--col-md-6-->
@@ -358,7 +374,7 @@ echo $category["id"];?>" class="text-warning"> <?php $category=array();
     </div><!--scetion4-->
 
 
-    
+
 
 <div id="contacts">
 <div class="container">
@@ -516,6 +532,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 }
 
  </script>
+
+    <script>
+    $(document).ready(function(){
+      $('.cat').click(function() {
+          var id = $(this).attr('id');
+          console.log(id);
+          //$("#w3s").attr("href", "http://www.w3schom");
+          $.post(
+            'cat.php',
+            { id: id },
+            function(data) {
+              console.log(data);
+            }
+          );
+      });
+    })
+
+    </script>
 
 
 </body>

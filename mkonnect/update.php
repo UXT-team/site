@@ -1,4 +1,5 @@
 <?php
+session_start();
 //include db
 $con = mysqli_connect("localhost", "root", "", "m_konnect");
 $db = "users";
@@ -13,6 +14,7 @@ if(isset($_POST['profile'])){
  $edu_level=$_POST['txt_cert'];
  $nationality=$_POST['txt_nationality'];
  $experience=$_POST['txt_years'];
+ $user_id =$_SESSION['id'];
 
 
 
@@ -22,7 +24,7 @@ if(isset($_POST['profile'])){
 
 //insert the user into the database.
 
-$insert_acc="insert into profiles (fullname,phone_number,edu_level,nationality,experience,user_id) VALUES ('$name','$number','$edu_level','$nationality','$experience',1)";
+$insert_acc="insert into profiles (fullname,phone_number,edu_level,nationality,experience,user_id) VALUES ('$name','$number','$edu_level','$nationality','$experience',$user_id)";
 
 if(mysqli_query($con,$insert_acc))
 {
