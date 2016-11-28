@@ -51,12 +51,12 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
-        
+
           <!--li class="active"><a href="#shortcode"><strong>ShortCode</strong></a></li-->
-          
+
           <li class="active"><a href="#contacts">Contacts</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
-          
+
       </div><!--/.nav-collapse -->
     </div><!--/.container -->
 </div><!--/.navbar -->
@@ -69,30 +69,30 @@
     </div>
     <div class="row">
       <div class="col-sm-3"><!--left col-->
-  
+
 
           <ul class="list-group">
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="profile.php"><center><span class="glyphicon glyphicon-user"></span> <strong> Profile </strong></center></a></li>
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>-->
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="uploadcv.php"> <center> <i class="fa fa-cloud-upload" aria-hidden="true"></i><strong>Upload C.V. </strong></center></a></li>-->
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="#"> <center> <i class="fa fa-question-circle-o" aria-hidden="true"></i><strong>Help </strong></center></a></li>
-      
+
     </ul>
-              
-               
+
+
           <div class="panel panel-default">
             <div class="panel-heading">Social Media</div>
             <div class="panel-body">
               <i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
             </div>
           </div>
-          
+
         </div><!--/col-3-->
       <div class="col-sm-9">
-          
+
           <ul class="nav nav-tabs" id="myTab">
-          
-            
+
+
             <li class="active"><a href="#profile" data-toggle="tab">Home</a></li>
 
             <li><a href="#edit-profile" data-toggle="tab">Edit Job Profile</a></li>
@@ -108,11 +108,11 @@
             <li><a href="#settings" data-toggle="tab">Settings</a></li>
 
           </ul>
-              
+
           <div class="tab-content">
             <div class="tab-pane active" id="profile">
               <div class="table-responsive">
-                
+
                 <hr>
                 <div class="row">
                   <div class="col-md-4 col-md-offset-4 text-center">
@@ -120,32 +120,40 @@
                   </div>
                 </div>
               </div><!--/table-resp-->
-              
+
               <hr>
              <div class="row">
                 <div class="jumbotron">
                 <div class="col-md-12">
                   <div class="panel">
                     <h2><center><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;FUll Name &nbsp;&nbsp; <span class="glyphicon glyphicon-user"></span></center></h2>
-                    
+
                   </div><!--panel-->
                   <div class="thumbnail">
         <table class="table table-striped" border="0">
-    
+
           <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Full  Name</center></strong> 
+        <strong><center><?php
+        $con = mysqli_connect("localhost", "root", "", "m_konnect");
+         $select_log = "select * from profiles WHERE user_id=20";
+
+        $query = mysqli_query($con, $select_log);
+        $row = mysqli_fetch_array($query);
+          $fullname = $row['fullname'];
+          echo $fullname;
+ ?></center></strong>
       </div>
     </td>
     </tr>
-    
+
     <tr>
-  
+
     <td><?php #echo $fname ?></td>
     </tr>
-    
-    
+
+
     </table>
     <?php ?>
                   </div><!--thumbnail-->
@@ -153,29 +161,36 @@
 
                 <div class="col-md-12">
                   <div class="panel">
-                    
+
                     <h2><center><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Email &nbsp;&nbsp; <span class="glyphicon glyphicon-envelope"></span></center></h2>
                   </div><!--panel-->
                   <div class="thumbnail">
           <table class="table table-striped" border="0">
-    
+
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Email</center></strong> 
+        <strong><center><?php
+        $con = mysqli_connect("localhost", "root", "", "m_konnect");
+         $select_log = "select * from users WHERE user_id=20";
+        $query = mysqli_query($con, $select_log);
+        $row = mysqli_fetch_array($query);
+          $fullname = $row['email'];
+          echo $fullname;
+ ?></center></strong>
       </div>
     </td>
     </tr>
-    
+
     <tr>
-  
+
     <td><?php #echo $fname ?></td>
     </tr>
-    
-    
+
+
     </table>
     <?php ?>
-  
+
 
                   </div><!--thumbnail-->
                 </div><!--col-md-12-->
@@ -187,21 +202,33 @@
 
                   <div class="thumbnail">
                      <table class="table table-striped" border="0">
-    
+
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Job Category</center></strong> 
+        <strong><center><?php
+        $con = mysqli_connect("localhost", "root", "", "m_konnect");
+         $select_log = "select * from job_applications WHERE user_id=20";
+
+        $query = mysqli_query($con, $select_log);
+        $row = mysqli_fetch_array($query);
+          $id = $row['category_id'];
+          $select_cat = "select * from job_category WHERE id=$id";
+          $query1 = mysqli_query($con, $select_cat);
+          $row1 = mysqli_fetch_array($query1);
+            $category = $row1['category'];
+            echo $category;
+ ?></center></strong>
       </div>
     </td>
     </tr>
-    
+
     <tr>
-  
+
     <td><?php #echo $fname ?></td>
     </tr>
-    
-    
+
+
     </table>
     <?php ?>
                   </div><!--thumbnail-->
@@ -210,27 +237,27 @@
 
                 <div class="col-md-12">
                   <div class="panel">
-                    
+
                     <h2><center><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Courses &nbsp;&nbsp;<span class="glyphicon glyphicon-folder-open"></span></center></h2>
                   </div><!--panel-->
                   <div class="thumbnail">
-                    
+
                <table class="table table-striped" border="0">
-    
+
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Courses</center></strong> 
+        <strong><center>Courses</center></strong>
       </div>
     </td>
     </tr>
-    
+
     <tr>
-  
+
     <td><?php #echo $fname ?></td>
     </tr>
-    
-    
+
+
     </table>
     <?php ?>
 
@@ -241,24 +268,25 @@
                   <div class="panel">
                     
                     <h2><center><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Experience&nbsp;&nbsp;<span class="glyphicon glyphicon-education"></span></center></h2>
+
                   </div><!--panel-->
                   <div class="thumbnail">
            <table class="table table-striped" border="0">
-    
+
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Certifications</center></strong> 
+        <strong><center>Certifications</center></strong>
       </div>
     </td>
     </tr>
-    
+
     <tr>
-  
+
     <td><?php #echo $fname ?></td>
     </tr>
-    
-    
+
+
     </table>
     <?php ?>
                   </div><!--thumbnail-->
@@ -271,21 +299,21 @@
 
                   <div class="thumbnail">
                      <table class="table table-striped" border="0">
-    
+
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Skills</center></strong> 
+        <strong><center>Skills</center></strong>
       </div>
     </td>
     </tr>
-    
+
     <tr>
-  
+
     <td><?php #echo $fname ?></td>
     </tr>
-    
-    
+
+
     </table>
     <?php ?>
                   </div><!--thumbnail-->
@@ -294,23 +322,23 @@
 
                 </div><!--jumbotron-->
                 </div><!--row-->
-                
 
-            
 
-            
-              
+
+
+
+
              </div><!--/tab-pane-->
 
 
 
 
-             
+
 
               <div class="tab-pane" id="edit-profile">
 
               <div class="row">
-                
+
                  <div class="col-md-12">
                  <div class="list-group">
                    <ul class="list-group">
@@ -330,7 +358,7 @@
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
-                        
+
                         <div id="form-category">
 
                        </div><!--form-content-->
@@ -343,18 +371,18 @@
 
 
                   <div class="addcategory" >
-                
+
                 <div class="col-md-6">
 
-              
+
                 </div><!--col-md-6-->
 
                 <?php include("category-help.php"); ?>
 
           <div id="form-category">
-      
+
       <form method="post" id="reg-category" autocomplete="off">
-        
+
         <select class="form-control" name="txt_category" id="category">
                   <option>Accountant</option>
                   <option>Executive/Top Management</option>
@@ -383,17 +411,17 @@
                   <option>Real Estate</option>
                   <option>Hospitality/Leisure/Travel</option>
                   <option>Others</option>
-                  
+
                 </select>
 
-  
+
         <hr />
          <div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Job Category & View Changes</button>
         </div><!--form-group-->
-        
+
       </form>
-            
+
             </div><!--form-content-->
 
             </div><!--addskill-->
@@ -419,22 +447,22 @@
                     <div class="adds">
 
                       <div id="form-qualification">
-      
+
       <form method="post" id="reg-qualification" autocomplete="off">
-        
+
         <div class="form-group">
-         
+
           <input type="text" class="form-control" name="txt_qualification" id="category" placeholder="Add experience in years" required />
         </div><!--form-group-->
         <hr />
          <div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Experience & View Changes</button>
         </div><!--form-group-->
-        
+
       </form>
-            
+
             </div><!--form-content-->
-    
+
             </div><!--adds-->
                </div><!--well-->
              </div><!--col-md-12-->
@@ -456,11 +484,11 @@
                  <?php include("skills-help.php"); ?>
 
                  <div class="addskills">
-                   
+
           <div id="form-skills">
-      
+
       <form method="post" id="reg-skills" autocomplete="off">
-        
+
         <div class="form-group">
           <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
         </div>
@@ -468,12 +496,12 @@
          <div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Skills & View Changes</button>
         </div><!--form-group-->
-        
+
       </form>
-            
+
             </div><!--form-content-->
             </div><!--addskill-->
-            
+
                </div><!--well-->
              </div><!--col-md-12-->
 
@@ -494,11 +522,11 @@
                   <?php include("course-help.php"); ?>
 
                  <div class="addskills">
-                   
+
           <div id="form-courses">
-      
+
       <form method="post" id="reg-courses" autocomplete="off">
-        
+
         <div class="form-group">
           <input type="text" class="form-control" name="txt_courses" id="courses" placeholder="Add courses" required />
         </div>
@@ -506,18 +534,18 @@
          <div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Courses & View Changes</button>
         </div><!--form-group-->
-        
+
       </form>
-            
+
             </div><!--form-content-->
             </div><!--addskill-->
-            
+
                </div><!--well-->
              </div><!--col-md-12-->
 
 
               </div><!--row-->
-                
+
 
 
 
@@ -527,17 +555,17 @@
 
 
              <div class="tab-pane" id="messages">
-               
+
                <h2></h2>
-               
+
                <ul class="list-group">
                   <li class="list-group-item text-muted">Inbox</li>
                   <li class="list-group-item text-right"><a href="#" class="pull-left">message or Notifications they will be received via phone thru text or via this job portal</a> 2.13.2014</li>
                   <li class="list-group-item text-right"><a href="#" class="pull-left">message or Notifications they will be received via phone thru text or via this job portal</a> 2.11.2014</li>
                   <li class="list-group-item text-right"><a href="#" class="pull-left">message or Notifications they will be received via phone thru text or via this job portal</a> 2.11.2014</li>
-                 
-                </ul> 
-               
+
+                </ul>
+
              </div><!--/tab-pane-->
 
              <div class="tab-pane" id="shortcode">
@@ -547,19 +575,19 @@
                   <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' Accounting  to</a> 22274</li>
                   <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' Marketing  to</a> 22274</li>
                   <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' ICT  to</a> 22274</li>
-                 
-                </ul> 
+
+                </ul>
 
              </div><!--shortcode-->
 
              <div class="tab-pane" id="CV">
                 <h3 style="margin-bottom:2%;">SMS Your skills to 22274 as shown below <i class="fa fa-level-down" aria-hidden="true"></i> </h3>
                 <ul class="list-group">
-                  
+
                   <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' cvskills  to</a> 22274</li>
-                  
-                 
-                </ul> 
+
+
+                </ul>
 
              </div><!--c.v. writing-->
 
@@ -568,28 +596,28 @@
                 <ul class="list-group">
                   <li class="list-group-item text-muted">Interview skills</li>
                   <li class="list-group-item text-right"><a href="#" class="pull-left">'SMS' interview  to</a> 22274</li>
-                  
-                 
-                </ul> 
+
+
+                </ul>
 
              </div><!--interviewskills-->
 
 
              <div class="tab-pane" id="settings">
-                
+
                 <div class="col-md-8">
                   <hr>
                   <form class="form" action="##" method="post" id="registrationForm">
-                      
-          
+
+
                       <div class="form-group">
-                          
+
                           <div class="col-xs-6">
                               <label for="phone"><h4>PhoneNumber</h4></label>
                               <input type="text" class="form-control" name="txt_phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
                           </div>
                       </div>
-          
+
                       <div class="form-group">
                           <div class="col-xs-6">
                              <label for="mobile"><h4>Confirm PhoneNumber</h4></label>
@@ -597,28 +625,28 @@
                           </div>
                       </div>
                       <div class="form-group">
-                          
+
                           <div class="col-xs-6">
                               <label for="email"><h4>Email</h4></label>
                               <input type="email" class="form-control" name="txt_email" id="email" placeholder="you@email.com" title="enter your email.">
                           </div>
                       </div>
                       <div class="form-group">
-                          
+
                           <div class="col-xs-6">
                               <label for="email"><h4>Location</h4></label>
                               <input type="email" class="form-control" name="txt_location" id="location" placeholder="somewhere" title="enter a location">
                           </div>
                       </div>
                       <div class="form-group">
-                          
+
                           <div class="col-xs-6">
                               <label for="password"><h4>Password</h4></label>
                               <input type="password" class="form-control" name="txt_password" id="password" placeholder="password" title="enter your password.">
                           </div>
                       </div>
                       <div class="form-group">
-                          
+
                           <div class="col-xs-6">
                             <label for="password2"><h4>Verify Password</h4></label>
                               <input type="password" class="form-control" name="password2" id="password2" name="txt_password" placeholder="password2" title="enter your password2.">
@@ -644,7 +672,7 @@
                   </div><!--panel-->
                 </div><!--col-md-4-->
               </div><!--/tab-pane-settings-->
-               
+
               </div><!--/tab-pane-->
           </div><!--/tab-content-->
 
@@ -655,14 +683,14 @@
 
 
 <div class="divider" id="section2"></div><!--divider-->
-  
+
 <section class="konnect">
   <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Tell a Friend To find Jobs here</h1></div>
 </section>
 
 
 
-  
+
 
 
 <div id="contacts">
@@ -676,7 +704,7 @@
         <li><a href="#"><img src="img/icons/soc_gplus.png"></a></li>
         <li><a href="#"><img src="img/icons/soc_pin.png"></a></li>
       </ul>
-      
+
     </div><!--/col-->
 </div><!--/container-->
 </div><!--contacts-->
@@ -690,10 +718,10 @@
 <ul class="nav pull-right scroll-top pull-right" >
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>
-  
+
 </div><!--/col-->
 </div><!--/container-->
-  
+
 </div><!--/wrap-->
 
 <ul class="nav pull-right scroll-top">
@@ -716,7 +744,7 @@ $('#nav').affix({
       offset: {
         top: $('header').height()-$('#nav').height()
       }
-}); 
+});
 
 /* highlight the top nav as scrolling occurs */
 $('body').scrollspy({ target: '#nav' })
@@ -804,14 +832,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
             <script type="text/javascript">
-$(document).ready(function() {  
-  
+$(document).ready(function() {
+
   // submit form using $.ajax() method
-  
+
   $('#reg-form').submit(function(e){
-    
+
     e.preventDefault(); // Prevent Default Submission
-    
+
     $.ajax({
       url: 'submit.php',
       type: 'POST',
@@ -823,10 +851,10 @@ $(document).ready(function() {
       });
     })
     .fail(function(){
-      alert('Ajax Submit Failed ...');  
+      alert('Ajax Submit Failed ...');
     });
   });
-  
+
 });
 </script>
 
@@ -834,14 +862,14 @@ $(document).ready(function() {
 -->
 
    <script type="text/javascript">
-$(document).ready(function() {  
-  
+$(document).ready(function() {
+
   // submit form using $.ajax() method
-  
+
   $('#reg-category').submit(function(e){
-    
+
     e.preventDefault(); // Prevent Default Submission
-    
+
     $.ajax({
       url: 'category.php',
       type: 'POST',
@@ -853,24 +881,24 @@ $(document).ready(function() {
       });
     })
     .fail(function(){
-      alert('Ajax Submit Failed ...');  
+      alert('Ajax Submit Failed ...');
     });
   });
-  
+
 });
 </script>
 
 <!-- Qualifications-->
 
 <script type="text/javascript">
-$(document).ready(function() {  
-  
+$(document).ready(function() {
+
   // submit form using $.ajax() method
-  
+
   $('#reg-qualification').submit(function(e){
-    
+
     e.preventDefault(); // Prevent Default Submission
-    
+
     $.ajax({
       url: 'qualification.php',
       type: 'POST',
@@ -882,10 +910,10 @@ $(document).ready(function() {
       });
     })
     .fail(function(){
-      alert('Ajax Submit Failed ...');  
+      alert('Ajax Submit Failed ...');
     });
   });
-  
+
 });
 </script>
 
@@ -893,14 +921,14 @@ $(document).ready(function() {
 <!-- skills-->
 
 <script type="text/javascript">
-$(document).ready(function() {  
-  
+$(document).ready(function() {
+
   // submit form using $.ajax() method
-  
+
   $('#reg-skills').submit(function(e){
-    
+
     e.preventDefault(); // Prevent Default Submission
-    
+
     $.ajax({
       url: 'skills.php',
       type: 'POST',
@@ -912,10 +940,10 @@ $(document).ready(function() {
       });
     })
     .fail(function(){
-      alert('Ajax Submit Failed ...');  
+      alert('Ajax Submit Failed ...');
     });
   });
-  
+
 });
 </script>
 
@@ -923,14 +951,14 @@ $(document).ready(function() {
 <!-- skills-->
 
 <script type="text/javascript">
-$(document).ready(function() {  
-  
+$(document).ready(function() {
+
   // submit form using $.ajax() method
-  
+
   $('#reg-courses').submit(function(e){
-    
+
     e.preventDefault(); // Prevent Default Submission
-    
+
     $.ajax({
       url: 'courses.php',
       type: 'POST',
@@ -942,24 +970,24 @@ $(document).ready(function() {
       });
     })
     .fail(function(){
-      alert('Ajax Submit Failed ...');  
+      alert('Ajax Submit Failed ...');
     });
   });
-  
+
 });
 </script>
 
 <!--registrationForm-->
 
 <script type="text/javascript">
-$(document).ready(function() {  
-  
+$(document).ready(function() {
+
   // submit form using $.ajax() method
-  
+
   $('#registrationForm').submit(function(e){
-    
+
     e.preventDefault(); // Prevent Default Submission
-    
+
     $.ajax({
       url: 'profile-form.php',
       type: 'POST',
@@ -971,10 +999,10 @@ $(document).ready(function() {
       });
     })
     .fail(function(){
-      alert('Ajax Submit Failed ...');  
+      alert('Ajax Submit Failed ...');
     });
   });
-  
+
 });
 </script>
 
