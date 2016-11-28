@@ -353,20 +353,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
     <div id="sction4">
       <div class="row">
-
-      <div class="col-md-6">
-      <div class="well" style="margin-left: 45%;">
-        <div class="thumbnail" style="margin-left:5%;">
-
-        <img src="img/careers.JPG">
-        <img src="img/findjob.JPG">
-          <p>Mkonnect is a job Application Platform that connects </p>
-
-        </div><!--thumbnaill-->
-
-        </div><!--col-md-6-->
-        </div><!--well-->
-
+          
+      
       </div><!--row-->
     </div><!--section4-->
 

@@ -1,12 +1,19 @@
 <?php
 
 if( $_POST ){
+
+    //session starts here
+    session_start();
 	
 	$skills = $_POST['txt_skills'];
+
+   $_SESSION['txt_skills']=$skills;
 	
 
 	?>
     
+    <form  action="saveskills.php" method="POST">
+
     <table class="table table-striped" border="0">
     
     <tr>
@@ -19,18 +26,19 @@ if( $_POST ){
     
     <tr>
     <td>Skills</td>
-    <form action="" method="POST">
+   
     <td><?php echo $skills ?></td>
     </tr>
-    </form>
+    
    
     <tr>
         <td>Save Changes</td>
-        <td><button class="btn btn-success">Save Changes</button></td>
+        <td><button class="btn btn-success" name="save">Save Changes</button></td>
     </tr>
    
     
     </table>
+    </form>
     <?php
 	
 }
