@@ -1,12 +1,21 @@
 <?php
 
 if( $_POST ){
+
+	//session starts here
+    session_start();
+    
+    $qualification  = $_POST['txt_qualification'];
+
+        $_SESSION['txt_qualification']=$qualification;
+       
 	
-	$qualification  = $_POST['txt_qualification'];
 	
 
 	?>
     
+    <form  action="savequalification.php" method="POST">
+
     <table class="table table-striped" border="0">
     
     <tr>
@@ -26,11 +35,12 @@ if( $_POST ){
    
     <tr>
         <td>Save Changes</td>
-        <td><button class="btn btn-success">Save Changes</button></td>
+        <td><button class="btn btn-success" name="save">Save Changes</button></td>
     </tr>
    
     
     </table>
+    </form>
     <?php
 	
 }

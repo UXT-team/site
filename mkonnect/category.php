@@ -1,12 +1,17 @@
 <?php
 
+
 if( $_POST ){
+        session_start();//session starts here
 	
 	$category = $_POST['txt_category'];
-	
+
+        $_SESSION['txt_category']=$category;
+        //$_SESSION['id']=$user_id;
+
 
 	?>
-    
+       <form  action="savecategory.php" method="POST">
     <table class="table table-striped" border="0">
     
     <tr>
@@ -18,22 +23,24 @@ if( $_POST ){
     </tr>
     
     <tr>
+ 
     <td>Job Category</td>
     
-     <form action="" method="POST">
+     
 
-    <td><?php echo $category ?></td>
+     <td><?php echo $category ?></td>
 
-    </form>
+    
     </tr>
    
     <tr>
         <td>Save Changes</td>
-        <td><button class="btn btn-success">Save Changes</button></td>
+        <td><button class="btn btn-success" name="save">Save Changes</button></td>
     </tr>
-   
-    
+
     </table>
+    </form>
     <?php
 	
 }
+

@@ -240,7 +240,7 @@
                 <div class="col-md-12">
                   <div class="panel">
                     
-                    <h2><center><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Qualifications&nbsp;&nbsp;<span class="glyphicon glyphicon-education"></span></center></h2>
+                    <h2><center><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Experience&nbsp;&nbsp;<span class="glyphicon glyphicon-education"></span></center></h2>
                   </div><!--panel-->
                   <div class="thumbnail">
            <table class="table table-striped" border="0">
@@ -312,6 +312,20 @@
               <div class="row">
                 
                  <div class="col-md-12">
+                 <div class="list-group">
+                   <ul class="list-group">
+                     <li class="list-group-item">
+                       <h4 class="text-warning" style="text-align: :center;">Update your Job Profile Below, incase:</h4>
+                       <h5>
+                       <li style="padding:2%;">You have more than one Job category or area of specialization for example You are skilled in IT and Accounting</li>
+                       <li style="padding:2%;"> your Years of Experience are More</li>
+                       <li style="padding:2%;">Any Skill that you have added in the course of time</li>
+                       
+                       <li style="padding:2%;">You have done another courses in the course of time.</li>
+                        </h5>
+                     </li>
+                   </ul>
+                 </div><!--list-group-->
                <div class="well">
                 <div class="col-md-6">
                  <div class="panel">
@@ -326,6 +340,8 @@
                  </div><!--col-md-6-->
 
                  <div class="col-md-6-">
+
+
                   <div class="addcategory" >
                 
                 <div class="col-md-6">
@@ -814,7 +830,8 @@ $(document).ready(function() {
 });
 </script>
 
-<!--Job-Category-->
+<!--Job-
+-->
 
    <script type="text/javascript">
 $(document).ready(function() {  
