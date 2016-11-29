@@ -1,3 +1,7 @@
+<?php
+session_start();
+$user_id = $_SESSION['id'];
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -137,7 +141,7 @@
       <div class="alert alert-info">
         <strong><center><?php
         $con = mysqli_connect("localhost", "root", "", "m_konnect");
-         $select_log = "select * from profiles WHERE user_id=20";
+         $select_log = "select * from profiles WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
@@ -172,7 +176,7 @@
       <div class="alert alert-info">
         <strong><center><?php
         $con = mysqli_connect("localhost", "root", "", "m_konnect");
-         $select_log = "select * from users WHERE user_id=20";
+         $select_log = "select * from users WHERE user_id=$user_id";
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
           $fullname = $row['email'];
@@ -208,7 +212,7 @@
       <div class="alert alert-info">
         <strong><center><?php
         $con = mysqli_connect("localhost", "root", "", "m_konnect");
-         $select_log = "select * from job_applications WHERE user_id=20";
+         $select_log = "select * from job_applications WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
@@ -248,7 +252,7 @@
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php $con = mysqli_connect("localhost", "root", "", "m_konnect");
-         $select_log = "select * from courses WHERE user_id=20";
+         $select_log = "select * from courses WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
@@ -283,7 +287,7 @@
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php $con = mysqli_connect("localhost", "root", "", "m_konnect");
-         $select_log = "select *  from profiles WHERE user_id=20";
+         $select_log = "select *  from profiles WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
@@ -316,7 +320,7 @@
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php $con = mysqli_connect("localhost", "root", "", "m_konnect");
-         $select_log = "select *  from skills WHERE user_id=20";
+         $select_log = "select *  from skills WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);

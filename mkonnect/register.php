@@ -54,7 +54,7 @@ $query = mysqli_query($con, $select_log);
     $_SESSION['email']=$user_email;
     $_SESSION['id']=$user_id;
     $category_id=$_SESSION['category'];
-    if ($category != null) {
+    if ($category_id != null) {
       $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
       mysqli_query($con,$insert_app);
     }
