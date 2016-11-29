@@ -14,9 +14,13 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
  <link href="css/styles.css" rel="stylesheet">
+ <link href="css/uploadcv.css" rel="stylesheet">
  <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/animate.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
    <script src="js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>
+
 
  <script src="js/plugins/sortable.min.js" type="text/javascript"></script>
    <script src="js/plugins/purify.min.js" type="text/javascript"></script>
@@ -30,6 +34,8 @@
      locale file as mentioned below -->
   <script src="js/locales/<lang>.js"></script>
 <script src="js/fa.js"></script>
+
+
 
 </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70" class="">
@@ -110,10 +116,10 @@ $message[]= "Unable to move file";             }
 ?>
 
 
- <a href="logout.php"><button type="submit" class="btn btn-danger"><h6 style="color:#ffffff;">Logout</h6></a>
+ 
 </div><!--well-->
 
-<div class="jumbotron">
+<div class="jumbotron wow fadeInDown" data-wow-delay="1s" style="margin-top: 4%;" >
 <div class="col-md-8">
 <div class="panel" style="padding: 10%;">
  <div class="container">
@@ -154,9 +160,23 @@ $message[]= "Unable to move file";             }
 </div><!--panel-->
 </div><!--col-md-10-->
 </div><!--jumbotron-->
+<div class="row">
+<div class="col-md-8">
+
+<div class="col-md-7">
+<div class="panel" style="margin-left:75%;">
+  <button class="btn btn-warning btn-block wow slideInRight" data-wow-duration="7s">Next</button>
+  </div><!--col-md-6-->
+  </div><!--panel-->
+
+</div><!--col-md-8-->
+</div><!--row-->
+<section class="konnect wow pulse" data-wow-iteration="infinite" data-wow-duration="4800ms">
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8); color: white;"><span class=" glyphicon glyphicon-hand-up"></span></h1></div>
+</section>
 
 <div class="modal fade" id="thankyouModal" tabindex="-1" role="dialog">
-<<<<<<< HEAD
+
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -164,6 +184,21 @@ $message[]= "Unable to move file";             }
                 <h4 class="modal-title" id="myModalLabel"> Wrong file type. </h4>
             </div>
 
+
+
+  <div id="footer">
+  <div class="container">
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
+  </div>
+</div>
+
+<ul class="nav pull-right scroll-top pull-right">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+<script src="js/wow.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/wow.js"></script>
 
 <script type="text/javascript">
   /* affix the navbar after scroll below header */
@@ -243,13 +278,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
 
-=======
-   <div class="modal-dialog">
-       <div class="modal-content">
-           <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-               <h4 class="modal-title" id="myModalLabel"> Wrong file type. </h4>
-           </div>
->>>>>>> 590ecd971dded63dea5035cac66498183a194361
+ <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+</script>
+
+   
 </body>
 </html>

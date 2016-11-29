@@ -8,6 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet">
 
 <!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
      This must be loaded before fileinput.min.js -->
@@ -60,14 +62,13 @@
 
 <div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
 
-<section class="konnect">
+<section class="konnect wow pulse"  data-wow-iteration="infinite" data-wow-duration="4800ms">
   <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below <span class=" glyphicon glyphicon-hand-down"></span></h1> </div>
 </section>
 
 
 
-
-<div class="row" style="margin-top: 8%;">
+<div class="row wow  slideInLeft" style="margin-top: 8%;">
 <div class="container">
     <div class="panel">
         <div class="panel">
@@ -214,6 +215,8 @@
 </div><!--row-->
 
 
+
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -226,6 +229,11 @@
 <!-- optionally if you need translation for your language then include
     locale file as mentioned below -->
 <script src="js/<lang>.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/wow.js"></script>
+
 
 <!--navbar-->
 <script type="text/javascript">
@@ -342,6 +350,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 });
 
         </script>
+
+        <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
 
 
 </body>
