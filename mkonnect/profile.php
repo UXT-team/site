@@ -249,7 +249,13 @@
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Courses</center></strong>
+        <strong><center><?php $con = mysqli_connect("localhost", "root", "", "m_konnect");
+         $select_log = "select * from courses WHERE user_id=20";
+
+        $query = mysqli_query($con, $select_log);
+        $row = mysqli_fetch_array($query);
+          $course = $row['course_name'];
+            echo $course; ?></center></strong>
       </div>
     </td>
     </tr>
@@ -268,7 +274,7 @@
 
                 <div class="col-md-12">
                   <div class="panel">
-                    
+
                     <h2><center><span class="glyphicon glyphicon-education"></span>&nbsp;&nbsp;Experience&nbsp;&nbsp;<span class="glyphicon glyphicon-education"></span></center></h2>
 
                   </div><!--panel-->
@@ -278,7 +284,13 @@
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Certifications</center></strong>
+        <strong><center><?php $con = mysqli_connect("localhost", "root", "", "m_konnect");
+         $select_log = "select *  from profiles WHERE user_id=20";
+
+        $query = mysqli_query($con, $select_log);
+        $row = mysqli_fetch_array($query);
+          $experience = $row['experience'];
+            echo $experience." "."years"; ?></center></strong>
       </div>
     </td>
     </tr>
@@ -305,7 +317,13 @@
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center>Skills</center></strong>
+        <strong><center><?php $con = mysqli_connect("localhost", "root", "", "m_konnect");
+         $select_log = "select *  from skills WHERE user_id=20";
+
+        $query = mysqli_query($con, $select_log);
+        $row = mysqli_fetch_array($query);
+          $skill = $row['skill'];
+            echo $skill;  ?></center></strong>
       </div>
     </td>
     </tr>
@@ -350,7 +368,7 @@
                        <li style="padding:2%;">You have more than one Job category or area of specialization for example You are skilled in IT and Accounting</li>
                        <li style="padding:2%;"> your Years of Experience are More</li>
                        <li style="padding:2%;">Any Skill that you have added in the course of time</li>
-                       
+
                        <li style="padding:2%;">You have done another courses in the course of time.</li>
                         </h5>
                      </li>

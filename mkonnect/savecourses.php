@@ -2,42 +2,26 @@
 session_start();//session starts here
 
     //include db
-         include('db/db_connection.php');
-
         if(isset($_POST['save'])){
-                
-         echo $_SESSION['txt_courses'];
-        
-        //select query
 
-         $select_category = " select * from job_category2 WHERE category = '" .$category. "'";
+         $course=$_SESSION['txt_courses'];
+         $con = mysqli_connect("localhost", "root", "", "m_konnect");
 
-         $run_query = mysqli_query($con, $select_category);
 
-       //query to ensure no double saving
 
-         $rows = mysqli_num_rows($run_query);
-         
-    if($rows>0)
-     {
-  $check_category= "<script>alert(' ".$category." Job Category already exist in our profile, Please try another Job Category!')</script>";
+         // $_POST['marketing']=null;
 
-         echo $check_category;
-      }
-     
-      else{
+         //insert the user into the database.
 
-        $insert_job_category="insert into job_category2 (category) VALUE ('$category')";
+         $insert_acc="insert into courses (course_name,user_id) VALUES ('$course',20)";
 
-    if(mysqli_query($con,$insert_job_category))
-     {
-       echo"<script>window.open('mkonnect.php','_self')</script>";   
-   }
-   else{
+         if(mysqli_query($con,$insert_acc))
+         {
 
-     echo "<script>alert('Check your details and try again')</script>";
-    }
+         echo "<script>alert('Saved  successfully')</script>";
+         echo"<script>window.open('profile.php','_self')</script>";
 
-     }
- }
+         }
 
+
+}
