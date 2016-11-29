@@ -2,42 +2,43 @@
 session_start();//session starts here
 
     //include db
-         include('db/db_connection.php');
-
         if(isset($_POST['save'])){
-                
-         echo $_SESSION['txt_category'];
-        
-        //select query
 
-         $select_category = " select * from job_category2 WHERE category = '" .$category. "'";
+         $category_id= $_SESSION['txt_category'];
+         $con = mysqli_connect("localhost", "root", "", "m_konnect");
 
-         $run_query = mysqli_query($con, $select_category);
+         $select_acc="select * from job_applications  WHERE category_id='".$category_id."' AND user_id=20 ";
 
-       //query to ensure no double saving
+         $run_acc=mysqli_query($con,$select_acc);
 
-         $rows = mysqli_num_rows($run_query);
-         
-    if($rows>0)
-     {
-  $check_category= "<script>alert(' ".$category." Job Category already exist in our profile, Please try another Job Category!')</script>";
 
-         echo $check_category;
-      }
-     
-      else{
+         $rows = mysqli_num_rows($run_acc);
 
-        $insert_job_category="insert into job_category2 (category) VALUE ('$category')";
+         if($rows>0)
+         {
+         $eng_acc= "<script>alert('Already applyed for that job Category')</script>";
 
-    if(mysqli_query($con,$insert_job_category))
-     {
-       echo"<script>window.open('mkonnect.php','_self')</script>";   
-   }
-   else{
+         echo $eng_acc;
+         echo"<script>window.open('profile.php','_self')</script>";
 
-     echo "<script>alert('Check your details and try again')</script>";
-    }
+         }
+         else{
 
-     }
+         // $_POST['marketing']=null;
+
+         //insert the user into the database.
+
+         $insert_acc="insert into job_applications (category_id,user_id) VALUES ('$category_id',20)";
+
+         if(mysqli_query($con,$insert_acc))
+         {
+
+         echo "<script>alert('Saved  successfully')</script>";
+         echo"<script>window.open('profile.php','_self')</script>";
+
+
+
+         }
+
  }
-
+}
