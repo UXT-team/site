@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,7 +34,11 @@
   overflow: hidden;
 
 }
+ .wow:first-child {
+      visibility: hidden;
+    }
 </style>
+
 
 
   </head>
@@ -63,7 +68,7 @@
 
 <div class="divider" id="section2"></div>
 
-<section class="konnect">
+<section class="konnect wow pulse" data-wow-iteration="infinite" data-wow-duration="5000ms">
   <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Jobs Here</h1><h2><span class=" glyphicon glyphicon-hand-down"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2><h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
 </section>
 
@@ -77,8 +82,9 @@
   </div><!--header-->
   <div class="modal-body">
 
-  <div class="row">
-<div class="col-md-12 well wow pulse" style="padding:10%;" data-wow-iteration="infinite" data-wow-duration="1500ms">
+  <div class="row" style="margin-top:-30%;">
+  <section class="wow fadeInDown">
+<div class="col-md-12 well " style="padding:10%;" >
 
         <fieldset>
 
@@ -87,7 +93,7 @@
               <div class="form-group" style="margin-bottom: 28%;">
                 <div class="col-md-10">
                 <div class="thumbnail">
-                  <p><center>If you Already have an account? </center> </p>
+                  <center><p class="text-danger">If you Already have an account?</p> </center> 
                   <h4 style="font-size:1.8em;"><center><a href="#login4">Login</a></center></h4>
                   </div><!--thumnail-->
                 </div><!--col-md-10-->
@@ -97,7 +103,7 @@
        <form action="register.php" method="POST" id="">
             <div class="form-group">
             <div class="col-md-12">
-               <label for="txt_subject" class="control-label">Enter Email</label>
+               <label for="txt_subject" class="control-label text-warning">Enter Email</label>
             </div><!--col-md-12-->
           </div><!--form-group-->
 
@@ -112,7 +118,7 @@
 
             <div class="form-group">
             <div class="col-md-12">
-               <label for="txt_subject" class="control-label">Enter Password</label>
+               <label for="txt_subject" class="control-label text-warning">Enter Password</label>
             </div><!--col-md-12-->
           </div><!--form-group-->
 
@@ -127,7 +133,7 @@
 
             <div class="form-group">
             <div class="col-md-12">
-               <label for="txt_subject" class="control-label">Confirm Password</label>
+               <label for="txt_subject" class="control-label text-warning">Confirm Password</label>
             </div><!--col-md-12-->
           </div><!--form-group-->
 
@@ -162,6 +168,7 @@
         </fieldset>
 
     </div><!--col-md--12-->
+    </section>
 
 
   <div class="jumbotron">
@@ -239,13 +246,13 @@
   </div><!--row-->
 </div><!--body-->
 </div><!--content-->
-
+<section class="wow fadeInDown" data-wow-duration="1s" >
   <div class="row">
   <div class="container">
   <div class="jumbotron" style="margin-top: 5%;">
   <div class="thumnail">
     <div class="caption">
-    <h3><center>Apply Below Job as Per Category</center></h3>
+    <h3 class="text-danger"><center>Apply Below Job as Per Category</center></h3>
     </div>
   </div><!--thumbnail-->
 
@@ -351,6 +358,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--jumbotron-->
      </div><!--container-->
     </div><!--row-->
+    </section>
 
     <div id="sction4">
       <div class="row">
@@ -360,10 +368,12 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--section4-->
 
     <div id="section1">
+    <section class="wow fadeInDown" style="background-color:#f1c40f;">
       <div class="row">
+      
         <div class="col-md-6">
           <div class="well" style="margin-left: 45%;">
-            <h2 style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
+            <h2 class="text-danger" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
             <ul class="list-group">
               <li class="list-group-item"> <h5>
                 <a href="#" class="pull-left text-warning">'SMS' Interview Skills  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
@@ -375,9 +385,12 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
             </ul>
           </div><!--well-->
         </div><!--col-md-10-->
+       
+
+
         <div class="col-md-6">
           <div class="well" style="margin-left: 15%; margin-right:25%;">
-            <h2 style="padding:2%; text-align:center;">JOBS</h2>
+            <h2 class="text-danger" style="padding:2%;  text-align:center;">JOBS</h2>
             <ul class="list-group">
               <li class="list-group-item"> <h5>
                 <a href="#" class="pull-left text-danger" style="font-size:1.7em;">'SMS' Jobs  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
@@ -388,10 +401,11 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           </div><!--well-->
         </div><!--col-md-6-->
       </div><!--row-->
+      </section>
     </div><!--scetion4-->
 
 
-
+<section class=" wow bounceInLeft " data-wow-offset="200">
 
 <div id="contacts">
 <div class="container">
@@ -408,6 +422,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--/col-->
 </div><!--/container-->
 </div><!--contacts-->
+</section>
+
 
   <div id="footer">
   <div class="container">
@@ -427,6 +443,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 <ul class="nav pull-right scroll-top">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>
+
 
 
 

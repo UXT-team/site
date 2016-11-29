@@ -13,6 +13,8 @@ $user_id = $_SESSION['id'];
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -127,7 +129,7 @@ $user_id = $_SESSION['id'];
 
               <hr>
              <div class="row">
-                <div class="jumbotron">
+                <div class="jumbotron wow fadeInDown" data-wow-delay="">
                 <div class="col-md-12">
                   <div class="panel">
                     <h2><center><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;FUll Name &nbsp;&nbsp; <span class="glyphicon glyphicon-user"></span></center></h2>
@@ -376,7 +378,7 @@ $user_id = $_SESSION['id'];
                      </li>
                    </ul>
                  </div><!--list-group-->
-               <div class="well">
+               <div class="well wow slideInRight" data-wow-delay="2s">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
@@ -437,7 +439,7 @@ $user_id = $_SESSION['id'];
              </div><!--col-md-12-->
 
               <div class="col-md-12">
-               <div class="well">
+               <div class="well wow slideInLeft" data-wow-delay="2s">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
@@ -462,9 +464,9 @@ $user_id = $_SESSION['id'];
           <input type="text" class="form-control" name="txt_qualification" id="category" placeholder="Add experience in years" required />
         </div><!--form-group-->
         <hr />
-         <div class="form-group">
+         <!--div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Experience & View Changes</button>
-        </div><!--form-group-->
+        </div--><!--form-group-->
 
       </form>
 
@@ -512,7 +514,7 @@ $user_id = $_SESSION['id'];
                </div><!--well-->
              </div><!--col-md-12-->
 
-             <div class="col-md-12">
+             <div class="col-md-12 wow bounceInLeft"  data-wow-offset="300">
                <div class="well">
                 <div class="col-md-6">
                  <div class="panel">
@@ -691,7 +693,7 @@ $user_id = $_SESSION['id'];
 
 <div class="divider" id="section2"></div><!--divider-->
 
-<section class="konnect">
+<section class="konnect wow pulse" data-wow-iteration="infinite" data-wow-duration="4800ms">
   <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Tell a Friend To find Jobs here</h1></div>
 </section>
 
@@ -700,7 +702,7 @@ $user_id = $_SESSION['id'];
 
 
 
-<div id="contacts">
+<div id="contacts " class="wow slideInLeft" data-wow-duration="4s">
 <div class="container">
     <div class="col-sm-8 col-sm-offset-2 text-center">
     <h2><em>CONTACT US</em></h2>
@@ -740,7 +742,27 @@ $user_id = $_SESSION['id'];
 
 
 
+<script src="js/wow.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/wow.js"></script>
 
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+</script>
 
 
 
