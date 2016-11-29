@@ -7,6 +7,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +53,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="#section4">About</a></li>
+          <li class="active"><a href="about.html">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -77,7 +78,7 @@
   <div class="modal-body">
 
   <div class="row">
-<div class="col-md-12 well" style="padding:10%;">
+<div class="col-md-12 well wow pulse" style="padding:10%;" data-wow-iteration="infinite" data-wow-duration="1500ms">
 
         <fieldset>
 
@@ -179,7 +180,7 @@
 
                 </div><!--panel-->
 
-                 <form class="form-vertical" action="login.php" method="POST" id="mkonnect2">
+                 <form class="form-vertical" action="login.php" method="POST" id="">
                  <div class="form-group">
             <div class="col-md-12">
                <label for="txt_email" class="control-label">Email</label>
@@ -522,6 +523,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
 
+    <script src="js/wow.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/wow.js"></script>
+
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
@@ -667,6 +672,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
         }
       } );
     } );
+  </script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
   </script>
 
 </body>
