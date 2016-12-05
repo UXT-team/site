@@ -462,7 +462,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
   <div class="col-md-8">
     
       
-        <div class="thumbnail well wow slideInleft" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
+        <div class="thumbnail well wow fadeInDown" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
         <div class="panel">
 
           <fieldset style="padding:10%;">
