@@ -1,15 +1,9 @@
 <?php
-session_start();
 
-//import js
-
+require ("db.php");
 include('header.php');
 
-//include db
-$con = mysqli_connect("localhost", "root", "", "m_konnect");
-$db = "users";
 
-$select_db=mysqli_select_db($con,$db);
 
 if(isset($_POST['accounts'])){
 

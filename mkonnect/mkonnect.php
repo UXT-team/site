@@ -1,3 +1,5 @@
+<?php   require ("db.php");
+ ?>
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,7 +95,7 @@
               <div class="form-group" style="margin-bottom: 28%;">
                 <div class="col-md-10">
                 <div class="thumbnail">
-                  <center><p class="text-danger">If you Already have an account?</p> </center> 
+                  <center><p class="text-danger">If you Already have an account?</p> </center>
                   <h4 style="font-size:1.8em;"><center><a href="#login4">Login</a></center></h4>
                   </div><!--thumnail-->
                 </div><!--col-md-10-->
@@ -112,7 +114,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="email" placeholder="Your Email" id="email" type="email" autofocus="" required="">
-                    
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -127,7 +129,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="password" placeholder="Your Password" type="password" id="password" required="">
- 
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -142,7 +144,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="confirm_password" placeholder="Confirm Password" type="password" id="confirm_password" required="">
-                    
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -172,9 +174,9 @@
 
 
   <div class="jumbotron">
-                    
+
                     <!--button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button-->
-                  
+
 
                         <div id="login2">
                 <div class="arrow"></div>
@@ -216,7 +218,7 @@
 
               </div><!--col-md-12-->
                </div><!--form-group-->
-                    
+
 
                 </div>
                 <div class="popover-footer" id="login4">
@@ -226,10 +228,10 @@
             </div><!--mypopoverid-->
 
 
-                 
+
                   </div><!--panel-->
 </div><!--login2-->
-</div><!--row-->        
+</div><!--row-->
     <center>
                   <!-- PopoverX content -->
 
@@ -257,11 +259,6 @@
   </div><!--thumbnail-->
 
   <?php
-  $con = mysqli_connect("localhost", "root", "", "m_konnect");
-  $db = "job_category";
-
-  $select_db=mysqli_select_db($con,$db);
-
   $query = "select * from job_category";
   $query1 = mysqli_query($con,$query);
   // $row = mysqli_fetch_all($query1);
@@ -362,15 +359,15 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
     <div id="sction4">
       <div class="row">
-          
-      
+
+
       </div><!--row-->
     </div><!--section4-->
 
     <div id="section1">
     <section class="wow fadeInDown" style="background-color:#f1c40f;">
       <div class="row">
-      
+
         <div class="col-md-6">
           <div class="well" style="margin-left: 45%;">
             <h2 class="text-danger" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
@@ -385,7 +382,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
             </ul>
           </div><!--well-->
         </div><!--col-md-10-->
-       
+
 
 
         <div class="col-md-6">
@@ -443,17 +440,6 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 <ul class="nav pull-right scroll-top">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>
-
-
-
-
-
-
-
-
-
-
-
 
 <script type="text/javascript">
   /* affix the navbar after scroll below header */
@@ -551,7 +537,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <script type="text/javascript" src="js/jquery.validate.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
 
-   
+
 <script type="text/javascript">
     $.validator.setDefaults( {
       submitHandler: function () {
@@ -584,7 +570,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
           agree: "required"
         },
         messages: {
-          
+
           password: {
             required: "Please provide a password",
             minlength: "Your password must be at least 6 characters long"
@@ -618,7 +604,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       $( "#mkonnect2" ).validate( {
         rules: {
-          
+
           password1: {
             required: true,
             minlength: 6

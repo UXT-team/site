@@ -1,6 +1,5 @@
 <?php
-//include db..
-$con = mysqli_connect("localhost", "root", "", "m_konnect");
+require ("db.php");
 
 if (isset($_POST['login'])) {
 
@@ -18,19 +17,13 @@ if (isset($_POST['login'])) {
 
   if(mysqli_num_rows($query)){
 
-   // "<script>alert('Login successful')</script>";
-    // "<script>window.open('mkonnect/upload.php','_self')</script>";
-           echo "<script>window.open('profile.php','_self')</script>";
-
-     //here session is used and value of $user_email store in $_SESSION.
-
+    $select_log = "select * from users WHERE email='$email'";
+    $query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
-        $user_id = $row['id'];
-      session_start();//session starts here
-
-
+        $user_id = $row['user_id'];
         $_SESSION['email']=$email;
         $_SESSION['id']=$user_id;
+        echo "<script>window.open('profile.php','_self')</script>";
   }
    else
     {

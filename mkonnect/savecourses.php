@@ -1,12 +1,10 @@
 <?php
-session_start();//session starts here
+require ("db.php");
 
     //include db
         if(isset($_POST['save'])){
 
          $course=$_SESSION['txt_courses'];
-         $con = mysqli_connect("localhost", "root", "", "m_konnect");
-
 
 
          // $_POST['marketing']=null;
