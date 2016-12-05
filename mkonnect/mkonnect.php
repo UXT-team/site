@@ -35,9 +35,25 @@
   background-color: #5cb85c;
 
 }
+
+#about .well{
+  height: auto;
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+#postjob .well{
+  height: auto;
+  width: 70%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
  .wow:first-child {
       visibility: hidden;
     }
+}
 </style>
 
 
@@ -60,6 +76,7 @@
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#about">About</a></li>
+          <li class="active"><a href="#postjob">PostJob</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -390,21 +407,22 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
     <div id="about">
       <div class="row">
-        <div class="col-md-10">
-          <div class="panel" style="margin-left:20%;">
+      <div class="well">
+        <div class="col-md-12">
+          <div class="panel wow slideInRight" style="margin-left:15%; margin-right: 15%; "  data-wow-delay="1s">
             <h3>Mkonnect is a Job Application system that Profile Matches Employers and Job seekers according to the employer's requirements and the seeker's qualifications. </h3>
             </div><!--col-md-6-->
           </div><!--panel-->
-      
+      </div><!--jumbotron-->
       </div><!--row-->
     </div><!--section4-->
 
     <div id="section1">
-    <section class="wow fadeInDown" style="background-color:#f0ad4e;">
+    <section class="wow fadeInDown" data-wow-delay="1s" style="background-color:#f0ad4e;">
       <div class="row">
       
         <div class="col-md-6">
-          <div class="well" style="margin-left: 45%;">
+          <div class="well" style="margin-left: 25%;">
             <h2 class="text-warning" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
             <ul class="list-group">
               <li class="list-group-item"> <h5>
@@ -436,6 +454,79 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
       </section>
     </div><!--scetion4-->
 
+    <!--Post-Jobs-->
+
+<div id="postjob">
+  <div class="row">
+  
+  <div class="col-md-8">
+    
+      
+        <div class="thumbnail well" style="padding: 10%; width:auto; margin-left: 12%; ">
+        <div class="panel">
+
+          <fieldset style="padding:10%;">
+
+          <legend> <h1 style="text-align: center;"><i class="fa fa-building-o fa-3x" aria-hidden="true"></i></h1> </legend>
+
+            <form method="" action="POST">
+              
+              <div class="col-md-12" >
+                <div class="form-group">
+                  <label><h3>Enter Email</h3></label>
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+             <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+                  <label><h3>Enter Password</h3></label>
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+              <input class="form-control" name="password" placeholder="Your Password" type="password" id="password1"  required="">
+             
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+              <button class="btn btn-success btn-block">Register</button>
+              
+              <p class="text-danger" style="text-align:center;"> Forgotten Password?</p>
+              <p class="text-warning" style="text-align: center;"> If you already have an acount, <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+              <button class="btn btn-success btn-block"> Login</button>
+             
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+
+            </form>
+
+          </fieldset>
+            
+          </div><!--panel-->
+        </div><!--panel-->
+      </div><!--col-md-8-->
+   
+    <div class="col-md-4">
+    <div class="thumbnail">
+      <h2> <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> Post Your Jobs </h2>
+    </div><!--thumbnail-->
+  </div><!--col-md-4-->
+  </div><!--row-->
+</div><!--post-Jobs-->
 
 
 <div id="contacts" class="wow bounceInLeft" data-wow-offset="200">

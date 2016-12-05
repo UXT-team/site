@@ -58,7 +58,8 @@ $user_id = $_SESSION['id'];
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
 
-          <!--li class="active"><a href="#shortcode"><strong>ShortCode</strong></a></li-->
+          <li class="active"><a href="#postjob"><strong>POST </strong></a></li>
+
 
           <li class="active"><a href="#contacts">Contacts</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
@@ -71,7 +72,7 @@ $user_id = $_SESSION['id'];
 <div class="container">
   <div class="row">
       <div class="col-sm-10"><h1></h1></div>
-      <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.PNG"></a></div>
+      <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.png"></a></div>
     </div>
     <div class="row">
       <div class="col-sm-3"><!--left col-->
@@ -360,11 +361,14 @@ $user_id = $_SESSION['id'];
 
 
               <div class="tab-pane" id="edit-profile">
-
+              
+              <hr>
+              <hr >
+              
               <div class="row">
 
                  <div class="col-md-12">
-                 <div class="list-group">
+                 <div class="list-group" style="margin-top:2%;">
                    <ul class="list-group">
                      <li class="list-group-item">
                        <h4 class="text-warning" style="text-align: :center;">Update your Job Profile Below, incase:</h4>
@@ -378,7 +382,7 @@ $user_id = $_SESSION['id'];
                      </li>
                    </ul>
                  </div><!--list-group-->
-               <div class="well wow slideInRight" data-wow-delay="2s">
+               <div class="well wow slideInRight" data-wow-delay="1s">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
@@ -437,47 +441,48 @@ $user_id = $_SESSION['id'];
             </div><!--col-md-6-->
              </div><!--well-->
              </div><!--col-md-12-->
+             <hr>
 
               <div class="col-md-12">
-               <div class="well wow slideInLeft" data-wow-delay="2s">
+               <!--div class="well wow slideInLeft" data-wow-delay="1s">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
-                     <div id="form-qualification">
+                     <!--div id="form-qualification">
 
-                       </div><!--form-content-->
+                       </div--><!--form-content-->
 
-                   </div><!--thumbnail-->
-                 </div><!--panel-->
-                 </div><!--col-md-6-->
+                   <!--/div><!--thumbnail-->
+                 <!--/div><!--panel-->
+                 <!--/div><!--col-md-6-->
 
-                    <?php include("qualification-help.php"); ?>
+                    <!--?php #include("qualification-help.php"); ?>
 
                     <div class="adds">
 
                       <div id="form-qualification">
 
-      <form method="post" id="reg-qualification" autocomplete="off">
+      <!--form method="post" id="reg-qualification" autocomplete="off">
 
-        <div class="form-group">
+        <!--div class="form-group">
 
           <input type="text" class="form-control" name="txt_qualification" id="category" placeholder="Add experience in years" required />
-        </div><!--form-group-->
+        </div--><!--form-group-->
         <hr />
          <!--div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Experience & View Changes</button>
         </div--><!--form-group-->
 
-      </form>
+      <!--/form-->
 
-            </div><!--form-content-->
+            <!--/div><!--form-content-->
 
-            </div><!--adds-->
-               </div><!--well-->
+            <!--/div><!--adds-->
+               <!--/div><!--well-->
              </div><!--col-md-12-->
 
              <div class="col-md-12">
-               <div class="well">
+               <div class="well wow fadeInDown"  data-wow-delay="1s">
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
@@ -513,6 +518,8 @@ $user_id = $_SESSION['id'];
 
                </div><!--well-->
              </div><!--col-md-12-->
+
+              <hr>
 
              <div class="col-md-12 wow bounceInLeft"  data-wow-offset="300">
                <div class="well">

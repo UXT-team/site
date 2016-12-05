@@ -1,7 +1,7 @@
 <?php
 //connect to database 
 //error_reporting(0);
-$con = mysqli_connect("localhost", "root", "dr67hj1", "mkonnect_jobs");
+$con = mysqli_connect("localhost", "root", "", "mkonnect");
 
 if (!$con) {
 	

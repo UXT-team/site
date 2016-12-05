@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UPDATE PROFILE</title>
+	<title>POST JOB</title>
 	 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +34,14 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="css/updateprofile.css">
           <style type="text/css">
+              .thumbnail{
+   height: auto;
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+  background-color: ;
 
+}
 
      </style>
 </head>
@@ -61,160 +68,176 @@
 </div><!--/.navbar -->
 
 <div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
+<div class="col-md-6">
+<div class="well" style="margin-left: 30%;">
+  <h2>Email session Variable</h2>
+</div><!--well-->
+</div><!--col-md-6-->
 
-<section class="konnect wow pulse"  data-wow-iteration="infinite" data-wow-duration="4800ms">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below <span class=" glyphicon glyphicon-hand-down"></span></h1> </div>
-</section>
 
 
-
-<div class="row wow  slideInLeft" style="margin-top: 8%;">
+<div class="row wow  slideInLeft" style="margin-top: 2%;">
 <div class="container">
     <div class="panel">
-        <div class="panel">
-            <h3 class="text-danger"><center>Please Update Your Profile the Click Next to Upload your C.V.</center></h3>
-            <div class="well" style=" margin:0%; ">
-                <div class="caption">
-
-                </div><!--caption-->
-
-
-
-                <fieldset>
-
-                    <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform"  style="padding: 2%;">
-
-
-                <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
-
-                 <div class="form-group">
+        <div class="">
+            <form>
+            <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter FullName</center></h3></label>
+                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Job Title</h2></center></label>
                 </div><!--col-md-12-->
-              </div><!--form-group-->
-
-                <div class="form-group">
-
-                    <div class="col-md-10">
-                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required=""  />
-                        
-
-                    </div><!--col-md--12-->
                 </div><!--form-group-->
 
-
-                 <div class="form-group">
-                <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Phone Number</center></h3></label>
+                <div class="form-group">
+                <div class="col-md-7">
+                 <input class="form-control" name="txt_jobtitle" placeholder="Job Title" type="text" id="inputName" required=""  />
                 </div><!--col-md-12-->
-              </div><!--form-group-->
-
-
-              <div class="form-group">
-
-                    <div class="col-md-10">
-                        <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required=""  />
-                        
-
-                    </div><!--col-md-12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Select Education Level</center></h3></label>
+                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Company Name</h2></center></label>
                 </div><!--col-md-12-->
-              </div><!--form-group-->
-
-              <div class="form-group">
-
-                    <div class="col-md-10">
-
-                         <select class="form-control" name="txt_cert"  required="">
-
-                              <option>Degree</option>
-                              <option>Diploma</option>
-                              <option>Certificate</option>
-                              <option>KCSE</option>
-
-                              </select>
-                        
-
-                    </div><!--col-md-12-->
                 </div><!--form-group-->
 
+                <div class="form-group">
+                <div class="col-md-7">
+                 <input class="form-control" name="txt_companyname" placeholder="companyName" type="text" id="inputName" required=""  />
+                </div><!--col-md-12-->
+                </div><!--form-group-->
+                </div><!--col-md-4-->
+
+                <div class="form-group">
+                <div class="col-md-12">
+                <label for="txt_subject" class="control-label"><h2 style="text-align: center;">Job Description</h2></center></label>
+                </div><!--col-md-12-->
+                </div><!--form-group-->
+
+
+                <div class="form-group">
+                <div class="col-md-12">
+
+                <textarea class="textarea" placeholder="Enter Job Description" style="width: 810px; height: 200px" required=""></textarea>
+
+                </div><!--col-md-12-->
+               </div><!--form-group-->
+
+        <div class="col-md-4">
+        <div class="form-group">
+         <div class="col-md-12">
+            <label for="txt_subject" class="control-label"></center><h2> Choose Job Category</h2></center></label>
+         </div><!--col-md-12-->
+         </div><!--col-md-12-->
+               
                <div class="form-group">
+         <div class="col-md-8">
+            <select class="form-control" name="txt_jobcategory">
+              <option>IT</option>
+              <option>Accounting</option>
+              <option>Top Management</option>
+              <option>Creatives</option>
+              <option>Customer Service</option>
+              <option>Education</option>
+              <option>Farming & Agriculture</option>
+              <option>Government</option>
+              <option>Healthcare & Pharmaceuticals</option>
+              <option>Human Resources & Recruitment</option>
+              <option>Insurance</option>
+              <option>Legal</option>
+              <option>Manufacturing & Production</option>
+              <option>Minning & Natural Resources</option>
+              <option>NGO, Communication</option>
+              <option>Administration & office Support</option>
+              <option>Project/ Project Management</option>
+              <option>Research, Quality control/ Quality Assurance</option>
+              <option>Sales/Business Development</option>
+              <option>Security</option>
+              <option>Strategy & Consulting</option>
+              <option>Tourism & Travel</option>
+              <option>Trade & Services</option>
+              <option>Transport,Logistics,Procurement</option>
+              <option>Real Estate</option>
+              <option>Hospitality</option>
+              <option>Others</option>
+            </select>
+         </div><!--col-md-12-->
+         </div><!--col-md-12-->
+         </div><!--col-md-3-->
+         <div class="col-md-4">
+         <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Nationality</center></h3></label>
+                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Website</h2></center></label>
                 </div><!--col-md-12-->
-              </div><!--form-group-->
+                </div><!--form-group-->
 
-              <div class="form-group">
+                <div class="form-group">
+                <div class="col-md-7">
+                 <input class="form-control" name="txt_website" placeholder=" eg. www.company.com" type="text" id="inputName" required=""  />
+                </div><!--col-md-12-->
+                </div><!--form-group-->
+                </div><!--col-md-4-->
 
-                    <div class="col-md-10">
-
-
-                        <select class="form-control" name="txt_nationality"  required="">
-
-                              <option>Kenyan</option>
-                              <option>Ugandan</option>
-                              <option>East African</option>
-
-                              </select>
-                        
-
-                    </div><!--col-md--12-->
+                <div class="col-md-12">
+                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">WorkExperience</h2></center></label>
+                </div><!--col-md-12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Years Of Experience</center></h3></label>
+                 <select class="form-group" name="txt_experience">
+                   <option>5</option>
+                   <option>4</option>
+                   <option>3</option>
+                   <option>2</option>
+                   <option>1</option>
+                   <option>none</option>
+                 </select>
                 </div><!--col-md-12-->
-              </div><!--form-group-->
-
-                <div class="form-group">
-
-                    <div class="col-md-10">
-
-                        <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required=""  />
-                        
-
-                    </div><!--col-md--12-->
                 </div><!--form-group-->
+                </div><!--col-md-4-->
 
-                <div class="form-group">
-
-                    <div class="col-md-10">
-
-
-                    </div><!--col-md-10-->
-                </div><!--form-group-->
-
-                <div class="form-group">
-                    <div class="col-md-10">
-
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Next" name="profile" style="font-size:1.25em;" >
-
-                    </div><!--col-md--12-->
-                </div><!--form-group-->
-
-
-
-
-                </div><!--col-md-12-->
+         <div class="form-group">
+         <div class="col-md-8">
+          <center>  <button class="btn btn-success btn-block" style="margin-top:2%;"><h3>SUBMIT</h3></button></center>
+         </div><!--col-md-12-->
+         </div><!--col-md-12-->
+         </div><!--col-md-12-->
+         </div><!--row-->
 
             </form>
-
-                </fieldset>
-
-
-
             </div><!--thumbnail-->
         </div><!--panel-->
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
 
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+    <h2 class="text-warning"><em>CONTACT US</em></h2>
 
+      <ul class="list-inline center-block">
+        <li><a href="#"><img src="img/icons/soc_fb.png"></a></li>
+        <li><a href="#"><img src="img/icons/soc_tw.png"></a></li>
+        <li><a href="#"><img src="img/icons/soc_gplus.png"></a></li>
+        <li><a href="#"><img src="img/icons/soc_pin.png"></a></li>
+      </ul>
+
+    </div><!--/col-->
+</div><!--/container-->
+</div><!--contacts-->
+
+
+
+  <div id="footer">
+  <div class="container">
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
+  </div>
+</div>
+
+<ul class="nav pull-right scroll-top pull-right">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
 
 
 <!-- jQuery library -->
@@ -233,6 +256,8 @@
     <script src="js/wow.min.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/wow.js"></script>
+    <script src="lib/js/wysihtml5-0.3.0.js"></script>
+
 
 
 <!--navbar-->
