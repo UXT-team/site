@@ -34,6 +34,7 @@
   width: 100%;
   padding: 40px 0;
   overflow: hidden;
+  background-color: #5cb85c;
 
 }
  .wow:first-child {
@@ -60,7 +61,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="about.html">About</a></li>
+          <li class="active"><a href="#about">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -79,7 +80,9 @@
 <div class="modal-dialog" role="document">
 <div class="modal-content">
   <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+     
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
     <center><h4 class="modal-title" id="myModalLabel">Register</h4></center>
   </div><!--header-->
   <div class="modal-body">
@@ -155,14 +158,39 @@
 
          <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"   style="font-size:1.25em;">
 
-                </div><!--col-md--12-->
+                </div><!--col-md-12-->
             </div><!--form-group-->
             </form>
 
             <div class="form-group">
                 <div class="col-md-12">
 
-                  <p class="text-danger"><a href="mkonnect/resetpassword.php">Forgotten Password</a></p>
+                    <div class="panel" style="margin-top:2%;">
+
+                  <p class="text-success"><a data-toggle="collapse" href="#forgotten" aria-expanded="false" aria-controls="collapseExample">Forgotten Password</a></p>
+
+                  </div><!--panel-->
+
+                  <div id="forgotten" class="collapse">
+
+                    <form class="form-vertical" action="" method="POST" id="">
+                 <div class="form-group">
+            <div class="col-md-12">
+               <label for="txt_email" class="control-label text-success" style="text-align:center;">Email</label>
+            </div><!--col-md-12-->
+          </div><!--form-group-->
+
+                  <div class="form-group">
+                 <div class="col-md-12">
+
+                   <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+
+
+                    </div><!--col-md-12-->
+                    </div><!--form-group-->
+                    </form>
+                    
+                  </div><!--forgotten-->
 
                 </div><!--col-md--12-->
             </div><!--form-group-->
@@ -173,8 +201,13 @@
     </section>
 
 
+<<<<<<< HEAD
   <div class="jumbotron">
 
+=======
+  <div class="thumbnail">
+                    
+>>>>>>> 416558dda1c1773e7821acdcda83f97ea7b6f7c3
                     <!--button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button-->
 
 
@@ -243,7 +276,7 @@
 
     <div class="modal-footer">
     <!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
-
+     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
   </div><!--modal-footer-->
   </div><!--row-->
 </div><!--body-->
@@ -315,7 +348,7 @@
   <div id="jobs"></div><!--jobs-->
   <div class="panel" style="margin:10%; padding: 10%;">
 
-<p  class="text-warning"> <?php $category=array();
+<p  class="text-success"> <?php $category=array();
  $category=$first[$i];
  echo $category["category"]; ?></p>
 <button id="<?php $category=$first[$i];
@@ -326,7 +359,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
 <div class="col-md-4">
   <div class="panel" style="padding:10%; margin:10%;">
-  <h3  class="text-warning"><?php $category=array();
+  <h3  class="text-success"><?php $category=array();
    $category=$second[$i];
    echo $category["category"]; ?></h3>
 
@@ -339,7 +372,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 <div class="col-md-4">
   <div class="panel" style="padding:10%; margin:10%;">
 
-  <h3  class="text-warning"><?php $category=array();
+  <h3  class="text-success"><?php $category=array();
    $category=$third[$i];
    echo $category["category"]; ?></h3>
 
@@ -357,20 +390,29 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--row-->
     </section>
 
-    <div id="sction4">
+    <div id="about">
       <div class="row">
+<<<<<<< HEAD
 
 
+=======
+        <div class="col-md-10">
+          <div class="panel" style="margin-left:20%;">
+            <h3>Mkonnect is a Job Application system that Profile Matches Employers and Job seekers according to the employer's requirements and the seeker's qualifications. </h3>
+            </div><!--col-md-6-->
+          </div><!--panel-->
+      
+>>>>>>> 416558dda1c1773e7821acdcda83f97ea7b6f7c3
       </div><!--row-->
     </div><!--section4-->
 
     <div id="section1">
-    <section class="wow fadeInDown" style="background-color:#f1c40f;">
+    <section class="wow fadeInDown" style="background-color:#f0ad4e;">
       <div class="row">
 
         <div class="col-md-6">
           <div class="well" style="margin-left: 45%;">
-            <h2 class="text-danger" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
+            <h2 class="text-warning" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
             <ul class="list-group">
               <li class="list-group-item"> <h5>
                 <a href="#" class="pull-left text-warning">'SMS' Interview Skills  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
@@ -387,7 +429,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
         <div class="col-md-6">
           <div class="well" style="margin-left: 15%; margin-right:25%;">
-            <h2 class="text-danger" style="padding:2%;  text-align:center;">JOBS</h2>
+            <h2 class="text-warning" style="padding:2%;  text-align:center;">JOBS</h2>
             <ul class="list-group">
               <li class="list-group-item"> <h5>
                 <a href="#" class="pull-left text-danger" style="font-size:1.7em;">'SMS' Jobs  to</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 22274 </h5></li>
@@ -402,12 +444,11 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--scetion4-->
 
 
-<section class=" wow bounceInLeft " data-wow-offset="200">
 
-<div id="contacts">
+<div id="contacts" class="wow bounceInLeft" data-wow-offset="200">
 <div class="container">
     <div class="col-sm-8 col-sm-offset-2 text-center">
-    <h2><em>CONTACT US</em></h2>
+    <h2 class="text-warning"><em>CONTACT US</em></h2>
 
       <ul class="list-inline center-block">
         <li><a href="#"><img src="img/icons/soc_fb.png"></a></li>
@@ -419,7 +460,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     </div><!--/col-->
 </div><!--/container-->
 </div><!--contacts-->
-</section>
+
 
 
   <div id="footer">
