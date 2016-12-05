@@ -1,11 +1,9 @@
 <?php
-session_start();//session starts here
+require ("db.php");
 
-    //include db
         if(isset($_POST['save'])){
 
          $skill= $_SESSION['txt_skills'];
-         $con = mysqli_connect("localhost", "root", "", "m_konnect");
 
 
 

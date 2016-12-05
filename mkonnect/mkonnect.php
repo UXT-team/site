@@ -1,3 +1,5 @@
+<?php   require ("db.php");
+ ?>
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -113,7 +115,7 @@
               <div class="form-group" style="margin-bottom: 28%;">
                 <div class="col-md-10">
                 <div class="thumbnail">
-                  <center><p class="text-danger">If you Already have an account?</p> </center> 
+                  <center><p class="text-danger">If you Already have an account?</p> </center>
                   <h4 style="font-size:1.8em;"><center><a href="#login4">Login</a></center></h4>
                   </div><!--thumnail-->
                 </div><!--col-md-10-->
@@ -132,7 +134,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="email" placeholder="Your Email" id="email" type="email" autofocus="" required="">
-                    
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -147,7 +149,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="password" placeholder="Your Password" type="password" id="password" required="">
- 
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -162,7 +164,7 @@
                 <div class="col-md-12">
 
                     <input class="form-control" name="confirm_password" placeholder="Confirm Password" type="password" id="confirm_password" required="">
-                    
+
                 </div><!--col-md-12-->
             </div><!--form-group-->
 
@@ -218,8 +220,9 @@
 
   <div class="thumbnail">
                     
+
                     <!--button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button-->
-                  
+
 
                         <div id="login2">
                 <div class="arrow"></div>
@@ -261,7 +264,7 @@
 
               </div><!--col-md-12-->
                </div><!--form-group-->
-                    
+
 
                 </div>
                 <div class="popover-footer" id="login4">
@@ -271,10 +274,10 @@
             </div><!--mypopoverid-->
 
 
-                 
+
                   </div><!--panel-->
 </div><!--login2-->
-</div><!--row-->        
+</div><!--row-->
     <center>
                   <!-- PopoverX content -->
 
@@ -302,11 +305,6 @@
   </div><!--thumbnail-->
 
   <?php
-  $con = mysqli_connect("localhost", "root", "", "m_konnect");
-  $db = "job_category";
-
-  $select_db=mysqli_select_db($con,$db);
-
   $query = "select * from job_category";
   $query1 = mysqli_query($con,$query);
   // $row = mysqli_fetch_all($query1);
@@ -407,6 +405,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
     <div id="about">
       <div class="row">
+
       <div class="well">
         <div class="col-md-12">
           <div class="panel wow slideInRight" style="margin-left:15%; margin-right: 15%; "  data-wow-delay="1s">
@@ -414,13 +413,14 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
             </div><!--col-md-6-->
           </div><!--panel-->
       </div><!--jumbotron-->
+
       </div><!--row-->
     </div><!--section4-->
 
     <div id="section1">
     <section class="wow fadeInDown" data-wow-delay="1s" style="background-color:#f0ad4e;">
       <div class="row">
-      
+
         <div class="col-md-6">
           <div class="well" style="margin-left: 25%;">
             <h2 class="text-warning" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
@@ -435,7 +435,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
             </ul>
           </div><!--well-->
         </div><!--col-md-10-->
-       
+
 
 
         <div class="col-md-6">
@@ -462,12 +462,12 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
   <div class="col-md-8">
     
       
-        <div class="thumbnail well" style="padding: 10%; width:auto; margin-left: 12%; ">
+        <div class="thumbnail well wow slideInleft" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
         <div class="panel">
 
           <fieldset style="padding:10%;">
 
-          <legend> <h1 style="text-align: center;"><i class="fa fa-building-o fa-3x" aria-hidden="true"></i></h1> </legend>
+          <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-3x aria-hidden="true"></i></h1> </legend>
 
             <form method="" action="POST">
               
@@ -521,8 +521,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
       </div><!--col-md-8-->
    
     <div class="col-md-4">
-    <div class="thumbnail">
-      <h2> <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> Post Your Jobs </h2>
+    <div class="thumbnail wow slideInReft" >
+      <h2> <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> Register and Post your Jobs Here. </h2>
     </div><!--thumbnail-->
   </div><!--col-md-4-->
   </div><!--row-->
@@ -565,17 +565,6 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 <ul class="nav pull-right scroll-top">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>
-
-
-
-
-
-
-
-
-
-
-
 
 <script type="text/javascript">
   /* affix the navbar after scroll below header */
@@ -673,7 +662,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <script type="text/javascript" src="js/jquery.validate.js"></script>
   <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
 
-   
+
 <script type="text/javascript">
     $.validator.setDefaults( {
       submitHandler: function () {
@@ -706,7 +695,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
           agree: "required"
         },
         messages: {
-          
+
           password: {
             required: "Please provide a password",
             minlength: "Your password must be at least 6 characters long"
@@ -740,7 +729,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       $( "#mkonnect2" ).validate( {
         rules: {
-          
+
           password1: {
             required: true,
             minlength: 6

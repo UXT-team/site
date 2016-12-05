@@ -1,12 +1,9 @@
 <?php
-session_start();//session starts here
-
+require ("db.php");
     //include db
         if(isset($_POST['save'])){
 
          $category_id= $_SESSION['txt_category'];
-         $con = mysqli_connect("localhost", "root", "", "m_konnect");
-
          $select_acc="select * from job_applications  WHERE category_id='".$category_id."' AND user_id=20 ";
 
          $run_acc=mysqli_query($con,$select_acc);

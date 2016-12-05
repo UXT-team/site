@@ -1,10 +1,5 @@
 <?php
-session_start();
-//include db
-$con = mysqli_connect("localhost", "root", "", "m_konnect");
-$db = "users";
-
-$select_db=mysqli_select_db($con,$db);
+require ("db.php");
 if(isset($_POST['profile'])){
 
 //declare variable

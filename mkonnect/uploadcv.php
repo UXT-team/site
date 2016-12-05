@@ -1,6 +1,5 @@
-<?php session_start();//session starts here ?>
-
-
+<?php require ("db.php");
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,7 +61,8 @@
 </div><!--/.navbar -->
 
 <div class="well-md">
-<?php //$user_id = $_SESSION['id'];
+<?php
+$user_id = $_SESSION['id'];
 
     // $email=$_SESSION['id'];
     // echo $email;
@@ -74,10 +74,6 @@ $max_file_size = 1024*1000; //100 kb
 $path = "uploads/"; // Upload directory
 $count = 0;
 
-$db_name = "mkonnect";
-$conn=mysqli_connect('localhost','root',"");
-error_reporting(0);
-mysqli_select_db($conn, $db_name) or die("cannot connect to the  DB");
 if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
  // Loop $_FILES to execute all files
  foreach ($_FILES['files']['name'] as $f => $name) {
@@ -116,7 +112,7 @@ $message[]= "Unable to move file";             }
 ?>
 
 
- 
+
 </div><!--well-->
 
 <div class="jumbotron wow fadeInDown" data-wow-delay="1s" style="margin-top: 4%;" >
@@ -296,6 +292,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
     };
 </script>
 
-   
+
 </body>
 </html>
