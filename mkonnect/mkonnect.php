@@ -467,7 +467,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
           <fieldset style="padding:10%;">
 
-          <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-3x aria-hidden="true"></i></h1> </legend>
+          <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> </legend>
 
             <form method="" action="POST">
               
