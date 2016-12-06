@@ -217,13 +217,20 @@ $user_id = $_SESSION['id'];
          $select_log = "select * from job_applications WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
-        $row = mysqli_fetch_array($query);
+         $i=1;
+        while($row = mysqli_fetch_array($query)) {
           $id = $row['category_id'];
-          $select_cat = "select * from job_category WHERE id=$id";
-          $query1 = mysqli_query($con, $select_cat);
-          $row1 = mysqli_fetch_array($query1);
-            $category = $row1['category'];
-            echo $category;
+          if (isset($id)) {
+            $select_cat = "select * from job_category WHERE id=$id";
+            $query1 = mysqli_query($con, $select_cat);
+            $row1 = mysqli_fetch_array($query1);
+              $category = $row1['category'];
+              echo $i."."." ".$category."</br>";   $i++;     }else {
+    echo "EDIT PROFILE TO UPDATE JOB CATEGORY.";          }
+
+
+          }
+
  ?></center></strong>
       </div>
     </td>
