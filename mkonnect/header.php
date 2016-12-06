@@ -13,15 +13,6 @@
 </head>
 <body>
 
-<script>
-	bootbox.alert({ 
-  size: "small",
-  title: "",
-  message: "Registration Successful…", 
-  callback: function(){ /* your callback code */
-  	console.log('Click Ok to Update your profile!');
-   }
-})
-</script>
+
 </body>
 </html>

@@ -10,6 +10,7 @@
 <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="css/animate.css" rel="stylesheet">
 <link href="css/site.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css"></link>
 
 <!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
      This must be loaded before fileinput.min.js -->
@@ -97,7 +98,9 @@
 
                 <div class="form-group">
                 <div class="col-md-12">
+                
                 <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Company Name</h2></center></label>
+                
                 </div><!--col-md-12-->
                 </div><!--form-group-->
 
@@ -108,18 +111,15 @@
                 </div><!--form-group-->
                 </div><!--col-md-4-->
 
-                <div class="form-group">
-                <div class="col-md-12">
-                <label for="txt_subject" class="control-label"><h2 style="text-align: center;">Job Description</h2></center></label>
-                </div><!--col-md-12-->
-                </div><!--form-group-->
 
 
                 <div class="form-group">
                 <div class="col-md-12">
-
+                  <div class="hero-unit" >
+                  <label for="txt_subject" class="control-label"><h2 style="text-align: center;">Job Description</h2></center></label>
+                  <hr/>
                 <textarea class="textarea" placeholder="Enter Job Description" style="width: 810px; height: 200px" required=""></textarea>
-
+                </div><!--her-unit-->
                 </div><!--col-md-12-->
                </div><!--form-group-->
 
@@ -256,8 +256,14 @@
     <script src="js/wow.min.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/wow.js"></script>
-    <script src="lib/js/wysihtml5-0.3.0.js"></script>
+    <script src="js/wysihtml5-0.3.0.js"></script>
+    <script src="js/wysihtml5-0.3.0.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/prettify.js"></script>
 
+<script>
+  $('.textarea').wysihtml5();
+</script>
 
 
 <!--navbar-->
