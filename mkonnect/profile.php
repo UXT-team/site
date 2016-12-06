@@ -145,7 +145,6 @@ $user_id = $_SESSION['id'];
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php
-        $con = mysqli_connect("localhost", "root", "", "m_konnect");
          $select_log = "select * from profiles WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -180,7 +179,6 @@ $user_id = $_SESSION['id'];
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php
-        $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
          $select_log = "select * from users WHERE user_id=$user_id";
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
@@ -216,7 +214,6 @@ $user_id = $_SESSION['id'];
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php
-        $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
          $select_log = "select * from job_applications WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -256,7 +253,7 @@ $user_id = $_SESSION['id'];
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center><?php $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
+        <strong><center><?php
          $select_log = "select * from courses WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -291,7 +288,7 @@ $user_id = $_SESSION['id'];
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center><?php $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
+        <strong><center><?php
          $select_log = "select *  from profiles WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -324,7 +321,7 @@ $user_id = $_SESSION['id'];
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center><?php $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
+        <strong><center><?php
          $select_log = "select *  from skills WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -363,10 +360,10 @@ $user_id = $_SESSION['id'];
 
 
               <div class="tab-pane" id="edit-profile">
-              
+
               <hr>
               <hr >
-              
+
               <div class="row">
 
                  <div class="col-md-12">
@@ -417,7 +414,6 @@ $user_id = $_SESSION['id'];
 
         <select class="form-control" name="txt_category" id="category">
                   <?php
-                  $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
                   $db = "job_category";
 
                   $select_db=mysqli_select_db($con,$db);
