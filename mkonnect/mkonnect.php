@@ -323,6 +323,7 @@
   //     echo $row2;
   //   }
   // }
+
   $first=array();
   $second=array();
   $third=array();
@@ -463,7 +464,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
   <div class="col-md-8">
     
       
-        <div class="thumbnail well wow fadeInDown" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
+        <div class="thumbnail well wow slideInRight" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
         <div class="panel">
 
           <fieldset style="padding:10%;">
@@ -505,7 +506,22 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
               <button class="btn btn-success btn-block">Register</button>
               
-              <p class="text-danger" style="text-align:center;"> Forgotten Password?</p>
+              <p class="text-danger" style="text-align:center; margin-top:2%;"> 
+              <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
+
+              <div id="forgotten_jobs" class="collapse">
+                
+                <div class="form-group">
+                 <div class="col-md-12">
+
+                   <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+
+
+                    </div><!--col-md-12-->
+                    </div><!--form-group-->
+
+              </div><!--forgotten_jobs-->
+
               <p class="text-warning" style="text-align: center;"> If you already have an acount, <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
               <button class="btn btn-success btn-block"> Login</button>
              
@@ -522,7 +538,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
       </div><!--col-md-8-->
    
     <div class="col-md-4">
-    <div class="thumbnail wow slideInReft" >
+    <div class="thumbnail wow slideInLeft" data-wow-delay="1s" >
       <h2> <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> Register and Post your Jobs Here. </h2>
     </div><!--thumbnail-->
   </div><!--col-md-4-->
