@@ -564,6 +564,20 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
+              <div class="col-md-12" >
+                <div class="form-group">
+                  <label><h3>Confirm Password</h3></label>
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+              <input class="form-control" name="job_confirm_password" placeholder="Confirm Password" type="password" id="password1"  required="">
+             
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
               <button class="btn btn-info btn-lg" name="job_post_register"> Reigster To Post Job</button>
 
             </form>
