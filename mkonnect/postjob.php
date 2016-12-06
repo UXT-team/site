@@ -248,7 +248,33 @@
     </div><!--container-->
 </div><!--row-->
 
+<div id="contacts" class="wow bounceInLeft" data-wow-offset="200">
+<div class="container">
+    <div class="col-sm-8 col-sm-offset-2 text-center">
+    <h2 class="text-warning"><em>CONTACT US</em></h2>
 
+      <ul class="list-inline center-block">
+        <li><a href="#"><img src="img/icons/soc_fb.png"></a></li>
+        <li><a href="#"><img src="img/icons/soc_tw.png"></a></li>
+        <li><a href="#"><img src="img/icons/soc_gplus.png"></a></li>
+        <li><a href="#"><img src="img/icons/soc_pin.png"></a></li>
+      </ul>
+
+    </div><!--/col-->
+</div><!--/container-->
+</div><!--contacts-->
+
+
+
+  <div id="footer">
+  <div class="container">
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
+  </div>
+</div>
+
+<ul class="nav pull-right scroll-top pull-right">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
 
 
 <!-- jQuery library -->
