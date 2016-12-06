@@ -72,7 +72,11 @@ $user_id = $_SESSION['id'];
 <div class="container">
   <div class="row">
 
-      <div class="col-sm-10"><h1><?php echo $_SESSION['id'];?></h1></div>
+      <div class="col-sm-10"><h1><?php  $select_log = "select * from profiles WHERE user_id=$user_id";
+
+      $query = mysqli_query($con, $select_log);
+      $row = mysqli_fetch_array($query);
+        $fullname = $row['fullname'];  echo "WELCOME"."  ".$fullname;?></h1></div>
       <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.PNG"></a></div>
 
     </div>
@@ -225,10 +229,7 @@ $user_id = $_SESSION['id'];
             $query1 = mysqli_query($con, $select_cat);
             $row1 = mysqli_fetch_array($query1);
               $category = $row1['category'];
-              echo $i."."." ".$category."</br>";   $i++;     }else {
-    echo "EDIT PROFILE TO UPDATE JOB CATEGORY.";          }
-
-
+              echo $i."."." ".$category."</br>";   $i++;     }
           }
 
  ?></center></strong>
