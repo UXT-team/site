@@ -504,7 +504,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <div class="col-md-12" >
                 <div class="form-group">
 
-              <button class="btn btn-success btn-block">Register</button>
+
+              <button class="btn btn-success btn-block">Login</button>
 
               <p class="text-danger" style="text-align:center; margin-top:2%;">
               <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
@@ -522,14 +523,54 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
               </div><!--forgotten_jobs-->
 
-              <p class="text-warning" style="text-align: center;"> If you already have an acount, <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
-              <button class="btn btn-success btn-block"> Login</button>
+          <p class="text-warning" style="text-align: center;"> If you don't have an account clcik Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+              <button class="btn btn-success btn-block" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Reigster </button>
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
 
             </form>
+            <div id="post_jobs_reg" class="collapse">
+
+              <div class="breadcrumb">
+
+            <form method="" action="">
+
+                <div class="col-md-12" >
+                <div class="form-group">
+                  <label><h3>Enter Email</h3></label>
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+             <input class="form-control" name="job_post_email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+                  <label><h3>Enter Password</h3></label>
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+              <input class="form-control" name="job_post_password" placeholder="Your Password" type="password" id="password1"  required="">
+
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <button class="btn btn-info btn-lg" name="job_post_register"> Reigster To Post Job</button>
+
+            </form>
+
+            </div><!--breadcrum-->
+            </div><!--post_job_reg-->
 
           </fieldset>
 

@@ -1,3 +1,5 @@
+<?php require ("db.php");
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,22 +14,9 @@
 <link href="css/site.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css">
 
-<!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
-     This must be loaded before fileinput.min.js -->
-<script src="js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>
-<!-- sortable.min.js is only needed if you wish to sort / rearrange files in initial preview.
-     This must be loaded before fileinput.min.js -->
-<script src="js/plugins/sortable.min.js" type="text/javascript"></script>
-<!-- purify.min.js is only needed if you wish to purify HTML content in your preview for HTML files.
-     This must be loaded before fileinput.min.js -->
-<script src="js/plugins/purify.min.js" type="text/javascript"></script>
-<!-- the main fileinput plugin file -->
-<script src="js/fileinput.min.js"></script>
-<!-- bootstrap.js below is needed if you wish to zoom and view file content
-     in a larger detailed modal dialog -->
 
-<!-- optionally if you need a theme like font awesome theme you can include
-    it as mentioned below -->
+
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
 
@@ -35,17 +24,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="css/updateprofile.css">
           <style type="text/css">
-              .thumbnail{
-   height: auto;
-  width: 100%;
-  
-  overflow: hidden;
-  background-color: ;
 
-}
-body{
-  font-size: 1.2em;
-}
 
      </style>
 </head>
@@ -71,72 +50,96 @@ body{
     </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
-<div class="col-md-6">
-<div class="well" style="margin-left:;">
-  <h2>Email session Variable</h2>
-</div><!--well-->
-</div><!--col-md-6-->
 
 
-
-<div class="row wow  slideInLeft" style="margin-top: 2%;">
+<div class="row wow  slideInLeft" style="margin-top: 8%;">
 <div class="container">
     <div class="panel">
-        <div class="">
-            <form>
-            <div class="row">
-            <div class="col-md-12">
+        <div class="panel">
+            
+            <div class="breadcrumb" style=" margin:0%; ">
+                <div class="caption">
+
+                </div><!--caption-->
+
+
+
+                <fieldset>
+
+                    <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform"  style="padding: 2%;">
+
+
+                <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
+
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Job Title</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+
+                    <div class="col-md-6">
+                        <input class="form-control" name="txt_job_title" placeholder="Job Title" type="text" id="inputName" required=""  />
+                        
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter CompanyName</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+
               <div class="form-group">
-                <div class="col-md-12">
-                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Job Title</h2></center></label>
-                </div><!--col-md-12-->
+
+                    <div class="col-md-6">
+                        <input class="form-control" name="txt_companyname" placeholder="companyname" type="text" id="inputName" required=""  />
+                        
+
+                    </div><!--col-md-12-->
                 </div><!--form-group-->
 
-                <div class="form-group">
-                <div class="col-md-7">
-                 <input class="form-control" name="txt_jobtitle" placeholder="Job Title" type="text" id="inputName" required=""  />
-                </div><!--col-md-12-->
-                </div><!--form-group-->
-
+                <div class="thumbnail">
                 <div class="form-group">
                 <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Job Description</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+              
+              <div class="form-group">
                 
-                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Company Name</h2></center></label>
-                
-                </div><!--col-md-12-->
+                <div class="col-md-10">
+                    
+            <div class="hero-unit">
+               <hr/>
+
+          <textarea class="textarea" placeholder="Enter Job Description" name="txt_jobdescription" style="width: 810px; height: 200px; margin-left: 2%;"></textarea>
+
+           </div><!--hero-unit-->
+
+                 </div><!--col-md-12-->
+                 
                 </div><!--form-group-->
+                </div><!--panel-->
 
-                <div class="form-group">
-                <div class="col-md-7">
-                 <input class="form-control" name="txt_companyname" placeholder="companyName" type="text" id="inputName" required=""  />
-                </div><!--col-md-12-->
-                </div><!--form-group-->
-                </div><!--col-md-4-->
-
-
-
-                <div class="form-group">
-                <div class="col-md-12">
-                  <div class="hero-unit" >
-                  <label for="txt_subject" class="control-label"><h2 style="text-align: center;">Job Description</h2></center></label>
-                  <hr/>
-                <textarea class="textarea" placeholder="Enter Job Description" style="width: 810px; height: 200px" required=""></textarea>
-                </div><!--her-unit-->
-                </div><!--col-md-12-->
-               </div><!--form-group-->
-
-        <div class="col-md-4">
-        <div class="form-group">
-         <div class="col-md-12">
-            <label for="txt_subject" class="control-label"></center><h2> Choose Job Category</h2></center></label>
-         </div><!--col-md-12-->
-         </div><!--col-md-12-->
-               
                <div class="form-group">
-         <div class="col-md-8">
-            <select class="form-control" name="txt_jobcategory">
-              <option>IT</option>
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Choose Job Category</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+              <div class="form-group">
+
+                    <div class="col-md-6">
+
+
+                        <select class="form-control" name="txt_nationality"   required="">
+
+                              <option>IT</option>
               <option>Accounting</option>
               <option>Top Management</option>
               <option>Creatives</option>
@@ -163,58 +166,89 @@ body{
               <option>Real Estate</option>
               <option>Hospitality</option>
               <option>Others</option>
-            </select>
-         </div><!--col-md-12-->
-         </div><!--col-md-12-->
-         </div><!--col-md-3-->
-         <div class="col-md-4">
-         <div class="form-group">
-                <div class="col-md-12">
-                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">Website</h2></center></label>
-                </div><!--col-md-12-->
-                </div><!--form-group-->
 
-                <div class="form-group">
-                <div class="col-md-7">
-                 <input class="form-control" name="txt_website" placeholder=" eg. www.company.com" type="text" id="inputName" required=""  />
-                </div><!--col-md-12-->
-                </div><!--form-group-->
-                </div><!--col-md-4-->
+                              </select>
+                        
 
-                <div class="col-md-12">
-                <label for="txt_subject" class="control-label"><center><h2 style="text-align: center;">WorkExperience</h2></center></label>
-                </div><!--col-md-12-->
+                    </div><!--col-md--12-->
                 </div><!--form-group-->
 
                 <div class="form-group">
                 <div class="col-md-12">
-                 <select class="form-group" name="txt_experience">
-                   <option>5</option>
-                   <option>4</option>
-                   <option>3</option>
-                   <option>2</option>
-                   <option>1</option>
-                   <option>none</option>
-                 </select>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Choose Job-Experience</center></h3></label>
                 </div><!--col-md-12-->
-                </div><!--form-group-->
-                </div><!--col-md-4-->
+              </div><!--form-group-->
 
-         <div class="form-group">
-         <div class="col-md-8">
-          <center>  <button class="btn btn-success btn-block" style="margin-top:2%;"><h3>SUBMIT</h3></button></center>
-         </div><!--col-md-12-->
-         </div><!--col-md-12-->
-         </div><!--col-md-12-->
-         </div><!--row-->
+              <div class="form-group">
+
+                    <div class="col-md-6">
+
+
+                        <select class="form-control" name="txt_experience"  required="">
+
+                              <option>5</option>
+                              <option>4</option>
+                              <option>3</option>
+                              <option>2</option>
+                              <option>1</option>
+
+                              </select>
+                        
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+
+                <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Company-Website</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+
+                    <div class="col-md-8">
+
+                        <input class="form-control" name="txt_website" placeholder="url eg. www.example.com" type="text" id="inputName" required=""  />
+                        
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+
+
+                    </div><!--col-md-10-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                    <div class="col-md-10">
+
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="POST JOB" name="profile" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+
+
+
+                </div><!--col-md-12-->
 
             </form>
+
+                </fieldset>
+
+
+
             </div><!--thumbnail-->
         </div><!--panel-->
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
 
+<div id="contacts" class="wow bounceInLeft" data-wow-offset="200">
 <div class="container">
     <div class="col-sm-8 col-sm-offset-2 text-center">
     <h2 class="text-warning"><em>CONTACT US</em></h2>
@@ -251,21 +285,18 @@ body{
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
-<script src="js/fa.js"></script>
-<!-- optionally if you need translation for your language then include
-    locale file as mentioned below -->
-<script src="js/<lang>.js"></script>
+
 
     <script src="js/wow.min.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/wow.js"></script>
-    <script src="js/wysihtml5-0.3.0.js"></script>
-    <script src="js/wysihtml5-0.3.0.js"></script>
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/prettify.js"></script>
+
+<script src="js/wysihtml5-0.3.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-wysihtml5.js"></script>
 
 <script>
-  $('.textarea').wysihtml5();
+    $('.textarea').wysihtml5();
 </script>
 
 
@@ -349,41 +380,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 
-
-
-<!--add-remove-experience-->
-<script type="text/javascript">
-          $(document).ready(function(){
-    var next = 1;
-    $(".add-more").click(function(e){
-        e.preventDefault();
-
-        var addto = "#field" + next;
-        var addRemove = "#field" + (next);
-        next = next + 1;
-        var newIn = '<input autocomplete="off" class="input form-control" id="field' + next + '" name="field' + next + '" type="text">';
-        var newInput = $(newIn);
-        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
-        var removeButton = $(removeBtn);
-        $(addto).after(newInput);
-        $(addRemove).after(removeButton);
-        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
-        $("#count").val(next);
-
-            $('.remove-me').click(function(e){
-                e.preventDefault();
-                var fieldNum = this.id.charAt(this.id.length-1);
-                var fieldID = "#field" + fieldNum;
-                $(this).remove();
-                $(fieldID).remove();
-            });
-    });
-
-
-
-});
-
-        </script>
 
         <script>
     wow = new WOW(

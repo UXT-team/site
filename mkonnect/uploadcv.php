@@ -161,7 +161,7 @@ $message[]= "Unable to move file";             }
 
 <div class="col-md-7">
 <div class="panel" style="margin-left:75%;">
-  <button class="btn btn-warning btn-block wow slideInRight" data-wow-duration="7s">Next</button>
+  <a href="profile.php"><button class="btn btn-warning btn-block wow slideInRight" data-wow-duration="7s">Next</button></a>
   </div><!--col-md-6-->
   </div><!--panel-->
 
