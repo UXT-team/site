@@ -35,7 +35,7 @@
   width: 100%;
   padding: 40px 0;
   overflow: hidden;
-  background-color: #5cb85c;
+  background-image: url("https://americanlibrariesmagazine.org/wp-content/uploads/2012/12/background_jobs4web.jpg");
 
 }
 
@@ -408,9 +408,9 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     <div id="about">
       <div class="row">
 
-      <div class="well">
+      <div class="panel">
         <div class="col-md-12">
-          <div class="panel wow slideInRight" style="margin-left:15%; margin-right: 15%; "  data-wow-delay="1s">
+          <div class=" wow slideInRight" style="margin-left:15%; margin-right: 15%; "  data-wow-delay="1s">
             <h3>Mkonnect is a Job Application system that Profile Matches Employers and Job seekers according to the employer's requirements and the seeker's qualifications. </h3>
             </div><!--col-md-6-->
           </div><!--panel-->
@@ -470,6 +470,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           <fieldset style="padding:10%;">
 
           <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> </legend>
+          <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
 
             <form method="" action="POST">
 
@@ -562,6 +563,20 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
               <input class="form-control" name="job_post_password" placeholder="Your Password" type="password" id="password1"  required="">
 
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+                  <label><h3>Confirm Password</h3></label>
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+
+              <div class="col-md-12" >
+                <div class="form-group">
+
+              <input class="form-control" name="job_confirm_password" placeholder="Confirm Password" type="password" id="password1"  required="">
+             
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
