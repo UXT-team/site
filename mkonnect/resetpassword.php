@@ -14,20 +14,22 @@
 <body>
 
 <fieldset>
-  <form role="form" class="form-horizontal" action="mkonnect.php" method="POST" name="contactform" data-toggle="validator">
+  <form role="form" class="form-horizontal" action="resetpassword.php" method="POST" name="contactform" data-toggle="validator">
   <div id="login">
   <div class="col-md-6 col-md-offset-3 panel">
-   <legend><center> <span class="glyphicon glyphicon-user"></span>LOGIN <span class="glyphicon glyphicon-user"></span></center> </legend>
-    <div class="form-group">
-                <div class="col-md-12">
-        <input type="email" class="form-control" name="email" placeholder="email" required />
-        <div class="help-block with-errors"></div><!--help-block-->
-          </div><!--col-md--6-->
-            </div><!--form-group-->
+   <legend><center> <i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i>Reset Password</center> </legend>
+    
             
             <div class="form-group">
                 <div class="col-md-12">
             <input class="form-control" name="password" placeholder="Your Password" type="password" data-minlength="6" id="inputPassword" value="" required />
+              <div class="help-block">Minimum of 6 characters</div>
+            </div><!--col-md-6-->
+            </div><!--form-group-->
+
+            <div class="form-group">
+                <div class="col-md-12">
+            <input class="form-control" name="confirm_password" placeholder="confirm Password" type="password" data-minlength="6" id="inputPassword" value="" required />
               <div class="help-block">Minimum of 6 characters</div>
             </div><!--col-md-6-->
             </div><!--form-group-->
@@ -48,82 +50,3 @@
 </body>
 </html>
 
-<?php
-//include db..
-include('mkonnect/db/db_connection.php');
-
-
-
-if (isset($_POST['login'])) {
-  
-  //declare variable
-
-  $email=$_POST['email'];
-  $user_pass = $_POST['password'];
-  $remember = $_POST['re'];
-
-  //encrypt password
-
-  $user_pass = md5($user_pass);
-
-  //set cookie for 20minutes if remember is on
-        if (isset($_POST['re']) && $_POST['re'] == 'on'){
-
-        setcookie("email", $user_email, time()+(20*20*1));
-        setcookie("txt_pass", $pass, time()+(20*20*1));
-
-        }
-        /*unset the cookie
-     * it set cookie 1 sec back to current Unix time
-     * so that it will invalid */
-        else{
-          $user_email='';
-          $user_pass='';
-        
-
-         if (isset($_COOKIE['email'])) {
-             $user_email = $_COOKIE['email'];
-            }
-
-      if (isset($_COOKIE['password'])) {
-          $user_pass = $_COOKIE['password'];
-            }
-            }
-
-
-  //select query
-  $select_log = " select * from accounts WHERE email='$email' AND password='$user_pass'";
-
-  $query = mysqli_query($con, $select_log);
-
-  if(mysqli_num_rows($query)){
-
-   // "<script>alert('Login successful')</script>";
-    // "<script>window.open('mkonnect/upload.php','_self')</script>";
-           echo "<script>window.open('mkonnect/uploadcv.php','_self')</script>";
-
-     //here session is used and value of $user_email store in $_SESSION.
-          
-      $row = mysqli_fetch_array($query);
-        $user_id = $row['id'];
-      session_start();//session starts here
-
-
-        $_SESSION['email']=$email;
-        $_SESSION['id']=$user_id;
-  }
-   else
-    {
-        echo "<script>alert('Email or password is incorrect! Please check your details and try again.')</script>";
-        
-    }
-
-
-
-
-}
-
-
-
-
- ?>

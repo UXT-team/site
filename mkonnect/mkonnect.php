@@ -45,6 +45,10 @@
   padding: 40px 0;
   overflow: hidden;
 }
+#job_types{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyA7xwFNVFltXxYYlyuiFzYtbshZcECIZThteLMuNgQvgEVAt"); height: auto;
+  width: 100%; padding: 40px 0; overflow: hidden;
+}
 
 #postjob .well{
   height: auto;
@@ -63,8 +67,17 @@
 
   </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70" class="">
+  <a class="navbar-brand" rel="home" href="#" title="logo">
+  <img src="img/logo.jpg"></a>
+  <div class="top" style="margin-top:2%; margin-left: 75%;">
+  
+  <a href="#sales" data-toggle="modal" data-target="#sales">
+  <button class="btn btn-success btn-lg">Register</button></a>
+  <a href="#sales" data-toggle="modal" data-target="#sales"><button class="btn btn-danger btn-lg">Login</button></a>
+  <a href="#postjob"><button class="btn  btn-lg" style="background-color:#FF9000; color:#fff;">POSTJOB</button></a>
+  </div><!--top-->
 <!-- Fixed navbar -->
-<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav" style="margin-top: 2%;">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,10 +89,9 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
-          <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#about">About</a></li>
-          <li class="active"><a href="#postjob">PostJob</a></li>
+          
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -89,8 +101,59 @@
 
 <div class="divider" id="section2"></div>
 
-<section class="konnect wow pulse" data-wow-iteration="infinite" data-wow-duration="5000ms">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Jobs Here</h1><h2><span class=" glyphicon glyphicon-hand-down"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2><h2><span class=" glyphicon glyphicon-hand-down"></span></h2></div>
+<section class="konnect wow pulse" data-wow-iteration="infinite" data-wow-duration="5000ms" style="margin-top: -8%;">
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Available Jobs Here</h1><h2><span class=" glyphicon glyphicon-hand-down" style="color:#4cae4c;"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2><h2><span class=" glyphicon glyphicon-hand-down" style="color:#000;"></h2></div>
+</section>
+
+
+<section id="job_types" style="margin-top:;" >
+  
+  <div class="container">
+
+  <div class="col-md-6">
+    <div class="wow fadeInDown" data-wow-delay="1s">
+
+              <a href="#9" style="color:#fff;"><h3>IT</h3></a>
+             <a href="#jobs" style="color:#fff;"> <h3>Accounting</h3></a>
+             <a href="#jobs" style="color:#fff;"> <h3>Top Management</h3></a>
+              <a href="#jobs" style="color:#fff;"><h3>Creatives</h3></a>
+              <a href="#3" style="color:#fff;"><h3>Customer Service</h3></a>
+             <a href="#3" style="color:#fff;"> <h3>Education</h3></a>
+             <a href="#6" style="color:#fff;"> <h3>Farming & Agriculture</h3></a>
+              <a href="#6" style="color:#fff;"><h3>Government</h3></a>
+             <a href="#6" style="color:#fff;"> <h3>Healthcare & Pharmaceuticals</h3></a>
+             <a href="#9" style="color:#fff;"> <h3>Human Resources & Recruitment</h3></a>
+             <a href="#9" style="color:#fff;"> <h3>Insurance</h3></a>
+             <a href="#12" style="color:#fff;"> <h3>Legal</h3></a>
+             <a href="#12" style="color:#fff;"> <h3>Manufacturing & Production</h3></a>
+            <a href="#15" style="color:#fff;">  <h3>Minning & Natural Resources</h3></a>
+              
+</div><!--wow-->
+</div><!--jumbotron-->
+
+ <div class="col-md-6">
+  <div class="wow fadeInDown" data-wow-delay="1s">
+            <a href="#12" style="color:#fff;"><h3>Marketing, Communications & PR</h3></a>
+              <a href="#15" style="color:#fff;"><h3>NGO, Communication</h3></a>
+              <a href="#15" style="color:#fff;"><h3>Administration & office Support</h3></a>
+             <a href="#16" style="color:#fff;"> <h3>Project/ Project Management</h3></a>
+              <a href="#16" style="color:#fff;"><h3>Research, Quality control/ Quality Assurance</h3></a>
+              <a href="#16" style="color:#fff;"><h3>Retail</h3></a>
+              <a href="#19" style="color:#fff;"><h3>Sales/Business Development</h3></a>
+              <a href="#19" style="color:#fff;"><h3>Security</h3></a>
+              <a href="#19" style="color:#fff;"><h3>Strategy & Consulting</h3></a>
+              <a href="#22" style="color:#fff;"><h3>Tourism & Travel</h3></a>
+              <a href="#22" style="color:#fff;"><h3>Trade & Services</h3></a>
+              <a href="#22" style="color:#fff;"><h3>Transport,Logistics,Procurement</h3></a>
+              <a href="#25" style="color:#fff;"><h3>Real Estate</h3></a>
+              <a href="#25" style="color:#fff;"><h3>Hospitality</h3></a>
+              <a href="#25" style="color:#fff;"><h3>Others</h3></a>
+      </div><!--data-wow-->    
+  </div><!--col-md-6-->
+</div><!--container-->
+
+
+
 </section>
 
 <!-- Modal -->
@@ -183,7 +246,7 @@
             <div class="form-group">
                 <div class="col-md-12">
 
-                    <div class="panel" style="margin-top:2%;">
+                  <div class="panel" style="margin-top:2%;">
 
                   <p class="text-success"><a data-toggle="collapse" href="#forgotten" aria-expanded="false" aria-controls="collapseExample">Forgotten Password</a></p>
 
@@ -290,7 +353,7 @@
 
     <div class="modal-footer">
     <!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
-     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     <button type="button" class="btn btn-lg" data-dismiss="modal" style="background-color: #fed136; color: #fff; font-size: 1.8em;" >Close</button>
   </div><!--modal-footer-->
   </div><!--row-->
 </div><!--body-->
@@ -472,7 +535,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> </legend>
           <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
 
-            <form method="" action="POST">
+            <form method="POST" action="rgister.php">
               
               <div class="col-md-12" >
                 <div class="form-group">

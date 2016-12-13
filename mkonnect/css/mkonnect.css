@@ -187,7 +187,9 @@ section {
 }
 
 .konnect {
-	background: url('http://www.dba.net/wp-content/uploads/2015/06/JOBS.jpg') no-repeat center center fixed; 
+	/*background: url('http://www.dba.net/wp-content/uploads/2015/06/JOBS.jpg') no-repeat center center fixed; */
+    background: url('http://previews.123rf.com/images/viki2win/viki2win1103/viki2win110300016/9092095-Desperate-businessman-looking-for-a-job-Stock-Photo-job-search-lost.jpg') no-repeat center center fixed; 
+/*    background: url('http://bryanhardwick.com/wp-content/uploads/2014/02/Looking-for-a-job-online.jpg') no-repeat center center fixed; */
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -208,6 +210,7 @@ section {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+    
 }
 
 .bg-4 {
