@@ -94,7 +94,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
              if(move_uploaded_file($_FILES["files"]["tmp_name"][$f], $path.$name)) {
 
                $query ="insert into files(name,path,user_id) values('$name','$path.$name','$user_id')";
-               $ros = mysqli_query($conn,$query);
+               $ros = mysqli_query($con,$query);
                if($ros!=true)
                {
                  $message[]= "Error inserting data to the database";

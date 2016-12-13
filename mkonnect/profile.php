@@ -72,7 +72,11 @@ $user_id = $_SESSION['id'];
 <div class="container">
   <div class="row">
 
-      <div class="col-sm-10"><h1><?php echo $_SESSION['id'];?></h1></div>
+      <div class="col-sm-10"><h1><?php  $select_log = "select * from profiles WHERE user_id=$user_id";
+
+      $query = mysqli_query($con, $select_log);
+      $row = mysqli_fetch_array($query);
+        $fullname = $row['fullname'];  echo "WELCOME"."  ".$fullname;?></h1></div>
       <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.PNG"></a></div>
 
     </div>
@@ -145,7 +149,6 @@ $user_id = $_SESSION['id'];
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php
-        $con = mysqli_connect("localhost", "root", "", "m_konnect");
          $select_log = "select * from profiles WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -180,7 +183,6 @@ $user_id = $_SESSION['id'];
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php
-        $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
          $select_log = "select * from users WHERE user_id=$user_id";
         $query = mysqli_query($con, $select_log);
         $row = mysqli_fetch_array($query);
@@ -216,17 +218,20 @@ $user_id = $_SESSION['id'];
     <td colspan="2">
       <div class="alert alert-info">
         <strong><center><?php
-        $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
          $select_log = "select * from job_applications WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
-        $row = mysqli_fetch_array($query);
+         $i=1;
+        while($row = mysqli_fetch_array($query)) {
           $id = $row['category_id'];
-          $select_cat = "select * from job_category WHERE id=$id";
-          $query1 = mysqli_query($con, $select_cat);
-          $row1 = mysqli_fetch_array($query1);
-            $category = $row1['category'];
-            echo $category;
+          if (isset($id)) {
+            $select_cat = "select * from job_category WHERE id=$id";
+            $query1 = mysqli_query($con, $select_cat);
+            $row1 = mysqli_fetch_array($query1);
+              $category = $row1['category'];
+              echo $i."."." ".$category."</br>";   $i++;     }
+          }
+
  ?></center></strong>
       </div>
     </td>
@@ -256,7 +261,7 @@ $user_id = $_SESSION['id'];
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center><?php $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
+        <strong><center><?php
          $select_log = "select * from courses WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -291,7 +296,7 @@ $user_id = $_SESSION['id'];
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center><?php $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
+        <strong><center><?php
          $select_log = "select *  from profiles WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -324,7 +329,7 @@ $user_id = $_SESSION['id'];
     <tr>
     <td colspan="2">
       <div class="alert alert-info">
-        <strong><center><?php $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
+        <strong><center><?php
          $select_log = "select *  from skills WHERE user_id=$user_id";
 
         $query = mysqli_query($con, $select_log);
@@ -363,10 +368,10 @@ $user_id = $_SESSION['id'];
 
 
               <div class="tab-pane" id="edit-profile">
-              
+
               <hr>
               <hr >
-              
+
               <div class="row">
 
                  <div class="col-md-12">
@@ -417,7 +422,6 @@ $user_id = $_SESSION['id'];
 
         <select class="form-control" name="txt_category" id="category">
                   <?php
-                  $con = mysqli_connect("localhost", "root", "dr67hj1", "m_konnect");
                   $db = "job_category";
 
                   $select_db=mysqli_select_db($con,$db);

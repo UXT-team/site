@@ -47,11 +47,12 @@ $query = mysqli_query($con, $select_log);
     $user_id = $row['user_id'];
     $_SESSION['email']=$user_email;
     $_SESSION['id']=$user_id;
-    $category_id=$_SESSION['category'];
-    if ($category_id != null) {
-      $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
-      mysqli_query($con,$insert_app);
-    }
+    if (isset($_SESSION['category'])) {
+      $category_id=$_SESSION['category'];
+
+        $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
+        mysqli_query($con,$insert_app);    }
+
 echo "<script>alert('Registration Successful')</script>";
 echo"<script>window.open('jobs.php','_self')</script>";
 

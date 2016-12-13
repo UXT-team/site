@@ -161,7 +161,7 @@
 <div class="modal-dialog" role="document">
 <div class="modal-content">
   <div class="modal-header">
-     
+
     <button type="button" class="close" data-dismiss="modal">&times;</button>
 
     <center><h4 class="modal-title" id="myModalLabel">Register</h4></center>
@@ -270,7 +270,7 @@
                     </div><!--col-md-12-->
                     </div><!--form-group-->
                     </form>
-                    
+
                   </div><!--forgotten-->
 
                 </div><!--col-md--12-->
@@ -283,7 +283,7 @@
 
 
   <div class="thumbnail">
-                    
+
 
                     <!--button class="btn btn-success btn-block" data-toggle="collapse" data-target="#login2" >Login</button-->
 
@@ -523,10 +523,10 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
 <div id="postjob">
   <div class="row">
-  
+
   <div class="col-md-8">
-    
-      
+
+
         <div class="thumbnail well wow slideInRight" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
         <div class="panel">
 
@@ -535,8 +535,13 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> </legend>
           <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
 
+<<<<<<< HEAD
             <form method="POST" action="rgister.php">
               
+=======
+            <form method="" action="POST">
+
+>>>>>>> ac8980229baa076be2e30ef8d7e94ff11eae897b
               <div class="col-md-12" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>
@@ -561,20 +566,21 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 <div class="form-group">
 
               <input class="form-control" name="password" placeholder="Your Password" type="password" id="password1"  required="">
-             
+
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
               <div class="col-md-12" >
                 <div class="form-group">
 
+
               <button class="btn btn-success btn-block">Login</button>
-              
-              <p class="text-danger" style="text-align:center; margin-top:2%;"> 
+
+              <p class="text-danger" style="text-align:center; margin-top:2%;">
               <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
 
               <div id="forgotten_jobs" class="collapse">
-                
+
                 <div class="form-group">
                  <div class="col-md-12">
 
@@ -586,9 +592,9 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
               </div><!--forgotten_jobs-->
 
-              <p class="text-warning" style="text-align: center;"> If you don't have an account clcik Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
+          <p class="text-warning" style="text-align: center;"> If you don't have an account clcik Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
               <button class="btn btn-success btn-block" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Reigster </button>
-             
+
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
@@ -599,7 +605,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <div class="breadcrumb">
 
             <form method="" action="">
-                
+
                 <div class="col-md-12" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>
@@ -624,7 +630,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 <div class="form-group">
 
               <input class="form-control" name="job_post_password" placeholder="Your Password" type="password" id="password1"  required="">
-             
+
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
@@ -650,11 +656,11 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
             </div><!--post_job_reg-->
 
           </fieldset>
-            
+
           </div><!--panel-->
         </div><!--panel-->
       </div><!--col-md-8-->
-   
+
     <div class="col-md-4">
     <div class="thumbnail wow slideInLeft" data-wow-delay="1s" >
       <h2> <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> Register and Post your Jobs Here. </h2>
@@ -954,6 +960,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
       this.parentNode.insertBefore(section, this);
     };
   </script>
+<script>
+$('.cat').click(function() {
+    var id = $(this).attr('id');
+    console.log(id);
+    //$("#w3s").attr("href", "http://www.w3schom");
+    $.post(
+      'cat.php',
+      { id: id },
+      function(data) {
+        console.log(data);
+      }
+    );
+});
+</script>
 
 </body>
 </html>
