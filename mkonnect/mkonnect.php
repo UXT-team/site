@@ -254,7 +254,7 @@
 
                   <div id="forgotten" class="collapse">
 
-                    <form class="form-vertical" action="" method="POST" id="">
+                    <form class="form-vertical" action="restpassword.php" method="POST" id="">
                  <div class="form-group">
             <div class="col-md-12">
                <label for="txt_email" class="control-label text-success" style="text-align:center;">Email</label>
@@ -269,6 +269,19 @@
 
                     </div><!--col-md-12-->
                     </div><!--form-group-->
+
+                    <div class="col-md-12" >
+                <div class="form-group">
+
+
+                </div><!--from-group-->
+              </div><!--col-md-10-->
+              <div class="col-md-12">
+                <div class="form-group">
+                   <input class="btn btn-lg btn-primary btn-block " type="submit" value="Submit Email" name="accounts"   style="font-size:1.25em;">
+
+                </div>
+              </div>
                     </form>
 
                   </div><!--forgotten-->
@@ -299,7 +312,7 @@
 
                 </div><!--panel-->
 
-                 <form class="form-vertical" action="login.php" method="POST" id="">
+            <form class="form-vertical" action="login.php" method="POST" id="">
                  <div class="form-group">
             <div class="col-md-12">
                <label for="txt_email" class="control-label">Email</label>
@@ -334,6 +347,7 @@
                 <div class="popover-footer" id="login4">
                    <center> <input type="submit" name="login" value="Login" class="btn btn-lg btn-info btn-lg"></input></center>
                 </div>
+
                 </form>
             </div><!--mypopoverid-->
 
@@ -535,7 +549,9 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> </legend>
           <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
 
-            <form method="POST" action="employer.php">
+
+            <form method="POST" action="register.php">
+
               <div class="col-md-12" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>
@@ -569,20 +585,36 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
 
               <button class="btn btn-success btn-block">Login</button>
+
               </form>
+
+
+
+
+
+
               <p class="text-danger" style="text-align:center; margin-top:2%;">
               <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
 
               <div id="forgotten_jobs" class="collapse">
+              <form method="POST" action="resetpassword.php">
 
                 <div class="form-group">
                  <div class="col-md-12">
 
-                   <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+                   <input class="form-control" name="reset_email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
 
 
                     </div><!--col-md-12-->
                     </div><!--form-group-->
+
+                    <div class="col-md-12">
+                <div class="form-group">
+                   <input class="btn btn-lg btn-primary btn-block " type="submit" value="Submit Email" name="accounts"   style="font-size:1.25em;">
+
+                </div>
+              </div>
+              </form>
 
               </div><!--forgotten_jobs-->
 
@@ -593,12 +625,13 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               </div><!--col-md-10-->
 
 
-
             <div id="post_jobs_reg" class="collapse">
 
               <div class="breadcrumb">
 
+
             <form method="POST" action="emp_reg.php">
+
 
                 <div class="col-md-12" >
                 <div class="form-group">
