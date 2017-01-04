@@ -25,6 +25,14 @@
      <link rel="stylesheet" href="css/updateprofile.css">
           <style type="text/css">
 
+          .post_jobs{
+   height: auto;
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWX6JKymovdy82Lsj0loepdN_dYNayblulZNvC5BCgH3AO3pRK");
+
+}
 
      </style>
 </head>
@@ -42,7 +50,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
-          <li class="active"><a href="mkonnect.php">ShortCode</a></li>
+          <li class="active"><a href="#posts">List Of Jobs Posted</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
           <li class="active"><a href="#contacts">LogOut</a></li>
 
@@ -247,6 +255,16 @@
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
+<section class="post_jobs">
+  <div class="panel">
+
+    <div id="posts">
+      
+
+    </div><!--post-->
+    
+  </div><!--panel-->
+</section>
 
 <div id="contacts" class="wow bounceInLeft" data-wow-offset="200">
 <div class="container">

@@ -9,25 +9,155 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  #music .jumbotron{
+
+  }
+</style>
 </head>
 <body>
+<section id="music">
+<div class="jumbotron" style="margin:10%; margin-bottom: 40%;">
+  <div class="panel">
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary">Check Library</button>
+        </div>
+
+        <div class="col-md-3">
+          <button class="btn btn-primary">Check Library</button>
+        </div>
+
+        <div class="col-md-3">
+          <button class="btn btn-primary">Check Library</button>
+        </div>
+
+        <div class="col-md-3">
+          <button class="btn btn-primary">Check Library</button>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+<center><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  
+</button></center>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
+        <h4 class="modal-title text-warning"><center>Check Library</center></h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <div class="jumbotron" >
+  <div class="panel">
+      <div class="row">
+        <div class="col-md-3">
+         Enter Track Number <input type="text" name="txt_mytext" class="form-control" id="mytext" placeholder="" required />
+        </div>
+        
+        <div class="col-md-3">
+        <h2></h2>
+          <button class="btn btn-primary">CheckTrack</button>
+        </div>
+         
+        <div class="col-md-3">
+        <h2></h2>
+          <button class="btn btn-warning">List All Tracks</button>
+        </div>
+          
+        <div class="col-md-3">
+         
+        </div>
+      </div>
+  </div>
+  <div class="panel">
+    <ul class="list-group">
+  <li class="list-group-item">
+
+    <audio controls>
+  <source src="downloads/artiste/SPOKEN WORD - BEAUTIFULE.mp3" type="audio/mpeg">
+  Your browser does not support the auio element
+</audio> &nbsp; &nbsp; &nbsp;
+<a href="downloads/download/onion.php?filename ='SPOKEN WORD - BEAUTIFULE.mp3'"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
+  </li>
+  <li class="list-group-item">
+    <audio controls>
+  <source src="downloads/artiste/SPOKEN WORD - HIGH COURT.mp3" type="audio/mpeg">
+  Your browser does not support the audio element
+</audio> &nbsp; &nbsp; &nbsp;
+<a href="download.php"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
+  </li>
+  <li class="list-group-item">
+    <audio controls>
+  <source src="downloads/artiste/SPOKEN WORD - ONE LOVE.mp3" type="audio/mpeg">
+  Your browser does not support the auio element
+</audio> &nbsp; &nbsp; &nbsp;
+<a href="download.php"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
+  </li>
+  <li class="list-group-item">
+    <audio controls>
+  <source src="downloads/artiste/SPOKEN WORD - SI SIRI.mp3" type="audio/mpeg">
+  Your browser does not support the auio element
+</audio> &nbsp; &nbsp; &nbsp;
+<a href="download.php"><button type="submit" class="btn btn-success">Download Full Song</button></a><br>
+  </li>
+  </ul>
+  </div>
+</div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        <!--button type="button" class="btn btn-primary">Save changes</button-->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<!-- Button trigger modal -->
+<center><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-bottom:30%;">
+  
+</button></center>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-warning"><center>Jugebox</center></h4>
+      </div>
+      <div class="modal-body">
+        <div class="jumbotron" >
+  <div class="panel">
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-lg">Check Library</button>
+        </div>
+        
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-lg">Create Playlist</button>
+        </div>
+         
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-lg">Update Library</button>
+        </div>
+          
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-lg">Exit</button>
+        </div>
+      </div>
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        <!--button type="button" class="btn btn-primary">Save changes</button-->
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -89,7 +219,7 @@
             </div>
             
 
-            <script type="text/javascript">
+<script type="text/javascript">
 $(document).ready(function() {  
   
   // submit form using $.ajax() method
