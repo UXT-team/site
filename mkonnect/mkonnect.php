@@ -550,7 +550,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
 
 
-            <form method="POST" action="register.php">
+            <form method="POST" action="emp_login.php">
 
               <div class="col-md-12" >
                 <div class="form-group">
@@ -584,7 +584,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 <div class="form-group">
 
 
-              <button class="btn btn-success btn-block">Login</button>
+              <button name="emp_login" class="btn btn-success btn-block">Login</button>
 
               </form>
 

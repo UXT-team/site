@@ -56,7 +56,7 @@
 <div class="container">
     <div class="panel">
         <div class="panel">
-            
+
             <div class="breadcrumb" style=" margin:0%; ">
                 <div class="caption">
 
@@ -66,10 +66,10 @@
 
                 <fieldset>
 
-                    <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform"  style="padding: 2%;">
+                    <form role="form" class="form-horizontal" action="emp_update.php" method="POST" name="contactform"  style="padding: 2%;">
 
 
-                <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
+                <legend><center> <h3><?php echo   $_SESSION['email']; ?></h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
                  <div class="form-group">
                 <div class="col-md-12">
@@ -81,7 +81,7 @@
 
                     <div class="col-md-6">
                         <input class="form-control" name="txt_job_title" placeholder="Job Title" type="text" id="inputName" required=""  />
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -98,7 +98,7 @@
 
                     <div class="col-md-6">
                         <input class="form-control" name="txt_companyname" placeholder="companyname" type="text" id="inputName" required=""  />
-                        
+
 
                     </div><!--col-md-12-->
                 </div><!--form-group-->
@@ -109,20 +109,20 @@
                    <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Job Description</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
-              
+
               <div class="form-group">
-                
+
                 <div class="col-md-10">
-                    
+
             <div class="hero-unit">
                <hr/>
 
-          <textarea class="textarea" placeholder="Enter Job Description" name="txt_jobdescription" style="width: 810px; height: 200px; margin-left: 2%;"></textarea>
+          <textarea class="textarea" name ="text_area" placeholder="Enter Job Description" name="txt_jobdescription" style="width: 810px; height: 200px; margin-left: 2%;"></textarea>
 
            </div><!--hero-unit-->
 
                  </div><!--col-md-12-->
-                 
+
                 </div><!--form-group-->
                 </div><!--panel-->
 
@@ -168,7 +168,7 @@
               <option>Others</option>
 
                               </select>
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -193,7 +193,7 @@
                               <option>1</option>
 
                               </select>
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -210,7 +210,7 @@
                     <div class="col-md-8">
 
                         <input class="form-control" name="txt_website" placeholder="url eg. www.example.com" type="text" id="inputName" required=""  />
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
