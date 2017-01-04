@@ -59,7 +59,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="mkonnect.php">ShortCode</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
-          <li class="active"><a href="#contacts">LogOut</a></li>
+          <li class="active"><a href="logout.php">LogOut</a></li>
 
       </div><!--/.nav-collapse -->
     </div><!--/.container -->

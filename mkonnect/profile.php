@@ -3,7 +3,7 @@ require ("db.php");
 $user_id = $_SESSION['id'];
 if ( $_SESSION['auth'] != true) {
   header("Location: mkonnect.php");
-}
+}``
  ?>
 <!DOCTYPE html>
 <html lang="en">

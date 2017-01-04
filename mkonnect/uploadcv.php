@@ -141,6 +141,8 @@ $message[]= "Unable to move file";             }
    # success message
    if($count !=0){
      printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $count);
+     $_SESSION['next'] = true;
+
    }
    ?>
    <script>
@@ -164,7 +166,7 @@ $message[]= "Unable to move file";             }
 
 <div class="col-md-7">
 <div class="panel" style="margin-left:75%;">
-  <a href="profile.php"><button class="btn btn-warning btn-block wow slideInRight" data-wow-duration="7s">Next</button></a>
+  <a href="next.php"><button class="btn btn-warning btn-block wow slideInRight" data-wow-duration="7s">Next</button></a>
   </div><!--col-md-6-->
   </div><!--panel-->
 
