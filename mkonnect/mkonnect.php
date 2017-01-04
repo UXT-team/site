@@ -254,7 +254,7 @@
 
                   <div id="forgotten" class="collapse">
 
-                    <form class="form-vertical" action="restpassword.php" method="POST" id="">
+                    <form class="form-vertical" action="remind.php" method="POST" id="">
                  <div class="form-group">
             <div class="col-md-12">
                <label for="txt_email" class="control-label text-success" style="text-align:center;">Email</label>

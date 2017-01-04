@@ -23,6 +23,7 @@ if (isset($_POST['login'])) {
         $user_id = $row['user_id'];
         $_SESSION['email']=$email;
         $_SESSION['id']=$user_id;
+          $_SESSION['auth'] = true;
         echo "<script>window.open('profile.php','_self')</script>";
   }
    else
