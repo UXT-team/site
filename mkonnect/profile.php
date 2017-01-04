@@ -1,6 +1,9 @@
 <?php
 require ("db.php");
 $user_id = $_SESSION['id'];
+if ( $_SESSION['auth'] != true) {
+  header("Location: mkonnect.php");
+}
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +65,7 @@ $user_id = $_SESSION['id'];
 
 
           <li class="active"><a href="#contacts">Contacts</a></li>
-          <li class="active"><a href="#contacts">LogOut</a></li>
+          <li class="active"><a href="logout.php">LogOut</a></li>
 
       </div><!--/.nav-collapse -->
     </div><!--/.container -->

@@ -52,7 +52,7 @@ $query = mysqli_query($con, $select_log);
 
         $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
         mysqli_query($con,$insert_app);    }
-
+  $_SESSION['auth'] = true;
 echo "<script>alert('Registration Successful')</script>";
 echo"<script>window.open('jobs.php','_self')</script>";
 

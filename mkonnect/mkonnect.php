@@ -70,7 +70,7 @@
   <a class="navbar-brand" rel="home" href="#" title="logo">
   <img src="img/logo.jpg"></a>
   <div class="top" style="margin-top:2%; margin-left: 75%;">
-  
+
   <a href="#sales" data-toggle="modal" data-target="#sales">
   <button class="btn btn-success btn-lg">Register</button></a>
   <a href="#sales" data-toggle="modal" data-target="#sales"><button class="btn btn-danger btn-lg">Login</button></a>
@@ -91,7 +91,7 @@
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#about">About</a></li>
-          
+
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -107,7 +107,7 @@
 
 
 <section id="job_types" style="margin-top:;" >
-  
+
   <div class="container">
 
   <div class="col-md-6">
@@ -127,7 +127,7 @@
              <a href="#12" style="color:#fff;"> <h3>Legal</h3></a>
              <a href="#12" style="color:#fff;"> <h3>Manufacturing & Production</h3></a>
             <a href="#15" style="color:#fff;">  <h3>Minning & Natural Resources</h3></a>
-              
+
 </div><!--wow-->
 </div><!--jumbotron-->
 
@@ -148,7 +148,7 @@
               <a href="#25" style="color:#fff;"><h3>Real Estate</h3></a>
               <a href="#25" style="color:#fff;"><h3>Hospitality</h3></a>
               <a href="#25" style="color:#fff;"><h3>Others</h3></a>
-      </div><!--data-wow-->    
+      </div><!--data-wow-->
   </div><!--col-md-6-->
 </div><!--container-->
 
@@ -273,7 +273,7 @@
                     <div class="col-md-12" >
                 <div class="form-group">
 
-             
+
                 </div><!--from-group-->
               </div><!--col-md-10-->
               <div class="col-md-12">
@@ -550,7 +550,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
           <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
 
 
-            <form method="POST" action="register.php">
+            <form method="POST" action="emp_login.php">
+
               <div class="col-md-12" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>
@@ -583,12 +584,14 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 <div class="form-group">
 
 
-              <button class="btn btn-success btn-block">Login</button>
+              <button name="emp_login" class="btn btn-success btn-block">Login</button>
 
-            </form>
-              
+              </form>
 
-              
+
+
+
+
 
               <p class="text-danger" style="text-align:center; margin-top:2%;">
               <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
@@ -622,14 +625,13 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               </div><!--col-md-10-->
 
 
-            
-
-             <form method="POST" action="register.php">
             <div id="post_jobs_reg" class="collapse">
 
               <div class="breadcrumb">
 
-           
+
+            <form method="POST" action="emp_reg.php">
+
 
                 <div class="col-md-12" >
                 <div class="form-group">
@@ -669,7 +671,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 <div class="form-group">
 
               <input class="form-control" name="job_confirm_password" placeholder="Confirm Password" type="password" id="password1"  required="">
-             
+
                 </div><!--from-group-->
               </div><!--col-md-10-->
 

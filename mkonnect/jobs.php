@@ -1,4 +1,7 @@
 <?php require ("db.php");
+      if ($_SESSION['auth'] == false) {
+        header("Location: mkonnect.php");
+      }
  ?>
 <!DOCTYPE html>
 <html>
@@ -99,7 +102,7 @@
 
                     <div class="col-md-10">
                         <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required=""  />
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -116,7 +119,7 @@
 
                     <div class="col-md-10">
                         <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required=""  />
-                        
+
 
                     </div><!--col-md-12-->
                 </div><!--form-group-->
@@ -139,7 +142,7 @@
                               <option>KCSE</option>
 
                               </select>
-                        
+
 
                     </div><!--col-md-12-->
                 </div><!--form-group-->
@@ -162,7 +165,7 @@
                               <option>East African</option>
 
                               </select>
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -178,7 +181,7 @@
                     <div class="col-md-10">
 
                         <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required=""  />
-                        
+
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
