@@ -248,7 +248,7 @@
 
                   <div class="panel" style="margin-top:2%;">
 
-                  <p class="text-success"><a data-toggle="collapse" href="#forgotten" aria-expanded="false" aria-controls="collapseExample">Forgotten Password</a></p>
+                  <p class="text-success"><a  href="forgot.php" >Forgotten Password</a></p>
 
                   </div><!--panel-->
 
