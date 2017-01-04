@@ -75,8 +75,33 @@ if (!$_SESSION['email']) {
                   <div id="jobs" class="collapse">
                     <a href="views/marketing.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Sales & Marketing</a>
                     <a href="views/ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
-                    <a href="views/accounts.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Accounts</a>
-                   <a href="views/medicine.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Medicine</a>
+                    <a href="views/accounts.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Accounting</a>
+                   <a href="views/management.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Top Management</a>
+                   <a href="views/creatives.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Creatives</a>
+                   <a href="views/customer_service.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Customer Service</a>
+                   <a href="views/education.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Education</a>
+                   <a href="views/farming.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>farming</a>
+                   <a href="views/government.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Government</a>
+                   <a href="views/health.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Healthcare</a>
+                   <a href="views/human_resource.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Human Resource</a>
+                   <a href="views/insurance.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Insurance</a>
+                   <a href="views/legal.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Legal</a>
+                   <a href="views/manufacturing.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Manufacturing</a>
+                   <a href="views/minning.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Minning & Natural Resource</a>
+                   <a href="views/NGO.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>NGO</a>
+                   <a href="views/administration.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Administration&Office support</a>
+                   <a href="views/project_management.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Project Management</a>
+                   <a href="views/research.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Research& Quality Assurance</a>
+                   <a href="views/retail.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Retail</a>
+                   <a href="views/business_development.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Business Development</a>
+                   <a href="views/security.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Security</a>
+                   <a href="views/strategy_consulting.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Strategy & Consulting</a>
+                   <a href="views/tourism.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Tourism & Travel</a>
+                   <a href="views/trade.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Trade & services</a>
+                   <a href="views/procurement.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Transport,Logistics,Procurement</a>
+                   <a href="views/real_estate.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Real Estate</a>
+                   <a href="views/hospitality.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Hospitality</a>
+                   <a href="views/others.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Others</a>
                 </div>
                     
                     <li class="list-group-item"><a href="help" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
@@ -121,7 +146,7 @@ if (!$_SESSION['email']) {
             <!--<img src="image/user">-->
           </div><!--card-->
           <div class="card-content">
-            <p> </p>
+        
           </div><!--card-content-->
         </div><!--col-md-4-->
 
