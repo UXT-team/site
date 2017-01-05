@@ -13,7 +13,7 @@ if (!$_SESSION['email']) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ICT</title>
+  <title>Accounts</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -90,7 +90,7 @@ if (!$_SESSION['email']) {
               <div class="col-md-2">
                <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
                   <ul class="list-group" >
-                    <li class="list-group-item"><a href="index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
+                    <li class="list-group-item"><a href="../index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
                   
                     <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
                     <li class="list-group-item"><a href="views/interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>

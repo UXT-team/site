@@ -30,7 +30,8 @@
   width: 100%;
   padding: 40px 0;
   overflow: hidden;
-  background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWX6JKymovdy82Lsj0loepdN_dYNayblulZNvC5BCgH3AO3pRK");
+  color: black;
+ /*background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWX6JKymovdy82Lsj0loepdN_dYNayblulZNvC5BCgH3AO3pRK");*/
 
 }
 
@@ -256,14 +257,14 @@
     </div><!--container-->
 </div><!--row-->
 <section class="post_jobs">
-  <div class="panel">
+  <div class="jumbotron">
 
     <div id="posts">
       <div clas="col-md-10">
-<center><p style="font-size:2em;">Dormant Job Seekers</p></center>
+<center><p style="font-size:2em;" class="text-danger">LIST OF JOBS POSTED</p></center>
 <div class="table-scrol">
   <div class="table-responsive">
-    <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
+    <table class="table  table-hover table-striped" style="table-layout:fixed">
       <thead>
         <tr class="success">
          <th>ID</th>
@@ -293,11 +294,14 @@
       while ($row = mysqli_fetch_array($run)) {
         
         $user_id = $row[0];
-        $name = $row[1];
-        $email = $row[2];
-        $reg= $row[3];
-        $reg= $row[4];
-        $dell = $row[5];
+        $job_title = $row[1];
+        $company_name = $row[2];
+        $job_category= $row[3];
+        $experience= $row[4];
+        $post_date = $row[6];
+       
+       
+        
        
       
 
@@ -306,8 +310,11 @@
        <tr>
          <!-- show those results in the table -->
          <td><?php echo $user_id; ?></td>
-         <td><?php echo $name; ?></td>
-         <td><?php echo $reg; ?></td> 
+         <td><?php echo $job_title; ?></td>
+         <td><?php echo $company_name; ?></td> 
+         <td><?php echo $job_category; ?></td> 
+         <td><?php echo $experience; ?></td> 
+         <td><?php echo $post_date; ?></td> 
                </tr>
        <?php } ?>
     </table>
