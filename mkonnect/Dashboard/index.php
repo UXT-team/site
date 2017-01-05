@@ -109,11 +109,11 @@ if (!$_SESSION['email']) {
                       <li class="list-group-item"><a href="views/traffic.html" style="color:#000000;" >Facebook</a>
                       <li class="list-group-item"><a href="traffic.html" style="color:#000000;" >Google SEO</a>
                     </div>
-                    <li class="list-group-item"> <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#activity">Activity  <span class="glyphicon glyphicon-flash"></span></button> </li>
+                    <li class="list-group-item"> <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#activity">Activity  <span class="glyphicon glyphicon-star"></span></button> </li>
                   </li>
                     <div id="activity" class="collapse">
-                      <li class="list-group-item"><a href="views/active.php" style="color:#000000;" >Active Job Seeker</a>
-                      <li class="list-group-item"><a href="views/dormant.php" style="color:#000000;" >Dormant Job seeker</a>
+                      <li class="list-group-item"><a href="views/active.php" style="color:#000000;" >Active Job Seeker <span class="glyphicon glyphicon-eye-open"></span></a>
+                      <li class="list-group-item"><a href="views/dormant.php" style="color:#000000;" >Dormant Job seeker &nbsp;<span class="glyphicon glyphicon-eye-close"></span></a>
                     </div>
                     <li class="list-group-item"><a href="help" style="color:#000000;">
                      <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>

@@ -114,7 +114,7 @@ if (!$_SESSION['email']) {
              
       <div class="col-md-10">
        <div clas="col-md-10">
-<center><p style="font-size:2em;">SKIZA ARTISTES</p></center>
+<center><p style="font-size:2em;">Dormant Job Seekers</p></center>
 <div class="table-scrol">
   <div class="table-responsive">
     <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
@@ -123,6 +123,8 @@ if (!$_SESSION['email']) {
          <th>ID</th>
          <th>Name</th>
          <th>Email </th>
+         <th>Job Category </th>
+         <th>Date of registration</th>
          <th>Last Update</th>
          
             

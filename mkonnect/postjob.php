@@ -259,7 +259,59 @@
   <div class="panel">
 
     <div id="posts">
+      <div clas="col-md-10">
+<center><p style="font-size:2em;">Dormant Job Seekers</p></center>
+<div class="table-scrol">
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
+      <thead>
+        <tr class="success">
+         <th>ID</th>
+         <th>Job Title</th>
+         <th>Company Name </th>
+         <th>Job Category </th>
+         <th>Years of Experience </th>
+         <th>Job Post Date</th>
+        
+         
+            
+
+      </thead>
+      <?php
+      //connect to db
+      //connect to db
+      include 'db/db_connection.php';
+
+      //select query to view users
+      $view_admin_query = " select * from users";
+      //run the sql query
+
+      $run = mysqli_query($con, $view_admin_query);
+
+      //while fetches  the result and store in an array row
+
+      while ($row = mysqli_fetch_array($run)) {
+        
+        $user_id = $row[0];
+        $name = $row[1];
+        $email = $row[2];
+        $reg= $row[3];
+        $reg= $row[4];
+        $dell = $row[5];
+       
       
+
+       ?>
+      
+       <tr>
+         <!-- show those results in the table -->
+         <td><?php echo $user_id; ?></td>
+         <td><?php echo $name; ?></td>
+         <td><?php echo $reg; ?></td> 
+               </tr>
+       <?php } ?>
+    </table>
+  </div>
 
     </div><!--post-->
     
