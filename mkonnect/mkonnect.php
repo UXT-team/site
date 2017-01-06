@@ -1,4 +1,5 @@
 <?php   require ("db.php");
+session_destroy();
  ?>
 <html lang="en"><head>
     <meta charset="utf-8">
@@ -549,11 +550,11 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
           <fieldset style="padding:0%;">
 
-          <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> 
+          <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1>
            <center><h3 class="text-warning">POST JOBS</h3></center>
             <hr>
             <form method="POST" action="emp_login.php">
-              
+
               <div class="col-md-12" style="margin-left:15%" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>

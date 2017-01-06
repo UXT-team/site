@@ -1,3 +1,4 @@
+<?php require ("db.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@
       </center>
       <center><p class="text-warning" style="font-size:1.5em;"> Click Next to Update your profile
       </center>
-    
+
      <center><a href="Jobs.php"><button class="btn btn-success btn-lg">Next</button></a></center>
      </div>
      </div>
@@ -30,7 +31,7 @@
     </div>
   </div>
 </div>
-  
+
 </div>
 
 
@@ -44,7 +45,7 @@
       <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR86aukb6WHzQ-QmUshY1kPcvnv9GuIkuvFUiaMgt7IJkxHxurRVQ">
       <div class="caption">
       <center><p class="text-danger" style="font-size:2em;"><?php  '.$user_email.' ?> Email is already exist in, Please try another one!'</p></center>
-    
+
      <center><a href="profile.php"><button class="btn btn-primary btn-lg">Try Again</button></a></center>
      </div>
      </div>
@@ -52,23 +53,20 @@
     </div>
   </div>
 </div>
-  
+
 </div>
 
 </body>
 </html>
 
 <?php
-require ("db.php");
-    //include db
+$user_id = $_SESSION['id'];
         if(isset($_POST['save'])){
 
          $category_id= $_SESSION['txt_category'];
-         $select_acc="select * from job_applications  WHERE category_id='".$category_id."' AND user_id=20 ";
+         $select_acc="select * from job_applications  WHERE category_id='".$category_id."' AND user_id=$user_id";
 
          $run_acc=mysqli_query($con,$select_acc);
-
-
          $rows = mysqli_num_rows($run_acc);
 
          if($rows>0)
@@ -85,7 +83,7 @@ require ("db.php");
 
          //insert the user into the database.
 
-         $insert_acc="insert into job_applications (category_id,user_id) VALUES ('$category_id',20)";
+         $insert_acc="insert into job_applications (category_id,user_id) VALUES ('$category_id',$user_id)";
 
          if(mysqli_query($con,$insert_acc))
          {

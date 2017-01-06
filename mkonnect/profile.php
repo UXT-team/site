@@ -79,7 +79,7 @@ if ( $_SESSION['auth'] != true) {
 
       $query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
-        $fullname = $row['fullname'];  echo "WELCOME"."  ".$fullname;?></h1></div>
+        $fullname = $row['fullname'];  echo "WELCOME"." ".$fullname;?></h1></div>
       <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.PNG"></a></div>
 
     </div>
