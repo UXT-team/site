@@ -22,7 +22,7 @@
       <div class="caption">
       <center><p class="text-danger" style="font-size:2em;">Email or password is incorrect! Please check your details and try again..</p></center>
      
-          <center><a href="mkonnect.php#sales"><button class="btn btn-primary btn-lg">Try again</button></a></center>
+          <center><a href="mkonnect.php#sales"><button class="btn btn-primary btn-lg" name="back">Try again</button></a></center>
      </div>
      </div>
      </div>
