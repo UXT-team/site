@@ -13,7 +13,7 @@ if (!$_SESSION['email']) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Creatives</title>
+  <title>Medicine</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -89,7 +89,7 @@ if (!$_SESSION['email']) {
             <div class="row">
               <div class="col-md-2">
                 <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
-                   <ul class="list-group" >
+                    <ul class="list-group" >
                     <li class="list-group-item"><a href="index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
                   
                     <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
@@ -152,7 +152,7 @@ if (!$_SESSION['email']) {
              
       <div class="col-md-10">
        <div clas="col-md-10">
-<center><p style="font-size:2em;">Creatives Job Seeker</p></center>
+<center><p style="font-size:2em;">Active Job Seekers</p></center>
 <div class="table-scrol">
   <div class="table-responsive">
     <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
@@ -161,8 +161,9 @@ if (!$_SESSION['email']) {
          <th>ID</th>
          <th>Name</th>
          <th>Email </th>
-         <th>Job Category </th>
+         <th>Job Category</th>
          <th>Date of Registration</th>
+         <th>Last Update</th>
          
             
 

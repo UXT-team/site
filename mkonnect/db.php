@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	//session_start();
 	date_default_timezone_set('Africa/Nairobi');
 	//ini_set('display_errors',1);  error_reporting(E_ALL);
 	//error_reporting(E_ALL);

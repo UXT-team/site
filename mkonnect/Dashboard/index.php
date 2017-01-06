@@ -68,7 +68,8 @@ if (!$_SESSION['email']) {
                   <ul class="list-group" >
                     <li class="list-group-item"><a href="index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
                   
-                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
+                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i> Add CV Writing tips</a></li>
+                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing tips Report</a></li>
                     <li class="list-group-item"><a href="views/interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
                     <li class="list-group-item">
                       <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
@@ -103,8 +104,20 @@ if (!$_SESSION['email']) {
                    <a href="views/hospitality.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Hospitality</a>
                    <a href="views/others.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Others</a>
                 </div>
-                    
-                    <li class="list-group-item"><a href="help" style="color:#000000;"> <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
+                    <li class="list-group-item"> <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#traffic">Traffic  <span class="glyphicon glyphicon-flash"></span></button> </li>
+                  </li>
+                    <div id="traffic" class="collapse">
+                      <li class="list-group-item"><a href="views/traffic.html" style="color:#000000;" >Facebook</a>
+                      <li class="list-group-item"><a href="traffic.html" style="color:#000000;" >Google SEO</a>
+                    </div>
+                    <li class="list-group-item"> <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#activity">Activity  <span class="glyphicon glyphicon-star"></span></button> </li>
+                  </li>
+                    <div id="activity" class="collapse">
+                      <li class="list-group-item"><a href="views/active.php" style="color:#000000;" >Active Job Seeker <span class="glyphicon glyphicon-eye-open"></span></a>
+                      <li class="list-group-item"><a href="views/dormant.php" style="color:#000000;" >Dormant Job seeker &nbsp;<span class="glyphicon glyphicon-eye-close"></span></a>
+                    </div>
+                    <li class="list-group-item"><a href="help" style="color:#000000;">
+                     <i class="glyphicon glyphicon-question-sign"></i>&nbsp;Help</a></li>
 
 
 

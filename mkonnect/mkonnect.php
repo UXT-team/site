@@ -50,9 +50,11 @@
   width: 100%; padding: 40px 0; overflow: hidden;
 }
 
-#postjob .well{
+.jobbs {
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwpFj66a4NwG0kr9hDqkNBJFbTF3ISpIPKe-Mvr8w4KEy3AYqV");
+  width: 100%;
   height: auto;
-  width: 70%;
+  width: auto;
   padding: 40px 0;
   overflow: hidden;
 }
@@ -501,7 +503,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
       <div class="row">
 
         <div class="col-md-6">
-          <div class="well" style="margin-left: 25%;">
+          <div class="well" style="margin-left: 0%;">
             <h2 class="text-warning" style="padding:2%; text-align:center;">Interview skills & CV Writing skills</h2>
             <ul class="list-group">
               <li class="list-group-item"> <h5>
@@ -536,43 +538,43 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
     <!--Post-Jobs-->
 
 <div id="postjob">
+<div class="jobbs">
   <div class="row">
 
-  <div class="col-md-8">
+  <div class="col-md-12">
 
 
-        <div class="thumbnail well wow slideInRight" data-wow-delay="1s" style="padding: 10%; width:auto; margin-left: 12%; " >
-        <div class="panel">
+        <div class="thumbnail wow slideInRight" data-wow-delay="1s" style="padding-right:0%; width:auto; margin-left: 0%; " >
+        <!--div class="panel"-->
 
-          <fieldset style="padding:10%;">
+          <fieldset style="padding:0%;">
 
-          <legend> <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> </legend>
-          <legend> <h1 style="text-align: center;">POST JOBS</i></h1> </legend>
-
-
+          <h1 style="text-align: center;"><i class="fa fa-registered" aria-hidden="true" fa-5x aria-hidden="true"></i></h1> 
+           <center><h3 class="text-warning">POST JOBS</h3></center>
+            <hr>
             <form method="POST" action="emp_login.php">
-
-              <div class="col-md-12" >
+              
+              <div class="col-md-12" style="margin-left:15%" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-8" style="margin-left:15%" >
                 <div class="form-group">
 
-             <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+             <input class="form-control" name="email" placeholder="Your Email" id="email" type="email" autofocus="" required="">
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-12" style="margin-left:15%">
                 <div class="form-group">
-                  <label><h3>Enter Password</h3></label>
+                <label><h3>Enter Password</h3></label>
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-8" style="margin-left:15%" >
                 <div class="form-group">
 
               <input class="form-control" name="password" placeholder="Your Password" type="password" id="password1"  required="">
@@ -584,14 +586,9 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 <div class="form-group">
 
 
-              <button name="emp_login" class="btn btn-success btn-block">Login</button>
+              <center><button name="emp_login" class="btn btn-success btn-lg">Login</button></center>
 
               </form>
-
-
-
-
-
 
               <p class="text-danger" style="text-align:center; margin-top:2%;">
               <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
@@ -600,7 +597,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <form method="POST" action="resetpassword.php">
 
                 <div class="form-group">
-                 <div class="col-md-12">
+                 <div class="col-md-8">
 
                    <input class="form-control" name="reset_email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
 
@@ -610,7 +607,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
                     <div class="col-md-12">
                 <div class="form-group">
-                   <input class="btn btn-lg btn-primary btn-block " type="submit" value="Submit Email" name="accounts"   style="font-size:1.25em;">
+                   <input class="btn btn-lg btn-primary btn-lg " type="submit" value="Submit Email" name="accounts"   style="font-size:1.25em;">
 
                 </div>
               </div>
@@ -619,7 +616,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               </div><!--forgotten_jobs-->
 
           <p class="text-warning" style="text-align: center;"> If you don't have an account clcik Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
-              <button class="btn btn-success btn-block" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Reigster </button>
+              <center><button class="btn btn-primary btn-lg" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Click to Reigster </button></center>
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
@@ -633,13 +630,13 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
             <form method="POST" action="emp_reg.php">
 
 
-                <div class="col-md-12" >
+                <div class="col-md-12" style="margin-left:15%" >
                 <div class="form-group">
                   <label><h3>Enter Email</h3></label>
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-8" style="margin-left:15%" >
                 <div class="form-group">
 
              <input class="form-control" name="job_post_email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
@@ -647,13 +644,13 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-12" style="margin-left:15%" >
                 <div class="form-group">
                   <label><h3>Enter Password</h3></label>
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-8" style="margin-left:15%">
                 <div class="form-group">
 
               <input class="form-control" name="job_post_password" placeholder="Your Password" type="password" id="password1"  required="">
@@ -661,21 +658,23 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-12" style="margin-left:15%" >
                 <div class="form-group">
                   <label><h3>Confirm Password</h3></label>
                 </div><!--from-group-->
               </div><!--col-md-10-->
 
-              <div class="col-md-12" >
+              <div class="col-md-8" style="margin-left:15%" >
                 <div class="form-group">
 
               <input class="form-control" name="job_confirm_password" placeholder="Confirm Password" type="password" id="password1"  required="">
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
-
-              <button class="btn btn-info btn-lg" name="job_post_register"> Reigster To Post Job</button>
+              <div class="col-md-8" >
+                <div class="form-group" style="margin-left:20%">
+              <center><button class="btn btn-info btn-lg" name="job_post_register"> Reigster To Post Job</button>
+              </div></center>
 
             </form>
 
@@ -684,16 +683,10 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
 
           </fieldset>
 
-          </div><!--panel-->
+         <!-- </div>panel-->
         </div><!--panel-->
       </div><!--col-md-8-->
-
-    <div class="col-md-4">
-    <div class="thumbnail wow slideInLeft" data-wow-delay="1s" >
-      <h2> <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> Register and Post your Jobs Here. </h2>
-    </div><!--thumbnail-->
-  </div><!--col-md-4-->
-  </div><!--row-->
+</div><!--jobbs-->
 </div><!--post-Jobs-->
 
 
