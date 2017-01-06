@@ -1,5 +1,5 @@
 <?php require ("db.php");
-      if ($_SESSION['auth'] == false) {
+      if ($_SESSION['auth'] != true) {
         header("Location: mkonnect.php");
       }
  ?>
