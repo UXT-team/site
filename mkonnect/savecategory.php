@@ -74,6 +74,7 @@ require ("db.php");
          if($rows>0)
          {
          $eng_acc= "<script>alert('Already applyed for that job Category')</script>";
+         //echo"<script> $('#success').modal('show');</script>";
 
          echo $eng_acc;
          echo"<script>window.open('profile.php','_self')</script>";

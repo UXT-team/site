@@ -43,7 +43,7 @@
     	<div class="thumbnail">
     	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR86aukb6WHzQ-QmUshY1kPcvnv9GuIkuvFUiaMgt7IJkxHxurRVQ">
     	<div class="caption">
-    	<center><p class="text-danger" style="font-size:2em;"><?php  '.$user_email.' ?> Email is already exist in, Please try another one!'</p></center>
+    	<center><p class="text-danger" style="font-size:2em;"> Email is already exist in, Please try another one!'</p></center>
     
      <center><a href="mkonnect.php"><button class="btn btn-primary btn-lg">Try Again</button></a></center>
      </div>
@@ -114,6 +114,7 @@ $query = mysqli_query($con, $select_log);
         $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
         mysqli_query($con,$insert_app);    }
   $_SESSION['auth'] = true;
+  
 echo"<script> $('#success').modal('show');</script>";
 //echo "<script>alert('Registration Successful')</script>";
 

@@ -1,7 +1,7 @@
-<?php require ("db.php");
-      if ($_SESSION['auth'] != true) {
-        header("Location: mkonnect.php");
-      }
+<?php# require ("db.php");
+      #if ($_SESSION['auth'] != true) {
+        #header("Location: mkonnect.php");
+      #}
  ?>
 <!DOCTYPE html>
 <html>
