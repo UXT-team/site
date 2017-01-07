@@ -196,9 +196,9 @@ session_destroy();
 
 
 </section>
- <div id="footer" style="margin-top:-4%">
+ <div id="footer" style="margin-top:0">
   <div class="container">
-    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4>
+    <h4 style="color:#fff;"><center>Copyright ©2016 Mkonnect.</center></h4
   </div>
 </div>
 
