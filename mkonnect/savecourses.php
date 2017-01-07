@@ -16,7 +16,7 @@
     <div class="modal-content">
       <div class="col-md-12">
       <div class="thumbnail">
-      <img src="https://s-media-cache-ak0.pinimg.com/736x/01/e4/b8/01e4b89b0279f6f4ee865ee862865551.jpg">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/ef/51/fd/ef51fd136b9e359549ceef3673b0dc31.jpg">
       <div class="caption">
       <center><p class="text-warning" style="font-size:2em;"> Saved Successful
       </center>
