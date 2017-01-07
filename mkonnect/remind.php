@@ -39,8 +39,8 @@
 			if (!$mail->send()) {
 				$lmsg = "Mailer Error. Please confirm your entries and try again ";
 			} else {
-				$query = "UPDATE `users` SET `pass_verification` = '".$rand."' WHERE `id` = '".$row['id']."'";
-				mysql_query($query);
+				$query = "UPDATE `users` SET `pass_verification` = '".$rand."' WHERE `user_id` = '".$row['user_id']."'";
+				mysqli_query($con,$query);
 				$lmsg = 'Please check your email for your password reset link.';
 			}
 		}

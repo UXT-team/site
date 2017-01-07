@@ -23,7 +23,7 @@
     	<center><p class="text-warning" style="font-size:1.5em;"> Click Next to Update your profile
     	</center>
     
-     <center><a href="jobs.php"><button class="btn btn-success btn-lg">Next</button></a></center>
+     <center><a href="register.php"><button class="btn btn-success btn-lg">Next</button></a></center>
      </div>
      </div>
      </div>
