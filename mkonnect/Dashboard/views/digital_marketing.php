@@ -6,75 +6,97 @@ session_start();
 
 if (!$_SESSION['email']) {
   
-  header("location: Auth/login.php");
+  header("location: ../Auth/login.php");
 }
 
  ?>
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MKONNECT Dashboard</title>
+<head>
+  <title>Digital Marketing</title>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" conutent="IE=edge">
-    <!--for repsonsiveness-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- styles -->
-    <link href="css/styles.css" rel="stylesheet">
-     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
-  <body>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="../css/styles.css" rel="stylesheet">
+     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 
-      <header>
-        
- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" >
-        <img  style="width:395px; height: 35px; align="left"" src="images/logo.jpg" >
-        
-      </a>
-    </div>
-    <ul class="nav navbar-nav">
-     
-  <li><a href="#" style="color:white; font-size:1.8em;">MKONNECT ADMIN</a></li>
-  <li><a href="#" style="color:white; font-size:1.8em;"><?php echo $_SESSION['email'];  ?></a></li> 
-  <div class="pull-right">
-    <div class="dropdown" >
-  <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" style="margin-top:8%;">Account Settings
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#"><input type="submit" class=" btn btn-success btn-sm" value="Reset Password"></a></li>
-    <li><a href="Auth/logout.php"><input type="submit" class="btn btn-danger btn-md" value="Log Out" style=" padding-right: 5%;" ></a></li> 
-  </ul>
-</div><!--drop-down-->
-</div><!--pull-right-->
+    
+</head>
+<body>
+<header>
+    
+        <div class="header">
+          <div class="container">
+          <div class="col-md-5">
+            <!--logo-->
+            <div class="logo">
+              <a class="navbar-brand">
+                <a href="../index.php">
+                  <img src="../images/logo.jpg">
+                </a>
+              </a>
+            </div>
+          </div><!--col-md-5-->
+
+          <div class="col-md-3">
+            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;"> MKONNECT ADMIN PORTAL</p></center> 
+            
+          </div><!--col-md-3-->
+
+          <div class="col-md-2">
+            <center><p style="color: white; font-size: 1.5em; margin-top:4%;"><?php echo $_SESSION['email'];  ?></p></center>
+          </div><!--col-md--2-->
+
+          <div class="col-md-2">
+            <div class="navbar navbar-inverse" role="banner">
+                    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                      <ul class="nav navbar-nav">
+                      <div class="signout">
+                        <a href="../Auth/logout.php"><input type="submit" class="btn btn-info" value="LogOut" style="margin-top:8%; "></a>
+                      
+                   
+                      </ul><!--nav-->
+
+                    </nav>
+                </div>
+
+           </div><!--col-md-2-->
+
+          </div><!--container-->
+        </div><!--header-->
       
-    </ul>
-
-  </div>
-</nav>
-      </header>
-      <section>
+</header>
+<section>
+  <div class="breadcrumb">
+    <div class="col-md-12">
+      <ul class="breadcrumb">
+      <li>
+  <button class="btn btn-danger" onclick="skiza()">Print this</button>
+  </li>
+  <li>
+  <a href="export.php"><button class="btn btn-danger">EXPORT</button></a>
+  </li>
+  </ul>
+</div><!--breadcrumb-->
+  </div><!--col-md--12-->
+</section>
+<section>
         <div class="page-content">
             <div class="row">
               <div class="col-md-2">
                 <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
-                  <ul class="list-group" >
+                    <ul class="list-group" >
                     <li class="list-group-item"><a href="index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
                   
-                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i> Add CV Writing tips</a></li>
-                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing tips Report</a></li>
+                    <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
                     <li class="list-group-item"><a href="views/interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
                     <li class="list-group-item">
                       <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
                   <div id="jobs" class="collapse">
-                  <a href="views/digital_marketing.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Digital Marketing</a>
                     <a href="views/marketing.php" class="list-group-item"><i class="glyphicon glyphicon-ice-lolly-tasted"></i>Sales & Marketing</a>
                     <a href="views/ict.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>ICT</a>
                     <a href="views/accounts.php" class="list-group-item"><i class="glyphicon glyphicon-cloud-upload"></i>Accounting</a>
@@ -125,82 +147,91 @@ if (!$_SESSION['email']) {
                   </ul>
                   
                 </div><!--listgroup-->
+
               </div><!--col-md-2-->
-             <div class="jumbotron">
+             
       <div class="col-md-10">
-       <div class="row">
-        <div class="col-md-3">
-      
-          <div class="card">
-            <div class="panel" style="padding:20%;">
-              <a href="interviewskills.php"><button class="btn btn-warning btn-lg" style="padding:10%;">Interview Skills</button></a>
-            </div><!--panel-->
-         </div><!--content-box-small -->
-       
-        </div><!--col-md-4-->
+       <div clas="col-md-10">
+<center><p style="font-size:2em;">Active Job Seekers</p></center>
+<div class="table-scrol">
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped" style="table-layout:fixed">
+      <thead>
+        <tr class="success">
+         <th>ID</th>
+         <th>Name</th>
+         <th>Email </th>
+         <th>Phonenumber </th>
+         <th>Job Category</th>
+         <th>Application Date</th>
+         <th>CV</th>
+         <th>Academic Transcripts</th>
+         
+         
+            
 
-        <div class="col-md-3">
-          <div class="card">
-            <div class="panel" style="padding:20%;">
-              <a href="cvwriting.php"><button class="btn btn-warning btn-lg" style="padding:10%;">CV WRITING</button></a>
-            </div><!--panel-->
-         </div><!--content-box-small -->
-        </div><!--col-md-4-->
+      </thead>
+      <?php
+      //connect to db
+      //connect to db
+      include 'db/db_connection.php';
 
-        <div class="col-md-3">
-          <div class="card">
-            <div class="panel" style="padding:20%;">
-              <a href="interviewskills.php"><button class="btn btn-warning btn-lg" style="padding:10%;">Help</button></a>
-            </div><!--panel-->
-         </div><!--content-box-small -->
-        </div><!--col-md-4-->
+      //select query to view users
+      $view_admin_query = " select * from users";
+      //run the sql query
 
-        <div class="col-md-3">
-          <div class="card">
-            <!--<img src="image/user">-->
-          </div><!--card-->
-          <div class="card-content">
+      $run = mysqli_query($con, $view_admin_query);
+
+      //while fetches  the result and store in an array row
+
+      while ($row = mysqli_fetch_array($run)) {
         
-          </div><!--card-content-->
-        </div><!--col-md-4-->
+        $user_id = $row[0];
+        $name = $row[1];
+        $email = $row[2];
+        $number= $row[3];
+        $job_category= $row[4];
+        $application_date = $row[5];
+       
+       
+      
 
-        <div class="col-md-3">
-          <div class="card">
-            <!--<img src="image/songview.png">-->
-          </div><!--card-->
-          <div class="card-content">
-            <p></p>
-          </div><!--card-content-->
-        </div><!--col-md-4-->
-
-          <div class="col-md-4">
-          <div class="card">
-            <!--<img src="image/albumnview.png">-->
-          </div><!--card-->
-          <div class="card-content">
-            <p> </p>
-          </div><!--card-content-->
-        </div><!--col-md-4-->
-
-        <div class="col-md-3">
-          <div class="card">
-            <!--<img src="image/users.jpeg">-->
-          </div><!--card-->
-          <div class="card-content">
-            <p>  </p>
-          </div><!--card-content-->
-        </div><!--col-md-4-->
-
-        </div><!--row-->
-        </div><!--col-md-10-->
-         </div><!--Jumbotron-->
-    
+       ?>
+      
+       <tr>
+         <!-- show those results in the table -->
+         <td><?php echo $user_id; ?></td>
+         <td><?php echo $name; ?></td>
+         <td><?php echo $email; ?></td> 
+         <td><?php echo $number; ?></td> 
+         <td><?php echo $job_category; ?></td> 
+         <td><?php echo $application_date; ?></td> 
+        <td><a href="#"><button class="btn btn-warning">Download CV</button></a></td>
+        <td><a href="#"><button class="btn btn-danger"> Transcript</button></a></td>
+       </tr>
+       <?php } ?>
+    </table>
+  </div>
+</div>
+</div><!--col-md-12 -->
             </div><!--row-->
         </div><!--page-content-->
         
     </section>
-    
-    
-   
-  </body>
-  </html>
+<section>
+
+
+
+
+
+
+<section>
+<script>
+function skiza() {
+    window.print();
+}
+</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

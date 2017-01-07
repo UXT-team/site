@@ -1,7 +1,7 @@
 <?php
 //connect to database 
 //error_reporting(0);
-$con = mysqli_connect("localhost", "root", "", "mkonnect");
+$con = mysqli_connect("localhost", "root", "", "m_konnect");
 
 if (!$con) {
 	
