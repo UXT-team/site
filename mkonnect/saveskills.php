@@ -33,27 +33,6 @@
 </div>
 
 
-
-<div class="container">
-  <div id="reg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="col-md-12">
-      <div class="thumbnail">
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR86aukb6WHzQ-QmUshY1kPcvnv9GuIkuvFUiaMgt7IJkxHxurRVQ">
-      <div class="caption">
-      <center><p class="text-danger" style="font-size:2em;"> Email is already exist in, Please try another one!'</p></center>
-    
-     <center><a href="mkonnect.php"><button class="btn btn-primary btn-lg">Try Again</button></a></center>
-     </div>
-     </div>
-     </div>
-    </div>
-  </div>
-</div>
-  
-</div>
-
 </body>
 </html>
 
