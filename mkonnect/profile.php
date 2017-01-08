@@ -85,8 +85,6 @@ if ( $_SESSION['auth'] != true) {
     </div>
     <div class="row">
       <div class="col-sm-3"><!--left col-->
-
-
           <ul class="list-group">
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="profile.php"><center><span class="glyphicon glyphicon-user"></span> <strong> Profile </strong></center></a></li>
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>-->
@@ -254,7 +252,6 @@ if ( $_SESSION['auth'] != true) {
 
                 <div class="col-md-12">
                   <div class="panel">
-
                     <h2><center><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Courses &nbsp;&nbsp;<span class="glyphicon glyphicon-folder-open"></span></center></h2>
                   </div><!--panel-->
                   <div class="thumbnail">
