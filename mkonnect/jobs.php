@@ -1,45 +1,32 @@
-<?php require ("db.php");
+<?php
+ /*require ("db.php");
       if ($_SESSION['auth'] != true) {
         header("Location: mkonnect.php");
-      }
+      }*/
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UPDATE PROFILE</title>
+	<title>Available Jobs</title>
 	 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
-<link href="css/animate.css" rel="stylesheet">
-<link href="css/site.css" rel="stylesheet">
+       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+   <!-- Bootstrap -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
 
-<!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
-     This must be loaded before fileinput.min.js -->
-<script src="js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>
-<!-- sortable.min.js is only needed if you wish to sort / rearrange files in initial preview.
-     This must be loaded before fileinput.min.js -->
-<script src="js/plugins/sortable.min.js" type="text/javascript"></script>
-<!-- purify.min.js is only needed if you wish to purify HTML content in your preview for HTML files.
-     This must be loaded before fileinput.min.js -->
-<script src="js/plugins/purify.min.js" type="text/javascript"></script>
-<!-- the main fileinput plugin file -->
-<script src="js/fileinput.min.js"></script>
-<!-- bootstrap.js below is needed if you wish to zoom and view file content
-     in a larger detailed modal dialog -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-<!-- optionally if you need a theme like font awesome theme you can include
-    it as mentioned below -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/updateprofile.css">
+     <link rel="stylesheet" href="css/jobs.css">
           <style type="text/css">
-
+        .available_jobs{
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyA7xwFNVFltXxYYlyuiFzYtbshZcECIZThteLMuNgQvgEVAt"); height: auto;
+          width: 100%; padding: 40px 0; overflow: hidden;
+        }
 
      </style>
 </head>
@@ -56,8 +43,9 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
-          <li class="active"><a href="mkonnect.php">Home</a></li>
-          <li class="active"><a href="mkonnect.php">ShortCode</a></li>
+          <li class="active"><a href="jobs.php">Home</a></li>
+          <li class="active"><a href="profile.php">Profile</a></li>
+          <li class="active"><a href="profile.php#shortcode">ShortCode</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
           <li class="active"><a href="logout.php">LogOut</a></li>
 
@@ -66,31 +54,65 @@
 </div><!--/.navbar -->
 
 <div class="divider" id="section2" style="margin-top: 0%;"></div><!--divider-->
-
-<section class="konnect wow pulse"  data-wow-iteration="infinite" data-wow-duration="4800ms">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below <span class=" glyphicon glyphicon-hand-down"></span></h1> </div>
-</section>
-
-
-
-<div class="row wow  slideInLeft" style="margin-top: 8%;">
+<section class="available_jobs" style="margin-top:-6%;">
+<div class="row wow  slideInLeft" style="margin-top: 3%;">
 <div class="container">
     <div class="panel">
         <div class="panel">
-            <h3 class="text-danger"><center>Please Update Your Profile the Click Next to Upload your C.V.</center></h3>
-            <div class="well" style=" margin:0%; ">
-                <div class="caption">
+          <div class="thumnail">
+            <center><img src="http://ireporterstv.co/wp-content/uploads/2012/11/now-hiring.jpg"></center>
+            <div class="caption" style="color: #000;">
+                    <h2>Digital Marketing Manager Job Description</h2>
+                   
+<ul >
+<li>
+<p><span class="txt14">Devising strategies to drive online traffic to the company website.</span></p>
+</li>
+<li>
+<p><span class="txt14">Tracking conversion rates and making improvements to the website.</span></p>
+</li>
+<li>
+<p><span class="txt14">Developing and managing digital marketing campaigns</span></p>
+</li>
+<li>
+<p><span class="txt14">Utilising a range of techniques including paid search, SEO and PPC.</span></p>
+</li>
+
+</li>
+</ul>
+<h2><span class="txt14">Requirements of the role</span></h2>
+<ul>
+<li>
+<p><span class="txt14">Bachelor degree in Marketing.</span></p>
+</li>
+<li>
+<p><span class="txt14">Qualified member of the CIM or equivalent.</span></p>
+</li>
+<li>
+<p><span class="txt14">Experience managing PPC, SEO and Affiliate programmes.</span></p>
+</li>
+<li>
+<p><span class="txt14">Strong understanding of current online marketing concepts, strategy and best practice.</span></p>
+</li>
+<li>
+<p><span class="txt14">Experience in ecommerce, SEO, PPC, Email marketing, and social media.</span></p>
+</li>
+<li>
+<p><span class="txt14">Previous experience in a similar digital marketing role.</span></p>
+</li>
+</ul>
 
                 </div><!--caption-->
-
-
-
+               </div><!--thumbnail-->
+         <h3 class="text-danger"> fill the form below then Upload your C.V. and Your Academic credentials</h3>
+            <div class="well" style=" margin-bottom:1%; ">
+              
                 <fieldset>
 
                     <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform"  style="padding: 2%;">
 
 
-                <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
+                <legend><center> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
                  <div class="form-group">
                 <div class="col-md-12">
@@ -193,18 +215,34 @@
 
                     </div><!--col-md-10-->
                 </div><!--form-group-->
-
-                <div class="form-group">
+                  <div class="form-group">
                     <div class="col-md-10">
+             
+    <form action="" method="post" enctype="multipart/form-data">
+      <label class="control-label" style="color:black;"><h3 class="text-warning">C.V. and any project you've done</h3></label>
+      <input id="input-6" type="file" name="files[]" multiple="multiple" style="color:#000;">
+      <input type="submit" value="Upload your C.V." class="btn btn-warning" style="margin-top: 1%; font-size: 1.4em;">
+    </form>
 
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="Next" name="profile" style="font-size:1.25em;" >
+       </div><!--col-md-10-->
+         </div><!--form-group-->
+          <div class="form-group">
+           <div class="col-md-10">
+           
+    <form action="" method="post" enctype="multipart/form-data">
+      <label class="control-label" style="color:black;"><h3 class="text-info">Academic Transcript eg. kcse, diploma</h3></label>
+      <input id="trans" type="file" name="files[]" multiple="multiple">
+      <input type="submit" value="Upload Academic Your Transcripts" class="btn btn-info" style="margin-top: 1%; margin-bottom: 3%; font-size: 1.4em;">
+    </form>
+
+       </div><!--col-md-10-->
+         </div><!--form-group-->
+          <div class="form-group">
+             <div class="col-md-10">
+               <input class="btn btn-lg btn-success btn-block" type="submit" value="Finish" name="finish" style="font-size:1.25em;" >
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
-
-
-
-
                 </div><!--col-md-12-->
 
             </form>
@@ -218,8 +256,29 @@
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
+</section>
+<section class="konnect wow pulse"  data-wow-iteration="infinite" data-wow-duration="4800ms">
+  <!--div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)"> Please Update your Profile Below <span class=" glyphicon glyphicon-hand-down"></span></h1> </div-->
+</section>
 
+<div id="footer">
+  <div class="container">
+    <h4 style="color:#fff;"><center>Copyright ©2016 <a href="mkonnect.php">Mkonnect.</a></center></h4>
+  </div>
+</div>
 
+<ul class="nav pull-right scroll-top pull-right">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+<!--/col-->
+<!--/container-->
+
+<!--/wrap-->
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
 
 
 <!-- jQuery library -->
@@ -231,8 +290,29 @@
 
 <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
 <script src="js/fa.js"></script>
-<!-- optionally if you need translation for your language then include
-    locale file as mentioned below -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.
+       This must be loaded before fileinput.min.js -->
+  <script src="js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>
+  <!-- sortable.min.js is only needed if you wish to sort / rearrange files in initial preview.
+       This must be loaded before fileinput.min.js -->
+  <script src="js/plugins/sortable.min.js" type="text/javascript"></script>
+  <!-- purify.min.js is only needed if you wish to purify HTML content in your preview for HTML files.
+       This must be loaded before fileinput.min.js -->
+  <script src="js/plugins/purify.min.js" type="text/javascript"></script>
+  <!-- the main fileinput plugin file -->
+  <script src="js/fileinput.min.js"></script>
+  <!-- bootstrap.js below is needed if you wish to zoom and view file content
+       in a larger detailed modal dialog -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- optionally if you need a theme like font awesome theme you can include
+      it as mentioned below -->
+  <script src="themes/fa/theme.js"></script>
+  <!-- optionally if you need translation for your language then include
+      locale file as mentioned below -->
+  <!-- <script src="js/locales/<lang>.js"></script> -->
+
 <script src="js/<lang>.js"></script>
 
     <script src="js/wow.min.js"></script>
@@ -373,7 +453,26 @@ google.maps.event.addDomListener(window, 'load', initialize);
       this.parentNode.insertBefore(section, this);
     };
   </script>
+  <!--upload-->
+   <script>
+    $(document).on('ready', function() {
+        $("#input-6").fileinput({
+            showUpload: false,
+            maxFileCount: 4,
+            mainClass: "input-group-lg"
+        });
+    });
 
+  </script>
+    <script>
+    $(document).on('ready', function() {
+        $("#trans").fileinput({
+            showUpload: false,
+            maxFileCount: 6,
+            mainClass: "input-group-lg"
+        });
+    });
 
+  </script>
 </body>
 </html>

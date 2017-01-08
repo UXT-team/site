@@ -18,6 +18,8 @@ if ( $_SESSION['auth'] != true) {
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
+    <!--favicon-->
+       <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,7 +63,7 @@ if ( $_SESSION['auth'] != true) {
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
 
-          <li class="active"><a href="#postjob"><strong>POST </strong></a></li>
+          <li class="active"><a href="postjob.php"><strong>POST Jobs </strong></a></li>
 
 
           <li class="active"><a href="#contacts">Contacts</a></li>
@@ -75,7 +77,7 @@ if ( $_SESSION['auth'] != true) {
 <div class="container">
   <div class="row">
 
-      <div class="col-sm-10"><h1><?php  $select_log = "select * from profiles WHERE user_id=$user_id";
+      <div class="col-sm-10"><h1 class="text-info"><img src="http://proptima.co/files/large/50a37cd690a4ab73e0c2ee5c3f212bf7.jpg"><?php  $select_log = "select * from profiles WHERE user_id=$user_id";
 
       $query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
@@ -85,13 +87,19 @@ if ( $_SESSION['auth'] != true) {
     </div>
     <div class="row">
       <div class="col-sm-3"><!--left col-->
+<<<<<<< HEAD
           <ul class="list-group">
+=======
+
+
+          <!--ul class="list-group">
+>>>>>>> 5cf34a44d2e41abb041f8bb3b408b24b24c17479
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="profile.php"><center><span class="glyphicon glyphicon-user"></span> <strong> Profile </strong></center></a></li>
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>-->
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="uploadcv.php"> <center> <i class="fa fa-cloud-upload" aria-hidden="true"></i><strong>Upload C.V. </strong></center></a></li>-->
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="#"> <center> <i class="fa fa-question-circle-o" aria-hidden="true"></i><strong>Help </strong></center></a></li>
 
-    </ul>
+    </ul-->
 
 
           <div class="panel panel-default">
@@ -107,9 +115,10 @@ if ( $_SESSION['auth'] != true) {
           <ul class="nav nav-tabs" id="myTab">
 
 
-            <li class="active"><a href="#profile" data-toggle="tab">Home</a></li>
+            <li class="active"><a href="#profile" data-toggle="tab">Job Profile</a></li>
 
             <li><a href="#edit-profile" data-toggle="tab">Edit Job Profile</a></li>
+            <li><a href="#jobs" data-toggle="tab">Available Jobs</a></li>
 
             <li><a href="#messages" data-toggle="tab">Messages</a></li>
 
@@ -576,6 +585,48 @@ if ( $_SESSION['auth'] != true) {
              </div><!--edit-profile-->
 
 
+              <!--Available Jobs -->
+              <div class="tab-pane" id="jobs">
+                  <div class="well">
+                    <center><h3 class="text-danger">Available Jobs</h3></center>
+                    
+                    <div class="thumbnail">
+                      <img src="https://trello-attachments.s3.amazonaws.com/586fa741147c6842003f1b5f/656x345/4d4553ff8f4dd1e56b59f6d63f52ce87/digital-marketting.jpg.png">
+                    </div><!--thumbnail-->
+                    <div class="caption panel">
+                      <h2>Job Description</h2>
+                      <ul>
+<li><strong>social media marketing</strong>: developing a distinct online presence by attracting high numbers of internet followers through social media channels such as Facebook, Twitter, YouTube and Instagram.</li>
+<li><strong>search engine optimisation (SEO)</strong>: developing strategies to increase the number of visitors to a website by achieving high-ranking placements in search results.</li>
+<li><strong>pay-per-click (PPC) campaigns</strong>: sponsored online advertising paid for by the business to appear alongside non-paid search results.</li>
+<li><strong>mobile marketing</strong>: includes app-based, in-game, location-based and SMS marketing.</li>
+<li><strong>affiliate marketing</strong>: where a business allows other businesses (affiliates) to sell products on their website. The affiliate is paid commission for each customer brought to the website by their own marketing strategies.</li>
+</ul>
+                      <h3>Requirements</h3>
+                      <ul>
+<li>create and upload copy and images for the organisation's website;</li>
+<li>write and dispatch email marketing campaigns;</li>
+<li>provide accurate reports and analysis to clients and company management to demonstrate effective return on investment (ROI);</li>
+<li>research new online media opportunities that may benefit the business including mobile, social media, development of blogs and forums;</li>
+<li>design website banners and assist with web visuals;</li>
+<li>communicate with clients, affiliate networks and affiliate partners;</li>
+<li>conduct keyword research and web statistics reporting;</li>
+<li>contribute to social media engagement and brand awareness campaigns;</li>
+<li>use web analytics software to monitor the performance of client websites and make recommendations for improvement;</li>
+<li>contribute to company and industry blogs and manage e-communications;</li>
+<li>assist with paid media - including liaising with digital advertising agencies;</li>
+<li>develop and integrate content marketing strategies;</li>
+<li>keep up to date with current digital trends;</li>
+<li>manage the contact database and assist with lead generation activities;</li>
+<li>negotiate with media suppliers to achieve the best price for clients.</li>
+</ul>
+<h4 id="salary">Salary</h4>
+<p>Ksh.20,0000</p>
+                     <a href="jobs.php"> <button class="btn btn-warning btn-lg">Apply</button></a>
+                    </div><!--caption-->
+
+                  </div>
+              </div><!--jobs-->
 
 
              <div class="tab-pane" id="messages">
