@@ -1,8 +1,5 @@
 <?php
- /*require ("db.php");
-      if ($_SESSION['auth'] != true) {
-        header("Location: mkonnect.php");
-      }*/
+ require ("db.php");
  ?>
 <!DOCTYPE html>
 <html>
@@ -63,7 +60,7 @@
             <center><img src="http://ireporterstv.co/wp-content/uploads/2012/11/now-hiring.jpg"></center>
             <div class="caption" style="color: #000;">
                     <h2>Digital Marketing Manager Job Description</h2>
-                   
+
 <ul >
 <li>
 <p><span class="txt14">Devising strategies to drive online traffic to the company website.</span></p>
@@ -106,13 +103,63 @@
                </div><!--thumbnail-->
          <h3 class="text-danger"> fill the form below then Upload your C.V. and Your Academic credentials</h3>
             <div class="well" style=" margin-bottom:1%; ">
-              
+
                 <fieldset>
 
-                    <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform"  style="padding: 2%;">
+                  <div class="form-group">
+                    <div class="col-md-10">
 
+    <form id="cv" method="post" action="save_cv.php" enctype="multipart/form-data">
+      <legend><center> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
-                <legend><center> <span class="glyphicon glyphicon-edit"></span></center> </legend>
+      <label class="control-label" style="color:black;"><h3 class="text-warning">C.V. and any project you've done</h3></label>
+      <input id="input-6" type="file" name="files[]" multiple="multiple" style="color:#000;">
+      <input type="submit" value="Upload your C.V." class="btn btn-warning" style="margin-top: 1%; font-size: 1.4em;">
+    </form>
+<?php
+# error messages
+if (isset($_SESSION['msg'])) {
+  $e_msg=$_SESSION['msg'];
+  foreach ($e_msg as $msg) {
+    printf("<p class='text-danger'>%s</p></ br>\n", $msg);
+  }
+}
+# success message
+if($_SESSION['count']){
+  printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $_SESSION['count']);
+
+}
+  ?>
+       </div><!--col-md-10-->
+         </div><!--form-group-->
+          <div class="form-group">
+           <div class="col-md-10">
+
+    <form id="cert" action="biodata.php" method="post"  enctype="multipart/form-data">
+      <label class="control-label" style="color:black;"><h3 class="text-info">Academic Transcript eg. kcse, diploma</h3></label>
+      <input id="trans" type="file" name="files[]" multiple="multiple">
+      <input type="submit" value="Upload Academic Your Transcripts" class="btn btn-info" style="margin-top: 1%; margin-bottom: 3%; font-size: 1.4em;">
+    </form>
+
+    <?php
+    # error messages
+    if (isset($_SESSION['msg1'])) {
+      $e_msg=$_SESSION['msg1'];
+      foreach ($e_msg as $msg) {
+        printf("<p class='text-danger'>%s</p></ br>\n", $msg);
+      }
+    }
+    # success message
+    if($_SESSION['count1']){
+      printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $_SESSION['count1']);
+
+    }
+      ?>
+
+       </div><!--col-md-10-->
+         </div><!--form-group-->
+
+                    <form role="form" class="form-horizontal" action="biodata.php" method="POST" name="contactform"  style="padding: 2%;">
 
                  <div class="form-group">
                 <div class="col-md-12">
@@ -140,7 +187,7 @@
               <div class="form-group">
 
                     <div class="col-md-10">
-                        <input class="form-control" name="txt_education" placeholder="072...." type="text" id="inputName" required=""  />
+                        <input class="form-control" name="txt_number" placeholder="072...." type="text" id="inputName" required=""  />
 
 
                     </div><!--col-md-12-->
@@ -156,7 +203,7 @@
 
                     <div class="col-md-10">
 
-                         <select class="form-control" name="txt_cert"  required="">
+                         <select class="form-control" name="txt_level"  required="">
 
                               <option>Degree</option>
                               <option>Diploma</option>
@@ -215,28 +262,7 @@
 
                     </div><!--col-md-10-->
                 </div><!--form-group-->
-                  <div class="form-group">
-                    <div class="col-md-10">
-             
-    <form action="" method="post" enctype="multipart/form-data">
-      <label class="control-label" style="color:black;"><h3 class="text-warning">C.V. and any project you've done</h3></label>
-      <input id="input-6" type="file" name="files[]" multiple="multiple" style="color:#000;">
-      <input type="submit" value="Upload your C.V." class="btn btn-warning" style="margin-top: 1%; font-size: 1.4em;">
-    </form>
 
-       </div><!--col-md-10-->
-         </div><!--form-group-->
-          <div class="form-group">
-           <div class="col-md-10">
-           
-    <form action="" method="post" enctype="multipart/form-data">
-      <label class="control-label" style="color:black;"><h3 class="text-info">Academic Transcript eg. kcse, diploma</h3></label>
-      <input id="trans" type="file" name="files[]" multiple="multiple">
-      <input type="submit" value="Upload Academic Your Transcripts" class="btn btn-info" style="margin-top: 1%; margin-bottom: 3%; font-size: 1.4em;">
-    </form>
-
-       </div><!--col-md-10-->
-         </div><!--form-group-->
           <div class="form-group">
              <div class="col-md-10">
                <input class="btn btn-lg btn-success btn-block" type="submit" value="Finish" name="finish" style="font-size:1.25em;" >

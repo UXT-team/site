@@ -20,8 +20,8 @@
       <div class="caption">
       <center><p class="text-warning" style="font-size:2em;"> Saved Successful
       </center>
-      
-    
+
+
      <center><a href="profile.php"><button class="btn btn-warning btn-lg">View Profile</button></a></center>
      </div>
      </div>
@@ -29,7 +29,7 @@
     </div>
   </div>
 </div>
-  
+
 </div>
 
 
@@ -43,13 +43,14 @@ require ("db.php");
         if(isset($_POST['save'])){
 
          $course=$_SESSION['txt_courses'];
+         $user_id = $_SESSION['id'];
 
 
          // $_POST['marketing']=null;
 
          //insert the user into the database.
 
-         $insert_acc="insert into courses (course_name,user_id) VALUES ('$course',20)";
+         $insert_acc="insert into courses (course_name,user_id) VALUES ('$course',$user_id)";
 
          if(mysqli_query($con,$insert_acc))
          {
