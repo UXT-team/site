@@ -2,10 +2,10 @@
 
 //store information of all pages in variables
 
-session_start(); 
+session_start();
 
 if (!$_SESSION['email']) {
-  
+
   header("location: ../Auth/login.php");
 }
 
@@ -24,11 +24,11 @@ if (!$_SESSION['email']) {
     <link href="../css/styles.css" rel="stylesheet">
      <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 
-    
+
 </head>
 <body>
 <header>
-    
+
         <div class="header">
           <div class="container">
           <div class="col-md-5">
@@ -43,8 +43,8 @@ if (!$_SESSION['email']) {
           </div><!--col-md-5-->
 
           <div class="col-md-3">
-            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;"> MKONNECT ADMIN PORTAL</p></center> 
-            
+            <center><p style="color: white; font-size: 1.3em; margin-top: 4%;"> MKONNECT ADMIN PORTAL</p></center>
+
           </div><!--col-md-3-->
 
           <div class="col-md-2">
@@ -57,8 +57,8 @@ if (!$_SESSION['email']) {
                       <ul class="nav navbar-nav">
                       <div class="signout">
                         <a href="../Auth/logout.php"><input type="submit" class="btn btn-info" value="LogOut" style="margin-top:8%; "></a>
-                      
-                   
+
+
                       </ul><!--nav-->
 
                     </nav>
@@ -68,7 +68,7 @@ if (!$_SESSION['email']) {
 
           </div><!--container-->
         </div><!--header-->
-      
+
 </header>
 <section>
   <div class="breadcrumb">
@@ -91,7 +91,7 @@ if (!$_SESSION['email']) {
                 <div class="list group" style="width:90%; padding:3%; font-size:1.7em; ">
                     <ul class="list-group" >
                     <li class="list-group-item"><a href="index.php" style="color:#000000;"> <i class="glyphicon glyphicon-home"></i>Dashboard</a></li>
-                  
+
                     <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing Views</a></li>
                     <li class="list-group-item"><a href="views/interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
                     <li class="list-group-item">
@@ -145,11 +145,11 @@ if (!$_SESSION['email']) {
 
 
                   </ul>
-                  
+
                 </div><!--listgroup-->
 
               </div><!--col-md-2-->
-             
+
       <div class="col-md-10">
        <div clas="col-md-10">
 <center><p style="font-size:2em;">Active Job Seekers</p></center>
@@ -166,9 +166,9 @@ if (!$_SESSION['email']) {
          <th>Application Date</th>
          <th>CV</th>
          <th>Academic Transcripts</th>
-         
-         
-            
+
+
+
 
       </thead>
       <?php
@@ -185,27 +185,28 @@ if (!$_SESSION['email']) {
       //while fetches  the result and store in an array row
 
       while ($row = mysqli_fetch_array($run)) {
-        
-        $user_id = $row[0];
-        $name = $row[1];
-        $email = $row[2];
-        $number= $row[3];
-        $job_category= $row[4];
-        $application_date = $row[5];
-       
-       
-      
 
+        $user_id = $row['user_id'];
+        $email = $row['email'];
+
+        // Get name and phone number from profile table
+        $select_prof = "select * from profiles WHERE user_id='$user_id' LIMIT 1";
+        $query= mysqli_query($con,$select_prof);
+         $row1=mysqli_fetch_array($query);
+         $name=$row1['fullname'];
+        $number= $row1['phone_number'];
+        // $job_category= $row[4];
+        // $application_date = $row[5];
        ?>
-      
+
        <tr>
          <!-- show those results in the table -->
          <td><?php echo $user_id; ?></td>
-         <td><?php echo $name; ?></td>
-         <td><?php echo $email; ?></td> 
-         <td><?php echo $number; ?></td> 
-         <td><?php echo $job_category; ?></td> 
-         <td><?php echo $application_date; ?></td> 
+         <td><?php echo $name ?></td>
+         <td><?php echo $email; ?></td>
+         <td><?php echo $number; ?></td>
+         <td></td>
+         <td></td>
         <td><a href="#"><button class="btn btn-warning">Download CV</button></a></td>
         <td><a href="#"><button class="btn btn-danger"> Transcript</button></a></td>
        </tr>
@@ -216,7 +217,7 @@ if (!$_SESSION['email']) {
 </div><!--col-md-12 -->
             </div><!--row-->
         </div><!--page-content-->
-        
+
     </section>
 <section>
 
