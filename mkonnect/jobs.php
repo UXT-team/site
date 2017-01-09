@@ -136,7 +136,7 @@ if($_SESSION['count']){
           <div class="form-group">
            <div class="col-md-10">
 
-    <form id="cert" action="biodata.php" method="post"  enctype="multipart/form-data">
+    <form id="cert" action="save_cert.php" method="post"  enctype="multipart/form-data">
       <label class="control-label" style="color:black;"><h3 class="text-info">Academic Transcript eg. kcse, diploma</h3></label>
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #5bc0de;">Valid Formats</span>&nbsp;&nbsp;<span class="badge" >"jpg", "png", "gif", "doc","docx"</span>
       <input id="trans" type="file" name="files[]" multiple="multiple">
@@ -252,7 +252,7 @@ if($_SESSION['count']){
 
                     <div class="col-md-10">
 
-                        
+
                         <select class="form-control" name="txt_years"  required="">
 
                               <option>5</option>
