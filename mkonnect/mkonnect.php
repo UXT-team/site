@@ -676,7 +676,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               </div><!--col-md-10-->
               <div class="col-md-8" >
                 <div class="form-group" style="margin-left:20%">
-              <center><button class="btn btn-info btn-lg" name="job_post_register"> Reigster To Post Job</button>
+              <center><button class="btn btn-info btn-lg" name="job_post_register"> Register To Post Job</button>
               </div></center>
 
             </form>
