@@ -28,7 +28,7 @@ if (isset($_POST['emp_login'])) {
    else
     {
         echo "<script>alert('Email or password is incorrect! Please check your details and try again.')</script>";
-        echo "<script>window.open('mkonnect.php','_self')</script>";
+        echo "<script>window.open('mkonnect.php#postjob','_self')</script>";
 	exit();
 
     }

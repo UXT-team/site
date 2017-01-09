@@ -23,7 +23,7 @@
       </center>
       <center><p class="text-warning" style="font-size:2em;"> Login if you already have an account, if you've forgotten password, reset it <a href="mkonnect.php#postjob">here</a>
       </center>
-    
+
 
      <center><a href="postjob.php#posts"><button class="btn btn-warning btn-lg">Try Again</button></a></center>
      </div>
@@ -88,9 +88,9 @@
 
       {
       //echo "<script>alert('Registration Successful')</script>";
-      echo"<script>window.open('jobs.php','_self')</script>";
+      echo"<script>window.open('postjob.php','_self')</script>";
       }
-      
+
 
       }
 
