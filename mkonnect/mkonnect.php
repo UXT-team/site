@@ -94,7 +94,7 @@ session_destroy();
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#about">About</a></li>
-
+          
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -628,7 +628,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <div class="breadcrumb">
 
 
-            <form method="POST" action="emp_reg.php">
+            <form method="POST" action="emp_reg.php" data-toggle="validator" >
 
 
                 <div class="col-md-12" style="margin-left:15%" >
@@ -654,7 +654,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <div class="col-md-8" style="margin-left:15%">
                 <div class="form-group">
 
-              <input class="form-control" name="job_post_password" placeholder="Your Password" type="password" id="password1"  required="">
+              <input class="form-control" name="job_post_password" type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+              <div class="help-block">Minimum of 6 characters</div>
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
@@ -668,7 +669,8 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <div class="col-md-8" style="margin-left:15%" >
                 <div class="form-group">
 
-              <input class="form-control" name="job_confirm_password" placeholder="Confirm Password" type="password" id="password1"  required="">
+              <input class="form-control" type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+               <div class="help-block with-errors"></div>
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
