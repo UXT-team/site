@@ -126,7 +126,7 @@ if (isset($_SESSION['msg'])) {
   }
 }
 # success message
-if($_SESSION['count']){
+if(isset($_SESSION['count'])){
   printf("<p class='text-success'>%d C.V. Uploaded successfully !</p>\n", $_SESSION['count']);
 
 }
@@ -152,7 +152,7 @@ if($_SESSION['count']){
       }
     }
     # success message
-    if($_SESSION['count1']){
+    if(isset($_SESSION['count1'])){
       printf("<p class='text-success'>%d Transcripts Uploaded successfully !</p>\n", $_SESSION['count1']);
 
     }
