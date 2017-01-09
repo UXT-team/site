@@ -589,10 +589,6 @@ if ( $_SESSION['auth'] != true) {
               <div class="tab-pane" id="jobs">
                   <div class="well">
                     <center><h3 class="text-danger">Available Jobs</h3></center>
-                    
-                    <div class="thumbnail">
-                      <img src="https://trello-attachments.s3.amazonaws.com/586fa741147c6842003f1b5f/656x345/4d4553ff8f4dd1e56b59f6d63f52ce87/digital-marketting.jpg.png">
-                    </div><!--thumbnail-->
                     <div class="caption panel">
                       <h2>Job Description</h2>
                       <ul>
@@ -623,6 +619,42 @@ if ( $_SESSION['auth'] != true) {
 <h4 id="salary">Salary</h4>
 <p>Ksh.20,0000</p>
                      <a href="jobs.php"> <button class="btn btn-warning btn-lg">Apply</button></a>
+                     <?php
+                     //connect to db
+                     //connect to db
+                     include 'db/db_connection.php';
+
+                     //select query to view users
+                     $view_admin_query = " select * from employer_jobs ORDER BY id desc";
+                     //run the sql query
+
+                     $run = mysqli_query($con, $view_admin_query);
+
+                     //while fetches  the result and store in an array row
+
+                     while ($row = mysqli_fetch_array($run)) {
+
+                       $user_id = $row[0];
+                       $job_title = $row[1];
+                       $company_name = $row[2];
+                       $job_category= $row[3];
+                       $experience= $row[4];
+                       $post_date = $row[6];
+
+
+
+
+
+
+                      ?>
+
+                     <h2><?php echo $job_title; ?></h2>
+                     <h2>Job Description</h2>
+                     <div><?php echo $company_name; ?></div>
+                      <a href="jobs.php"> <button id="<?php  echo $user_id;?>" class="btn btn-warning btn-lg">Apply</button></a>
+                      <?php } ?>
+
+
                     </div><!--caption-->
 
                   </div>

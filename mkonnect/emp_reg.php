@@ -111,8 +111,6 @@
       $_SESSION['auth'] = true;
       echo"<script> $('#success').modal('show');</script>";
       }
-
-
       }
 
 
