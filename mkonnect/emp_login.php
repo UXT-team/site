@@ -23,6 +23,7 @@ if (isset($_POST['emp_login'])) {
         $user_id = $row['employer_id'];
         $_SESSION['email']=$email;
         $_SESSION['id']=$user_id;
+        $_SESSION['auth'] = true;
         echo "<script>window.open('postjob.php','_self')</script>";
   }
    else

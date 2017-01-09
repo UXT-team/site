@@ -1,4 +1,7 @@
-<?php require ("db.php");
+<?php  require ("db.php");
+      if ($_SESSION['auth'] != true) {
+        header("Location: mkonnect.php#postjob");
+      }
  ?>
 <!DOCTYPE html>
 <html>
@@ -141,12 +144,12 @@
 
         <div class="content-box-large">
           <div class="panel-heading">
-          <div class="panel-title"><h2 style="text-align:center;">Job description & requirements</h2> 
+          <div class="panel-title"><h2 style="text-align:center;">Job description & requirements</h2>
           </div>
-          
+
           <div class="panel-options">
             <a href="postjobs.php" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-            
+
           </div>
         </div>
           <div class="panel-body">
@@ -156,7 +159,7 @@
         </div>
         </div>
 
-        
+
 
 
 
@@ -300,9 +303,9 @@
          <th>Job Category </th>
          <th>Years of Experience </th>
          <th>Job Post Date</th>
-        
-         
-            
+
+
+
 
       </thead>
       <?php
@@ -311,7 +314,7 @@
       include 'db/db_connection.php';
 
       //select query to view users
-      $view_admin_query = " select * from users";
+      $view_admin_query = " select * from employer_jobs ORDER BY id desc";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
@@ -319,36 +322,36 @@
       //while fetches  the result and store in an array row
 
       while ($row = mysqli_fetch_array($run)) {
-        
+
         $user_id = $row[0];
         $job_title = $row[1];
         $company_name = $row[2];
         $job_category= $row[3];
         $experience= $row[4];
         $post_date = $row[6];
-       
-       
-        
-       
-      
+
+
+
+
+
 
        ?>
-      
+
        <tr>
          <!-- show those results in the table -->
          <td><?php echo $user_id; ?></td>
          <td><?php echo $job_title; ?></td>
-         <td><?php echo $company_name; ?></td> 
-         <td><?php echo $job_category; ?></td> 
-         <td><?php echo $experience; ?></td> 
-         <td><?php echo $post_date; ?></td> 
+         <td><?php echo $company_name; ?></td>
+         <td><?php echo $job_category; ?></td>
+         <td><?php echo $experience; ?></td>
+         <td><?php echo $post_date; ?></td>
                </tr>
        <?php } ?>
     </table>
   </div>
 
     </div><!--post-->
-    
+
   </div><!--panel-->
 </section>
 
@@ -503,7 +506,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     };
   </script>
 
-<link rel="stylesheet" type="text/css" href="vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css"></link> 
+<link rel="stylesheet" type="text/css" href="vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css"></link>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>

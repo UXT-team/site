@@ -1,3 +1,6 @@
+<?php
+ require ("db.php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,15 +43,8 @@
 </body>
 </html>
 
-
-
-
-.
-
-
 <?php echo $_POST['job_post_email'];
       echo $_POST['job_post_password'];
-      require ("db.php");
       if(isset($_POST['job_post_register'])){
 
       //declare variable
@@ -59,6 +55,8 @@
        //$user_job = $_POST['txt_jobs'];
 
       //here query check weather if user already registered so can't register again.
+
+      $_SESSION['email']=$user_email;
 
       $select_acc="select * from employer WHERE email='".$user_email."'";
 
@@ -88,6 +86,7 @@
 
       {
       //echo "<script>alert('Registration Successful')</script>";
+      $_SESSION['auth'] = true;
       echo"<script>window.open('postjob.php','_self')</script>";
       }
 
