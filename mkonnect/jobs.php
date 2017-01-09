@@ -56,7 +56,7 @@
 <div class="container">
     <div class="panel">
         <div class="panel">
-          <div class="thumnail">
+          <!--div class="thumnail">
             <center><img src="http://ireporterstv.co/wp-content/uploads/2012/11/now-hiring.jpg"></center>
             <div class="caption" style="color: #000;">
                     <h2>Digital Marketing Manager Job Description</h2>
@@ -100,7 +100,7 @@
 </ul>
 
                 </div><!--caption-->
-               </div><!--thumbnail-->
+               </div--><!--thumbnail-->
          <h3 class="text-danger"> fill the form below then Upload your C.V. and Your Academic credentials</h3>
             <div class="well" style=" margin-bottom:1%; ">
 
