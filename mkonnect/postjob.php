@@ -117,13 +117,8 @@
                     </div><!--col-md-12-->
                 </div><!--form-group-->
 
-                <div class="thumbnail">
-                <div class="form-group">
-                <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Job Description</center></h3></label>
-                </div><!--col-md-12-->
-              </div><!--form-group-->
-
+                <div class="">
+                
               <div class="form-group">
 
                 <div class="col-md-10">

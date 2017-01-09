@@ -15,6 +15,28 @@
 </head>
 <body>
 
+<div id="success" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="col-md-12">
+      <div class="thumbnail">
+      <img src="http://www.clipartkid.com/images/85/smiley-face-thumbs-up-clipart-panda-free-clipart-images-XsvGRj-clipart.png">
+      <div class="caption">
+      <center><p class="text-success" style="font-size:2em;"> Registration Successful
+      </center>
+      <center><p class="text-warning" style="font-size:1.5em;"> Click Next To Post Jobs.
+      </center>
+
+     <center><a href="postjob.php"><button class="btn btn-success btn-lg">Next</button></a></center>
+     </div>
+     </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
 <div id="error" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -87,7 +109,7 @@
       {
       //echo "<script>alert('Registration Successful')</script>";
       $_SESSION['auth'] = true;
-      echo"<script>window.open('postjob.php','_self')</script>";
+      echo"<script> $('#success').modal('show');</script>";
       }
 
 
