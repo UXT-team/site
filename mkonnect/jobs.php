@@ -113,6 +113,7 @@
       <legend><center> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
       <label class="control-label" style="color:black;"><h3 class="text-warning">C.V. and any project you've done</h3></label>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #f0ad4e;">Valid Formats</span>&nbsp;&nbsp;<span class="badge" > "doc","docx","pdf"</span>
       <input id="input-6" type="file" name="files[]" multiple="multiple" style="color:#000;">
       <input type="submit" value="Upload your C.V." class="btn btn-warning" style="margin-top: 1%; font-size: 1.4em;">
     </form>
@@ -126,7 +127,7 @@ if (isset($_SESSION['msg'])) {
 }
 # success message
 if($_SESSION['count']){
-  printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $_SESSION['count']);
+  printf("<p class='text-success'>%d C.V. Uploaded successfully !</p>\n", $_SESSION['count']);
 
 }
   ?>
@@ -137,6 +138,7 @@ if($_SESSION['count']){
 
     <form id="cert" action="biodata.php" method="post"  enctype="multipart/form-data">
       <label class="control-label" style="color:black;"><h3 class="text-info">Academic Transcript eg. kcse, diploma</h3></label>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #5bc0de;">Valid Formats</span>&nbsp;&nbsp;<span class="badge" >"jpg", "png", "gif", "doc","docx"</span>
       <input id="trans" type="file" name="files[]" multiple="multiple">
       <input type="submit" value="Upload Academic Your Transcripts" class="btn btn-info" style="margin-top: 1%; margin-bottom: 3%; font-size: 1.4em;">
     </form>
@@ -151,7 +153,7 @@ if($_SESSION['count']){
     }
     # success message
     if($_SESSION['count1']){
-      printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $_SESSION['count1']);
+      printf("<p class='text-success'>%d Transcripts Uploaded successfully !</p>\n", $_SESSION['count1']);
 
     }
       ?>
@@ -218,7 +220,7 @@ if($_SESSION['count']){
 
                <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Nationality</center></h3></label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Choose Nationality</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -231,6 +233,7 @@ if($_SESSION['count']){
 
                               <option>Kenyan</option>
                               <option>Ugandan</option>
+                              <option>Tanzanian</option>
                               <option>East African</option>
 
                               </select>
@@ -241,7 +244,7 @@ if($_SESSION['count']){
 
                 <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Years Of Experience</center></h3></label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Choose Years Of Experience</center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -249,7 +252,17 @@ if($_SESSION['count']){
 
                     <div class="col-md-10">
 
-                        <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required=""  />
+                        
+                        <select class="form-control" name="txt_years"  required="">
+
+                              <option>5</option>
+                              <option>4</option>
+                              <option>3</option>
+                              <option>2</option>
+                              <option>1</option>
+
+                              </select>
+
 
 
                     </div><!--col-md--12-->

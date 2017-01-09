@@ -20,14 +20,13 @@ require ("db.php");
     <div class="modal-content">
     	<div class="col-md-12">
     	<div class="thumbnail">
-    	<img src="http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/13108626_553805548132875_1933189810_n.jpg?ig_cache_key=MTI0ODk1NjE3Mjc3OTgyNTM0OQ%3D%3D.2">
-    	<div class="caption">
-    	<center><p class="text-success" style="font-size:2em;"> Data Submited Successfully
+    	<img src="https://trello-attachments.s3.amazonaws.com/57cd66c81620c41c25537e9d/5873245b02367ea3926a590e/a21f54e3c2a9e3fd4cc4c9c3188f1b14/thanks.jpg">
+    	<center><p class="text-success" style="font-size:2em;"> Your Credential have been Successfully
     	</center>
-    	<center><p class="text-warning" style="font-size:1.5em;"> Click Next to View More Jobs
+    	<center><p class="text-warning" style="font-size:1.5em;"> Click Profile to View Available Jobs.
     	</center>
 
-     <center><a href="mkonnect.php"><button class="btn btn-success btn-lg">Next</button></a></center>
+     <center><a href="profile.php"><button class="btn btn-success btn-lg">Profile</button></a></center>
      </div>
      </div>
      </div>

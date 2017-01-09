@@ -3,7 +3,7 @@ require ("db.php");
 $user_id = rand();
 $_SESSION['id']=$user_id;
 
-$valid_formats = array("jpg", "png", "gif", "doc","docx");
+$valid_formats = array( "doc","docx","pdf");
 $max_file_size = 1024*1000; //100 kb
 $path = "uploads/"; // Upload directory
 $count = 0;
