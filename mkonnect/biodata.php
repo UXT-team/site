@@ -5,7 +5,7 @@ require ("db.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Update failed</title>
+  <title>Credentials Succesful</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,7 +16,7 @@ require ("db.php");
 </head>
 <body>
 <div id="success" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog modal-md">
     <div class="modal-content">
     	<div class="col-md-12">
     	<div class="thumbnail">
@@ -38,7 +38,7 @@ require ("db.php");
 
 
 
-<div class="container">
+<!--div class="container">
   <div id="update_error" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
@@ -59,7 +59,7 @@ require ("db.php");
   </div>
 </div>
 
-</div>
+</div-->
 
 </body>
 </html>
@@ -98,13 +98,13 @@ echo"<script> $('#success').modal('show');</script>";
 
 
 }
-else{
+//else{
 //echo "<script>alert('Check your details and try again')</script>";
-echo"<script> $('#update_error').modal('show');</script>";
-exit();
+//echo"<script> $('#update_error').modal('show');</script>";
+//exit();
 //$refresh = "<script>window.open('mkonnect.php','_self')</script>";
 
-}
+//}
 
 
 
