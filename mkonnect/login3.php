@@ -173,7 +173,7 @@ session_destroy();
                   <div class="form-group">
                  <div class="col-md-12">
 
-                   <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+                   <input class="form-control" name="email" placeholder="Your Email" id="email" type="email" autofocus="" required="">
 
 
                     </div><!--col-md-12-->
@@ -186,18 +186,36 @@ session_destroy();
           </div><!--form-group-->
 
               <div class="form-group">
-              <div class="col-md-12">
+              <div class="col-md-10">
 
-            <input class="form-control" name="password" placeholder="Your Password" type="password" id="password1"  required="">
-
+              <input class="form-control" name="password" placeholder="Your Password" type="password" id="password" required="">
               </div><!--col-md-12-->
                </div><!--form-group-->
+               <div class="form-group">
+            <div class="col-md-10">
+               <label for="txt_subject" class="control-label text-warning">Confirm Password</label>
+            </div><!--col-md-12-->
+          </div><!--form-group-->
+
+          <div class="form-group has-error has-danger">
+
+                <div class="col-md-12">
+
+                    <input class="form-control" name="confirm_password" placeholder="Confirm Password" type="password" id="confirm_password" required="">
+
+                </div><!--col-md-12-->
+            </div><!--form-group-->
+
 
 
                 </div>
-                <div class="popover-footer" id="login4">
-                   <center> <input type="submit" name="login" value="Register" class="btn btn-lg btn-info btn-lg"></input></center>
-                </div>
+                <div class="form-group">
+                <div class="col-md-8">
+
+         <input class="btn btn-lg btn-success btn-block " type="submit" value="Register" name="accounts"   style="font-size:1.25em;" margin-top:-8%;>
+
+                </div><!--col-md-12-->
+            </div><!--form-group-->
 
                 </form>
         </div><!--panel-->
