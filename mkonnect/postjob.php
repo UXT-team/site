@@ -22,7 +22,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
      <link rel="stylesheet" href="css/updateprofile.css">
+     <!--link href="css/editors.css" rel="stylesheet"-->
           <style type="text/css">
 
           .post_jobs{
@@ -126,7 +128,7 @@
             <div class="hero-unit">
                <hr/>
 
-          <textarea class="textarea" name ="text_area" placeholder="Enter Job Description" name="txt_jobdescription" style="width: 810px; height: 200px; margin-left: 2%;"></textarea>
+          <!--textarea class="textarea" name ="text_area" placeholder="Enter Job Description" name="txt_jobdescription" style="width: 810px; height: 200px; margin-left: 2%;"></textarea-->
 
            </div><!--hero-unit-->
 
@@ -134,6 +136,31 @@
 
                 </div><!--form-group-->
                 </div><!--panel-->
+                  <div class="form-group">
+                  <div class="col-md-10">
+
+        <div class="content-box-large">
+          <div class="panel-heading">
+          <div class="panel-title"><h2 style="text-align:center;">Job description & requirements</h2> 
+          </div>
+          
+          <div class="panel-options">
+            <a href="postjobs.php" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+            
+          </div>
+        </div>
+          <div class="panel-body">
+            <textarea id="tinymce_full" name="txt_area"></textarea>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        
+
+
+
+      </div>
 
                <div class="form-group">
                 <div class="col-md-12">
@@ -210,7 +237,7 @@
 
                 <div class="form-group">
                 <div class="col-md-12">
-                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Company-Website</center></h3></label>
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Company-Website<span class="badge">If any</span></center></h3></label>
                 </div><!--col-md-12-->
               </div><!--form-group-->
 
@@ -218,7 +245,7 @@
 
                     <div class="col-md-8">
 
-                        <input class="form-control" name="txt_website" placeholder="url eg. www.example.com" type="text" id="inputName" required=""  />
+                        <input class="form-control" name="txt_website" placeholder="url eg. www.example.com" type="text" id="inputName"  />
 
 
                     </div><!--col-md--12-->
@@ -476,6 +503,25 @@ google.maps.event.addDomListener(window, 'load', initialize);
     };
   </script>
 
+<link rel="stylesheet" type="text/css" href="vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css"></link> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendors/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
+    <script src="vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js"></script>
+
+    <script src="vendors/ckeditor/ckeditor.js"></script>
+    <script src="vendors/ckeditor/adapters/jquery.js"></script>
+
+    <script type="text/javascript" src="vendors/tinymce/js/tinymce/tinymce.min.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/editors.js"></script>
 
 </body>
 </html>

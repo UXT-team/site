@@ -56,7 +56,7 @@
 <div class="container">
     <div class="panel">
         <div class="panel">
-          <div class="thumnail">
+          <!--div class="thumnail">
             <center><img src="http://ireporterstv.co/wp-content/uploads/2012/11/now-hiring.jpg"></center>
             <div class="caption" style="color: #000;">
                     <h2>Digital Marketing Manager Job Description</h2>
@@ -100,7 +100,7 @@
 </ul>
 
                 </div><!--caption-->
-               </div><!--thumbnail-->
+               </div--><!--thumbnail-->
          <h3 class="text-danger"> fill the form below then Upload your C.V. and Your Academic credentials</h3>
             <div class="well" style=" margin-bottom:1%; ">
 
@@ -126,7 +126,7 @@ if (isset($_SESSION['msg'])) {
   }
 }
 # success message
-if($_SESSION['count']){
+if(isset($_SESSION['count'])){
   printf("<p class='text-success'>%d C.V. Uploaded successfully !</p>\n", $_SESSION['count']);
 
 }
@@ -152,7 +152,7 @@ if($_SESSION['count']){
       }
     }
     # success message
-    if($_SESSION['count1']){
+    if(isset($_SESSION['count1'])){
       printf("<p class='text-success'>%d Transcripts Uploaded successfully !</p>\n", $_SESSION['count1']);
 
     }

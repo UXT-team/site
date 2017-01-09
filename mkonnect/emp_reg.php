@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Post Job</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--favicon-->
+       <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
+</head>
+<body>
+
+<div id="error" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="col-md-12">
+      <div class="thumbnail">
+      <img src="http://previews.123rf.com/images/krisdog/krisdog1510/krisdog151000166/47534099-A-thinking-emoji-emoticon-smiley-face-character-looking-interested-with-hand-on-chin-Stock-Vector.jpg">
+      <div class="caption">
+      <center><p class="text-warning" style="font-size:2em;"> Email already exist
+      </center>
+      <center><p class="text-warning" style="font-size:2em;"> Login if you already have an account, if you've forgotten password, reset it <a href="mkonnect.php#postjob">here</a>
+      </center>
+    
+
+     <center><a href="postjob.php#posts"><button class="btn btn-warning btn-lg">Try Again</button></a></center>
+     </div>
+     </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+.
+
+
 <?php echo $_POST['job_post_email'];
       echo $_POST['job_post_password'];
       require ("db.php");
@@ -21,7 +69,8 @@
 
       if($rows>0)
       {
-      $eng_acc= "<script>alert(' ".$user_email." Email is already exist in our database, Please try another one!')</script>";
+     // $eng_acc= "<script>alert(' ".$user_email." Email is already exist in our database, Please try another one!')</script>";
+        echo"<script> $('#error').modal('show');</script>";
 
       echo $eng_acc;
       echo"<script>window.open('mkonnect.php','_self')</script>";
@@ -38,15 +87,10 @@
       if(mysqli_query($con,$insert_acc))
 
       {
-      echo "<script>alert('Registration Successful')</script>";
+      //echo "<script>alert('Registration Successful')</script>";
       echo"<script>window.open('jobs.php','_self')</script>";
       }
-      else{
-      echo "<script>alert('Check your details and try again')</script>";
-      $refresh = "<script>window.open('mkonnect.php','_self')</script>";
-       echo $refresh;
-       exit();
-      }
+      
 
       }
 

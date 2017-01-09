@@ -177,7 +177,7 @@ if (!$_SESSION['email']) {
       include 'db/db_connection.php';
 
       //select query to view users
-      $view_admin_query = " select * from users";
+      $view_admin_query = " select * from users orderby desc";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
