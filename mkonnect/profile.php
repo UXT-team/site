@@ -87,13 +87,13 @@ if ( $_SESSION['auth'] != true) {
     </div>
     <div class="row">
       <div class="col-sm-3"><!--left col-->
-<<<<<<< HEAD
+
           <ul class="list-group">
-=======
+
 
 
           <!--ul class="list-group">
->>>>>>> 5cf34a44d2e41abb041f8bb3b408b24b24c17479
+
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="profile.php"><center><span class="glyphicon glyphicon-user"></span> <strong> Profile </strong></center></a></li>
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>-->
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="uploadcv.php"> <center> <i class="fa fa-cloud-upload" aria-hidden="true"></i><strong>Upload C.V. </strong></center></a></li>-->
@@ -649,7 +649,7 @@ if ( $_SESSION['auth'] != true) {
                       ?>
 
                      <h2><?php echo $job_title; ?></h2>
-                     <h2>Job Description</h2>
+                     <!--h2>Job Description</h2-->
                      <div><?php echo $company_name; ?></div>
                       <a href="jobs.php"> <button id="<?php  echo $user_id;?>" class="btn btn-warning btn-lg">Apply</button></a>
                       <?php } ?>

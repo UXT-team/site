@@ -56,51 +56,7 @@
 <div class="container">
     <div class="panel">
         <div class="panel">
-          <!--div class="thumnail">
-            <center><img src="http://ireporterstv.co/wp-content/uploads/2012/11/now-hiring.jpg"></center>
-            <div class="caption" style="color: #000;">
-                    <h2>Digital Marketing Manager Job Description</h2>
-
-<ul >
-<li>
-<p><span class="txt14">Devising strategies to drive online traffic to the company website.</span></p>
-</li>
-<li>
-<p><span class="txt14">Tracking conversion rates and making improvements to the website.</span></p>
-</li>
-<li>
-<p><span class="txt14">Developing and managing digital marketing campaigns</span></p>
-</li>
-<li>
-<p><span class="txt14">Utilising a range of techniques including paid search, SEO and PPC.</span></p>
-</li>
-
-</li>
-</ul>
-<h2><span class="txt14">Requirements of the role</span></h2>
-<ul>
-<li>
-<p><span class="txt14">Bachelor degree in Marketing.</span></p>
-</li>
-<li>
-<p><span class="txt14">Qualified member of the CIM or equivalent.</span></p>
-</li>
-<li>
-<p><span class="txt14">Experience managing PPC, SEO and Affiliate programmes.</span></p>
-</li>
-<li>
-<p><span class="txt14">Strong understanding of current online marketing concepts, strategy and best practice.</span></p>
-</li>
-<li>
-<p><span class="txt14">Experience in ecommerce, SEO, PPC, Email marketing, and social media.</span></p>
-</li>
-<li>
-<p><span class="txt14">Previous experience in a similar digital marketing role.</span></p>
-</li>
-</ul>
-
-                </div><!--caption-->
-               </div--><!--thumbnail-->
+          
          <h3 class="text-danger"> fill the form below then Upload your C.V. and Your Academic credentials</h3>
             <div class="well" style=" margin-bottom:1%; ">
 
