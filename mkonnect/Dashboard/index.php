@@ -70,6 +70,17 @@ if (!$_SESSION['email']) {
                     <li class="list-group-item"><a href="views/cvwriting.php" style="color:#000000;" > <i class="glyphicon glyphicon-pencil"></i>CV Writing tips Report</a></li>
                     <li class="list-group-item"><a href="views/interviewskills.php" style="color:#000000;"><i class="glyphicon glyphicon-education"></i>Interview Skills Views</a></li>
                     <li class="list-group-item">
+                      <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#available_jobs">Available Jobs</button> </li>
+                      <div id="available_jobs" class="collapse">
+                        <?php
+                        $query = "select * from employer_jobs";
+                        $query1 = mysqli_query($con,$query);
+                        while ($row = mysqli_fetch_array($query1)) {
+                         ?>
+                      <a href="#"><i class="glyphicon glyphicon-ice-lolly-tasted list-group-item"></i><?php echo $row['job_title']; ?></a>
+                      <?php } ?>
+                    </div>
+                    <li class="list-group-item">
                       <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
                   <div id="jobs" class="collapse">
                     <?php
@@ -132,7 +143,9 @@ if (!$_SESSION['email']) {
 
         <div class="col-md-3">
           <div class="card">
-            <!--<img src="image/user">-->
+            <div class="panel" style="padding:20%;">
+              <a href="interviewskills.php"><button class="btn btn-warning btn-lg" style="padding:10%;">Available Jobs</button></a>
+            </div>
           </div><!--card-->
           <div class="card-content">
 
