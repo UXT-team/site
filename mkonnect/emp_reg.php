@@ -65,8 +65,7 @@
 </body>
 </html>
 
-<?php echo $_POST['job_post_email'];
-      echo $_POST['job_post_password'];
+<?php
       if(isset($_POST['job_post_register'])){
 
       //declare variable
