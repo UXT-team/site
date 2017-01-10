@@ -94,7 +94,7 @@ session_destroy();
           <li class="active"><a href="mkonnect.php">Home</a></li>
           <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#about">About</a></li>
-          
+
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
@@ -595,12 +595,12 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               <a data-toggle="collapse" href="#forgotten_jobs" aria-expanded="false" aria-controls="collapseExample"> Forgotten Password? </a></p>
 
               <div id="forgotten_jobs" class="collapse">
-              <form method="POST" action="resetpassword.php">
+              <form method="POST" action="remind.php">
 
                 <div class="form-group">
                  <div class="col-md-8">
 
-                   <input class="form-control" name="reset_email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
+                   <input class="form-control" name="email" placeholder="Your Email" type="email" autofocus="" id="email1" required="">
 
 
                     </div><!--col-md-12-->
