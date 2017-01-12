@@ -141,7 +141,7 @@ $message[]= "Unable to move file";             }
    }
    # success message
    if($count !=0){
-     printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $count);
+     printf("<p class='text-success'>%d files added and database updated successfully ! click next to view your profile</p>\n", $count);
      $_SESSION['next'] = true;
 
    }

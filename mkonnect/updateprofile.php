@@ -181,7 +181,17 @@
 
                     <div class="col-md-10">
 
-                        <input class="form-control" name="txt_years" placeholder="Years of experience" type="text" id="inputName" required=""  />
+                        
+                         <select class="form-control" name="txt_years"  required="">
+
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+
+                              </select>
+
 
 
                     </div><!--col-md--12-->
