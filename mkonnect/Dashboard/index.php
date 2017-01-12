@@ -200,7 +200,25 @@ if (!$_SESSION['email']) {
 									'jobs_admin.php',
 									function(data) {
 										var json = jQuery.parseJSON(data);
+
 										var content = '';
+                    var content2= '<div class="table-scrol">';
+                      content2 +='<div class="table-responsive">'
+                      content2 +='<table class="table table-bordered table-hover table-striped" style="table-layout:fixed">'
+                        content2 += '<thead>'
+                          content2 +='<tr class="success">'
+                             content2 +='<th>ID</th>';
+                            content2 +='<th>Name</th>';
+                             content2 +='<th>Email </th>';
+                             content2 +='<th>Phonenumber </th>';
+                             content2 +='<th>Job Category</th>';
+                             content2 +='<th>Application Date</th>';
+                             content2 +='<th>CV</th>';
+                             content2 +='<th>Academic Transcripts</th>';
+                             content2 +='</thead>';
+                          content2 +='</table>';
+                        content2 +='</div>';
+                    content2 +='</div>';
 						            for (var i = 0; i < json.length; i++) {
 						            content += '<tr>';
 						            content += '<td>' +json[i].id+'</td>';
@@ -208,10 +226,9 @@ if (!$_SESSION['email']) {
                         content += '<td>' + json[i].email + '</td>';
 						            content += '<td>' + json[i].number + '</td>';
                         content += '<td>' + json[i].job_category + '</td>';
-
 						            content += '</tr>';
 						            }
-										 $('#table_jobs').html(content);
+										 $('#table_jobs').html(content2);
 									}
 								);
 

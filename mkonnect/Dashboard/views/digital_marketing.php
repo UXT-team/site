@@ -174,10 +174,10 @@ if (!$_SESSION['email']) {
       <?php
       //connect to db
       //connect to db
-      include 'db/db_connection.php';
+      $con = mysqli_connect("localhost", "root", "", "m_konnect");
 
       //select query to view users
-      $view_admin_query = "select * from users orderby desc";
+      $view_admin_query = "select * from users";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
