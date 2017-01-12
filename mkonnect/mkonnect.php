@@ -73,11 +73,12 @@ session_destroy();
   <a class="navbar-brand" rel="home" href="#" title="logo">
   <img src="img/logo.jpg"></a>
   <div class="top" style="margin-top:2%; margin-left: 75%;">
-
+  <a href="#sales" data-toggle="modal" data-target="#sales">
+  <button class="btn btn-primary btn-lg">Submit C.V.</button></a>
   <a href="#sales" data-toggle="modal" data-target="#sales">
   <button class="btn btn-success btn-lg">Register</button></a>
   <a href="#sales" data-toggle="modal" data-target="#sales"><button class="btn btn-danger btn-lg">Login</button></a>
-  <a href="#postjob"><button class="btn  btn-lg" style="background-color:#FF9000; color:#fff;">POSTJOB</button></a>
+  <a href="#postjob"><button class="btn  btn-lg" style="background-color:#FF9000; color:#fff; margin-top:2%; margin-left: -118%; height:auto" >POSTJOB</button></a>
   </div><!--top-->
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav" style="margin-top: 2%;">

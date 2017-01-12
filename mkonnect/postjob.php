@@ -42,7 +42,7 @@
 
      </style>
 </head>
-  <body data-spy="scroll" data-target="#uxt" data-offset="70">
+  <body data-spy="scroll" data-target="#uxt" data-offset="70" class="jumbotron">
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
     <div class="container">
@@ -65,13 +65,13 @@
 </div><!--/.navbar -->
 
 
-
-<div class="row wow  slideInLeft" style="margin-top: 8%;">
+<section>
+<div class="row wow  slideInLeft" style="margin-top:-4%;">
 <div class="container">
     <div class="panel">
         <div class="panel">
 
-            <div class="breadcrumb" style=" margin:0%; ">
+            <div class="panel" style=" margin:0%; ">
                 <div class="caption">
 
                 </div><!--caption-->
@@ -125,9 +125,6 @@
 
             <div class="hero-unit">
                <hr/>
-
-          <!--textarea class="textarea" name ="text_area" placeholder="Enter Job Description" name="txt_jobdescription" style="width: 810px; height: 200px; margin-left: 2%;"></textarea-->
-
            </div><!--hero-unit-->
 
                  </div><!--col-md-12-->
@@ -158,7 +155,7 @@
 
 
 
-      </div>
+      
 
                <div class="form-group">
                 <div class="col-md-12">
@@ -191,6 +188,7 @@
               <option>Administration & office Support</option>
               <option>Project/ Project Management</option>
               <option>Research, Quality control/ Quality Assurance</option>
+              <option>Marketing</option>
               <option>Sales/Business Development</option>
               <option>Security</option>
               <option>Strategy & Consulting</option>
@@ -260,7 +258,7 @@
                 <div class="form-group">
                     <div class="col-md-10">
 
-                         <input class="btn btn-lg btn-success btn-block" type="submit" value="POST JOB" name="profile" style="font-size:1.25em;" >
+                         <input class="btn btn-lg btn-success btn-block" type="submit" value="POST JOB" name="profile" style="font-size:1.25em; margin-top:8%;" >
 
                     </div><!--col-md--12-->
                 </div><!--form-group-->
@@ -281,6 +279,7 @@
     </div><!--jumbotron-->
     </div><!--container-->
 </div><!--row-->
+</section>
 <section class="post_jobs">
   <div class="jumbotron">
 
@@ -292,12 +291,12 @@
     <table class="table  table-hover table-striped" style="table-layout:fixed">
       <thead>
         <tr class="success">
-         <th>ID</th>
          <th>Job Title</th>
-         <th>Company Name </th>
+         <th>Company Name</th>
+         <th> Job Description </th>
          <th>Job Category </th>
          <th>Years of Experience </th>
-         <th>Job Post Date</th>
+         <th>Job Post Date  &nbsp; [Year/Month/Day/HH/MM/SS]</th>
 
 
 
@@ -323,7 +322,8 @@
         $company_name = $row[2];
         $job_category= $row[3];
         $experience= $row[4];
-        $post_date = $row[6];
+        //$post_date = $row[5];
+        $post_date = $row['Job Post Date'];
 
 
 
@@ -332,7 +332,7 @@
 
        ?>
 
-       <tr>
+       <tr class="info">
          <!-- show those results in the table -->
          <td><?php echo $user_id; ?></td>
          <td><?php echo $job_title; ?></td>
