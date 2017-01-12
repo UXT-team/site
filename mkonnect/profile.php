@@ -97,7 +97,8 @@ if ( $_SESSION['auth'] != true) {
       <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="profile.php"><center><span class="glyphicon glyphicon-user"></span> <strong> Profile </strong></center></a></li>
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="jobs.php"> <center><i class="fa fa-external-link" aria-hidden="true"></i> <strong> Edit Profile </strong> </center></a></li>-->
       <!--<li class="list-group-item" style="font-size:1.5em; color:black;"><a href="uploadcv.php"> <center> <i class="fa fa-cloud-upload" aria-hidden="true"></i><strong>Upload C.V. </strong></center></a></li>-->
-      <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="#"> <center> <i class="fa fa-question-circle-o" aria-hidden="true"></i><strong>Help </strong></center></a></li>
+      <li class="list-group-item" style="font-size:1.5em; color:black;"><a href="#"> <center><?php include("help.php"); ?>
+</strong></center></a></li>
 
     </ul-->
 
@@ -128,7 +129,7 @@ if ( $_SESSION['auth'] != true) {
 
             <li><a href="#Interviewskills" data-toggle="tab">Interview Skills</a></li>
 
-            <li><a href="#settings" data-toggle="tab">Settings</a></li>
+            <!--li><a href="#settings" data-toggle="tab">Settings</a></li-->
 
           </ul>
 
@@ -522,7 +523,7 @@ if ( $_SESSION['auth'] != true) {
 
         <div class="form-group">
         <div class="add_skills">
-          <button class="btn btn-info btn-lg" style="font-size:1.3em;">Click to Add More Skills & View Changes</button>
+          <!--button class="btn btn-info btn-lg" style="font-size:1.3em;">Click to Add More Skills & View Changes</button-->
           </div>
           <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
         </div>
