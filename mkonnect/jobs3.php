@@ -18,7 +18,6 @@
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css">
      <link rel="stylesheet" href="css/jobs.css">
           <style type="text/css">
         .available_jobs{
@@ -58,20 +57,18 @@
     <div class="panel">
         <div class="panel">
           
-         <h3 class="text-danger"> fill the form Below to Apply </h3>
+         <h3 class="text-danger"> fill the form below then Upload your C.V. and Your Academic credentials</h3>
             <div class="well" style=" margin-bottom:1%; ">
 
                 <fieldset>
-                  
 
-                  
                   <div class="form-group">
                     <div class="col-md-10">
 
     <form id="cv" method="post" action="save_cv.php" enctype="multipart/form-data">
       <legend><center> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
-      <label class="control-label" style="color:black;"><h3 class="text-warning">C.V.</h3></label>
+      <label class="control-label" style="color:black;"><h3 class="text-warning">C.V. and any project you've done</h3></label>
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #f0ad4e;">Valid Formats</span>&nbsp;&nbsp;<span class="badge" > "doc","docx","pdf"</span>
       <input id="input-6" type="file" name="files[]" multiple="multiple" style="color:#000;">
       <input type="submit" value="Upload your C.V." class="btn btn-warning" style="margin-top: 1%; font-size: 1.4em;">
@@ -92,38 +89,157 @@ if(isset($_SESSION['count'])){
   ?>
        </div><!--col-md-10-->
          </div><!--form-group-->
-          
-
-                    <form role="form" class="form-horizontal" action="biodata.php" method="POST" name="contactform"  style="padding: 2%;">
-                    <div class="form-group">
+          <div class="form-group">
            <div class="col-md-10">
-           <label class="control-label text-muted" style="font-size:1.8em;">Option: Use your saved C.V.</label>
-            </div>
-            </div>
-            <div class="form-group">
-            <div class="col-md-10">
-            <select placeholder="Use your saved cv" class="form-control">
-              <option>Select..</option>
-              <option>echo cv name</option>
 
-            </select>            
-    
-         </div><!--col-md-10-->
+    <form id="cert" action="save_cert.php" method="post"  enctype="multipart/form-data">
+      <label class="control-label" style="color:black;"><h3 class="text-info">Academic Transcript eg. kcse, diploma</h3></label>
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #5bc0de;">Valid Formats</span>&nbsp;&nbsp;<span class="badge" >"jpg", "png", "gif", "doc","docx"</span>
+      <input id="trans" type="file" name="files[]" multiple="multiple">
+      <input type="submit" value="Upload Academic Your Transcripts" class="btn btn-info" style="margin-top: 1%; margin-bottom: 3%; font-size: 1.4em;">
+    </form>
+
+    <?php
+    # error messages
+    if (isset($_SESSION['msg1'])) {
+      $e_msg=$_SESSION['msg1'];
+      foreach ($e_msg as $msg) {
+        printf("<p class='text-danger'>%s</p></ br>\n", $msg);
+      }
+    }
+    # success message
+    if(isset($_SESSION['count1'])){
+      printf("<p class='text-success'>%d Transcripts Uploaded successfully !</p>\n", $_SESSION['count1']);
+
+    }
+      ?>
+
+       </div><!--col-md-10-->
          </div><!--form-group-->
 
-         <div class="form-group">
-           <div class="col-md-10">
-             <div class="content-box-large">
-          <div class="panel-heading">
-          <div class="panel-title"><h2 style="text-align:center;" class="text-warning">Your Cover Letter</h2>
-          </div>
-          <div class="panel-body">
-            <textarea id="tinymce_full" name="txt_area"></textarea>
-          </div>
+                    <form role="form" class="form-horizontal" action="biodata.php" method="POST" name="contactform"  style="padding: 2%;">
 
-           </div>
-         </div>
-           <center> <button class="btn btn-primary btn-block">POST</button></center>
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter FullName</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <input class="form-control" name="txt_name" placeholder="Your Full Name" type="text" id="inputName" required=""  />
+
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+
+                 <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Enter Phone Number</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+
+              <div class="form-group">
+
+                    <div class="col-md-10">
+                        <input class="form-control" name="txt_number" placeholder="072...." type="text" id="inputName" required=""  />
+
+
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Select Education Level</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+              <div class="form-group">
+
+                    <div class="col-md-10">
+
+                         <select class="form-control" name="txt_level"  required="">
+
+                              <option>Degree</option>
+                              <option>Diploma</option>
+                              <option>Certificate</option>
+                              <option>KCSE</option>
+
+                              </select>
+
+
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
+
+               <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Choose Nationality</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+              <div class="form-group">
+
+                    <div class="col-md-10">
+
+
+                        <select class="form-control" name="txt_nationality"  required="">
+
+                              <option>Kenyan</option>
+                              <option>Ugandan</option>
+                              <option>Tanzanian</option>
+                              <option>East African</option>
+
+                              </select>
+
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+                <div class="col-md-12">
+                   <label for="txt_subject" class="control-label"><h3 class="text-warning"><center>Choose Years Of Experience</center></h3></label>
+                </div><!--col-md-12-->
+              </div><!--form-group-->
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+
+
+                        <select class="form-control" name="txt_years"  required="">
+
+                              <option>5</option>
+                              <option>4</option>
+                              <option>3</option>
+                              <option>2</option>
+                              <option>1</option>
+
+                              </select>
+
+
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+
+
+                    </div><!--col-md-10-->
+                </div><!--form-group-->
+
+          <div class="form-group">
+             <div class="col-md-10">
+               <input class="btn btn-lg btn-success btn-block" type="submit" value="Finish" name="finish" style="font-size:1.25em;" >
+
+                    </div><!--col-md--12-->
+                </div><!--form-group-->
+                </div><!--col-md-12-->
+
             </form>
 
                 </fieldset>
@@ -169,18 +285,6 @@ if(isset($_SESSION['count'])){
 
 <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
 <script src="js/fa.js"></script>
-
-    <script src="vendors/bootstrap-wysihtml5/lib/js/wysihtml5-0.3.0.js"></script>
-    <script src="vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.js"></script>
-
-    <script src="vendors/ckeditor/ckeditor.js"></script>
-    <script src="vendors/ckeditor/adapters/jquery.js"></script>
-
-    <script type="text/javascript" src="vendors/tinymce/js/tinymce/tinymce.min.js"></script>
-
-    <script src="js/custom.js"></script>
-    <script src="js/editors.js"></script>
-
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!-- canvas-to-blob.min.js is only needed if you wish to resize images before upload.

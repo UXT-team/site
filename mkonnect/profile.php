@@ -398,7 +398,7 @@ if ( $_SESSION['auth'] != true) {
                      </li>
                    </ul>
                  </div><!--list-group-->
-               <div class="well wow slideInRight" data-wow-delay="1s">
+               <div class="well" >
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
@@ -499,7 +499,7 @@ if ( $_SESSION['auth'] != true) {
              </div><!--col-md-12-->
 
              <div class="col-md-12">
-               <div class="well wow fadeInDown"  data-wow-delay="1s">
+               <div class=""  >
                 <div class="col-md-6">
                  <div class="panel">
                    <div class="thumbnail">
@@ -514,18 +514,22 @@ if ( $_SESSION['auth'] != true) {
 
                  <?php include("skills-help.php"); ?>
 
-                 <div class="addskills">
+                 <div class="addskills well">
 
           <div id="form-skills">
 
       <form method="post" id="reg-skills" autocomplete="off">
 
         <div class="form-group">
+        <div class="add_skills">
+          <button class="btn btn-info btn-lg" style="font-size:1.3em;">Click to Add More Skills & View Changes</button>
+          </div>
           <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
         </div>
         <hr />
          <div class="form-group">
-          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Skills & View Changes</button>
+
+          <button class="btn btn-warning btn-lg" style="font-size:1.7em;">Click View Changes</button>
         </div><!--form-group-->
 
       </form>
@@ -535,10 +539,11 @@ if ( $_SESSION['auth'] != true) {
 
                </div><!--well-->
              </div><!--col-md-12-->
-
+             
+      
               <hr>
 
-             <div class="col-md-12 wow bounceInLeft"  data-wow-offset="300">
+             <div class="col-md-12 "  data-wow-offset="300">
                <div class="well">
                 <div class="col-md-6">
                  <div class="panel">
@@ -567,6 +572,7 @@ if ( $_SESSION['auth'] != true) {
          <div class="form-group">
           <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Courses & View Changes</button>
         </div><!--form-group-->
+
 
       </form>
 
@@ -1043,6 +1049,26 @@ $(document).ready(function() {
 
 });
 </script>
+<script>
+  $(document).ready(function() {
+    var max_fields      = 3; //maximum input boxes allowed
+    var wrapper         = $(".adds"); //Fields wrapper
+    var add_button      = $(".categories"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="txt_category1" class="form-control"/><a href="#" class="remove_field">Remove</a></div>   <div><input type="text" name="txt_category2" class="form-control"/>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+</script>
 
 
 <!-- skills-->
@@ -1130,6 +1156,26 @@ $(document).ready(function() {
     });
   });
 
+});
+</script>
+<script>
+  $(document).ready(function() {
+    var max_fields      = 3; //maximum input boxes allowed
+    var wrapper         = $(".adds"); //Fields wrapper
+    var add_button      = $(".categories"); //Add button ID
+    
+    var x = 1; //initlal text box count
+    $(add_skills).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div><input type="text" name="txt_skills1" class="form-control"/><a href="#" class="remove_field">Remove</a></div>   <div><input type="text" name="txt_skills2" class="form-control"/>'); //add input box
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
 });
 </script>
 

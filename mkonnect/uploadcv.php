@@ -1,4 +1,5 @@
 <?php require ("db.php");
+     $_SESSION['next'] = false;
 if ( $_SESSION['auth'] != true) {
   header("Location: mkonnect.php");
 }
@@ -72,7 +73,7 @@ $user_id = $_SESSION['id'];
     // if(!$_SESSION){
     //   header("location: mkonnect/login.php");
     // }
-      $valid_formats = array("jpg", "png", "gif", "doc","docx");
+      $valid_formats = array( "doc","docx");
 $max_file_size = 1024*1000; //100 kb
 $path = "uploads/"; // Upload directory
 $count = 0;
@@ -126,7 +127,7 @@ $message[]= "Unable to move file";             }
                        <!-- Multiple file upload html form-->
 
        <form action="" method="post" enctype="multipart/form-data">
-     <label class="control-label">Select File</label>
+     <label class="control-label">Select File  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp Format &nbsp&nbsp <span class="badge">"jpg" "doc","docx"</span></label>
            <input id="input-6" type="file" name="files[]" multiple="multiple"><br>
           <center> <input type="submit" class="btn btn-warning btn-lg" value="Upload CV"> </center>
        </form>
