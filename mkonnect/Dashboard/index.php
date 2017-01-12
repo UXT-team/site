@@ -81,7 +81,7 @@ if (!$_SESSION['email']) {
                       <?php } ?>
                     </div>
                     <li class="list-group-item">
-                      <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">Jobs</button> </li>
+                      <button id="job_apps" type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#jobs">job_applications</button> </li>
                   <div id="jobs" class="collapse">
                     <?php
                     $query = "select * from job_category";
@@ -113,8 +113,8 @@ if (!$_SESSION['email']) {
                 </div><!--listgroup-->
               </div><!--col-md-2-->
              <div class="jumbotron">
-      <div class="col-md-10">
-       <div class="row">
+      <div id="table_jobs" class="col-md-10">
+       <div  class="row">
         <div class="col-md-3">
 
           <div class="card">
@@ -192,3 +192,28 @@ if (!$_SESSION['email']) {
 
   </body>
   </html>
+
+  <script>
+	$('#job_apps').click(function(){
+								console.log('kae');
+								$.get(
+									'jobs_admin.php',
+									function(data) {
+										var json = jQuery.parseJSON(data);
+										var content = '';
+						            for (var i = 0; i < json.length; i++) {
+						            content += '<tr>';
+						            content += '<td>' +json[i].id+'</td>';
+						            content += '<td>' + json[i].name + '</td>';
+                        content += '<td>' + json[i].email + '</td>';
+						            content += '<td>' + json[i].number + '</td>';
+                        content += '<td>' + json[i].job_category + '</td>';
+
+						            content += '</tr>';
+						            }
+										 $('#table_jobs').html(content);
+									}
+								);
+
+    });
+	</script>
