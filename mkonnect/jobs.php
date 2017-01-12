@@ -57,14 +57,14 @@
 <div class="container">
     <div class="panel">
         <div class="panel">
-          
+
          <h3 class="text-danger"> fill the form Below to Apply </h3>
             <div class="well" style=" margin-bottom:1%; ">
 
                 <fieldset>
-                  
 
-                  
+
+
                   <div class="form-group">
                     <div class="col-md-10">
 
@@ -92,7 +92,7 @@ if(isset($_SESSION['count'])){
   ?>
        </div><!--col-md-10-->
          </div><!--form-group-->
-          
+
 
                     <form role="form" class="form-horizontal" action="biodata.php" method="POST" name="contactform"  style="padding: 2%;">
                     <div class="form-group">
@@ -102,12 +102,12 @@ if(isset($_SESSION['count'])){
             </div>
             <div class="form-group">
             <div class="col-md-10">
-            <select placeholder="Use your saved cv" class="form-control">
+            <select name="cv_name" placeholder="Use your saved cv" class="form-control">
               <option>Select..</option>
               <option>echo cv name</option>
 
-            </select>            
-    
+            </select>
+
          </div><!--col-md-10-->
          </div><!--form-group-->
 
@@ -123,7 +123,7 @@ if(isset($_SESSION['count'])){
 
            </div>
          </div>
-           <center> <button class="btn btn-primary btn-block">POST</button></center>
+           <center> <button name="finish" class="btn btn-primary btn-block">POST</button></center>
             </form>
 
                 </fieldset>

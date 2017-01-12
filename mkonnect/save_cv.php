@@ -1,7 +1,7 @@
 <?php
 require ("db.php");
-$user_id = rand();
-$_SESSION['id']=$user_id;
+$user_id =$_SESSION['id'];
+
 
 $valid_formats = array( "doc","docx","pdf");
 $max_file_size = 1024*1000; //100 kb

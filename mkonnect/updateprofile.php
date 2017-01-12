@@ -91,7 +91,7 @@
                     <form role="form" class="form-horizontal" action="update.php" method="POST" name="contactform"  style="padding: 2%;">
 
 
-                <legend><center> <h3>Put Email Session varaible here to be seen by user here</h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
+                <legend><center> <h3><?php echo   $_SESSION['email'] ?></h3> <span class="glyphicon glyphicon-edit"></span></center> </legend>
 
                  <div class="form-group">
                 <div class="col-md-12">

@@ -70,16 +70,9 @@ require ("db.php");
 <?php
 if(isset($_POST['finish'])){
 
-//declare variable
- //$user_name = $_POST['txt_name'];
- $name = $_POST['txt_name'];
- $number=$_POST['txt_number'];
- $edu_level=$_POST['txt_level'];
- $nationality=$_POST['txt_nationality'];
- $experience=$_POST['txt_years'];
- $user_id =$_SESSION['id'];
-
-
+$cover_letter = $_POST['txt_area'];
+$user_id=$_SESSION['id'];
+$cv_name=$_POST['cv_name'];
 
 
 
@@ -87,7 +80,7 @@ if(isset($_POST['finish'])){
 
 //insert the user into the database.
 
-$insert_acc="insert into profiles (fullname,phone_number,edu_level,nationality,experience,user_id) VALUES ('$name','$number','$edu_level','$nationality','$experience',$user_id)";
+$insert_acc="insert into current_applications (letter,cv_name,user_id) VALUES ('$cover_letter','$cv_name','$user_id')";
 
 if(mysqli_query($con,$insert_acc))
 {
@@ -95,8 +88,6 @@ if(mysqli_query($con,$insert_acc))
 echo"<script> $('#success').modal('show');</script>";
 
 // echo"<script>window.open('uploadcv.php','_self')</script>";
-
-
 }
 //else{
 //echo "<script>alert('Check your details and try again')</script>";

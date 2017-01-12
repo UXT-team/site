@@ -1,6 +1,4 @@
-<?php
-$user_email = $_POST['email'];
- ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,15 +23,15 @@ $user_email = $_POST['email'];
     	</center>
     	<center><p class="text-warning" style="font-size:1.5em;"> Click Next to Update your profile
     	</center>
-    
-     <center><a href="register.php"><button class="btn btn-success btn-lg">Next</button></a></center>
+
+     <center><a href="updateprofile.php"><button class="btn btn-success btn-lg">Next</button></a></center>
      </div>
      </div>
      </div>
     </div>
   </div>
 </div>
-  
+
 </div>
 
 
@@ -46,8 +44,8 @@ $user_email = $_POST['email'];
     	<div class="thumbnail">
     	<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR86aukb6WHzQ-QmUshY1kPcvnv9GuIkuvFUiaMgt7IJkxHxurRVQ">
     	<div class="caption">
-    	<center><p class="text-danger" style="font-size:2em;"> <?php echo $user_email; ?> already exist in, Please try another one!'</p></center>
-    
+    	<center><p class="text-danger" style="font-size:2em;"> email already exist, Please try another one!'</p></center>
+
      <center><a href="mkonnect.php"><button class="btn btn-primary btn-lg">Try Again</button></a></center>
      </div>
      </div>
@@ -55,7 +53,7 @@ $user_email = $_POST['email'];
     </div>
   </div>
 </div>
-  
+
 </div>
 
 </body>
@@ -117,7 +115,7 @@ $query = mysqli_query($con, $select_log);
         $insert_app="insert into job_applications (user_id,category_id) VALUES ('$user_id','$category_id')";
         mysqli_query($con,$insert_app);    }
   $_SESSION['auth'] = true;
-  
+
 echo"<script> $('#success').modal('show');</script>";
 //echo "<script>alert('Registration Successful')</script>";
 
