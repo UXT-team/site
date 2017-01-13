@@ -88,7 +88,7 @@ if (!$_SESSION['email']) {
                     $query1 = mysqli_query($con,$query);
                     while ($row = mysqli_fetch_array($query1)) {
                      ?>
-                  <a href="#"><i class="glyphicon glyphicon-ice-lolly-tasted list-group-item"></i><?php echo $row['category']; ?></a>
+                  <a href="#" class="job" id="<?php echo $row['id']?>"><i class="glyphicon glyphicon-ice-lolly-tasted list-group-item"></i><?php echo $row['category']; ?></a>
                   <?php } ?>
                 </div>
                     <li class="list-group-item"> <button type="button" class="btn btn-warning btn-lg" data-toggle="collapse" data-target="#traffic">Traffic  <span class="glyphicon glyphicon-flash"></span></button> </li>
@@ -232,6 +232,54 @@ if (!$_SESSION['email']) {
 						            content += '</tr>';
 						            }
 										 $('#table_jobs').html(content2+content+content3);
+									}
+								);
+
+    });
+	</script>
+
+  <script>
+	$('.job').click(function(){
+    var id = $(this).attr('id');
+								console.log(id);
+								$.get(
+									'job.php',
+                  { id: id },
+									function(data) {
+                    console.log(data);
+										// var json = jQuery.parseJSON(data);
+                    //
+										// var content = '';
+                    // var content2= '<div class="table-scrol">';
+                    //   content2 +='<div class="table-responsive">'
+                    //   content2 +='<table class="table table-bordered table-hover table-striped" style="table-layout:fixed">'
+                    //     content2 += '<thead>'
+                    //       content2 +='<tr class="success">'
+                    //          content2 +='<th>ID</th>';
+                    //         content2 +='<th>Name</th>';
+                    //          content2 +='<th>Email </th>';
+                    //          content2 +='<th>Phonenumber </th>';
+                    //          content2 +='<th>Job Category</th>';
+                    //          content2 +='<th>Application Date</th>';
+                    //          content2 +='<th>CV</th>';
+                    //          content2 +='<th>Academic Transcripts</th>';
+                    //          content2 +='</thead>';
+                    //       var content3 ='</table>';
+                    //     content3 +='</div>';
+                    // content3 +='</div>';
+						        //     for (var i = 0; i < json.length; i++) {
+						        //     content += '<tr>';
+						        //     content += '<td>' +json[i].id+'</td>';
+						        //     content += '<td>' + json[i].name + '</td>';
+                    //     content += '<td>' + json[i].email + '</td>';
+						        //     content += '<td>' + json[i].number + '</td>';
+                    //     content += '<td>' + json[i].job_category + '</td>';
+                    //     content += '<td></td>';
+                    //     content += '<td><a href="#"><button class="btn btn-warning">Download CV</button></a></td>';
+                    //     content += '<td><a href="#"><button class="btn btn-danger"> Transcript</button></a></td>';
+						        //     content += '</tr>';
+						        //     }
+										//  $('#table_jobs').html(content2+content+content3);
 									}
 								);
 
