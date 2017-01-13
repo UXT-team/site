@@ -216,9 +216,9 @@ if (!$_SESSION['email']) {
                              content2 +='<th>CV</th>';
                              content2 +='<th>Academic Transcripts</th>';
                              content2 +='</thead>';
-                          content2 +='</table>';
-                        content2 +='</div>';
-                    content2 +='</div>';
+                          var content3 ='</table>';
+                        content3 +='</div>';
+                    content3 +='</div>';
 						            for (var i = 0; i < json.length; i++) {
 						            content += '<tr>';
 						            content += '<td>' +json[i].id+'</td>';
@@ -226,9 +226,12 @@ if (!$_SESSION['email']) {
                         content += '<td>' + json[i].email + '</td>';
 						            content += '<td>' + json[i].number + '</td>';
                         content += '<td>' + json[i].job_category + '</td>';
+                        content += '<td></td>';
+                        content += '<td><a href="#"><button class="btn btn-warning">Download CV</button></a></td>';
+                        content += '<td><a href="#"><button class="btn btn-danger"> Transcript</button></a></td>';
 						            content += '</tr>';
 						            }
-										 $('#table_jobs').html(content2);
+										 $('#table_jobs').html(content2+content+content3);
 									}
 								);
 
