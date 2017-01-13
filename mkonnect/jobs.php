@@ -1,5 +1,6 @@
 <?php
  require ("db.php");
+ $user_id=$_SESSION[id];
  ?>
 <!DOCTYPE html>
 <html>
@@ -103,9 +104,9 @@ if(isset($_SESSION['count'])){
             <div class="form-group">
             <div class="col-md-10">
             <select name="cv_name" placeholder="Use your saved cv" class="form-control">
-              <option>Select..</option>
-              <option>echo cv name</option>
-
+              <?php $query="SELECT * FROM files WHERE user_id='$user_id'"; $query1=mysqli_query($con,$query); while ($row=mysqli_fetch_array($query1)) {?>
+              <option><?php echo $row['name']; ?></option>
+              <?php } ?>
             </select>
 
          </div><!--col-md-10-->

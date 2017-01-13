@@ -103,11 +103,12 @@
 
       $insert_acc="insert into employer (email,password) VALUES ('$user_email',md5('$user_pass'))";
 
-      if(mysqli_query($con,$insert_acc))
+      if($row=mysqli_query($con,$insert_acc))
 
       {
-      //echo "<script>alert('Registration Successful')</script>";
-      $_SESSION['auth'] = true;
+      $employer_id=$row['employer_id'];
+      $_SESSION['id']=$employer_id;
+      $_SESSION['auth_emp'] = true;
       echo"<script> $('#success').modal('show');</script>";
       }
       }
