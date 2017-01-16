@@ -20,7 +20,7 @@
       <div class="caption">
       <center><p class="text-warning" style="font-size:2em;"> Job Has Been Posted Succesfully
       </center>
-		
+
 
      <center><a href="postjob.php#posts"><button class="btn btn-warning btn-lg">View Report</button></a></center>
      </div>
@@ -47,7 +47,7 @@ if(isset($_POST['profile'])){
  //$user_name = $_POST['txt_name'];
  $job_title = $_POST['txt_job_title'];
  $company_name=$_POST['txt_companyname'];
- $job_description=$_POST['text_area'];
+ $job_description=$_POST['txt_area'];
  $job_category=$_POST['txt_nationality'];
  $experience=$_POST['txt_experience'];
  $employer_id =$_SESSION['id'];

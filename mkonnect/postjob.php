@@ -307,8 +307,10 @@
       //connect to db
       include 'db/db_connection.php';
 
+      $employer_id=$_SESSION['id'];
+
       //select query to view users
-      $view_admin_query = " select * from employer_jobs ORDER BY id desc";
+      $view_admin_query = "select * from employer_jobs WHERE employer_id=$employer_id";
       //run the sql query
 
       $run = mysqli_query($con, $view_admin_query);
