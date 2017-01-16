@@ -1,5 +1,5 @@
 <?php  require ("db.php");
-      if ($_SESSION['auth'] != true) {
+      if ($_SESSION['auth_emp'] != true) {
         header("Location: mkonnect.php#postjob");
       }
  ?>
@@ -118,7 +118,7 @@
                 </div><!--form-group-->
 
                 <div class="">
-                
+
               <div class="form-group">
 
                 <div class="col-md-10">
@@ -155,7 +155,7 @@
 
 
 
-      
+
 
                <div class="form-group">
                 <div class="col-md-12">

@@ -69,33 +69,38 @@ require ("db.php");
 
 <?php
 if(isset($_POST['finish'])){
+  if (isset($_SESSION['finish'])) {
+    $cover_letter = $_POST['txt_area'];
+    $user_id=$_SESSION['id'];
+    $cv_name=$_POST['cv_name'];
 
-$cover_letter = $_POST['txt_area'];
-$user_id=$_SESSION['id'];
-$cv_name=$_POST['cv_name'];
 
 
+    // $_POST['marketing']=null;
 
-// $_POST['marketing']=null;
+    //insert the user into the database.
 
-//insert the user into the database.
+    $insert_acc="insert into current_applications (letter,cv_name,user_id) VALUES ('$cover_letter','$cv_name','$user_id')";
 
-$insert_acc="insert into current_applications (letter,cv_name,user_id) VALUES ('$cover_letter','$cv_name','$user_id')";
+    if(mysqli_query($con,$insert_acc))
+    {
 
-if(mysqli_query($con,$insert_acc))
-{
+    echo"<script> $('#success').modal('show');</script>";
 
-echo"<script> $('#success').modal('show');</script>";
+    // echo"<script>window.open('uploadcv.php','_self')</script>";
+    }
+    //else{
+    //echo "<script>alert('Check your details and try again')</script>";
+    //echo"<script> $('#update_error').modal('show');</script>";
+    //exit();
+    //$refresh = "<script>window.open('mkonnect.php','_self')</script>";
 
-// echo"<script>window.open('uploadcv.php','_self')</script>";
-}
-//else{
-//echo "<script>alert('Check your details and try again')</script>";
-//echo"<script> $('#update_error').modal('show');</script>";
-//exit();
-//$refresh = "<script>window.open('mkonnect.php','_self')</script>";
+    //}
+  }else {
 
-//}
+      header("Location: jobs.php");
+  }
+
 
 
 

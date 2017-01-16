@@ -2,7 +2,6 @@
 require ("db.php");
 $user_id =$_SESSION['id'];
 
-
 $valid_formats = array( "doc","docx","pdf");
 $max_file_size = 1024*1000; //100 kb
 $path = "uploads/"; // Upload directory
@@ -53,6 +52,7 @@ if (isset($message)) {
 # success message
 if($count !=0){
   $_SESSION['count'] = $count;
+  $_SESSION['finish'] = true;
   // printf("<p class='text-success'>%d files added and database updated successfully !</p>\n", $count);
 
 }
