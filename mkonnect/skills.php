@@ -5,9 +5,13 @@ if( $_POST ){
     //session starts here
     session_start();
 	
-	$skills = $_POST['txt_skills'];
+    $skills = $_POST['txt_skills'];
+    //$skills2 = $_POST['txt_skills2'];
+	//$skills3 = $_POST['txt_skills3'];
 
    $_SESSION['txt_skills']=$skills;
+   //$_SESSION['txt_skills2']=$skills2;
+   //$_SESSION['txt_skills3']=$skills3; 
 	
 
 	?>
@@ -25,9 +29,22 @@ if( $_POST ){
     </tr>
     
     <tr>
-    <td>Skills</td>
+    <td class="warning"><strong>Skills</strong></td>
    
-    <td><?php echo $skills ?></td>
+    <td><?php echo $skills; ?></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td>
+    <?php //  if(!isset($skills2)){echo "";}else {echo $skills2;}?>
+        
+    </td>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td>
+    <?php  //if(!isset($skill3)){echo "";}else{echo $skill3;} ?></td>
     </tr>
     
    

@@ -16,6 +16,109 @@
 </style>
 </head>
 <body>
+<section style="margin-bottom: 10%;" class="jumbotron">
+<center><h2>Sending data via ajax n php without loading form</h2></center>
+  <div id="contact_form" style="padding-left:40%;" >
+<form name="contact" action="" >
+  <fieldset>
+    <label for="name" id="name_label">Name</label><br>
+    <input type="text" name="name" id="name" size="30" value="" class="text-input" /><br>
+    <label class="error" for="name" id="name_error">This field is required.</label><br>
+     
+    <label for="email" id="email_label">Return Email</label><br>
+    <input type="text" name="email" id="email" size="30" value="" class="text-input" /><br>
+    <label class="error" for="email" id="email_error">This field is required.</label><br>
+     
+    <label for="phone" id="phone_label">Return Phone</label><br>
+    <input type="text" name="phone" id="phone" size="30" value="" class="text-input" /><br>
+    <label class="error" for="phone" id="phone_error">This field is required.</label><br>
+     
+      <br />
+    <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
+  </fieldset>
+</form>
+</div>
+</section>
+
+<script type="text/javascript">
+  $(function() {
+    $(".button").click(function() {
+      // validate and process form here
+      $('.error').hide();
+      var name = $("input#name").val();
+      if (name == "") {
+        $("label#name_error").show();
+        $("input#name").focus();
+        return false;
+      }
+      var email = $("input#email").val();
+      if (email == "") {
+        $("label#email_error").show();
+        $("input#email").focus();
+        return false;
+      }
+      var phone = $("input#phone").val();
+      if (phone == "") {
+        $("label#phone_error").show();
+        $("input#phone").focus();
+        return false;
+    });
+  });
+</script>
+<section class="well">
+  
+</section>
+<section class="well">
+<div class="container " style="margin-top:20% ">
+  <input type="hidden" name="count" value="1" />
+        <div class="control-group" id="categories">
+            <label class="control-label" for="category1">Nice Multiple Form Fields</label>
+            <div class="controls" id="profs"> 
+                <form class="input-append">
+                    <div id="category"><input autocomplete="off" class="input" id="category1" name="prof1" type="text" placeholder="Type something" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
+                </form>
+            <br>
+            <small>Press + to add another form field :)</small>
+        </div>
+  </div>
+</div>
+
+<!--add field with + -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var next = 1;
+
+    $(".add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#category" + next;
+        var addRemove = "#category" + (next);
+        next = next + 1;
+        var newIn = '<input autocomplete="off" class="input form-control" id="category' + next + '" name="category' + next + '" type="text">';
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="category">';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#category" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#category" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+    
+
+    
+});
+
+</script>
+</section>
+
+
 <section id="music">
 <div class="jumbotron" style="margin:10%; margin-bottom: 40%;">
   <div class="panel">

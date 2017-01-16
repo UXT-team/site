@@ -525,7 +525,13 @@ if ( $_SESSION['auth'] != true) {
         <div class="add_skills">
           <!--button class="btn btn-info btn-lg" style="font-size:1.3em;">Click to Add More Skills & View Changes</button-->
           </div>
-          <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
+          <div class="adds">
+    <button class="categories btn-info btn-lg">Add More Fields</button>
+    <div>
+    <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
+    </div>
+</div>
+          
         </div>
         <hr />
          <div class="form-group">
@@ -597,35 +603,6 @@ if ( $_SESSION['auth'] != true) {
                   <div class="well">
                     <center><h3 class="text-danger">Available Jobs</h3></center>
                     <div class="caption panel">
-                      <h2>Job Description</h2>
-                      <ul>
-<li><strong>social media marketing</strong>: developing a distinct online presence by attracting high numbers of internet followers through social media channels such as Facebook, Twitter, YouTube and Instagram.</li>
-<li><strong>search engine optimisation (SEO)</strong>: developing strategies to increase the number of visitors to a website by achieving high-ranking placements in search results.</li>
-<li><strong>pay-per-click (PPC) campaigns</strong>: sponsored online advertising paid for by the business to appear alongside non-paid search results.</li>
-<li><strong>mobile marketing</strong>: includes app-based, in-game, location-based and SMS marketing.</li>
-<li><strong>affiliate marketing</strong>: where a business allows other businesses (affiliates) to sell products on their website. The affiliate is paid commission for each customer brought to the website by their own marketing strategies.</li>
-</ul>
-                      <h3>Requirements</h3>
-                      <ul>
-<li>create and upload copy and images for the organisation's website;</li>
-<li>write and dispatch email marketing campaigns;</li>
-<li>provide accurate reports and analysis to clients and company management to demonstrate effective return on investment (ROI);</li>
-<li>research new online media opportunities that may benefit the business including mobile, social media, development of blogs and forums;</li>
-<li>design website banners and assist with web visuals;</li>
-<li>communicate with clients, affiliate networks and affiliate partners;</li>
-<li>conduct keyword research and web statistics reporting;</li>
-<li>contribute to social media engagement and brand awareness campaigns;</li>
-<li>use web analytics software to monitor the performance of client websites and make recommendations for improvement;</li>
-<li>contribute to company and industry blogs and manage e-communications;</li>
-<li>assist with paid media - including liaising with digital advertising agencies;</li>
-<li>develop and integrate content marketing strategies;</li>
-<li>keep up to date with current digital trends;</li>
-<li>manage the contact database and assist with lead generation activities;</li>
-<li>negotiate with media suppliers to achieve the best price for clients.</li>
-</ul>
-<h4 id="salary">Salary</h4>
-<p>Ksh.20,0000</p>
-                     <a href="jobs.php"> <button class="btn btn-warning btn-lg">Apply</button></a>
                      <?php
                      //connect to db
                      //connect to db
@@ -1052,7 +1029,7 @@ $(document).ready(function() {
 </script>
 <script>
   $(document).ready(function() {
-    var max_fields      = 3; //maximum input boxes allowed
+    var max_fields      = 2; //maximum input boxes allowed
     var wrapper         = $(".adds"); //Fields wrapper
     var add_button      = $(".categories"); //Add button ID
     
@@ -1061,7 +1038,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="txt_category1" class="form-control"/><a href="#" class="remove_field">Remove</a></div>   <div><input type="text" name="txt_category2" class="form-control"/>'); //add input box
+            $(wrapper).append('<div><input type="text" class="form-control" name="txt_skills2" id="skills" placeholder="Add skills" required /><a href="#" class="remove_field text-danger" style="font-size:1em;">Remove</a></div>   <div><input type="text" class="form-control" name="txt_skills3" id="skills" placeholder="Add skills" required /><a href="#" class="remove_field text-danger" style="font-size:1em;">Remove</a></div>'); //add input box
         }
     });
     
@@ -1159,29 +1136,6 @@ $(document).ready(function() {
 
 });
 </script>
-<script>
-  $(document).ready(function() {
-    var max_fields      = 3; //maximum input boxes allowed
-    var wrapper         = $(".adds"); //Fields wrapper
-    var add_button      = $(".categories"); //Add button ID
-    
-    var x = 1; //initlal text box count
-    $(add_skills).click(function(e){ //on add input button click
-        e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
-            $(wrapper).append('<div><input type="text" name="txt_skills1" class="form-control"/><a href="#" class="remove_field">Remove</a></div>   <div><input type="text" name="txt_skills2" class="form-control"/>'); //add input box
-        }
-    });
-    
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-    })
-});
-</script>
-
-
-
 
   </body>
 </html>
