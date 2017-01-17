@@ -19,7 +19,7 @@ if(isset($_POST['profile'])){
 
 //insert the user into the database.
 
-$insert_acc="insert into profiles (fullname,phone_number,edu_level,nationality,experience,user_id) VALUES ('$name','$number','$edu_level','$nationality','$experience',$user_id)";
+$insert_acc="insert into profiles (fullname,phone_number,edu_level,nationality,experience,user_id) VALUES ('$name','$number','$edu_level','$nationality','$experience','$user_id')";
 
 if(mysqli_query($con,$insert_acc))
 {
