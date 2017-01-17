@@ -103,9 +103,11 @@
 
       $insert_acc="insert into employer (email,password) VALUES ('$user_email',md5('$user_pass'))";
 
-      if($row=mysqli_query($con,$insert_acc))
-
+      if(mysqli_query($con,$insert_acc))
       {
+        $select_log = "select * from employer WHERE email='$user_email'";
+        $query = mysqli_query($con, $select_log);
+          $row = mysqli_fetch_array($query);
       $employer_id=$row['employer_id'];
       $_SESSION['id']=$employer_id;
       $_SESSION['auth_emp'] = true;
