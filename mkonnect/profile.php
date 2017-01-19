@@ -18,6 +18,7 @@ if ( $_SESSION['auth'] != true) {
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
+    <link href="css/blinker.css" rel="stylesheet">
     <!--favicon-->
        <link rel="icon" type="image/png" href="img/favicon.ico" sizes="32x32" />
 
@@ -49,6 +50,7 @@ if ( $_SESSION['auth'] != true) {
 
   </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70">
+<?php include_once("analyticstracking.php") ?>
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
     <div class="container">
@@ -82,7 +84,7 @@ if ( $_SESSION['auth'] != true) {
       $query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
         $fullname = $row['fullname'];  echo "WELCOME"." ".$fullname;?></h1></div>
-      <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.PNG"></a></div>
+      <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.png"></a></div>
 
     </div>
     <div class="row">
@@ -104,23 +106,33 @@ if ( $_SESSION['auth'] != true) {
 
 
           <div class="panel panel-default">
-            <div class="panel-heading">Social Media</div>
+            <div class="panel-heading">Contact</div>
             <div class="panel-body">
-              <i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
+            <li class="list-group-item">
+             <span class="" style="color:brown;" > <i class="fa fa-phone fa-2x" aria-hidden="true"></i></span> 0791730695
+             </li>
+             
+            </div>
+            <div class="panel-body">
+            <li class="list-group-item">
+              <span  style="color:#5bc0de;"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span>
+             info@mkonnect.co.ke
+             </li>
             </div>
           </div>
 
         </div><!--/col-3-->
       <div class="col-sm-9">
 
-          <ul class="nav nav-tabs" id="myTab">
+          <ul class="nav nav-tabs" id="myTab" style="font-size:1.5em;">
 
+            <li><a href="#jobs" data-toggle="tab">
 
+            Available Jobs <span class="blink_text" style="color:  #5cb85c;" ><i class="fa fa-map" aria-hidden="true"></i></span></a></li>
             <li class="active"><a href="#profile" data-toggle="tab">Job Profile</a></li>
 
-            <li><a href="#edit-profile" data-toggle="tab">Edit Job Profile</a></li>
-            <li><a href="#jobs" data-toggle="tab">Available Jobs</a></li>
-
+            <li><a href="#edit-profile" data-toggle="tab">Edit Job Profile</a> </li>
+            
             <li><a href="#messages" data-toggle="tab">Messages</a></li>
 
             <li><a href="#shortcode" data-toggle="tab">ShortCode Service</a></li>
@@ -133,16 +145,16 @@ if ( $_SESSION['auth'] != true) {
 
           </ul>
 
-          <div class="tab-content">
-            <div class="tab-pane active" id="profile">
+          <div class="tab-content" >
+            <div class="tab-pane active" id="profile" style="margin-top:-2%;">
               <div class="table-responsive">
 
                 <hr>
-                <div class="row">
+                <!--div class="row">
                   <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="pagination" id="myPager"></ul>
                   </div>
-                </div>
+                </div-->
               </div><!--/table-resp-->
 
               <hr>
@@ -601,7 +613,7 @@ if ( $_SESSION['auth'] != true) {
               <!--Available Jobs -->
               <div class="tab-pane" id="jobs">
                   <div class="well">
-                    <center><h3 class="text-danger">Available Jobs</h3></center>
+                    <center><h3 class="text-warning">Available Jobs</h3></center>
                     <div class="caption panel">
                      <?php
                      //connect to db
@@ -1136,6 +1148,10 @@ $(document).ready(function() {
 
 });
 </script>
+
+<!--live chat-->
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=96693563"></script>
+
 
   </body>
 </html>

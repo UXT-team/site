@@ -42,6 +42,7 @@ if ( $_SESSION['auth'] != true) {
 
 </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70" class="">
+  <?php include_once("analyticstracking.php") ?>
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
     <div class="container">
@@ -54,15 +55,16 @@ if ( $_SESSION['auth'] != true) {
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="index.php">Home</a></li>
           <li class="active"><a href="#sales" data-toggle="modal" data-target="#sales">Register/Login</a></li>
-          <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
-          <li class="active"><a href="#section4">About</a></li>
+          <li class="active"><a href="#index.php#shortcode"><strong>ShortCode</strong></a></li>
+          <li class="active"><a href="index.php#about">About</a></li>
           <li class="active"><a href="#contacts">Contact</a></li>
 
       </ul></div><!--/.nav-collapse -->
     </div><!--/.container -->
 </div><!--/.navbar -->
+
 
 <div class="well-md">
 <?php

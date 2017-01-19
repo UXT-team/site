@@ -45,6 +45,7 @@
      </style>
 </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70">
+<?php include_once("analyticstracking.php") ?>
 <!-- Fixed navbar -->
 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
     <div class="container">

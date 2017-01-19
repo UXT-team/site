@@ -71,7 +71,7 @@ session_destroy();
 
   </head>
   <body data-spy="scroll" data-target="#uxt" data-offset="70" class="">
-  
+  <?php include_once("analyticstracking.php") ?>
   <a class="navbar-brand" rel="home" href="#" title="logo">
   <img src="img/logo.jpg"></a>
   <div class="top" style="margin-top:2%; margin-left: 75%;">
@@ -80,10 +80,11 @@ session_destroy();
   <a href="#sales" data-toggle="modal" data-target="#sales">
   <button class="btn btn-success btn-lg">Register</button></a>
   <a href="#sales" data-toggle="modal" data-target="#sales"><button class="btn btn-danger btn-lg">Login</button></a>
-  <a href="#postjob"><button class="btn  btn-lg" style="background-color:#FF9000; color:#fff; margin-top:2%; margin-left: -118%; height:auto" >POSTJOB</button></a>
+  
+  <a href="#postjob"><button class="btn  btn-lg" style="background-color:#FF9000; color:#fff; margin-top:0%; margin-left: ; height:auto" >POSTJOB</button></a><br>
   </div><!--top-->
 <!-- Fixed navbar -->
-<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav" style="margin-top: 2%;">
+<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav" style="margin-top: 1%;">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -95,7 +96,7 @@ session_destroy();
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav nav-justified">
           <li class="active"><a href="mkonnect.php">Home</a></li>
-          <li class="active"><a href="#section1"><strong>ShortCode</strong></a></li>
+          <li class="active"><a href="#shortcode"><strong>ShortCode</strong></a></li>
           <li class="active"><a href="#about">About</a></li>
 
           <li class="active"><a href="#contacts">Contact</a></li>
@@ -108,7 +109,7 @@ session_destroy();
 <div class="divider" id="section2"></div>
 
 <section class="konnect wow pulse" data-wow-iteration="infinite" data-wow-duration="5000ms" style="margin-top: -8%;">
-  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Available Jobs Here</h1><h2><span class=" glyphicon glyphicon-hand-down" style="color:#4cae4c;"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2><h2><span class=" glyphicon glyphicon-hand-down" style="color:#000;"></h2></div>
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h1 style="padding:20px;background-color:rgba(5,5,5,.8)">Find Available Jobs Here</h1><!--h2><span class=" glyphicon glyphicon-hand-down" style="color:#4cae4c;"></span></h2> <h2><span class=" glyphicon glyphicon-hand-down"></span></h2><h2><span class=" glyphicon glyphicon-hand-down" style="color:#000;"></h2--></div>
 </section>
 
 
@@ -502,7 +503,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
       </div><!--row-->
     </div><!--section4-->
 
-    <div id="section1">
+    <div id="shortcode">
     <section class="wow fadeInDown" data-wow-delay="1s" style="background-color:#f0ad4e;">
       <div class="row">
 
@@ -620,7 +621,7 @@ echo $category["id"];?>" class="cat btn btn-warning btn-lg" style="padding:10%; 
               </div><!--forgotten_jobs-->
 
           <p class="text-warning" style="text-align: center;"> If you don't have an account clcik Below to register <i class="fa fa-hand-o-down" aria-hidden="true"></i></p>
-              <center><button class="btn btn-primary btn-lg" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Click to Reigster </button></center>
+              <center><button class="btn btn-primary btn-lg" a data-toggle="collapse" href="#post_jobs_reg" aria-expanded="false" aria-controls="collapseExample"> Click to Register </button></center>
 
                 </div><!--from-group-->
               </div><!--col-md-10-->
