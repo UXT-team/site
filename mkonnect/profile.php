@@ -33,6 +33,10 @@ if ( $_SESSION['auth'] != true) {
 <link rel="stylesheet" href="css/profile.css">
 <script src="js/bootstrap-popover-x.js" type="text/javascript"></script>
    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -83,7 +87,7 @@ if ( $_SESSION['auth'] != true) {
 
       $query = mysqli_query($con, $select_log);
       $row = mysqli_fetch_array($query);
-        $fullname = $row['fullname'];  echo "WELCOME"." ".$fullname;?></h1></div>
+        $fullname = $row['fullname'];  echo "WELCOME"." ".$fullname;?></h3></div>
       <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="img/logo.png"></a></div>
 
     </div>
@@ -124,7 +128,7 @@ if ( $_SESSION['auth'] != true) {
         </div><!--/col-3-->
       <div class="col-sm-9">
 
-          <ul class="nav nav-tabs" id="myTab" style="font-size:1.5em;">
+          <ul class="nav nav-tabs" id="myTab" style="font-size:1.3em;">
 
             <li><a href="#jobs" data-toggle="tab">
 
@@ -460,7 +464,7 @@ if ( $_SESSION['auth'] != true) {
 
         <hr />
          <div class="form-group">
-          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Job Category & View Changes</button>
+          <!--button class="btn btn-warning btn-block" style="font-size:1.7em;"-->Click to Add Job Category & View Changes</button>
         </div><!--form-group-->
 
       </form>
