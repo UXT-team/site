@@ -112,7 +112,7 @@
               <div class="form-group">
 
                     <div class="col-md-6">
-                        <input class="form-control" name="txt_companyname" placeholder="companyname" type="text" id="inputName" required=""  />
+                        <input class="form-control" name="txt_companyname" placeholder="companyname" type="text" row="10" id="comment" required=""  />
 
 
                     </div><!--col-md-12-->

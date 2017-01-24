@@ -464,7 +464,7 @@ if ( $_SESSION['auth'] != true) {
 
         <hr />
          <div class="form-group">
-          <!--button class="btn btn-warning btn-block" style="font-size:1.7em;"-->Click to Add Job Category & View Changes</button>
+          <button class="btn btn-warning btn-block" style="font-size:1.7em;">Click to Add Job Category & View Changes</button>
         </div><!--form-group-->
 
       </form>
@@ -542,7 +542,7 @@ if ( $_SESSION['auth'] != true) {
           <!--button class="btn btn-info btn-lg" style="font-size:1.3em;">Click to Add More Skills & View Changes</button-->
           </div>
           <div class="adds">
-    <button class="categories btn-info btn-lg">Add More Fields</button>
+    <!--button class="categories btn-info btn-lg">Add More Fields</button-->
     <div>
     <input type="text" class="form-control" name="txt_skills" id="skills" placeholder="Add skills" required />
     </div>

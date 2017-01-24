@@ -125,6 +125,35 @@ if(isset($_SESSION['count'])){
 
            </div>
          </div>
+         <div class="form-group">
+            <div class="panel-title"><h3 style="text-align:center;" class="text-warning"> Choose Job Category</h3>
+          </div>
+                    <div class="col-md-10">
+
+                         <select class="form-control" name="txt_category"  required="">
+
+                              <option>
+                                <?php
+                  $db = "job_category";
+
+                  $select_db=mysqli_select_db($con,$db);
+
+                  $query = "select * from job_category";
+                  $query1 = mysqli_query($con,$query);
+
+                  while ($row = mysqli_fetch_assoc($query1)) {
+                    echo "<option value='".$row['id']."'>".$row['category']."</option>";
+                  }
+                   ?>
+                              </option>
+                              
+                              
+
+                              </select>
+
+
+                    </div><!--col-md-12-->
+                </div><!--form-group-->
            <center> <button name="finish" class="btn btn-primary btn-block">POST</button></center>
             </form>
 
